@@ -270,6 +270,9 @@ select {
 .p-flow__textBox {
   width: 500px;
 }
+.p-flow__listTitle {
+  font-size: 24px;
+}
 .p-flow__listText {
   margin-top: 40px;
 }
