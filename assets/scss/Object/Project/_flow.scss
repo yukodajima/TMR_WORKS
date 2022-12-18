@@ -1,0 +1,29 @@
+@use '../../Foundation/global'as *;
+
+.p-flow {
+  padding: 120px 0px 80px;
+  &__list {
+    margin: 80px auto 0px;
+    padding: 0;
+  }
+  &__listItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    &--reverse {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+  &__textBox {
+    width: 500px;
+  }
+  &__img {
+    width: 350px;
+    height: 250px;
+  }
+}

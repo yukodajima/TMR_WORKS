@@ -1,7 +1,7 @@
 @use '../Foundation/global'as *;
 .l-main {
   padding-top: $header-height-pc;
-  background-color: $color-background;
+  background-color: $color-background-sub;
 
   @include mq(sp) {
     padding-top: $header-height-sp;

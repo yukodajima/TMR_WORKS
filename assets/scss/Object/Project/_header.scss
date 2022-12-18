@@ -1,0 +1,27 @@
+@use '../../Foundation/global'as *;
+
+.p-header {
+  background-color: $color-background-sub;
+  &__titleBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    height: 100px;
+  }
+  &__menuList {
+    display: flex;
+    height: 50px;
+    list-style: none;
+  }
+  &__menuItem {
+    padding: 10px 30px;
+    display: flex;
+    gap: 10px;
+  }
+  &__menuLogo {
+    width: 20px;
+    height: 20px;
+  }
+}

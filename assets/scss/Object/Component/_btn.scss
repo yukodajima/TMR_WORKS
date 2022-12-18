@@ -1,0 +1,18 @@
+@use '../../Foundation/global'as *;
+
+.c-btn {
+  background-color: #FF9800;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  &__contact {
+    background-color: #006BBA;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    }
+}
