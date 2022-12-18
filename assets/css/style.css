@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  color: #3B4043;
+  color: #1B224C;
   letter-spacing: normal;
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   min-height: 100%;
@@ -96,7 +96,7 @@ select {
 
 .l-main {
   padding-top: 100px;
-  background-color: #EDEBEB;
+  background-color: #F5F5F5;
 }
 @media (max-width: 599px) {
   .l-main {
@@ -150,7 +150,7 @@ select {
 
 .c-sample {
   font-size: 18px;
-  background-color: #26226B;
+  background-color: #FF9801;
 }
 
 .p-example {
