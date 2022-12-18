@@ -1,4 +1,16 @@
-/* Box sizing rules */
+@charset "UTF-8";
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #3B4043;
+  letter-spacing: normal;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  min-height: 100%;
+}
+
+/* A Modern CSS Reset */
 *,
 *::before,
 *::after {
@@ -6,7 +18,6 @@
           box-sizing: border-box;
 }
 
-/* Remove default margin */
 body,
 h1,
 h2,
@@ -20,38 +31,32 @@ dd {
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role=list],
 ol[role=list] {
   list-style: none;
 }
 
-/* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
 img,
 picture {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -59,7 +64,6 @@ select {
   font: inherit;
 }
 
-/* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -74,5 +78,104 @@ select {
     -webkit-transition-duration: 0.01ms !important;
             transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 20;
+}
+@media (max-width: 599px) {
+  .l-header {
+    height: 80px;
+  }
+}
+
+.l-main {
+  padding-top: 100px;
+  background-color: #EDEBEB;
+}
+@media (max-width: 599px) {
+  .l-main {
+    padding-top: 80px;
+  }
+}
+
+.l-container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: inherit;
+  padding: 0 40px;
+}
+@media (max-width: 900px) {
+  .l-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: calc(100% - 30px * 2);
+  }
+}
+@media (max-width: 599px) {
+  .l-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% - 20px * 2);
+  }
+}
+
+.l-footer {
+  padding: 0 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .l-footer {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 599px) {
+  .l-footer {
+    padding: 0 20px;
+  }
+}
+
+.l-wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+.c-sample {
+  font-size: 18px;
+  background-color: #26226B;
+}
+
+.p-example {
+  width: 300px;
+  height: 100px;
+}
+
+.u-hidden {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .u-hidden-pc {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .u-hidden-tab {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .u-hidden-sp {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+// ======================================
+// サイトの基本設定
+// ======================================
+
+// 幅関係の設定--------------------------
+$width-base: 1200px; // 全体
+$width-main: 800px; // メインエリアの幅
+$width-side: 360px; // サイドバーの幅
+
+// フォント関係の設定--------------------
+$font-base:
+"Hiragino Sans W3",
+"Hiragino Kaku Gothic ProN",
+"ヒラギノ角ゴ ProN W3",
+"メイリオ",
+Meiryo,
+"ＭＳ Ｐゴシック",
+"MS PGothic",
+sans-serif;
+;
+$font-serif: serif;
+$font-size-base: 16px;
+$font-weight-base: 400;
+$line-height-base: calc(27 / 16);
+
+// 色関係の設定--------------------------
+$color-main: #26226B; // サイトカラー
+$color-sub: #5872A8;
+$color-background: #EDEBEB;
+$color-background-sub: #FFF;
+$color-text: #3B4043; // フォントカラー
+$hover-opacity: 0.7; // 透過度
+
+// 階層
+$layer: (modal: 100, // モ―ダル
+  drawer: 40, // ドロワー
+  floating: 30, // フローティングアイテム
+  header: 20, // ヘッダー
+  footer: 10, // フッター
+  default: 1,
+);
+
+// 余白
+$padding-pc: 40px;
+$padding-tab: 30px;
+$padding-sp: 20px;
+
+// ヘッダー高さ
+$header-height-pc: 100px;
+$header-height-sp: 80px;

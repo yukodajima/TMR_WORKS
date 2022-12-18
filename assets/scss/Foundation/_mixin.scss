@@ -1,0 +1,13 @@
+$breakpoint: (
+  pc: '(min-width: 901px)',
+  tab: '(max-width: 900px)',
+  tab-only: '(min-width: 600px) and (max-width: 900px)',
+  sp: '(max-width: 599px)',
+);
+
+@mixin mq($bp: sp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
+

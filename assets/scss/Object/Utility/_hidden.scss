@@ -1,0 +1,22 @@
+@use '../../Foundation/global' as *;
+.u-hidden {
+  display: none;
+}
+
+.u-hidden-pc {
+  @include mq(pc) {
+    display: none;
+  }
+}
+
+.u-hidden-tab {
+  @include mq(tab-only) {
+    display: none;
+  }
+}
+
+.u-hidden-sp {
+  @include mq(sp) {
+    display: none;
+  }
+}

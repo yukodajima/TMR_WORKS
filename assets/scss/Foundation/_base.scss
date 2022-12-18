@@ -1,0 +1,12 @@
+@use './global' as *;
+
+html {
+  font-size: $font-size-base;
+}
+
+body{
+  color: $color-text;
+  letter-spacing: normal;
+  font-family: $font-base;
+  min-height: 100%;
+}
