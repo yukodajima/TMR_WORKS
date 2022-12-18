@@ -1,1 +1,39 @@
 @use '../../Foundation/global'as *;
+
+.p-important {
+  width: 900px;
+  margin: 0 auto;
+  padding: 80px 0px;
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin-top: 80px;
+    list-style: none;
+  }
+  &__item {
+  }
+  &__itemTitle{
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    &::after {
+      display: block;
+      content: "";
+      position: relative;
+      width: 270px;
+      height: 1px;
+      background-color: #1B224C;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}

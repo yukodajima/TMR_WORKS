@@ -11,19 +11,30 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    height: 250px;
+    &:not(:first-child) {
+      margin-top: 80px;
+    }
     &--reverse {
       display: flex;
       flex-direction: row-reverse;
       justify-content: center;
       align-items: center;
       gap: 40px;
+      margin-top: 80px;
     }
   }
   &__textBox {
     width: 500px;
   }
+  &__listText {
+    margin-top: 40px;
+  }
   &__img {
     width: 350px;
     height: 250px;
+    & img {
+      height: 100%;
+    }
   }
 }
