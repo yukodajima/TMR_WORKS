@@ -12,6 +12,7 @@
   }
   &__menuList {
     display: flex;
+    justify-content: space-between;
     height: 50px;
     list-style: none;
     padding: 0;
@@ -20,7 +21,7 @@
   &__menuItem {
     display: flex;
     & a {
-      padding: 10px 30px;
+      padding: 10px 20px;
       display: flex;
       gap: 10px;
       text-decoration: none;

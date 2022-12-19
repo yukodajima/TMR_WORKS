@@ -227,6 +227,10 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 50px;
   list-style: none;
   padding: 0;
@@ -239,7 +243,7 @@ select {
   display: flex;
 }
 .p-header__menuItem a {
-  padding: 10px 30px;
+  padding: 10px 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
