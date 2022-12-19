@@ -1,0 +1,34 @@
+@use '../../Foundation/global' as *;
+.p-work {
+  padding: 120px 0 80px;
+
+  &__list {
+    margin-top: 80px;
+    display: flex;
+    gap: 120px;
+    list-style: none;
+  }
+  &__item {
+    text-align: center;
+  }
+  &__imgContainer {
+    width: 300px;
+    height: 300px;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  &__title {
+    font-size: 32px;
+    margin-top: 40px;
+    color: $color-text;
+  }
+  &__text {
+    margin-top: 25px;
+    font-size: 16px;
+    color: $color-text;
+  }
+}

@@ -1,0 +1,14 @@
+@use '../../Foundation/global' as *;
+
+.p-menu {
+  padding: 80px 0 90px;
+  &__container {
+    width: 600px;
+    height: 100px;
+    border: solid 1px black;
+  }
+
+  &__btn {
+    background-color: aqua;
+  }
+}
