@@ -6,13 +6,11 @@
     margin-top: 100px;
     display: flex;
     gap: 50px;
-    // justify-content: space-between;
   }
   &__item {
     list-style: none;
   }
   &__imgContainer {
-    width: 350px;
     height: 250px;
   }
   &__image {

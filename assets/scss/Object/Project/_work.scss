@@ -10,9 +10,10 @@
   }
   &__item {
     text-align: center;
+    flex-basis: 100%;
   }
   &__imgContainer {
-    width: 300px;
+    // width: 300px;
     height: 300px;
   }
   &__image {

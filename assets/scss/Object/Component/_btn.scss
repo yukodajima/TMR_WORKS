@@ -1,0 +1,13 @@
+@use '../../Foundation/global' as *;
+.c-btn {
+  background-color: $color-main;
+  width: 200px;
+  height: 50px;
+  margin-top: 40px;
+  border: none;
+  color: $color-background-sub;
+
+  &__container {
+    text-align: center;
+  }
+}
