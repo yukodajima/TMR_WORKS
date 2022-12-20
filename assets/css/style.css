@@ -329,7 +329,7 @@ select {
 }
 
 .p-shopList {
-  padding: 80px 0 90px;
+  padding: 80px 0 0;
 }
 .p-shopList__container {
   margin-top: 60px;
@@ -339,6 +339,9 @@ select {
   border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
+}
+.p-shopList__row {
+  color: #1B224C;
 }
 .p-shopList__area {
   border: solid 1px black;
@@ -363,6 +366,26 @@ select {
 
 .p-news {
   padding: 120px 0 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.p-news__container {
+  margin-top: 80px;
+}
+.p-news__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.p-news__date {
+  white-space: nowrap;
+  color: #1B224C;
+}
+.p-news__text {
+  color: #1B224C;
 }
 
 .u-hidden {

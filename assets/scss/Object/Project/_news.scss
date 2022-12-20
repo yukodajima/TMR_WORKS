@@ -1,4 +1,22 @@
 @use '../../Foundation/global' as *;
 .p-news {
   padding: 120px 0 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  &__container {
+    margin-top: 80px;
+  }
+  &__list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+  &__date {
+    white-space: nowrap;
+    color: $color-text;
+  }
+  &__text {
+    color: $color-text;
+  }
 }
