@@ -1,0 +1,56 @@
+@use '../../Foundation/global' as *;
+.p-contact {
+  padding: 30px 0 80px;
+  background-color: #fff;
+  // max-width: 900px;
+
+  &__container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__list {
+    margin-top: 50px;
+    list-style: none;
+    text-align: left;
+    // z-index: 1;
+    border-top: solid gray 1px;
+  }
+  &__item {
+  }
+  &__text {
+    padding: 10px 0;
+    position: relative;
+  }
+
+  &__triger {
+    color: $color-text;
+    &::before {
+      content: '';
+      border-top: 1px solid black;
+      width: 20px;
+      /* height: 20px; */
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: rotate(90deg);
+    }
+    &::after {
+      content: '';
+      border-top: 1px solid black;
+      width: 20px;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+    }
+  }
+  &__text--hidden {
+    background-color: #f8f8f8;
+    padding: 15px;
+    // opacity: 0;
+    // transform: translateY(-50px);
+    // z-index: -1;
+  }
+}
