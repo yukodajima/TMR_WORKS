@@ -9,9 +9,10 @@
   }
   &__item {
     list-style: none;
+    max-width: 350px;
   }
   &__imgContainer {
-    height: 250px;
+    height: 200px;
   }
   &__image {
     width: 100%;

@@ -5,6 +5,7 @@
   // position: absolute;
   bottom: 0;
   width: 100%;
+  background-color: #ff9801;
 
   @include mq(tab-only) {
     padding: 0 $padding-tab;
