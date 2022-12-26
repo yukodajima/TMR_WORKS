@@ -1,7 +1,7 @@
 @use '../../Foundation/global' as *;
 
 .p-menu {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   padding: 80px 0 90px;
   background-color: $color-background-sub;
 
@@ -14,6 +14,11 @@
     border: solid 1px black;
     text-align: center;
     padding: 20px;
+    @include mq('tab') {
+      max-width: 600px;
+      min-width: 120px;
+      padding: 20px 0;
+    }
   }
   &__textContainer--right {
     width: 600px;
@@ -35,37 +40,79 @@
       border-color: $color-main transparent transparent transparent;
       border-width: 20px 20px 0 20px;
     }
+    @include mq('tab') {
+      max-width: 600px;
+      min-width: 120px;
+      padding: 20px 0;
+    }
   }
   &__title {
     font-size: 32px;
     color: $color-main;
+    @include mq('tab') {
+      white-space: nowrap;
+      font-size: 28px;
+    }
+    @include mq('sp') {
+      font-size: 18px;
+    }
   }
   &__title--right {
     font-size: 32px;
     color: $color-background-sub;
+    @include mq('tab') {
+      white-space: nowrap;
+      font-size: 28px;
+    }
+    @include mq('sp') {
+      font-size: 18px;
+    }
   }
   &__subTitle {
     font-size: 16px;
+    @include mq('tab') {
+      white-space: nowrap;
+      font-size: 20px;
+    }
+    @include mq('sp') {
+      font-size: 16px;
+    }
   }
   &__subTitle--right {
     font-size: 16px;
     color: $color-background-sub;
+    @include mq('tab') {
+      white-space: nowrap;
+      font-size: 16px;
+    }
   }
   &__list {
     margin-top: 60px;
     display: flex;
+    gap: 30px;
     justify-content: space-between;
     flex-wrap: wrap;
-    :nth-child(n + 5) {
-      margin-top: 30px;
+    // :nth-child(n + 5) {
+    //   margin-top: 30px;
+    // }
+    @include mq('tab') {
+      justify-content: space-around;
     }
   }
   &__item {
     list-style: none;
+    width: 20%;
+    @include mq('tab') {
+      width: 40%;
+    }
   }
   &__imgContainer {
     max-width: 275px;
     height: 240px;
+    @include mq('tab') {
+      max-width: initial;
+      height: auto;
+    }
   }
   &__image {
     width: 100%;
@@ -75,5 +122,11 @@
   &__text {
     text-align: center;
     margin-top: 20px;
+  }
+  @include mq('tab') {
+    font-size: 20px;
+  }
+  @include mq('sp') {
+    font-size: 16px;
   }
 }

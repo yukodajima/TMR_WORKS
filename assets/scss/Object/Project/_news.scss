@@ -11,12 +11,17 @@
     display: flex;
     gap: 40px;
     list-style: none;
+    @include mq('tab') {
+      gap: 15px;
+      flex-direction: column;
+    }
   }
   &__date {
     white-space: nowrap;
     color: $color-text;
   }
-  &__text {
+  &__text > a {
     color: $color-text;
+    text-decoration: none;
   }
 }

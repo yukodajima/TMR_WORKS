@@ -23,6 +23,9 @@
     // height: 100px;
     line-height: 100px;
     font-size: 24px;
+    @include mq('tab') {
+      font-size: 18px;
+    }
   }
   &__innerArea {
     border-top: solid 1px $color-border;
@@ -44,22 +47,28 @@
     width: 24px;
   }
   &__pref {
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 16px;
   }
   &__shopNameList {
     display: flex;
-    gap: 20px;
+    // gap: 20px;
     flex-wrap: wrap;
+    @include mq('tab') {
+      margin-top: 10px;
+      justify-content: flex-start;
+    }
   }
   &__shopName {
     list-style: none;
-    margin: 20px 0 0 20px;
+    margin: 20px;
     font-size: 18px;
     width: 100px;
-    margin-left: 20px;
     border: solid;
     text-align: center;
+    @include mq('tab') {
+      margin: 10px;
+    }
   }
   &__shopName > a {
     text-decoration: none;
