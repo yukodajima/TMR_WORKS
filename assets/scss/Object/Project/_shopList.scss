@@ -1,0 +1,79 @@
+@use '../../Foundation/global'as *;
+span {
+    display: block;
+}
+.p-shopList {
+    &__areaList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        gap: 40px 90px;
+    }
+    &__areaItem {
+        width: 300px;
+        height: 80px;
+    }
+    &__areaButton {
+        border: none;
+        background-color: #FFBA00;
+        color: #FFFFFF;
+        width: 100%;
+        height: 100%;
+        font-size: 24px;
+        align-items: center;
+        border-radius: 8px;
+    }
+    // &__shopAddress {
+    //     font-size: 24px;
+    //     @include mq('tab') {
+    //         background-color: yellow;
+    //     }
+    // }
+    &__shopInfoWrapper {
+        padding: 80px 0;
+    }
+    &__shopInfoArea {
+        font-size: 36px;
+        text-align: center;
+    }
+    &__shopInfoList { //クラス名変える
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 80px 2%;
+        margin-top: 60px;
+    }
+    &__shopInfoItem {
+        display: flex;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    &__shopInfoImg {
+        width: 240px;
+        height: 180px;
+        margin-right: 50px;
+    }
+    &__shopIntroduce {
+        display: inline-block;
+    }
+    &__shopName {
+        font-size: 24px;
+        text-decoration: underline;
+    }
+    &__shopAddress {
+        font-size: 16px;
+        margin: 43px 100px 0 0;
+    }
+    &__shopTelNum {
+        font-size: 16px;
+    }
+    &__shopIntroduceButton {
+        width: 200px;
+        height: 50px;
+        font-size: 22px;
+        border-radius: 8px;
+    }
+}
