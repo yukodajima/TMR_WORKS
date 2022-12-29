@@ -105,13 +105,13 @@
         <section class="p-menu">
           <div class="l-container">
             <div class="p-menu__container">
-              <div class="p-menu__textContainer">
-                <h2 class="p-menu__title">修理メニュー</h2>
-                <h3 class="p-menu__subTitle">Menu</h3>
+              <div class="p-menu__textContainer orange">
+                <h2 class="p-menu__title white">修理メニュー</h2>
+                <h3 class="p-menu__subTitle white">Menu</h3>
               </div>
-              <div class="p-menu__textContainer--right">
-                <h2 class="p-menu__title--right">症状で選択</h2>
-                <h3 class="p-menu__subTitle--right">Symptoms</h3>
+              <div class="p-menu__textContainer">
+                <h2 class="p-menu__title">症状で選択</h2>
+                <h3 class="p-menu__subTitle">Symptoms</h3>
               </div>
             </div>
             <ul class="p-menu__list">
@@ -196,8 +196,8 @@
                 <p class="p-menu__text">画面が割れてしまった</p>
               </li>
             </ul>
-            <div class="c-btn__container">
-              <button class="c-btn" type="submit">一覧</button>
+            <div class="p-menu__btnContainer">
+              <button class="p-menu__btn" type="submit">一覧</button>
             </div>
           </div>
         </section>
@@ -243,8 +243,8 @@
                   >
                 </li>
               </ul>
-              <div class="c-btn__container">
-                <button class="c-btn" type="submit">一覧</button>
+              <div class="p-news__btnContainer">
+                <button class="p-news__btn" type="submit">一覧</button>
               </div>
             </div>
           </div>
@@ -355,7 +355,9 @@
                 </li>
               </ul>
               <ul class="p-footer__boxList">
-                <li class="p-footer__shopList">店舗一覧</li>
+                <li class="p-footer__shopList">
+                  店舗一覧<span class="p-footer__triger"></span>
+                </li>
                 <li class="p-footer__shopItem">
                   <a href="">北海道・東北</a>
                 </li>
@@ -376,16 +378,16 @@
                 </li>
               </ul>
               <ul class="p-footer__boxList">
-                <li class="p-footer__item">
+                <li class="p-footer__category">
                   <a href="">加盟店募集</a>
                 </li>
-                <li class="p-footer__item">
+                <li class="p-footer__category">
                   <a href="">お知らせ</a>
                 </li>
-                <li class="p-footer__item">
+                <li class="p-footer__category">
                   <a href="">ブログ</a>
                 </li>
-                <li class="p-footer__item">
+                <li class="p-footer__category">
                   <a href="">お問い合わせ</a>
                 </li>
               </ul>
@@ -420,5 +422,33 @@
         </div>
       </footer>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('.p-menu__textContainer').on('click', function () {
+          $('.p-menu__textContainer').removeClass('orange');
+          $('.p-menu__title').removeClass('white');
+          $('.p-menu__subTitle').removeClass('white');
+          let index = $('.p-menu__textContainer').index(this);
+          $('.p-menu__textContainer').eq(index).addClass('orange');
+          $('.p-menu__title').eq(index).addClass('white');
+          $('.p-menu__subTitle').eq(index).addClass('white');
+        });
+
+        $('.p-contact__text').on('click', function () {
+          $(this).next().slideToggle();
+          $(this).children().toggleClass('open');
+        });
+
+        $('.p-footer__triger').on('click', function () {
+          $(this).toggleClass('open');
+          $('.p-footer__shopItem').slideToggle();
+        });
+      });
+    </script>
   </body>
 </html>

@@ -3,7 +3,9 @@
   padding: 120px 0 80px;
   max-width: 1000px;
   margin: 0 auto;
-
+  @include mq('tab') {
+    padding: 30px 0 40px;
+  }
   &__container {
     margin-top: 80px;
   }
@@ -23,5 +25,16 @@
   &__text > a {
     color: $color-text;
     text-decoration: none;
+  }
+  &__btnContainer {
+    text-align: center;
+    margin-top: 40px;
+  }
+  &__btn {
+    background-color: $color-main;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: $color-background-sub;
   }
 }

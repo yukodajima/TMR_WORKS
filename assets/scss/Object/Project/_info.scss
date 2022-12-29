@@ -1,9 +1,7 @@
 @use '../../Foundation/global' as *;
-
 .p-info {
-  // padding: 120px 0 0;
   &__list {
-    margin-top: 100px;
+    margin-top: 80px;
     display: flex;
     gap: 50px;
     @include mq('tab') {
@@ -11,7 +9,7 @@
       display: block;
     }
     @include mq('sp') {
-      // margin-top: 50px;
+      margin-top: 50px;
     }
   }
   &__item {

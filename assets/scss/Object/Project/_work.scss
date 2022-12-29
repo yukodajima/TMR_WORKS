@@ -2,9 +2,8 @@
 .p-work {
   padding: 120px 0 80px;
   @include mq('tab') {
-    padding: 80px 0 50px;
+    padding: 60px 0 40px;
   }
-
   &__list {
     margin-top: 80px;
     display: flex;

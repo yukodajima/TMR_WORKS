@@ -1,7 +1,9 @@
 @use '../../Foundation/global' as *;
 .p-footer {
   padding: 80px 0;
-
+  @include mq('tab') {
+    padding: 40px 0;
+  }
   &__contentList {
     display: flex;
     gap: 50px;
@@ -13,15 +15,13 @@
   }
   &__contentItem {
     position: relative;
-    @include mq('tab') {
-      // margin: 0 auto;
 
+    @include mq('tab') {
       &:nth-child(n + 2) {
         margin-top: 30px;
       }
     }
   }
-
   &__imgContainer {
     height: 200px;
     max-width: 350px;
@@ -30,12 +30,10 @@
       margin: 0 auto;
     }
   }
-
   &__image {
     width: 100%;
     height: 100%;
   }
-
   &__title {
     font-size: 48px;
     text-align: center;
@@ -44,12 +42,13 @@
     left: 0;
     right: 0;
     margin: auto;
+    padding: 0 10px;
     @include mq('tab') {
       font-size: 36px;
     }
   }
   &__text {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
     position: absolute;
@@ -57,13 +56,17 @@
     left: 0;
     right: 0;
     margin: auto;
+    padding: 0 10px;
     @include mq('sp') {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
   &__line {
     border-bottom: #fff 1px solid;
     margin-top: 80px;
+    @include mq('tab') {
+      margin-top: 40px;
+    }
   }
   &__textBox {
     display: flex;
@@ -71,31 +74,89 @@
     margin: 80px auto 0;
     width: 100%;
     max-width: 850px;
+    @include mq('tab') {
+      margin: 40px auto 0;
+    }
     @include mq('sp') {
-      // display: block;
+      display: block;
     }
   }
   &__boxList {
     list-style: none;
     color: #fff;
     @include mq('sp') {
-      font-size: 2vw;
+      display: flex;
+      align-items: baseline;
+      flex-direction: row;
+      gap: 5%;
+      flex-wrap: wrap;
+      + .p-footer__boxList {
+        margin-top: 30px;
+      }
+      &:nth-child(2) {
+        display: block;
+      }
     }
   }
-
   &__item > a {
     text-decoration: none;
     color: #fff;
   }
   &__item {
     white-space: nowrap;
-    // + &__item {
-    //   margin-bottom: 20px;
-    // }
+    + .p-footer__item {
+      margin-top: 10px;
+    }
+    @include mq('sp') {
+      + .p-footer__item {
+        margin-top: auto;
+      }
+    }
+  }
+  &__shopList {
+    position: relative;
+  }
+  &__shopList > a {
+    text-decoration: none;
+    color: #fff;
+  }
+  &__triger {
+    @include mq('sp') {
+      &::before {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: rotate(90deg);
+        transition-duration: 0.5s;
+      }
+      &.open::before {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: rotate(0);
+        transition-duration: 0.5s;
+      }
+      &::after {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+      }
+    }
   }
   &__shopItem {
     position: relative;
-    // width: 150px;
     margin-left: 30px;
     &::before {
       content: '';
@@ -119,29 +180,37 @@
     }
     @include mq('sp') {
       white-space: nowrap;
-      &::before {
-        content: '';
-        width: 8px;
-      }
-      &::after {
-        content: '';
-        width: 8px;
-      }
+      margin-left: 20px;
+      display: none;
     }
   }
-
   &__shopItem > a {
     text-decoration: none;
     color: #fff;
   }
-  &__shopList > a {
+  &__category > a {
     text-decoration: none;
     color: #fff;
+  }
+  &__category {
+    white-space: nowrap;
+    + .p-footer__category {
+      margin-top: 30px;
+    }
+    @include mq('tab') {
+      + .p-footer__category {
+        margin-top: 10px;
+      }
+    }
+    @include mq('sp') {
+      + .p-footer__category {
+        margin-top: auto;
+      }
+    }
   }
   &__nav {
     display: flex;
     @include mq('sp') {
-      //tabは問題ない
       padding: 20px 0;
       display: block;
     }
@@ -151,7 +220,6 @@
     width: 100%;
     height: 100px;
     @include mq('sp') {
-      //tabは問題ない
       height: auto;
     }
   }
@@ -180,13 +248,9 @@
     height: 100px;
     line-height: 100px;
     @include mq('sp') {
-      //tabは問題ない
       line-height: inherit;
       height: auto;
       font-size: 8px;
     }
   }
-}
-.p-footer__item + .p-footer__item {
-  margin-top: 10px;
 }
