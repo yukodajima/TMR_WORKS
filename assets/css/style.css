@@ -158,10 +158,6 @@ select {
   height: 100px;
 }
 
-span {
-  display: block;
-}
-
 .p-shopList__areaList {
   display: -webkit-box;
   display: -webkit-flex;
@@ -174,9 +170,13 @@ span {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
   list-style: none;
   gap: 40px 90px;
+}
+@media (max-width: 900px) {
+  .p-shopList__areaList {
+    gap: 10px;
+  }
 }
 .p-shopList__areaItem {
   width: 300px;
@@ -194,13 +194,29 @@ span {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 8px;
+  text-align: -webkit-center;
+}
+@media (max-width: 900px) {
+  .p-shopList__areaButton {
+    font-size: 22px;
+  }
 }
 .p-shopList__shopInfoWrapper {
   padding: 80px 0;
 }
+@media (max-width: 900px) {
+  .p-shopList__shopInfoWrapper {
+    padding: 40px 0;
+  }
+}
 .p-shopList__shopInfoArea {
   font-size: 36px;
   text-align: center;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopInfoArea {
+    font-size: 34px;
+  }
 }
 .p-shopList__shopInfoList {
   display: -webkit-box;
@@ -217,6 +233,11 @@ span {
   gap: 80px 2%;
   margin-top: 60px;
 }
+@media (max-width: 900px) {
+  .p-shopList__shopInfoList {
+    gap: 40px 0;
+  }
+}
 .p-shopList__shopInfoItem {
   display: -webkit-box;
   display: -webkit-flex;
@@ -229,30 +250,71 @@ span {
   max-width: 900px;
   margin: 0 auto;
 }
+@media (max-width: 900px) {
+  .p-shopList__shopInfoItem {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+}
 .p-shopList__shopInfoImg {
   width: 240px;
   height: 180px;
   margin-right: 50px;
 }
+@media (max-width: 900px) {
+  .p-shopList__shopInfoImg {
+    width: 100%;
+    height: auto;
+  }
+}
 .p-shopList__shopIntroduce {
   display: inline-block;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopIntroduce {
+    display: block;
+    word-wrap: break-word;
+  }
 }
 .p-shopList__shopName {
   font-size: 24px;
   text-decoration: underline;
 }
-.p-shopList__shopAddress {
-  font-size: 16px;
-  margin: 43px 100px 0 0;
+@media (max-width: 900px) {
+  .p-shopList__shopName {
+    font-size: 22px;
+  }
 }
-.p-shopList__shopTelNum {
+.p-shopList__shopAddress {
+  margin-top: 43px;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopAddress {
+    margin-top: 20px;
+  }
+}
+.p-shopList__shopAddress, .p-shopList__shopTelNum {
   font-size: 16px;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopAddress, .p-shopList__shopTelNum {
+    font-size: 14px;
+  }
 }
 .p-shopList__shopIntroduceButton {
   width: 200px;
   height: 50px;
   font-size: 22px;
   border-radius: 8px;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopIntroduceButton {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+  }
 }
 
 .u-hidden {
