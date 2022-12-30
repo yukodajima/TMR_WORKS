@@ -5,10 +5,13 @@
     padding: 60px 0 40px;
   }
   &__list {
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
-    gap: 120px;
-    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    :nth-child(n + 5) {
+      margin-top: 30px;
+    }
     @include mq('tab') {
       gap: 50px;
       display: block;
@@ -17,9 +20,12 @@
     }
   }
   &__item {
+    list-style: none;
+    width: 30%;
+    margin: 0 auto;
     text-align: center;
-    flex-basis: 100%;
     @include mq('tab') {
+      width: auto;
       margin: 0 auto;
       :nth-child(n + 1) {
         margin-top: 20px;
@@ -27,22 +33,21 @@
     }
   }
   &__imgContainer {
-    height: 300px;
     max-width: 300px;
+    margin: 0 auto;
     @include mq('tab') {
       margin: 0 auto;
     }
   }
   &__image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+    height: auto;
   }
   &__title {
     font-size: 32px;
     margin-top: 40px;
     color: $color-text;
+    white-space: nowrap;
     @include mq('tab') {
       font-size: 20px;
       margin-top: 20px;

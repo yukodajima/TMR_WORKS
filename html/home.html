@@ -63,7 +63,7 @@
                 <div class="p-work__imgContainer">
                   <img
                     class="p-work__image"
-                    src="../assets/images/img-sample.jpg"
+                    src="../assets/images/logo-sample.png"
                     alt="丸画像"
                   />
                 </div>
@@ -76,7 +76,7 @@
                 <div class="p-work__imgContainer">
                   <img
                     class="p-work__image"
-                    src="../assets/images/img-sample.jpg"
+                    src="../assets/images/logo-sample.png"
                     alt="丸画像"
                   />
                 </div>
@@ -89,7 +89,7 @@
                 <div class="p-work__imgContainer">
                   <img
                     class="p-work__image"
-                    src="../assets/images/img-sample.jpg"
+                    src="../assets/images/logo-sample.png"
                     alt="丸画像"
                   />
                 </div>
@@ -235,13 +235,15 @@
             <div class="c-titleBox">新着情報</div>
             <div class="p-news__container">
               <ul class="p-news__list">
-                <li class="p-news__date">2020-01-01</li>
-                <li class="p-news__text">
-                  <a href="#">
-                    PC修理の「PCワークス」、創業10周年を記念した「創業祭」キャンペーンを開催！11月末までの期間限定、全国22店舗に
-                    てお得なキャンペーンを実施します。</a
-                  >
-                </li>
+                <div class="p-news__article">
+                  <li class="p-news__date">2020-01-01</li>
+                  <li class="p-news__text">
+                    <a href="#">
+                      PC修理の「PCワークス」、創業10周年を記念した「創業祭」キャンペーンを開催！11月末までの期間限定、全国22店舗に
+                      てお得なキャンペーンを実施します。</a
+                    >
+                  </li>
+                </div>
               </ul>
               <div class="p-news__btnContainer">
                 <button class="p-news__btn" type="submit">一覧</button>
@@ -427,28 +429,9 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
-    <script>
-      $(function () {
-        $('.p-menu__textContainer').on('click', function () {
-          $('.p-menu__textContainer').removeClass('orange');
-          $('.p-menu__title').removeClass('white');
-          $('.p-menu__subTitle').removeClass('white');
-          let index = $('.p-menu__textContainer').index(this);
-          $('.p-menu__textContainer').eq(index).addClass('orange');
-          $('.p-menu__title').eq(index).addClass('white');
-          $('.p-menu__subTitle').eq(index).addClass('white');
-        });
-
-        $('.p-contact__text').on('click', function () {
-          $(this).next().slideToggle();
-          $(this).children().toggleClass('open');
-        });
-
-        $('.p-footer__triger').on('click', function () {
-          $(this).toggleClass('open');
-          $('.p-footer__shopItem').slideToggle();
-        });
-      });
-    </script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/changeTab.js"></script>
+    <script src="../assets/js/slideContact.js"></script>
+    <script src="../assets/js/slideFooter.js"></script>
   </body>
 </html>

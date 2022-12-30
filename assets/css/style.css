@@ -240,13 +240,21 @@ select {
   }
 }
 .p-work__list {
-  margin-top: 80px;
+  margin-top: 60px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  gap: 120px;
-  list-style: none;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.p-work__list :nth-child(n+5) {
+  margin-top: 30px;
 }
 @media (max-width: 900px) {
   .p-work__list {
@@ -257,13 +265,14 @@ select {
   }
 }
 .p-work__item {
+  list-style: none;
+  width: 30%;
+  margin: 0 auto;
   text-align: center;
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
 }
 @media (max-width: 900px) {
   .p-work__item {
+    width: auto;
     margin: 0 auto;
   }
   .p-work__item :nth-child(n+1) {
@@ -271,8 +280,8 @@ select {
   }
 }
 .p-work__imgContainer {
-  height: 300px;
   max-width: 300px;
+  margin: 0 auto;
 }
 @media (max-width: 900px) {
   .p-work__imgContainer {
@@ -281,15 +290,13 @@ select {
 }
 .p-work__image {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
+  height: auto;
 }
 .p-work__title {
   font-size: 32px;
   margin-top: 40px;
   color: #1B224C;
+  white-space: nowrap;
 }
 @media (max-width: 900px) {
   .p-work__title {
@@ -429,10 +436,6 @@ select {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -606,7 +609,7 @@ select {
 .p-news__container {
   margin-top: 80px;
 }
-.p-news__list {
+.p-news__article {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -615,7 +618,7 @@ select {
   list-style: none;
 }
 @media (max-width: 900px) {
-  .p-news__list {
+  .p-news__article {
     gap: 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
