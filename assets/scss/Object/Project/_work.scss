@@ -27,7 +27,7 @@
     @include mq('tab') {
       width: auto;
       margin: 0 auto;
-      :nth-child(n + 1) {
+      & + .p-work__item {
         margin-top: 20px;
       }
     }

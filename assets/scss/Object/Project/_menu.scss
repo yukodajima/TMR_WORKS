@@ -99,6 +99,9 @@
     }
     @include mq('tab') {
       justify-content: space-around;
+      :nth-child(n + 3) {
+        margin-top: initial;
+      }
     }
   }
   &__item {

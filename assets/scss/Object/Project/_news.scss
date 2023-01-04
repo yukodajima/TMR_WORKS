@@ -13,6 +13,9 @@
     display: flex;
     gap: 40px;
     list-style: none;
+    + .p-news__article {
+      margin-top: 20px;
+    }
     @include mq('tab') {
       gap: 15px;
       flex-direction: column;

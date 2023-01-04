@@ -18,13 +18,10 @@
     @include mq('tab') {
       margin: 0 auto;
       max-width: 400px;
-      :nth-child(n + 1) {
+      & + .p-info__item {
         margin-top: 20px;
       }
     }
-  }
-  &__imgContainer {
-    height: 200px;
   }
   &__image {
     width: 100%;
