@@ -190,6 +190,11 @@ select {
 .c-hero__img {
   height: 500px;
 }
+@media (max-width: 900px) {
+  .c-hero__img {
+    height: 300px;
+  }
+}
 .c-hero__img img {
   height: 100%;
   width: 100%;
@@ -205,6 +210,12 @@ select {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+@media (max-width: 900px) {
+  .c-hero__title {
+    font-size: 32px;
+    white-space: nowrap;
+  }
 }
 
 .p-example {
