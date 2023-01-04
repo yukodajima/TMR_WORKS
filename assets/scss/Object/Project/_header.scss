@@ -55,7 +55,7 @@
   &__menuList {
     display: flex;
     margin: 0;
-    justify-content: space-between;
+    justify-content: center;
     height: 50px;
     list-style: none;
     padding: 0;
@@ -74,6 +74,7 @@
     }
   }
   &__menuItem {
+    padding: 10px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,12 +85,12 @@
       border-bottom: 1.5px solid $color-background;
     }
     & a {
-      padding: 10px 10px;
       display: flex;
       gap: 10px;
       text-decoration: none;
       color: $color-text;
       text-align: center;
+      white-space: nowrap;
     }
     &:not(:first-child){
       border-left: 1.5px solid #CBCBCB;

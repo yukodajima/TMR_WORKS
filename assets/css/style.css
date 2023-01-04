@@ -295,10 +295,10 @@ select {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 50px;
   list-style: none;
   padding: 0;
@@ -327,6 +327,7 @@ select {
   }
 }
 .p-header__menuItem {
+  padding: 10px 15px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -352,7 +353,6 @@ select {
   }
 }
 .p-header__menuItem a {
-  padding: 10px 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -361,6 +361,7 @@ select {
   text-decoration: none;
   color: #1B224C;
   text-align: center;
+  white-space: nowrap;
 }
 .p-header__menuItem:not(:first-child) {
   border-left: 1.5px solid #CBCBCB;
