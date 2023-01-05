@@ -8,13 +8,16 @@
   }
   &__container {
     margin-top: 80px;
+    @include mq('tab') {
+      margin-top: 40px;
+    }
   }
   &__article {
     display: flex;
     gap: 40px;
     list-style: none;
     + .p-news__article {
-      margin-top: 20px;
+      margin-top: 50px;
     }
     @include mq('tab') {
       gap: 15px;

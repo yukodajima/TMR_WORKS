@@ -1,18 +1,9 @@
 @use '../Foundation/global' as *;
 
 .l-footer {
-  padding: 0 $padding-pc;
   bottom: 0;
   width: 100%;
   background-color: #ff9801;
-
-  @include mq(tab-only) {
-    padding: 0 $padding-tab;
-  }
-
-  @include mq(sp) {
-    padding: 0 $padding-sp;
-  }
   &__bottom {
     background-color: #fff;
     padding: 0 $padding-pc;
