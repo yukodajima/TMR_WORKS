@@ -171,12 +171,11 @@ select {
 }
 
 .p-revue {
-  padding: 80px 0 80px;
-  background-color: #fff;
+  padding: 80px 0;
 }
 @media (max-width: 900px) {
   .p-revue {
-    padding: 40px 0 40px;
+    padding: 40px 0;
   }
 }
 .p-revue__list {
@@ -184,11 +183,11 @@ select {
   max-width: 900px;
   margin: 0 auto;
 }
-.p-revue__item + .p-revue__item {
+.p-revue__item.p-revue__item {
   margin-top: 40px;
 }
 @media (max-width: 900px) {
-  .p-revue__item + .p-revue__item {
+  .p-revue__item.p-revue__item {
     margin-top: 20px;
   }
 }
@@ -202,11 +201,17 @@ select {
 @media (max-width: 900px) {
   .p-revue__title {
     font-size: 20px;
+    margin-top: 10px;
   }
 }
 .p-revue__text {
   font-size: 16px;
   margin: 20px 0 40px;
+}
+@media (max-width: 900px) {
+  .p-revue__text {
+    margin: 10px 0 20px;
+  }
 }
 
 .p-info__list {
