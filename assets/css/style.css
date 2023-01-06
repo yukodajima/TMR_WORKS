@@ -194,6 +194,11 @@ select {
   font-size: 24px;
   margin-top: 20px;
 }
+@media (max-width: 900px) {
+  .p-revue__title {
+    font-size: 20px;
+  }
+}
 .p-revue__text {
   font-size: 16px;
   margin: 20px 0 40px;
