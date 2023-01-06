@@ -171,12 +171,12 @@ select {
 }
 
 .p-revue {
-  padding: 90px 0 80px;
+  padding: 80px 0 80px;
   background-color: #fff;
 }
 @media (max-width: 900px) {
   .p-revue {
-    padding: 0 0 40px;
+    padding: 40px 0 40px;
   }
 }
 .p-revue__list {
