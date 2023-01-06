@@ -9,12 +9,10 @@
   @include mq('tab') {
     padding-left: $padding-tab;
     padding-right: $padding-tab;
-    // width: calc(100% - #{$padding-tab} * 2);
   }
 
   @include mq('sp') {
     padding-left: $padding-sp;
     padding-right: $padding-sp;
-    // width: calc(100% - #{$padding-sp} * 2);
   }
 }
