@@ -1,5 +1,3 @@
-jQuery(function ($) {
-  $(window).on('load', function () {
-
-  });
+$(window).on('load', function () {
+  jQuery(function ($) {});
 });
