@@ -36,6 +36,10 @@ ol[role=list] {
   list-style: none;
 }
 
+ul {
+  padding: 0;
+}
+
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -156,6 +160,35 @@ select {
 .p-example {
   width: 300px;
   height: 100px;
+}
+
+.p-revue {
+  padding: 80px 0;
+  background-color: #fff;
+}
+@media (max-width: 900px) {
+  .p-revue {
+    padding: 40px 0;
+  }
+}
+.p-revue__list {
+  list-style: none;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.p-revue__item + .p-revue__item {
+  margin-top: 40px;
+}
+.p-revue__date {
+  font-size: 16px;
+}
+.p-revue__title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+.p-revue__text {
+  font-size: 16px;
+  margin: 20px 0 40px;
 }
 
 .u-hidden {

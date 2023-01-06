@@ -1,0 +1,29 @@
+@use '../../Foundation/global' as *;
+.p-revue {
+  padding: 80px 0;
+  @include mq('tab') {
+    padding: 40px 0;
+  }
+  background-color: #fff;
+  &__list {
+    list-style: none;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  &__item {
+    & + .p-revue__item {
+      margin-top: 40px;
+    }
+  }
+  &__date {
+    font-size: 16px;
+  }
+  &__title {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  &__text {
+    font-size: 16px;
+    margin: 20px 0 40px;
+  }
+}
