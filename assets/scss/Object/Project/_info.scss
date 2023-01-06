@@ -1,0 +1,39 @@
+@use '../../Foundation/global' as *;
+.p-info {
+  &__list {
+    margin-top: 80px;
+    display: flex;
+    gap: 50px;
+    @include mq('tab') {
+      gap: 25px;
+      display: block;
+    }
+    @include mq('sp') {
+      margin-top: 50px;
+    }
+  }
+  &__item {
+    list-style: none;
+    max-width: 350px;
+    @include mq('tab') {
+      margin: 0 auto;
+      max-width: 400px;
+      & + .p-info__item {
+        margin-top: 50px;
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    @include mq('tab') {
+      object-fit: cover;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    color: $color-text;
+    margin-top: 20px;
+    display: inline-block;
+  }
+}
