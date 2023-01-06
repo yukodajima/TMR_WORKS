@@ -171,7 +171,7 @@ select {
 }
 
 .p-revue {
-  padding: 0 0 80px;
+  padding: 90px 0 80px;
   background-color: #fff;
 }
 @media (max-width: 900px) {
@@ -186,6 +186,11 @@ select {
 }
 .p-revue__item + .p-revue__item {
   margin-top: 40px;
+}
+@media (max-width: 900px) {
+  .p-revue__item + .p-revue__item {
+    margin-top: 20px;
+  }
 }
 .p-revue__date {
   font-size: 16px;

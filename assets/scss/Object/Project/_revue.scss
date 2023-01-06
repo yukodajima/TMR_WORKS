@@ -1,6 +1,6 @@
 @use '../../Foundation/global' as *;
 .p-revue {
-  padding: 0 0 80px;
+  padding: 90px 0 80px;
   @include mq('tab') {
     padding: 0 0 40px;
   }
@@ -13,6 +13,11 @@
   &__item {
     & + .p-revue__item {
       margin-top: 40px;
+    }
+    @include mq('tab') {
+      & + .p-revue__item {
+        margin-top: 20px;
+      }
     }
   }
   &__date {
