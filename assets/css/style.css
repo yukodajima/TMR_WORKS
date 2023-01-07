@@ -308,14 +308,6 @@ select {
     padding: 40px 0;
   }
 }
-.p-menu__top {
-  padding-top: 40px;
-}
-@media (max-width: 900px) {
-  .p-menu__top {
-    padding-top: 20px;
-  }
-}
 .p-menu__topText {
   text-align: center;
   font-size: 16px;
@@ -325,6 +317,12 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 80px;
+}
+@media (max-width: 900px) {
+  .p-menu__container {
+    margin-top: 40px;
+  }
 }
 .p-menu__textContainer {
   max-width: 600px;

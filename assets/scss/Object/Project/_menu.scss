@@ -5,18 +5,16 @@
   @include mq('tab') {
     padding: 40px 0;
   }
-  &__top {
-    padding-top: 40px;
-    @include mq('tab') {
-      padding-top: 20px;
-    }
-  }
   &__topText {
     text-align: center;
     font-size: 16px;
   }
   &__container {
     display: flex;
+    margin-top: 80px;
+    @include mq('tab') {
+      margin-top: 40px;
+    }
   }
   &__textContainer {
     max-width: 600px;
