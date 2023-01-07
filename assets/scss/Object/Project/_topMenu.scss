@@ -1,0 +1,147 @@
+@use '../../Foundation/global' as *;
+.p-topMenu {
+  padding: 80px 0;
+  background-color: $color-background-sub;
+  @include mq('tab') {
+    padding: 40px 0;
+  }
+  &__container {
+    display: flex;
+  }
+  &__textContainer {
+    max-width: 600px;
+    width: 100%;
+    height: 100px;
+    border: solid 1px black;
+    text-align: center;
+    padding: 20px;
+    @include mq('tab') {
+      max-width: 600px;
+      min-width: 120px;
+      padding: 20px 0;
+    }
+  }
+  &__textContainer.orange {
+    max-width: 600px;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    background-color: $color-main;
+    position: relative;
+    border: none;
+    ::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+      left: 0;
+      width: 0px;
+      height: 0px;
+      margin: auto;
+      border-style: solid;
+      border-color: $color-main transparent transparent transparent;
+      border-width: 20px 20px 0 20px;
+    }
+    @include mq('tab') {
+      max-width: 600px;
+      min-width: 120px;
+      padding: 20px 0;
+    }
+  }
+  &__title {
+    font-size: 32px;
+    color: $color-main;
+    @include mq('tab') {
+      white-space: nowrap;
+      font-size: 28px;
+    }
+    @include mq('sp') {
+      font-size: 18px;
+    }
+  }
+  &__title.white {
+    font-size: 32px;
+    color: $color-background-sub;
+    @include mq('tab') {
+      white-space: nowrap;
+      font-size: 28px;
+    }
+    @include mq('sp') {
+      font-size: 18px;
+    }
+  }
+  &__subTitle {
+    font-size: 16px;
+    @include mq('tab') {
+      white-space: nowrap;
+      font-size: 20px;
+    }
+    @include mq('sp') {
+      font-size: 16px;
+    }
+  }
+  &__subTitle.white {
+    font-size: 16px;
+    color: $color-background-sub;
+    @include mq('tab') {
+      white-space: nowrap;
+      font-size: 16px;
+    }
+  }
+  &__list {
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    :nth-child(n + 5) {
+      margin-top: 30px;
+    }
+    @include mq('tab') {
+      justify-content: space-around;
+      :nth-child(n + 3) {
+        margin-top: initial;
+      }
+    }
+  }
+  &__item {
+    list-style: none;
+    width: 20%;
+    margin: 0 auto;
+    @include mq('tab') {
+      width: 40%;
+    }
+  }
+  &__imgContainer {
+    max-width: 275px;
+    @include mq('tab') {
+      max-width: initial;
+      height: auto;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__text {
+    text-align: center;
+    margin-top: 20px;
+  }
+  @include mq('tab') {
+    font-size: 20px;
+  }
+  @include mq('sp') {
+    font-size: 16px;
+  }
+  &__btnContainer {
+    text-align: center;
+    margin-top: 40px;
+  }
+  &__btn {
+    background-color: $color-main;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: $color-background-sub;
+  }
+}
