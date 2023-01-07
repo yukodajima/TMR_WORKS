@@ -25,8 +25,8 @@
   }
   &__list {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-between;
+    // gap: 40px;
     padding: 0;
     margin-top: 80px;
     list-style: none;
@@ -34,6 +34,10 @@
       flex-direction: column;
       margin-top: 40px;
     }
+  }
+  &__item {
+    width: 30%;
+    max-width: 280px;
   }
   &__itemTitle{
     font-size: 24px;

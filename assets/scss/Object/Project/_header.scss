@@ -71,6 +71,10 @@
       left: 0;
       background-color: $color-main;
       transform: translateX(100%);
+      transition: ease .5s;
+    }
+    &.open {
+      transform: translateX(0);
     }
   }
   &__menuItem {
