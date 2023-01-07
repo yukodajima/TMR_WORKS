@@ -7,9 +7,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: $width-base;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 $padding-pc;
+    @include mq('tab') {
+      padding-left: $padding-tab;
+      padding-right: $padding-tab;
+    }
+    @include mq('sp') {
+      padding-left: $padding-sp;
+      padding-right: $padding-sp;
+    }
+
   }
   &__logo {
     height: 100px;
+    @include mq("tab") {
+      height: $header-height-tab;
+    }
+    @include mq("sp") {
+      height: $header-height-sp;
+    }
     & img {
       width: 100%;
       height: 100%;
@@ -54,24 +73,25 @@
   }
   &__menuList {
     display: flex;
-    margin: 0;
     justify-content: center;
+    max-width: $width-base;
     height: 50px;
-    list-style: none;
+    margin: 0 auto;
     padding: 0;
+    list-style: none;
     border-top: 1.5px solid #CBCBCB;
     @include mq ("tab") {
+      position: fixed;
+      top: 0;
+      left: 0;
       flex-direction: column;
       justify-content: center;
       gap: 5px;
       width: 100%;
       height: 100vh;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: $color-main;
       transform: translateX(100%);
       transition: ease .5s;
+      background-color: $color-main;
     }
     &.open {
       transform: translateX(0);
@@ -104,7 +124,7 @@
     }
   }
   &__menuText {
-    font-size: 16px;
+    font-size: clamp(0.9rem, 1.6vw, 1.3rem);
   }
   &__menuLogo {
     width: 20px;
