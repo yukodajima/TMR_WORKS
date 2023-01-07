@@ -30,6 +30,9 @@
   }
   &__title {
     font-size: 32px;
+    @include mq("tab") {
+      font-size: 28px;
+    }
   }
   &__text {
     font-size: 16px;

@@ -222,6 +222,11 @@ select {
 .c-titleBox__title {
   font-size: 32px;
 }
+@media (max-width: 900px) {
+  .c-titleBox__title {
+    font-size: 28px;
+  }
+}
 .c-titleBox__text {
   font-size: 16px;
 }
