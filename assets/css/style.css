@@ -1454,7 +1454,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-important__title {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 .p-important__linefeed {
