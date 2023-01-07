@@ -1,20 +1,12 @@
 @use '../../Foundation/global' as *;
-.p-menu {
+.p-topMenu {
   padding: 80px 0;
   background-color: $color-background-sub;
   @include mq('tab') {
     padding: 40px 0;
   }
-  &__topText {
-    text-align: center;
-    font-size: 16px;
-  }
   &__container {
     display: flex;
-    margin-top: 80px;
-    @include mq('tab') {
-      margin-top: 40px;
-    }
   }
   &__textContainer {
     max-width: 600px;
