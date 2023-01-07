@@ -1409,6 +1409,7 @@ select {
 @media (max-width: 900px) {
   .p-flow__list {
     margin: 40px auto 0px;
+    max-width: 600px;
   }
 }
 .p-flow__listItem {
@@ -1443,6 +1444,8 @@ select {
         -ms-flex-align: normal;
             align-items: normal;
     height: auto;
+    text-align: center;
+    gap: 20px;
   }
 }
 .p-flow__listItem:not(:first-child) {
@@ -1490,6 +1493,8 @@ select {
         -ms-flex-align: normal;
             align-items: normal;
     margin-top: 40px;
+    text-align: center;
+    gap: 20px;
   }
 }
 .p-flow__textBox {
@@ -1523,6 +1528,7 @@ select {
 @media (max-width: 900px) {
   .p-flow__img {
     height: auto;
+    margin: 0 auto;
   }
 }
 .p-flow__img img {

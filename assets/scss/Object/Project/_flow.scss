@@ -10,6 +10,7 @@
     padding: 0;
     @include mq("tab") {
       margin: 40px auto 0px;
+      max-width: 600px;
     }
   }
   &__listItem {
@@ -23,6 +24,8 @@
       justify-content: start;
       align-items: normal;
       height: auto;
+      text-align: center;
+      gap: 20px;
     }
     &:not(:first-child) {
       margin-top: 80px;
@@ -42,6 +45,8 @@
         justify-content: start;
         align-items: normal;
         margin-top: 40px;
+        text-align: center;
+        gap: 20px;
       }
     }
   }
@@ -68,6 +73,7 @@
     height: 250px;
     @include mq("tab") {
       height: auto;
+      margin: 0 auto;
     }
     & img {
       height: 100%;
