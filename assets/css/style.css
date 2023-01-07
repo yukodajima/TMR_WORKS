@@ -1399,6 +1399,11 @@ select {
 .p-flow__textBox {
   width: 500px;
 }
+@media (max-width: 900px) {
+  .p-flow__textBox {
+    width: 100%;
+  }
+}
 .p-flow__listTitle {
   font-size: 24px;
 }
@@ -1416,12 +1421,12 @@ select {
   }
 }
 .p-flow__img {
-  width: 350px;
+  max-width: 350px;
   height: 250px;
 }
 @media (max-width: 900px) {
   .p-flow__img {
-    height: 180px;
+    height: auto;
   }
 }
 .p-flow__img img {
@@ -1438,13 +1443,27 @@ select {
 @media (max-width: 900px) {
   .p-important {
     width: 100%;
-    padding: 40px;
+    padding: 40px 0px;
   }
 }
 .p-important__title {
   text-align: center;
   font-size: 32px;
   font-weight: bold;
+  white-space: nowrap;
+}
+@media (max-width: 900px) {
+  .p-important__title {
+    font-size: 28px;
+  }
+}
+.p-important__linefeed {
+  display: none;
+}
+@media (max-width: 599px) {
+  .p-important__linefeed {
+    display: block;
+  }
 }
 .p-important__list {
   display: -webkit-box;
@@ -1475,6 +1494,11 @@ select {
   font-weight: bold;
   white-space: nowrap;
 }
+@media (max-width: 900px) {
+  .p-important__itemTitle {
+    font-size: 20px;
+  }
+}
 .p-important__itemTitle::after {
   display: block;
   content: "";
@@ -1482,6 +1506,11 @@ select {
   width: 270px;
   height: 1px;
   background-color: #1B224C;
+}
+@media (max-width: 900px) {
+  .p-important__itemTitle::after {
+    width: 250px;
+  }
 }
 .p-important__text {
   font-size: 16px;

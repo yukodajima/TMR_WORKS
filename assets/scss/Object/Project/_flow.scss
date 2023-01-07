@@ -47,6 +47,9 @@
   }
   &__textBox {
     width: 500px;
+    @include mq("tab") {
+      width: 100%;
+    }
   }
   &__listTitle {
     font-size: 24px;
@@ -61,10 +64,10 @@
     }
   }
   &__img {
-    width: 350px;
+    max-width: 350px;
     height: 250px;
     @include mq("tab") {
-      height: 180px;
+      height: auto;
     }
     & img {
       height: 100%;

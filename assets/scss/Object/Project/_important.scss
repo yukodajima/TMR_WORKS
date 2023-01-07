@@ -6,12 +6,22 @@
   padding: 80px 0px;
   @include mq ("tab") {
     width: 100%;
-    padding: 40px;
+    padding: 40px 0px;
   }
   &__title {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
+    white-space: nowrap;
+    @include mq("tab") {
+      font-size: 28px;
+    }
+  }
+  &__linefeed {
+    display: none;
+    @include mq("sp") {
+      display: block;
+    }
   }
   &__list {
     display: flex;
@@ -29,6 +39,9 @@
     font-size: 24px;
     font-weight: bold;
     white-space: nowrap;
+    @include mq("tab"){
+      font-size: 20px;
+    }
     &::after {
       display: block;
       content: "";
@@ -36,6 +49,9 @@
       width: 270px;
       height: 1px;
       background-color: #1B224C;
+      @include mq("tab") {
+        width: 250px;
+      }
     }
   }
   &__text {
