@@ -26,7 +26,6 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    // gap: 40px;
     padding: 0;
     margin-top: 80px;
     list-style: none;
@@ -37,10 +36,15 @@
   }
   &__item {
     width: 30%;
-    max-width: 280px;
+    @include mq("tab") {
+      width: 100%;
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
   }
   &__itemTitle{
-    font-size: 24px;
+    font-size: 1.3rem;
     font-weight: bold;
     white-space: nowrap;
     @include mq("tab"){
@@ -50,7 +54,7 @@
       display: block;
       content: "";
       position: relative;
-      width: 270px;
+      width: 100%;
       height: 1px;
       background-color: #1B224C;
       @include mq("tab") {

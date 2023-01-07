@@ -1592,10 +1592,17 @@ select {
 }
 .p-important__item {
   width: 30%;
-  max-width: 280px;
+}
+@media (max-width: 900px) {
+  .p-important__item {
+    width: 100%;
+  }
+  .p-important__item:not(:first-child) {
+    margin-top: 30px;
+  }
 }
 .p-important__itemTitle {
-  font-size: 24px;
+  font-size: 1.3rem;
   font-weight: bold;
   white-space: nowrap;
 }
@@ -1608,7 +1615,7 @@ select {
   display: block;
   content: "";
   position: relative;
-  width: 270px;
+  width: 100%;
   height: 1px;
   background-color: #1B224C;
 }
