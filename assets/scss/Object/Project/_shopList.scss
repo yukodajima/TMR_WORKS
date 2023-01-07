@@ -121,7 +121,7 @@
         height: 50px;
         font-size: 22px;
         border-radius: 5px;
-        background-color: #707070;
+        border-color: #707070;
         @include mq('tab') {
             display: block;
             width: 100%;

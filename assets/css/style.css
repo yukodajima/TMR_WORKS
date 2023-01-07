@@ -321,7 +321,7 @@ select {
   height: 50px;
   font-size: 22px;
   border-radius: 5px;
-  background-color: #707070;
+  border-color: #707070;
 }
 @media (max-width: 900px) {
   .p-shopList__shopIntroduceButton {
