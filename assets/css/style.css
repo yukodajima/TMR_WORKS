@@ -175,7 +175,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-shopList__areaList {
-    gap: 10px;
+    gap: 25px;
   }
 }
 .p-shopList__areaItem {
@@ -193,13 +193,28 @@ select {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 8px;
-  text-align: -webkit-center;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
 }
 @media (max-width: 900px) {
   .p-shopList__areaButton {
     font-size: 22px;
   }
+}
+.p-shopList__areaButton::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  border-top: solid 1px;
+  border-right: solid 1px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  position: absolute;
+  top: 50%;
+  right: 25px;
 }
 .p-shopList__shopInfoWrapper {
   padding: 80px 0;
@@ -219,18 +234,7 @@ select {
   }
 }
 .p-shopList__shopInfoList {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 80px 2%;
+  gap: 80px 0;
   margin-top: 60px;
 }
 @media (max-width: 900px) {
@@ -243,6 +247,10 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -257,7 +265,11 @@ select {
     width: 100%;
   }
 }
+.p-shopList__shopInfoItem:not(:first-child) {
+  margin-top: 40px;
+}
 .p-shopList__shopInfoImg {
+  display: inline-block;
   width: 240px;
   height: 180px;
   margin-right: 50px;
@@ -265,16 +277,17 @@ select {
 @media (max-width: 900px) {
   .p-shopList__shopInfoImg {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 }
 .p-shopList__shopIntroduce {
-  display: inline-block;
+  max-width: 413px;
 }
 @media (max-width: 900px) {
   .p-shopList__shopIntroduce {
     display: block;
     word-wrap: break-word;
+    width: 100%;
   }
 }
 .p-shopList__shopName {
@@ -284,21 +297,22 @@ select {
 @media (max-width: 900px) {
   .p-shopList__shopName {
     font-size: 22px;
-  }
-}
-.p-shopList__shopAddress {
-  margin-top: 43px;
-}
-@media (max-width: 900px) {
-  .p-shopList__shopAddress {
     margin-top: 20px;
   }
 }
-.p-shopList__shopAddress, .p-shopList__shopTelNum {
+.p-shopList__shopPostalcode {
+  margin-top: 43px;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopPostalcode {
+    margin-top: 20px;
+  }
+}
+.p-shopList__shopPostalcode, .p-shopList__shopAddress, .p-shopList__shopTelNum {
   font-size: 16px;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopAddress, .p-shopList__shopTelNum {
+  .p-shopList__shopPostalcode, .p-shopList__shopAddress, .p-shopList__shopTelNum {
     font-size: 14px;
   }
 }
@@ -306,7 +320,8 @@ select {
   width: 200px;
   height: 50px;
   font-size: 22px;
-  border-radius: 8px;
+  border-radius: 5px;
+  background-color: #707070;
 }
 @media (max-width: 900px) {
   .p-shopList__shopIntroduceButton {

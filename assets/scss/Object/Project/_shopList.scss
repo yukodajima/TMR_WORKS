@@ -7,7 +7,7 @@
         list-style: none;
         gap: 40px 90px;
         @include mq('tab') {
-            gap: 10px;
+            gap: 25px;
         }
     }
     &__areaItem {
@@ -22,11 +22,25 @@
         height: 100%;
         font-size: 24px;
         align-items: center;
-        border-radius: 8px;
-        text-align: -webkit-center;
+        border-radius: 5px;
+        text-align: center;
+        position: relative;
+        display: inline-block;
         @include mq('tab') {
             font-size: 22px;
         }
+    }
+    &__areaButton::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        margin-top: -5px;
+        border-top: solid 1px;
+        border-right: solid 1px;
+        transform: rotate(135deg);
+        position: absolute;
+        top: 50%;
+        right: 25px;
     }
     &__shopInfoWrapper {
         padding: 80px 0;
@@ -41,11 +55,8 @@
             font-size: 34px;
         }
     }
-    &__shopInfoList { //クラス名変える
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 80px 2%;
+    &__shopInfoList {
+        gap: 80px 0;
         margin-top: 60px;
         @include mq('tab') {
             gap: 40px 0;
@@ -53,6 +64,7 @@
     }
     &__shopInfoItem {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         max-width: 900px;
         margin: 0 auto;
@@ -62,20 +74,26 @@
             width: 100%;
         }
     }
+    &__shopInfoItem:not(:first-child) {
+        margin-top: 40px;
+    }
     &__shopInfoImg {
+        display: inline-block;
         width: 240px;
         height: 180px;
         margin-right: 50px;
         @include mq('tab') {
             width: 100%;
-            height: auto;
+            height: 100%;
         }
     }
     &__shopIntroduce {
-        display: inline-block;
+        // display: inline-block;
+        max-width: 413px;
         @include mq('tab') {
             display: block;
             word-wrap: break-word;
+            width: 100%;
         }
     }
     &__shopName {
@@ -83,15 +101,16 @@
         text-decoration: underline;
         @include mq('tab') {
             font-size: 22px;
+            margin-top: 20px;
         }
     }
-    &__shopAddress {
+    &__shopPostalcode {
         margin-top: 43px;
         @include mq('tab') {
             margin-top: 20px;
         }
     }
-    &__shopAddress , &__shopTelNum {
+    &__shopPostalcode , &__shopAddress , &__shopTelNum {
         font-size: 16px;
         @include mq('tab') {
             font-size: 14px;
@@ -101,7 +120,8 @@
         width: 200px;
         height: 50px;
         font-size: 22px;
-        border-radius: 8px;
+        border-radius: 5px;
+        background-color: #707070;
         @include mq('tab') {
             display: block;
             width: 100%;
