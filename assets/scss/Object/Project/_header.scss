@@ -19,58 +19,148 @@
       padding-left: $padding-sp;
       padding-right: $padding-sp;
     }
-
   }
   &__logo {
     height: 100px;
     @include mq("tab") {
+      width: 200px;
       height: $header-height-tab;
     }
     @include mq("sp") {
+      width: 40vw;
+      min-width: 150px;
       height: $header-height-sp;
     }
     & img {
       width: 100%;
       height: 100%;
-    }
-  }
-  &__btnArea {
-    @include mq ("tab") {
-      display: none;
+      @include mq("sp") {
+        object-fit: contain;
+      }
     }
   }
   &__menu {
     display: none;
-    @include mq ("tab") {
-      position: relative;
+    @include mq("tab") {
+      display: block;
+      width: 40px;
+    }
+    @include mq("sp") {
+      width: 30px;
+    }
+  }
+  &__menuArea {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @include mq("sp") {
+      gap: 10px;
+    }
+  }
+  &__btnArea {
+    @include mq("sp") {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 50px;
-      height: 50px;
-      background-color: $color-main;
-      border-radius: 3px;
+      gap: 5px;
+    }
+
+  }
+  &__btn {
+    @include mq("tab") {
+      width: 130px;
+      font-size: 2vw;
+    }
+    @include mq("sp") {
+      width: 20vw;
+      min-width: 80px;
+      height: 25px;
+      font-size: 1.5vw;
+    }
+  }
+  &__contactBtn {
+    @include mq("tab") {
+      width: 130px;
+      font-size: 2vw;
+    }
+    @include mq("sp") {
+      width: 20vw;
+      min-width: 80px;
+      height: 25px;
+      font-size: 1vw;
     }
   }
   &__menuLine {
-    width: 35px;
-    height: 3px;
-    background-color: $color-background;
-    border-radius: 3px;
-    &:nth-of-type(1) {
-      position: absolute;
-      top: 30%;
-    }
-    &:nth-child(2) {
-      position: absolute;
-      top: 50%;
-    }
-    &:nth-child(3) {
-      position: absolute;
-      top: 70%;
+    height: 1px;
+    width: 100%;
+    background-color: $color-text;
+    &:not(:first-child) {
+      margin-top: 10px;
+      @include mq("sp") {
+        margin-top: 5px;
+      }
     }
   }
+  // &__menuArea {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 30px;
+  //   @include mq("sp") {
+  //     gap: 5px;
+  //   }
+  // }
+  // &__btn {
+  //   @include mq("tab") {
+  //     width: 80px;
+  //     font-size: 1.8vw;
+  //   }
+  //   @include mq("sp") {
+  //     width: 50px;
+  //   }
+  // }
+  // &__contactBtn {
+  //   @include mq("tab") {
+  //     width: 80px;
+  //     font-size: 1.8vw;
+  //   }
+  //   @include mq("sp") {
+  //     width: 50px;
+  //   }
+  // }
+  // &__menu {
+  //   display: none;
+  //   @include mq ("tab") {
+  //     position: relative;
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     width: 50px;
+  //     height: 50px;
+  //     background-color: $color-main;
+  //     border-radius: 3px;
+  //   }
+  //   @include mq("sp") {
+  //     width: 20px;
+  //   }
+  // }
+  // &__menuLine {
+  //   width: 35px;
+  //   height: 3px;
+  //   background-color: $color-background;
+  //   border-radius: 3px;
+  //   &:nth-of-type(1) {
+  //     position: absolute;
+  //     top: 30%;
+  //   }
+  //   &:nth-child(2) {
+  //     position: absolute;
+  //     top: 50%;
+  //   }
+  //   &:nth-child(3) {
+  //     position: absolute;
+  //     top: 70%;
+  //   }
+  // }
   &__menuList {
     display: flex;
     justify-content: center;
@@ -89,12 +179,12 @@
       gap: 5px;
       width: 100%;
       height: 100vh;
-      transform: translateX(100%);
+      transform: translateY(-100%);
       transition: ease .5s;
       background-color: $color-main;
     }
     &.open {
-      transform: translateX(0);
+      transform: translateY(0%);
     }
   }
   &__menuItem {
@@ -123,6 +213,7 @@
       }
     }
   }
+
   &__menuText {
     font-size: clamp(0.9rem, 1.6vw, 1.3rem);
   }
