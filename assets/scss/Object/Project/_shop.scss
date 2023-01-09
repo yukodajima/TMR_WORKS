@@ -1,5 +1,4 @@
 @use '../../Foundation/global' as *;
-
 .p-shop {
   padding: 80px 0 0;
   @include mq('tab') {
@@ -18,6 +17,9 @@
     display: flex;
     color: $color-text;
     border-bottom: dotted 1px $color-border;
+    @include mq('tab') {
+      display: block;
+    }
   }
   &__area {
     max-width: 200px;
@@ -28,7 +30,8 @@
     line-height: 100px;
     font-size: 24px;
     @include mq('tab') {
-      font-size: 18px;
+      line-height: 60px;
+      max-width: none;
     }
   }
   &__innerArea {
@@ -37,11 +40,22 @@
     max-width: 1000px;
     width: 100%;
     background-color: #fff;
+    @include mq('tab') {
+      border: solid 1px $color-border;
+    }
+  }
+  &__prefBox {
+    @include mq('tab') {
+      display: flex;
+    }
   }
   &__iconPref {
     display: flex;
     width: 100%;
     margin-top: 10px;
+    @include mq('tab') {
+      width: auto;
+    }
   }
   &__iconContainer {
     margin-left: 20px;
