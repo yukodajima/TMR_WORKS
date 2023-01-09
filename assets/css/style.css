@@ -1273,6 +1273,398 @@ select {
   color: #FFF;
 }
 
+span {
+  display: block;
+}
+
+.p-shopInfo__infomation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__infomation {
+    display: block;
+  }
+}
+.p-shopInfo__shopName {
+  font-size: 32px;
+  font-weight: bold;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__shopName {
+    font-size: 30px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfo__shopName {
+    font-size: 28px;
+  }
+}
+.p-shopInfo__shopAddress {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+  word-wrap: break-word;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__shopAddress {
+    font-size: 22px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfo__shopAddress {
+    font-size: 20px;
+  }
+}
+.p-shopInfo__shopHours {
+  font-size: 24px;
+  margin-top: 40px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__shopHours {
+    font-size: 22px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfo__shopHours {
+    font-size: 20px;
+  }
+}
+.p-shopInfo__shopImg {
+  max-width: 500px;
+  width: 50%;
+  height: auto;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__shopImg {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+  }
+}
+.p-shopInfo__shopImg img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-shopInfo__contact, .p-shopInfo__contactMail, .p-shopInfo__contactTel, .p-shopInfo__contactLine {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__contact, .p-shopInfo__contactMail, .p-shopInfo__contactTel, .p-shopInfo__contactLine {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+.p-shopInfo__contactMail, .p-shopInfo__contactTel, .p-shopInfo__contactLine {
+  color: #FFFFFF;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  max-width: 300px;
+  width: 30%;
+  height: 100px;
+  padding: 0 20px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__contactMail, .p-shopInfo__contactTel, .p-shopInfo__contactLine {
+    max-width: 80%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 10%;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfo__contactMail, .p-shopInfo__contactTel, .p-shopInfo__contactLine {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.p-shopInfo__contact {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__contact {
+    display: block;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .p-shopInfo__contact li:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+.p-shopInfo__contactMail {
+  background-color: #FFBA00;
+  font-size: 24px;
+}
+.p-shopInfo__contactMailImg {
+  width: 35px;
+  height: 35px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__contactMailImg {
+    margin-right: 50px;
+  }
+}
+.p-shopInfo__contactTel {
+  background-color: #009DFF;
+  font-size: 20px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__contactTel {
+    font-size: 24px;
+  }
+}
+.p-shopInfo__contactTelImg {
+  width: 35px;
+  height: 35px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__contactTelImg {
+    margin-right: 50px;
+  }
+}
+.p-shopInfo__contactTelInfo {
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__contactTelInfo {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 900px) {
+  .p-shopInfo__contactTelInfo p:first-child {
+    margin-right: 30px;
+  }
+}
+.p-shopInfo__contactTelNum {
+  background-color: #FFFFFF;
+  color: #009DFF;
+  padding: 10px 7px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__contactTelNum {
+    margin: auto 0;
+  }
+}
+.p-shopInfo__contactLine {
+  background-color: #5AC363;
+  font-size: 24px;
+}
+.p-shopInfo__contactLineImg {
+  width: 35px;
+  height: 35px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__contactLineImg {
+    margin-right: 50px;
+  }
+}
+.p-shopInfo__introduction {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 45px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__introduction {
+    display: block;
+  }
+}
+.p-shopInfo__introdocutionImg {
+  max-width: 500px;
+  width: 50%;
+  height: auto;
+  margin-right: 35px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__introdocutionImg {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+}
+.p-shopInfo__introdocutionImg img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-shopInfo__introductionText {
+  padding-top: 55px;
+  font-size: 16px;
+  max-width: 55%;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__introductionText {
+    max-width: 100%;
+  }
+}
+.p-shopInfo__introductionText p:not(:first-child) {
+  margin: 1rem 0rem 0rem;
+}
+.p-shopInfo__repairCost {
+  margin-top: 40px;
+}
+.p-shopInfo__repairCost th {
+  background-color: #FF9800;
+  color: #FFFFFF;
+  border: solid 1px #707070;
+  font-size: 24px;
+  width: 400px;
+  height: 50px;
+}
+.p-shopInfo__repairCost td {
+  border: solid 1px #707070;
+  font-size: 24px;
+  width: 400px;
+  height: 50px;
+}
+.p-shopInfo__repairCost table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.p-shopInfo__root {
+  max-width: 1035px;
+  margin: 68px auto 0;
+}
+.p-shopInfo__rootList {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px 0;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__rootList {
+    display: block;
+  }
+}
+.p-shopInfo__rootItem {
+  width: 400px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__rootItem {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .p-shopInfo__rootItem:not(:first-child) {
+    margin-top: 50px;
+  }
+}
+.p-shopInfo__rootItemImg {
+  width: 100%;
+  height: 250px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__rootItemImg {
+    height: 100%;
+  }
+}
+.p-shopInfo__rootItem p {
+  margin-top: 20px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__rootItem p {
+    margin-top: 30px;
+  }
+}
+.p-shopInfo__rootItemMap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+}
+.p-shopInfo__rootItemMapImg {
+  width: 1020px;
+  height: 500px;
+}
+.p-shopInfo__news {
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+.p-shopInfo__newsItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1017px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__newsItem {
+    display: block;
+  }
+}
+.p-shopInfo__newsItem:not(:first-child) {
+  margin-top: 25px;
+}
+.p-shopInfo__newsItemDate {
+  margin-right: 40px;
+  font-size: 16px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__newsItemDate {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.p-shopInfo__newsContent {
+  max-width: 80%;
+  font-size: 16px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__newsContent {
+    max-width: 100%;
+  }
+}
+
 .u-hidden {
   display: none;
 }

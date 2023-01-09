@@ -1,0 +1,289 @@
+@use '../../Foundation/global'as *;
+span {
+    display: block;
+}
+.p-shopInfo {
+    &__infomation {
+        display: flex;
+        justify-content: space-between;
+        @include mq('tab') {
+            display: block;
+        }
+    }
+    &__shopName {
+        font-size: 32px;
+        font-weight: bold;
+        @include mq('tab') {
+            font-size: 30px;
+        }
+        @include mq('sp') {
+            font-size: 28px;
+        }
+    }
+    &__shopAddress {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 40px;
+        word-wrap: break-word;
+        @include mq('tab') {
+            font-size: 22px;
+        }
+        @include mq('sp') {
+            font-size: 20px;
+        }
+    }
+    &__shopHours {
+        font-size: 24px;
+        margin-top: 40px;
+        @include mq('tab') {
+            font-size: 22px;
+        }
+        @include mq('sp') {
+            font-size: 20px;
+        }
+    }
+    &__shopImg {
+        max-width: 500px;
+        width: 50%;
+        height: auto;
+        @include mq('tab') {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            margin-top: 40px;
+        }
+        & img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__contact , &__contactMail , &__contactTel , &__contactLine {
+        display: flex;
+        justify-content: space-around;
+        @include mq('tab') {
+            justify-content: flex-start;
+        }
+    }
+    &__contactMail , &__contactTel , &__contactLine {
+        color: #FFFFFF;
+        align-items: center;
+        border-radius: 8px;
+        max-width: 300px;
+        width: 30%;
+        height: 100px;
+        padding: 0 20px;
+        @include mq('tab') {
+            max-width: 80%;
+            width: 80%;
+            margin: 0 auto;
+            padding: 0 10%;
+        }
+        @include mq('sp') {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    &__contact {
+        justify-content: space-between;
+        margin-top: 80px;
+        @include mq('tab') {
+            display: block;
+            margin-top: 40px;
+        }
+    }
+    &__contact li:not(:first-child){
+        @include mq('tab') {
+            margin-top: 20px;
+        }
+    }
+    &__contactMail {
+        background-color: #FFBA00;
+        font-size: 24px;
+    }
+    &__contactMailImg {
+        width: 35px;
+        height: 35px;
+        @include mq('tab') {
+            margin-right: 50px;
+        }
+    }
+    &__contactTel {
+        background-color: #009DFF;
+        font-size: 20px;
+        @include mq('tab') {
+            font-size: 24px;
+        }
+    }
+    &__contactTelImg {
+        width: 35px;
+        height: 35px;
+        @include mq('tab') {
+            margin-right: 50px;
+        }
+    }
+    &__contactTelInfo {
+        text-align: center;
+        @include mq('tab') {
+            display: flex !important;
+            align-items: center;
+        }
+    }
+    &__contactTelInfo p:first-child{
+        @include mq('tab') {
+            margin-right: 30px;
+        }
+    }
+    &__contactTelNum {
+        background-color: #FFFFFF;
+        color: #009DFF;
+        padding: 10px 7px;
+        border-radius: 8px;
+        margin-top: 10px;
+        font-size: 15px;
+        @include mq('tab') {
+            margin: auto 0;
+        }
+    }
+    &__contactLine {
+        background-color: #5AC363;
+        font-size: 24px;
+    }
+    &__contactLineImg {
+        width: 35px;
+        height: 35px;
+        @include mq('tab') {
+            margin-right: 50px;
+        }
+    }
+    &__introduction {
+        display: flex;
+        margin-top: 45px;
+        @include mq('tab') {
+            display: block;
+        }
+    }
+    &__introdocutionImg {
+        max-width: 500px;
+        width: 50%;
+        height: auto;
+        margin-right: 35px;
+        @include mq('tab') {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+        }
+        & img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__introductionText {
+        padding-top: 55px;
+        font-size: 16px;
+        max-width: 55%;
+        @include mq('tab') {
+            max-width: 100%;
+        }
+    }
+    &__introductionText p:not(:first-child) {
+        margin: 1rem 0rem 0rem;
+    }
+    &__repairCost {
+        margin-top: 40px;
+    }
+    &__repairCost th {
+        background-color: #FF9800;
+        color: #FFFFFF;
+        border: solid 1px #707070;
+        font-size: 24px;
+        width: 400px;
+        height: 50px;
+    }
+    &__repairCost td {
+        border: solid 1px #707070;
+        font-size: 24px;
+        width: 400px;
+        height: 50px;
+    }
+    &__repairCost table {
+        border-collapse:  collapse;
+        margin-bottom: 20px;
+    }
+    &__root {
+        max-width: 1035px;
+        margin: 68px auto 0;
+    }
+    &__rootList {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px 0;
+        @include mq('tab') {
+            display: block;
+        }
+    }
+    &__rootItem {
+        width: 400px;
+        @include mq('tab') {
+            width: 100%;
+        }
+    }
+    &__rootItem:not(:first-child){
+        @include mq('tab') {
+            margin-top: 50px;
+        }
+    }
+    &__rootItemImg {
+        width: 100%;
+        height: 250px;
+        @include mq('tab') {
+            height: 100%;
+        }
+    }
+    &__rootItem p {
+        margin-top: 20px;
+        @include mq('tab') {
+            margin-top: 30px;
+        }
+    }
+    &__rootItemMap {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    &__rootItemMapImg {
+        width: 1020px;
+        height: 500px;
+    }
+    &__news {
+        margin-top: 80px;
+        padding-bottom: 80px;
+    }
+    &__newsItem {
+        display: flex;
+        max-width: 1017px;
+        margin: 0 auto;
+        @include mq('tab') {
+            display: block;
+        }
+    }
+    &__newsItem:not(:first-child){
+        margin-top: 25px;
+    }
+    &__newsItemDate {
+        margin-right: 40px;
+        font-size: 16px;
+        @include mq('tab') {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    &__newsContent {
+        max-width: 80%;
+        font-size: 16px;
+        @include mq('tab') {
+            max-width: 100%;
+        }
+    }
+}
