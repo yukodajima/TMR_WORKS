@@ -100,67 +100,6 @@
       }
     }
   }
-  // &__menuArea {
-  //   display: flex;
-  //   align-items: center;
-  //   gap: 30px;
-  //   @include mq("sp") {
-  //     gap: 5px;
-  //   }
-  // }
-  // &__btn {
-  //   @include mq("tab") {
-  //     width: 80px;
-  //     font-size: 1.8vw;
-  //   }
-  //   @include mq("sp") {
-  //     width: 50px;
-  //   }
-  // }
-  // &__contactBtn {
-  //   @include mq("tab") {
-  //     width: 80px;
-  //     font-size: 1.8vw;
-  //   }
-  //   @include mq("sp") {
-  //     width: 50px;
-  //   }
-  // }
-  // &__menu {
-  //   display: none;
-  //   @include mq ("tab") {
-  //     position: relative;
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center;
-  //     align-items: center;
-  //     width: 50px;
-  //     height: 50px;
-  //     background-color: $color-main;
-  //     border-radius: 3px;
-  //   }
-  //   @include mq("sp") {
-  //     width: 20px;
-  //   }
-  // }
-  // &__menuLine {
-  //   width: 35px;
-  //   height: 3px;
-  //   background-color: $color-background;
-  //   border-radius: 3px;
-  //   &:nth-of-type(1) {
-  //     position: absolute;
-  //     top: 30%;
-  //   }
-  //   &:nth-child(2) {
-  //     position: absolute;
-  //     top: 50%;
-  //   }
-  //   &:nth-child(3) {
-  //     position: absolute;
-  //     top: 70%;
-  //   }
-  // }
   &__menuList {
     display: flex;
     justify-content: center;
@@ -172,19 +111,19 @@
     border-top: 1.5px solid #CBCBCB;
     @include mq ("tab") {
       position: fixed;
-      top: 0;
+      top: $header-height-tab;
       left: 0;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 5px;
       width: 100%;
-      height: 100vh;
-      transform: translateY(-100%);
-      transition: ease .5s;
+      height: calc( 100%  - #{$header-height-tab} );
       background-color: $color-main;
+      overflow-y: auto;
     }
-    &.open {
-      transform: translateY(0%);
+    @include mq("sp") {
+      top: $header-height-sp;
+      height: calc( 100% - #{$header-height-sp} );
     }
   }
   &__menuItem {
@@ -193,23 +132,136 @@
     justify-content: center;
     align-items: center;
     @include mq ("tab") {
-      width: 30%;
-      margin: 0 auto;
       justify-content: flex-start;
+      width: 95%;
+      margin: 0 auto;
+      padding: 10px 20px;
       border-bottom: 1.5px solid $color-background;
-    }
-    & a {
-      display: flex;
-      gap: 10px;
-      text-decoration: none;
-      color: $color-text;
-      text-align: center;
-      white-space: nowrap;
     }
     &:not(:first-child){
       border-left: 1.5px solid #CBCBCB;
       @include mq ("tab"){
         border-left: none;
+      }
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+  &__menuLink {
+    display: flex;
+    position: relative;
+    gap: 10px;
+    width: 100%;
+    text-decoration: none;
+    color: $color-text;
+    text-align: center;
+    white-space: nowrap;
+    @include mq("tab") {
+      &::before {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 12px;
+        display: inline-block;
+        position: absolute;
+        top: 30%;
+        right: 0;
+        transform: rotate(35deg);
+      }
+      &::after {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 12px;
+        display: inline-block;
+        position: absolute;
+        top: 60%;
+        right: 0;
+        transform: rotate(-35deg);
+      }
+    }
+  }
+  &__shopList {
+    display: none;
+    list-style: none;
+  }
+  &__shopItem {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 20px 10px 70px;
+    border-bottom: 1.5px solid #F5F5F5;
+    & a {
+      position: relative;
+      display: block;
+      width: 100%;
+      color: $color-text;
+      text-decoration: none;
+      font-size: clamp(0.9rem, 1.6vw, 1.3rem);
+      @include mq("tab") {
+        &::before {
+          content: '';
+          border-top: 1px solid #fff;
+          width: 12px;
+          display: inline-block;
+          position: absolute;
+          top: 30%;
+          right: 0;
+          transform: rotate(35deg);
+        }
+        &::after {
+          content: '';
+          border-top: 1px solid #fff;
+          width: 12px;
+          display: inline-block;
+          position: absolute;
+          top: 60%;
+          right: 0;
+          transform: rotate(-35deg);
+        }
+      }
+    }
+  }
+
+  &__drawerMenuItem {
+    display: flex;
+    position: relative;
+    gap: 10px;
+    width: 100%;
+    text-decoration: none;
+    color: $color-text;
+    text-align: center;
+    white-space: nowrap;
+    @include mq("tab") {
+      &::before {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 25px;
+        display: inline-block;
+        position: absolute;
+        top: 45%;
+        right: -5px;
+        transform: rotate(90deg);
+        transition-duration: 0.5s;
+      }
+      &.open::before {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 25px;
+        display: inline-block;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        transform: rotate(0);
+        transition-duration: 0.5s;
+      }
+      &::after {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 25px;
+        display: inline-block;
+        position: absolute;
+        top: 45%;
+        right: -5px;
+        transform: none;
       }
     }
   }
