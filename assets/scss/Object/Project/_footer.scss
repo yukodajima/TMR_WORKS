@@ -75,16 +75,18 @@
     list-style: none;
     color: #fff;
     @include mq('sp') {
-      display: flex;
+      // display: flex;
       align-items: baseline;
       flex-direction: row;
       gap: 5%;
       flex-wrap: wrap;
       + .p-footer__boxList {
-        margin-top: 30px;
+        padding: 0 10px;
+        margin-top: 10px;
       }
-      &:nth-child(2) {
+      &:nth-child(2n + 1) {
         display: block;
+        margin-top: 30px;
       }
     }
   }
@@ -98,6 +100,8 @@
       margin-top: 10px;
     }
     @include mq('sp') {
+      border-top: 1px solid #fff;
+      padding: 10px;
       + .p-footer__item {
         margin-top: auto;
       }
@@ -105,6 +109,9 @@
   }
   &__shopList {
     position: relative;
+    @include mq('sp') {
+      // padding: 0 10px;
+    }
   }
   &__shopList > a {
     text-decoration: none;
@@ -170,8 +177,23 @@
     }
     @include mq('sp') {
       white-space: nowrap;
-      margin-left: 20px;
+      margin-left: 50px;
       display: none;
+      padding: 10px;
+      border-top: 1px solid #fff;
+      &:first-child {
+        margin-top: 10px;
+      }
+      &::before {
+        content: '';
+        left: -2px;
+        display: contents;
+      }
+      &::after {
+        content: '';
+        left: -2px;
+        display: contents;
+      }
     }
   }
   &__shopItem > a {
@@ -193,6 +215,8 @@
       }
     }
     @include mq('sp') {
+      border-top: 1px solid #fff;
+      padding: 10px;
       + .p-footer__category {
         margin-top: auto;
       }
@@ -209,12 +233,15 @@
     max-width: 300px;
     width: 100%;
     height: 100px;
-    @include mq('sp') {
+    @include mq('tab') {
+      display: flex;
+      max-width: 200px;
+      width: 100%;
       height: auto;
     }
   }
   &__logo {
-    width: 24px;
+    width: 100%;
   }
   &__navListBox {
     margin-left: 15%;

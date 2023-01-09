@@ -880,10 +880,6 @@ select {
 }
 @media (max-width: 599px) {
   .p-footer__boxList {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: baseline;
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;
@@ -899,10 +895,12 @@ select {
             flex-wrap: wrap;
   }
   .p-footer__boxList + .p-footer__boxList {
-    margin-top: 30px;
+    padding: 0 10px;
+    margin-top: 10px;
   }
-  .p-footer__boxList:nth-child(2) {
+  .p-footer__boxList:nth-child(2n+1) {
     display: block;
+    margin-top: 30px;
   }
 }
 .p-footer__item > a {
@@ -916,6 +914,10 @@ select {
   margin-top: 10px;
 }
 @media (max-width: 599px) {
+  .p-footer__item {
+    border-top: 1px solid #fff;
+    padding: 10px;
+  }
   .p-footer__item + .p-footer__item {
     margin-top: auto;
   }
@@ -993,8 +995,23 @@ select {
 @media (max-width: 599px) {
   .p-footer__shopItem {
     white-space: nowrap;
-    margin-left: 20px;
+    margin-left: 50px;
     display: none;
+    padding: 10px;
+    border-top: 1px solid #fff;
+  }
+  .p-footer__shopItem:first-child {
+    margin-top: 10px;
+  }
+  .p-footer__shopItem::before {
+    content: "";
+    left: -2px;
+    display: contents;
+  }
+  .p-footer__shopItem::after {
+    content: "";
+    left: -2px;
+    display: contents;
   }
 }
 .p-footer__shopItem > a {
@@ -1017,6 +1034,10 @@ select {
   }
 }
 @media (max-width: 599px) {
+  .p-footer__category {
+    border-top: 1px solid #fff;
+    padding: 10px;
+  }
   .p-footer__category + .p-footer__category {
     margin-top: auto;
   }
@@ -1038,13 +1059,19 @@ select {
   width: 100%;
   height: 100px;
 }
-@media (max-width: 599px) {
+@media (max-width: 900px) {
   .p-footer__logoContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 200px;
+    width: 100%;
     height: auto;
   }
 }
 .p-footer__logo {
-  width: 24px;
+  width: 100%;
 }
 .p-footer__navListBox {
   margin-left: 15%;
@@ -1202,14 +1229,17 @@ select {
 }
 .p-topMenu__list {
   margin-top: 60px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   gap: 30px;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  display: none;
+}
+.p-topMenu__list.show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 .p-topMenu__list :nth-child(n+5) {
   margin-top: 30px;
@@ -1222,6 +1252,16 @@ select {
   }
   .p-topMenu__list :nth-child(n+3) {
     margin-top: initial;
+  }
+}
+.p-topMenu__item {
+  list-style: none;
+  width: 20%;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .p-topMenu__item {
+    width: 40%;
   }
 }
 .p-topMenu__item {
