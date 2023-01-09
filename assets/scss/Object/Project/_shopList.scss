@@ -88,7 +88,6 @@
         }
     }
     &__shopIntroduce {
-        // display: inline-block;
         max-width: 413px;
         @include mq('tab') {
             display: block;
