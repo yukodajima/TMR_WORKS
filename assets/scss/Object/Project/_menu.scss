@@ -5,16 +5,8 @@
   @include mq('tab') {
     padding: 40px 0;
   }
-  &__topText {
-    text-align: center;
-    font-size: 16px;
-  }
   &__container {
     display: flex;
-    margin-top: 80px;
-    @include mq('tab') {
-      margin-top: 40px;
-    }
   }
   &__textContainer {
     max-width: 600px;
@@ -99,9 +91,12 @@
   }
   &__list {
     margin-top: 60px;
-    display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    display: none;
+    &.show {
+      display: flex;
+    }
     :nth-child(n + 5) {
       margin-top: 30px;
     }
@@ -110,6 +105,15 @@
       :nth-child(n + 3) {
         margin-top: initial;
       }
+    }
+  }
+  &__item {
+    list-style: none;
+    width: 20%;
+    margin: 0 auto;
+
+    @include mq('tab') {
+      width: 40%;
     }
   }
   &__item {
