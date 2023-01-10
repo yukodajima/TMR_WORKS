@@ -1,0 +1,70 @@
+@use '../../Foundation/global'as *;
+
+.p-important {
+  width: 900px;
+  margin: 0 auto;
+  padding: 80px 0px;
+  @include mq ("tab") {
+    width: 100%;
+    padding: 40px 0px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    white-space: nowrap;
+    @include mq("tab") {
+      font-size: 26px;
+    }
+  }
+  &__linefeed {
+    display: none;
+    @include mq("sp") {
+      display: block;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 80px auto 0;
+    list-style: none;
+    @include mq ("tab") {
+      flex-direction: column;
+      margin-top: 40px;
+      max-width: 600px;
+    }
+  }
+  &__item {
+    width: 30%;
+    @include mq("tab") {
+      width: 100%;
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+  }
+  &__itemTitle{
+    font-size: 1.3rem;
+    font-weight: bold;
+    white-space: nowrap;
+    @include mq("tab"){
+      font-size: 20px;
+    }
+    &::after {
+      display: block;
+      content: "";
+      position: relative;
+      width: 100%;
+      height: 1px;
+      background-color: #1B224C;
+      @include mq("tab") {
+        width: 250px;
+      }
+    }
+  }
+  &__text {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}

@@ -2,6 +2,11 @@
 .l-main {
   padding-top: $header-height-pc;
   background-color: $color-background-sub;
+
+  @include mq(tab) {
+    padding-top: $header-height-tab;
+  }
+
   @include mq(sp) {
     padding-top: $header-height-sp;
   }

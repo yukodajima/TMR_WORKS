@@ -7,6 +7,10 @@
   width: 100%;
   z-index: map-get($layer, 'header');
 
+  @include mq(tab) {
+    height: $header-height-tab;
+  }
+
   @include mq(sp) {
     height: $header-height-sp;
   }
