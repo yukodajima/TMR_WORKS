@@ -64,7 +64,6 @@
       flex-direction: column;
       gap: 5px;
     }
-
   }
   &__btn {
     @include mq("tab") {
@@ -148,7 +147,6 @@
       top: $header-height-sp;
       height: calc( 100% - #{$header-height-sp} );
     }
-
   }
   &__menuItem {
     padding: 10px 15px;
@@ -288,7 +286,6 @@
       }
     }
   }
-
   &__menuText {
     font-size: clamp(0.9rem, 1.6vw, 1.3rem);
     @include mq("tab") {
