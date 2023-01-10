@@ -2,7 +2,7 @@
 .p-footer {
   padding: 80px 0;
   @include mq('tab') {
-    padding: 40px 0;
+    padding: 40px 0 10px;
   }
   &__contentList {
     display: flex;
@@ -17,11 +17,20 @@
     position: relative;
     max-width: 350px;
     @include mq('tab') {
-      max-width: 400px;
+      max-width: none;
+      height: 300px;
       margin: 0 auto;
       &:nth-child(n + 2) {
         margin-top: 30px;
       }
+    }
+    @include mq("sp") {
+      height: 200px;
+    }
+  }
+  &__imgContainer {
+    @include mq("tab") {
+      height: 100%;
     }
   }
   &__image {
@@ -38,18 +47,25 @@
     @include mq('tab') {
       top: 50%;
       transform: translateY(-50%);
+      padding: 10px;
     }
   }
   &__title {
     font-size: 48px;
     font-weight: bold;
-    @include mq('tab') {
+    @include mq("sp") {
       font-size: 40px;
     }
   }
   &__text {
     font-size: 18px;
     font-weight: bold;
+    @include mq("tab") {
+      font-size: 24px;
+    }
+    @include mq("sp") {
+      font-size: 20px;
+    }
   }
   &__line {
     border-bottom: #fff 1px solid;
@@ -65,60 +81,52 @@
     width: 100%;
     max-width: 850px;
     @include mq('tab') {
-      margin: 40px auto 0;
-    }
-    @include mq('sp') {
       display: block;
+      margin: 0 auto;
     }
   }
   &__boxList {
     list-style: none;
     color: #fff;
     @include mq('sp') {
-      // display: flex;
       align-items: baseline;
       flex-direction: row;
       gap: 5%;
       flex-wrap: wrap;
-      + .p-footer__boxList {
-        padding: 0 10px;
-        margin-top: 10px;
-      }
       &:nth-child(2n + 1) {
         display: block;
-        margin-top: 30px;
       }
     }
-  }
-  &__item > a {
-    text-decoration: none;
-    color: #fff;
   }
   &__item {
     white-space: nowrap;
-    + .p-footer__item {
-      margin-top: 10px;
+    @include mq("tab") {
+      border-bottom: 1px solid $color-background-sub;
+      padding: 10px 20px;
     }
-    @include mq('sp') {
-      border-top: 1px solid #fff;
-      padding: 10px;
-      + .p-footer__item {
-        margin-top: auto;
+    & a {
+      text-decoration: none;
+      color: #fff;
+    }
+    &:not(:first-child) {
+      margin-top: 10px;
+      @include mq("tab") {
+        margin-top: 0;
       }
     }
   }
   &__shopList {
     position: relative;
-    @include mq('sp') {
-      // padding: 0 10px;
+    @include mq("tab") {
+      padding: 10px 20px;
+    }
+    & a {
+      text-decoration: none;
+      color: #fff;
     }
   }
-  &__shopList > a {
-    text-decoration: none;
-    color: #fff;
-  }
   &__triger {
-    @include mq('sp') {
+    @include mq('tab') {
       &::before {
         content: '';
         border-top: 1px solid #fff;
@@ -175,11 +183,11 @@
       left: -20px;
       transform: rotate(-35deg);
     }
-    @include mq('sp') {
+    @include mq('tab') {
       white-space: nowrap;
-      margin-left: 50px;
+      margin-left: 0;
       display: none;
-      padding: 10px;
+      padding: 10px 50px;
       border-top: 1px solid #fff;
       &:first-child {
         margin-top: 10px;
@@ -196,9 +204,12 @@
       }
     }
   }
-  &__shopItem > a {
-    text-decoration: none;
-    color: #fff;
+  &__shopItem {
+    & a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+    }
   }
   &__category > a {
     text-decoration: none;
@@ -210,13 +221,14 @@
       margin-top: 30px;
     }
     @include mq('tab') {
+      padding: 10px 20px;
       + .p-footer__category {
         margin-top: 10px;
       }
     }
-    @include mq('sp') {
+    @include mq('tab') {
       border-top: 1px solid #fff;
-      padding: 10px;
+      // padding: 10px;
       + .p-footer__category {
         margin-top: auto;
       }
