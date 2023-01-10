@@ -1,12 +1,15 @@
 @use '../../Foundation/global'as *;
 .p-shopList {
+    color: $color-text;
     &__areaList {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         list-style: none;
+        margin-top: 85px;
         gap: 40px 90px;
         @include mq('tab') {
+            margin-top: 50px;
             gap: 25px;
         }
     }
@@ -16,8 +19,9 @@
     }
     &__areaButton {
         border: none;
-        background-color: #FFBA00;
-        color: #FFFFFF;
+        background-color: $color-main;
+        color: $color-background-sub;
+        ;
         width: 100%;
         height: 100%;
         font-size: 24px;
@@ -53,9 +57,10 @@
         }
     }
     &__shopInfoList {
-        gap: 80px 0;
         margin-top: 60px;
+        gap: 80px 0;
         @include mq('tab') {
+            margin-top: 50px;
             gap: 40px 0;
         }
     }
@@ -101,7 +106,7 @@
         }
     }
     &__shopPostalCode {
-        margin-top: 43px;
+        margin-top: 40px;
         @include mq('tab') {
             margin-top: 20px;
         }
@@ -116,9 +121,9 @@
         width: 200px;
         height: 50px;
         font-size: 22px;
-        background-color: #FFFFFF;
+        background-color: $color-background-sub;
         border-radius: 5px;
-        border-color: #707070;
+        border-color: $color-border;
         @include mq('tab') {
             width: 100%;
             font-size: 20px;
