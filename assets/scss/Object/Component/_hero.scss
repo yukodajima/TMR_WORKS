@@ -1,0 +1,29 @@
+@use '../../Foundation/global'as *;
+
+.c-hero {
+  position: relative;
+  &__img {
+    height: 500px;
+    @include mq("tab") {
+      height: 300px;
+    }
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    font-size: 48px;
+    color: $color-background-sub;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include mq("tab") {
+      font-size: 32px;
+      white-space: nowrap;
+    }
+  }
+}
