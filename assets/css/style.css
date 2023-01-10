@@ -176,7 +176,8 @@ select {
 }
 
 .c-btn {
-  background-color: #FF9800;
+  background-color: #006BBA;
+  color: #FFF;
   border: none;
   border-radius: 5px;
   width: 150px;
@@ -184,7 +185,8 @@ select {
   font-size: 16px;
 }
 .c-btn__contact {
-  background-color: #006BBA;
+  background-color: #FF9800;
+  color: #FFF;
   border: none;
   border-radius: 5px;
   width: 150px;
@@ -1497,7 +1499,7 @@ select {
   position: relative;
   display: block;
   width: 100%;
-  color: #1B224C;
+  color: #FFF;
   text-decoration: none;
   font-size: clamp(0.9rem, 1.6vw, 1.3rem);
 }
@@ -1542,7 +1544,7 @@ select {
   .p-header__drawerMenuItem::before {
     content: "";
     border-top: 1px solid #fff;
-    width: 25px;
+    width: 20px;
     display: inline-block;
     position: absolute;
     top: 45%;
@@ -1555,7 +1557,7 @@ select {
   .p-header__drawerMenuItem.open::before {
     content: "";
     border-top: 1px solid #fff;
-    width: 25px;
+    width: 20px;
     display: inline-block;
     position: absolute;
     top: 45%;
@@ -1568,7 +1570,7 @@ select {
   .p-header__drawerMenuItem::after {
     content: "";
     border-top: 1px solid #fff;
-    width: 25px;
+    width: 20px;
     display: inline-block;
     position: absolute;
     top: 45%;
@@ -1579,6 +1581,11 @@ select {
 }
 .p-header__menuText {
   font-size: clamp(0.9rem, 1.6vw, 1.3rem);
+}
+@media (max-width: 900px) {
+  .p-header__menuText {
+    color: #FFF;
+  }
 }
 .p-header__menuLogo {
   width: 20px;
