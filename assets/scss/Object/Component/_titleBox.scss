@@ -1,0 +1,44 @@
+@use '../../Foundation/global'as *;
+
+.c-titleBox {
+  text-align: center;
+  &__wrapper {
+    position: relative;
+    display: inline-block;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -40px;
+      width: 1px;
+      height: 70px;
+      transform: rotateZ(20deg);
+      background-color: $color-text;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -40px;
+      width: 1px;
+      height: 70px;
+      transform: rotateZ(20deg);
+      background-color: $color-text;
+    }
+  }
+  &__title {
+    font-size: 32px;
+    @include mq("tab") {
+      font-size: 28px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+  }
+}
+
+.c-titleBox {
+  text-align: center;
+}

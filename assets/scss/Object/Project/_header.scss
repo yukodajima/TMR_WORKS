@@ -1,0 +1,299 @@
+@use '../../Foundation/global'as *;
+
+.p-header {
+  background-color: $color-background-sub;
+  height: 100%;
+  &__titleBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $width-base;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 $padding-pc;
+    @include mq('tab') {
+      padding-left: $padding-tab;
+      padding-right: $padding-tab;
+    }
+    @include mq('sp') {
+      padding-left: $padding-sp;
+      padding-right: $padding-sp;
+    }
+  }
+  &__logo {
+    height: 100px;
+    @include mq("tab") {
+      width: 200px;
+      height: $header-height-tab;
+    }
+    @include mq("sp") {
+      width: 40vw;
+      min-width: 150px;
+      height: $header-height-sp;
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+      @include mq("sp") {
+        object-fit: contain;
+      }
+    }
+  }
+  &__menu {
+    display: none;
+    @include mq("tab") {
+      position: relative;
+      display: block;
+      width: 40px;
+    }
+    @include mq("sp") {
+      width: 30px;
+    }
+  }
+  &__menuArea {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @include mq("sp") {
+      gap: 10px;
+    }
+  }
+  &__btnArea {
+    @include mq("sp") {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  &__btn {
+    @include mq("tab") {
+      width: 130px;
+      font-size: 2vw;
+    }
+    @include mq("sp") {
+      width: 20vw;
+      min-width: 80px;
+      height: 25px;
+      font-size: 1.5vw;
+    }
+  }
+  &__contactBtn {
+    @include mq("tab") {
+      width: 130px;
+      font-size: 2vw;
+    }
+    @include mq("sp") {
+      width: 20vw;
+      min-width: 80px;
+      height: 25px;
+      font-size: 1vw;
+    }
+  }
+  &__menuLine {
+    height: 1px;
+    width: 100%;
+    background-color: $color-text;
+    transition: all .5s;
+    &:not(:first-child) {
+      margin-top: 10px;
+      @include mq("sp") {
+        margin-top: 5px;
+      }
+    }
+    &.open {
+      &:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(6px) rotate(-45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        transform: translateY(-6px) rotate(45deg);
+        @include mq("sp") {
+          top: 8px;
+        }
+      }
+    }
+  }
+  &__menuList {
+    display: flex;
+    justify-content: center;
+    max-width: $width-base;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    border-top: 1.5px solid #CBCBCB;
+    @include mq("tab") {
+      display: none;
+      position: fixed;
+      top: $header-height-tab;
+      left: 0;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 5px;
+      width: 100%;
+      height: calc( 100%  - #{$header-height-tab} );
+      background-color: $color-main;
+      overflow-y: auto;
+    }
+    @include mq("sp") {
+      top: $header-height-sp;
+      height: calc( 100% - #{$header-height-sp} );
+    }
+  }
+  &__menuItem {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq ("tab") {
+      justify-content: flex-start;
+      width: 95%;
+      margin: 0 auto;
+      padding: 10px 20px;
+      border-bottom: 1.5px solid $color-background;
+      &:last-child {
+        border: none;
+      }
+    }
+    &:not(:first-child){
+      border-left: 1.5px solid #CBCBCB;
+      @include mq ("tab"){
+        border-left: none;
+      }
+    }
+  }
+  &__menuLink {
+    display: flex;
+    position: relative;
+    gap: 10px;
+    width: 100%;
+    text-decoration: none;
+    color: $color-text;
+    text-align: center;
+    white-space: nowrap;
+    @include mq("tab") {
+      &::before {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 12px;
+        display: inline-block;
+        position: absolute;
+        top: 30%;
+        right: 0;
+        transform: rotate(35deg);
+      }
+      &::after {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 12px;
+        display: inline-block;
+        position: absolute;
+        top: 60%;
+        right: 0;
+        transform: rotate(-35deg);
+      }
+    }
+  }
+  &__shopList {
+    display: none;
+    list-style: none;
+  }
+  &__shopItem {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 20px 10px 70px;
+    border-bottom: 1.5px solid #F5F5F5;
+    & a {
+      position: relative;
+      display: block;
+      width: 100%;
+      color: $color-background-sub;
+      text-decoration: none;
+      font-size: clamp(0.9rem, 1.6vw, 1.3rem);
+      @include mq("tab") {
+        &::before {
+          content: '';
+          border-top: 1px solid #fff;
+          width: 12px;
+          display: inline-block;
+          position: absolute;
+          top: 30%;
+          right: 0;
+          transform: rotate(35deg);
+        }
+        &::after {
+          content: '';
+          border-top: 1px solid #fff;
+          width: 12px;
+          display: inline-block;
+          position: absolute;
+          top: 60%;
+          right: 0;
+          transform: rotate(-35deg);
+        }
+      }
+    }
+  }
+  &__drawerMenuItem {
+    display: flex;
+    position: relative;
+    gap: 10px;
+    width: 100%;
+    text-decoration: none;
+    color: $color-text;
+    text-align: center;
+    white-space: nowrap;
+    @include mq("tab") {
+      &::before {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 45%;
+        right: -5px;
+        transform: rotate(90deg);
+        transition-duration: 0.5s;
+      }
+      &.open::before {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        transform: rotate(0);
+        transition-duration: 0.5s;
+      }
+      &::after {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 45%;
+        right: -5px;
+        transform: none;
+      }
+    }
+  }
+  &__menuText {
+    font-size: clamp(0.9rem, 1.6vw, 1.3rem);
+    @include mq("tab") {
+      color: $color-background-sub;
+    }
+  }
+  &__menuLogo {
+    width: 20px;
+    height: 20px;
+  }
+}

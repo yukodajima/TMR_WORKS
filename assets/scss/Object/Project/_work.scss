@@ -1,0 +1,64 @@
+@use '../../Foundation/global' as *;
+.p-work {
+  padding: 120px 0 80px;
+  @include mq('tab') {
+    padding: 60px 0 40px;
+  }
+  &__list {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    :nth-child(n + 5) {
+      margin-top: 30px;
+    }
+    @include mq('tab') {
+      gap: 50px;
+      display: block;
+      margin: 40px auto 0;
+      max-width: 400px;
+    }
+  }
+  &__item {
+    list-style: none;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    @include mq('tab') {
+      width: auto;
+      margin: 0 auto;
+      & + .p-work__item {
+        margin-top: 50px;
+      }
+    }
+  }
+  &__imgContainer {
+    max-width: 300px;
+    margin: 0 auto;
+    @include mq('tab') {
+      margin: 0 auto;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__title {
+    font-size: 32px;
+    margin-top: 40px;
+    color: $color-text;
+    white-space: nowrap;
+    @include mq('tab') {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  }
+  &__text {
+    margin-top: 25px;
+    font-size: 16px;
+    color: $color-text;
+    @include mq('tab') {
+      margin-top: 20px;
+    }
+  }
+}
