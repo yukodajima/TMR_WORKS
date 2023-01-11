@@ -34,6 +34,9 @@
       max-width: none;
     }
   }
+  &__loop {
+    width: 100%;
+  }
   &__innerArea {
     border-top: solid 1px $color-border;
     border-right: solid 1px $color-border;

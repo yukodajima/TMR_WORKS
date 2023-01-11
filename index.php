@@ -196,24 +196,24 @@
           <div class="c-titleBox">新着情報</div>
           <div class="p-shop__container">
             <ul class="p-shop__list">
-
               <li class="p-shop__item">
                 <p class="p-shop__area">北海道・東北</p>
-                <div class="p-shop__innerArea">
-                  <div class="p-shop__iconPref">
-                    <div class="p-shop__iconContainer">
-                      <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="" />
+                <div class="p-shop__loop">
+                  <div class="p-shop__innerArea">
+                    <div class="p-shop__iconPref">
+                      <div class="p-shop__iconContainer">
+                        <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="" />
+                      </div>
+                      <p class="p-shop__pref">北海道</p>
                     </div>
-                    <p class="p-shop__pref">北海道</p>
+                    <ul class="p-shop__shopNameList">
+                      <li class="p-shop__shopName">
+                        <a href="#"> 札幌店</a>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="p-shop__shopNameList">
-                    <li class="p-shop__shopName">
-                      <a href="#"> 札幌店</a>
-                    </li>
-                  </ul>
                 </div>
               </li>
-
             </ul>
           </div>
         </div>
