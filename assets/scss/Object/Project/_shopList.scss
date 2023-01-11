@@ -1,6 +1,7 @@
 @use '../../Foundation/global'as *;
 .p-shopList {
     color: $color-text;
+    padding: 115px 0 170px;
     &__areaList {
         display: flex;
         flex-wrap: wrap;
@@ -44,9 +45,10 @@
         }
     }
     &__shopInfoWrapper {
-        padding: 80px 0;
+        margin-top: 80px;
+        font-weight: bold;
         @include mq('tab') {
-            padding: 40px 0;
+            margin-top: 40px;
         }
     }
     &__shopInfoArea {
