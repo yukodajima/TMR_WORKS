@@ -2015,6 +2015,73 @@ select {
   color: #FFF;
 }
 
+.p-contact {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 120px 0 160px;
+}
+@media (max-width: 900px) {
+  .p-contact {
+    width: 100%;
+    max-width: none;
+  }
+}
+.p-contact__text {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.p-contact__form {
+  margin-top: 40px;
+}
+.p-contact__list {
+  list-style: none;
+}
+.p-contact__listItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.p-contact__listItem:not(:first-child) {
+  margin-top: 15px;
+}
+.p-contact__input {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  border: 0.5px solid #1B224C;
+}
+.p-contact__textarea {
+  height: 240px;
+  margin-top: 10px;
+  border: 0.5px solid #1B224C;
+}
+.p-contact__policy {
+  margin-top: 60px;
+  text-align: center;
+}
+.p-contact__policyCheck {
+  margin-top: 25px;
+}
+.p-contact__submit {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 45px auto 0;
+  padding: 15px 0;
+  text-align: center;
+  color: #FFF;
+  background-color: #1B224C;
+  border: none;
+  border-radius: 5px;
+}
+
 .u-hidden {
   display: none;
 }
