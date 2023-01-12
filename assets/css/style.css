@@ -692,6 +692,9 @@ select {
     max-width: none;
   }
 }
+.p-shop__loop {
+  width: 100%;
+}
 .p-shop__innerArea {
   border-top: solid 1px #707070;
   border-right: solid 1px #707070;
