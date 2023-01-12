@@ -2016,7 +2016,7 @@ select {
 }
 
 .p-shopInfo {
-  padding: 80px 0;
+  padding: 60px 0;
   color: #1B224C;
   font-weight: bold;
 }
@@ -2029,6 +2029,7 @@ select {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 80px;
 }
 @media (max-width: 900px) {
   .p-shopInfo__infomation {
@@ -2271,7 +2272,7 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 45px;
+  margin: 45px 0 80px;
 }
 @media (max-width: 900px) {
   .p-shopInfo__introduction {
@@ -2310,8 +2311,18 @@ select {
   margin: 1rem 0rem 0rem;
 }
 .p-shopInfo__repairCost {
-  margin-top: 40px;
+  margin: 40px 0 160px;
   border-color: #707070;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__repairCost {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfo__repairCost {
+    margin-bottom: 50px;
+  }
 }
 .p-shopInfo__repairCost th {
   background-color: #FF9801;
@@ -2342,7 +2353,17 @@ select {
 }
 .p-shopInfo__root {
   max-width: 1035px;
-  margin: 68px auto 0;
+  margin: 70px auto 160px;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__root {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfo__root {
+    margin-bottom: 50px;
+  }
 }
 .p-shopInfo__rootList {
   list-style: none;

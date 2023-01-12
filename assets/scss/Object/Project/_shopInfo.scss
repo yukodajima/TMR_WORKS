@@ -1,11 +1,12 @@
 @use '../../Foundation/global'as *;
 .p-shopInfo {
-    padding: 80px 0;
+    padding: 60px 0;
     color: $color-text;
     font-weight: bold;
     &__infomation {
         display: flex;
         justify-content: space-between;
+        margin-top: 80px;
         @include mq('tab') {
             display: block;
         }
@@ -176,7 +177,7 @@
     }
     &__introduction {
         display: flex;
-        margin-top: 45px;
+        margin: 45px 0 80px;
         @include mq('tab') {
             display: block;
         }
@@ -208,8 +209,14 @@
         }
     }
     &__repairCost {
-        margin-top: 40px;
+        margin: 40px 0 160px;
         border-color: $color-border;
+        @include mq('tab') {
+            margin-bottom: 100px;
+        }
+        @include mq('sp') {
+            margin-bottom: 50px;
+        }
         & th {
             background-color: $color-main;
             color: $color-background-sub;
@@ -236,7 +243,13 @@
     }
     &__root {
         max-width: 1035px;
-        margin: 68px auto 0;
+        margin: 70px auto 160px;
+        @include mq('tab') {
+            margin-bottom: 100px;
+        }
+        @include mq('sp') {
+            margin-bottom: 50px;
+        }
     }
     &__rootList {
         list-style: none;
