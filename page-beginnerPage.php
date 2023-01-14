@@ -19,7 +19,7 @@
                     問題を解消する為に必要な費用に関しましての概算見積金額をお伝え致します。
                   </p>
                 </div>
-                <div class="p-flow__img"><img src="../assets/images/img-sample.jpg" alt=""></div>
+                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
               </li>
               <li class="p-flow__listItem--reverse">
                 <div class="p-flow__textBox">
@@ -31,7 +31,7 @@
                     お急ぎの方、お忙しい方等、お客様のご都合に合せてお選びいただくことが可能です。
                   </p>
                 </div>
-                <div class="p-flow__img"><img src="../assets/images/img-sample.jpg" alt=""></div>
+                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
               </li>
               <li class="p-flow__listItem">
                 <div class="p-flow__textBox">
@@ -46,7 +46,7 @@
                     追加検査費が必要となる場合がございます。
                   </p>
                 </div>
-                <div class="p-flow__img"><img src="../assets/images/img-sample.jpg" alt=""></div>
+                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
               </li>
               <li class="p-flow__listItem--reverse">
                 <div class="p-flow__textBox">
@@ -60,7 +60,7 @@
                     ※店頭持ち込みのお客様でも返却時の郵送返却は可能です。
                   </p>
                 </div>
-                <div class="p-flow__img"><img src="../assets/images/img-sample.jpg" alt=""></div>
+                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
               </li>
             </ul>
           </div>
@@ -110,20 +110,4 @@
           </div>
         </section>
       </main>
-      <footer class="l-footer">
-        <div class="l-container">
-        </div>
-      </footer>
-    </div>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="../assets/js/index.js"></script>
-    <!-- <script src="../assets/js/changeTab.js"></script>
-    <script src="../assets/js/slideContact.js"></script>
-    <script src="../assets/js/slideFooter.js"></script> -->
-    <script src="../assets/js/header.js"></script>
-  </body>
-</html>
+      <?php get_footer(); ?>

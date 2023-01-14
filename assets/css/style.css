@@ -2024,11 +2024,13 @@ select {
   .p-contact {
     width: 100%;
     max-width: none;
+    padding: 60px 0 80px;
   }
 }
 .p-contact__text {
   display: block;
-  max-width: 500px;
+  width: 100%;
+  max-width: 700px;
   margin: 0 auto;
 }
 .p-contact__form {

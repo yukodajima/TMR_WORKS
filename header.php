@@ -17,8 +17,8 @@
             <div class="p-header__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-pc.jpg" alt=""></div>
             <div class="p-header__menuArea">
               <div class="p-header__btnArea">
-                <button class="c-btn p-header__btn">店舗一覧</button>
-                <button class="c-btn__contact p-header__contactBtn">お問い合わせ</button>
+                <button class="c-btn p-header__btn" onclick="location.href='/shopList'">店舗一覧</button>
+                <button class="c-btn__contact p-header__contactBtn" onclick="location.href='/contact'">お問い合わせ</button>
               </div>
               <div class="p-header__menu">
                 <div class="p-header__menuLine"></div>
@@ -29,7 +29,7 @@
           </div>
           <ul class="p-header__menuList">
             <li class="p-header__menuItem">
-              <a class="p-header__menuLink" href="">
+              <a class="p-header__menuLink" href="<?php echo home_url(); ?>">
                 <div class="p-header__menuLogo">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
                 </div>
@@ -37,7 +37,7 @@
               </a>
             </li>
             <li class="p-header__menuItem">
-              <a class="p-header__menuLink" href="">
+              <a class="p-header__menuLink" href="<?php echo home_url("/beginnerPage"); ?>">
                 <div class="p-header__menuLogo">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
                 </div>
@@ -45,7 +45,7 @@
               </a>
             </li>
             <li class="p-header__menuItem">
-              <a class="p-header__menuLink" href="">
+              <a class="p-header__menuLink" href="<?php echo home_url("/repair"); ?>">
                 <div class="p-header__menuLogo">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
                 </div>
@@ -53,7 +53,7 @@
               </a>
             </li>
             <li class="p-header__menuItem">
-              <a class="p-header__menuLink" href="">
+              <a class="p-header__menuLink" href="<?php echo home_url("/repair"); ?>">
                 <div class="p-header__menuLogo">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
                 </div>
@@ -61,7 +61,7 @@
               </a>
             </li>
             <li class="p-header__menuItem">
-              <a class="p-header__menuLink" href="">
+              <a class="p-header__menuLink" href="<?php echo home_url("/revue"); ?>">
                 <div class="p-header__menuLogo">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
                 </div>
@@ -69,7 +69,7 @@
               </a>
             </li>
             <li class="p-header__menuItem p-header__drawerMenu">
-              <div class="p-header__drawerMenuItem" href="">
+              <div class="p-header__drawerMenuItem">
                 <div class="p-header__menuLogo">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
                 </div>
@@ -78,26 +78,26 @@
             </li>
             <ul class="p-header__shopList">
               <li class="p-header__shopItem">
-                <a href="">北海道・東北</a>
+                <a href="<?php echo home_url("/shopList"); ?>">北海道・東北</a>
               </li>
               <li class="p-header__shopItem">
-                <a href="">関東</a>
+                <a href="<?php echo home_url("/shopList"); ?>">関東</a>
               </li>
               <li class="p-header__shopItem">
-                <a href="">東海・北陸</a>
+                <a href="<?php echo home_url("/shopList"); ?>">東海・北陸</a>
               </li>
               <li class="p-header__shopItem">
-                <a href="">関西</a>
+                <a href="<?php echo home_url("/shopList"); ?>">関西</a>
               </li>
               <li class="p-header__shopItem">
-                <a href="">四国・中国</a>
+                <a href="<?php echo home_url("/shopList"); ?>">四国・中国</a>
               </li>
               <li class="p-header__shopItem">
-                <a href="">九州・沖縄</a>
+                <a href="<?php echo home_url("/shopList"); ?>">九州・沖縄</a>
               </li>
             </ul>
             <li class="p-header__menuItem">
-              <a class="p-header__menuLink" href="">
+              <a class="p-header__menuLink" href="<?php echo home_url("/franchiseRecruiting"); ?>">
                 <div class="p-header__menuLogo">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
                 </div>
