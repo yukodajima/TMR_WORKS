@@ -2,14 +2,18 @@
 .p-shopInfo {
     padding: 60px 0;
     color: $color-text;
-    font-weight: bold;
+    // font-weight: bold;
     &__infomation {
         display: flex;
         justify-content: space-between;
         margin-top: 80px;
         @include mq('tab') {
             display: block;
+            margin-top: 40px;
         }
+    }
+    &__infomationWrapper {
+        max-width: 40%;
     }
     &__shopName {
         font-size: 32px;
@@ -23,9 +27,10 @@
     &__shopAddress {
         font-size: 24px;
         margin-top: 40px;
-        word-wrap: break-word;
+        // word-wrap: break-word;
         @include mq('tab') {
             font-size: 22px;
+            margin-top: 20px;
         }
         @include mq('sp') {
             font-size: 20px;
@@ -36,6 +41,7 @@
         margin-top: 40px;
         @include mq('tab') {
             font-size: 22px;
+            margin-top: 20px;
         }
         @include mq('sp') {
             font-size: 20px;
@@ -43,8 +49,9 @@
     }
     &__shopImg {
         max-width: 500px;
+        max-height: 350px;
+        height: 350px;
         width: 50%;
-        height: auto;
         @include mq('tab') {
             max-width: 100%;
             width: 100%;
@@ -52,7 +59,6 @@
             margin-top: 40px;
         }
         & img {
-            height: 100%;
             object-fit: cover;
         }
     }
@@ -156,6 +162,10 @@
         font-size: 15px;
         @include mq('tab') {
             margin: auto 0;
+            margin-top: 5px;
+        }
+        @include mq('sp') {
+            font-size: 20px;
         }
     }
     &__contactLine {
@@ -180,12 +190,14 @@
         margin: 45px 0 80px;
         @include mq('tab') {
             display: block;
+            margin: 23px 0 40px;
         }
     }
     &__introdocutionImg {
         max-width: 500px;
+        // max-height: 350px;
+        height: 350px;
         width: 50%;
-        height: auto;
         margin-right: 35px;
         @include mq('tab') {
             max-width: 100%;
@@ -193,16 +205,31 @@
             height: 100%;
         }
         & img {
-            height: 100%;
             object-fit: cover;
         }
     }
+    // &__shopImg {
+    //     max-width: 500px;
+    //     max-height: 350px;
+    //     width: 50%;
+    //     @include mq('tab') {
+    //         max-width: 100%;
+    //         width: 100%;
+    //         height: 100%;
+    //         margin-top: 40px;
+    //     }
+    //     & img {
+    //         height: 350px;
+    //         object-fit: cover;
+    //     }
+    // }
     &__introductionText {
-        padding-top: 55px;
-        font-size: 16px;
         max-width: 55%;
+        margin-top: 55px;
+        font-size: 16px;
         @include mq('tab') {
             max-width: 100%;
+            margin-top: 28px;
         }
         & p:not(:first-child) {
             margin: 1rem 0rem 0rem;
@@ -212,11 +239,11 @@
         margin: 40px 0 160px;
         border-color: $color-border;
         @include mq('tab') {
-            margin-bottom: 100px;
+            margin: 20px 0 100px;
         }
-        @include mq('sp') {
-            margin-bottom: 50px;
-        }
+        // @include mq('sp') {
+        //     margin: 10px 0 50px;
+        // }
         & th {
             background-color: $color-main;
             color: $color-background-sub;
@@ -235,6 +262,7 @@
             font-size: 24px;
             @include mq('tab') {
                 font-size: 22px;
+                margin-bottom: 10px;
             }
             @include mq('sp') {
                 font-size: 20px;
@@ -245,11 +273,11 @@
         max-width: 1035px;
         margin: 70px auto 160px;
         @include mq('tab') {
-            margin-bottom: 100px;
+            margin: 35px 0 80px;
         }
-        @include mq('sp') {
-            margin-bottom: 50px;
-        }
+        // @include mq('sp') {
+        //     margin-bottom: 50px;
+        // }
     }
     &__rootList {
         list-style: none;
@@ -274,7 +302,7 @@
         & p {
             margin-top: 20px;
             @include mq('tab') {
-                margin-top: 30px;
+                margin-top: 10px;
             }
         }
     }
@@ -289,18 +317,29 @@
         display: flex;
         justify-content: center;
         margin-top: 80px;
+        @include mq('tab') {
+            margin-top: 40px;
+        }
     }
     &__rootItemMapImg {
         width: 1020px;
         height: 500px;
+        @include mq('tab') {
+            width: 100%;
+        }
+        @include mq('sp') {
+            height: 300px;
+        }
     }
     &__news {
-        margin-top: 80px;
+        margin: 80px auto 0;
+        @include mq('tab') {
+            margin-top: 40px;
+        }
     }
     &__newsItem {
         display: flex;
         max-width: 1017px;
-        margin: 0 auto;
         @include mq('tab') {
             display: block;
         }

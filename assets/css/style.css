@@ -2018,7 +2018,6 @@ select {
 .p-shopInfo {
   padding: 60px 0;
   color: #1B224C;
-  font-weight: bold;
 }
 .p-shopInfo__infomation {
   display: -webkit-box;
@@ -2034,7 +2033,11 @@ select {
 @media (max-width: 900px) {
   .p-shopInfo__infomation {
     display: block;
+    margin-top: 40px;
   }
+}
+.p-shopInfo__infomationWrapper {
+  max-width: 40%;
 }
 .p-shopInfo__shopName {
   font-size: 32px;
@@ -2052,11 +2055,11 @@ select {
 .p-shopInfo__shopAddress {
   font-size: 24px;
   margin-top: 40px;
-  word-wrap: break-word;
 }
 @media (max-width: 900px) {
   .p-shopInfo__shopAddress {
     font-size: 22px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 599px) {
@@ -2071,6 +2074,7 @@ select {
 @media (max-width: 900px) {
   .p-shopInfo__shopHours {
     font-size: 22px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 599px) {
@@ -2080,8 +2084,9 @@ select {
 }
 .p-shopInfo__shopImg {
   max-width: 500px;
+  max-height: 350px;
+  height: 350px;
   width: 50%;
-  height: auto;
 }
 @media (max-width: 900px) {
   .p-shopInfo__shopImg {
@@ -2092,7 +2097,6 @@ select {
   }
 }
 .p-shopInfo__shopImg img {
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2242,6 +2246,12 @@ select {
 @media (max-width: 900px) {
   .p-shopInfo__contactTelNum {
     margin: auto 0;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfo__contactTelNum {
+    font-size: 20px;
   }
 }
 .p-shopInfo__contactLine {
@@ -2277,12 +2287,13 @@ select {
 @media (max-width: 900px) {
   .p-shopInfo__introduction {
     display: block;
+    margin: 23px 0 40px;
   }
 }
 .p-shopInfo__introdocutionImg {
   max-width: 500px;
+  height: 350px;
   width: 50%;
-  height: auto;
   margin-right: 35px;
 }
 @media (max-width: 900px) {
@@ -2293,18 +2304,18 @@ select {
   }
 }
 .p-shopInfo__introdocutionImg img {
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .p-shopInfo__introductionText {
-  padding-top: 55px;
-  font-size: 16px;
   max-width: 55%;
+  margin-top: 55px;
+  font-size: 16px;
 }
 @media (max-width: 900px) {
   .p-shopInfo__introductionText {
     max-width: 100%;
+    margin-top: 28px;
   }
 }
 .p-shopInfo__introductionText p:not(:first-child) {
@@ -2316,12 +2327,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-shopInfo__repairCost {
-    margin-bottom: 100px;
-  }
-}
-@media (max-width: 599px) {
-  .p-shopInfo__repairCost {
-    margin-bottom: 50px;
+    margin: 20px 0 100px;
   }
 }
 .p-shopInfo__repairCost th {
@@ -2344,6 +2350,7 @@ select {
 @media (max-width: 900px) {
   .p-shopInfo__repairCost table {
     font-size: 22px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 599px) {
@@ -2357,12 +2364,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-shopInfo__root {
-    margin-bottom: 100px;
-  }
-}
-@media (max-width: 599px) {
-  .p-shopInfo__root {
-    margin-bottom: 50px;
+    margin: 35px 0 80px;
   }
 }
 .p-shopInfo__rootList {
@@ -2403,7 +2405,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-shopInfo__rootItem p {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 .p-shopInfo__rootItemImg {
@@ -2426,12 +2428,32 @@ select {
           justify-content: center;
   margin-top: 80px;
 }
+@media (max-width: 900px) {
+  .p-shopInfo__rootItemMap {
+    margin-top: 40px;
+  }
+}
 .p-shopInfo__rootItemMapImg {
   width: 1020px;
   height: 500px;
 }
+@media (max-width: 900px) {
+  .p-shopInfo__rootItemMapImg {
+    width: 100%;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfo__rootItemMapImg {
+    height: 300px;
+  }
+}
 .p-shopInfo__news {
-  margin-top: 80px;
+  margin: 80px auto 0;
+}
+@media (max-width: 900px) {
+  .p-shopInfo__news {
+    margin-top: 40px;
+  }
 }
 .p-shopInfo__newsItem {
   display: -webkit-box;
@@ -2439,7 +2461,6 @@ select {
   display: -ms-flexbox;
   display: flex;
   max-width: 1017px;
-  margin: 0 auto;
 }
 @media (max-width: 900px) {
   .p-shopInfo__newsItem {
