@@ -1,0 +1,15 @@
+@use '../../Foundation/global'as *;
+.p-franchise {
+  margin-top: 80px;
+  @include mq("tab") {
+    margin-top: 60px;
+  }
+  &__text {
+    display: block;
+    margin: 40px auto 0;
+    max-width: 1000px;
+    @include mq("tab") {
+      margin: 20px auto 0;
+    }
+  }
+}
