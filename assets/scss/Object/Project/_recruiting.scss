@@ -29,6 +29,12 @@
   &__label {
     display: block;
   }
+  &__radio {
+    margin-right: 20px;
+  }
+  &__checkbox {
+    margin-right: 20px;
+  }
   &__linefeed {
     display: none;
     @include mq("sp") {

@@ -2308,6 +2308,12 @@ select {
 .p-recruiting__label {
   display: block;
 }
+.p-recruiting__radio {
+  margin-right: 20px;
+}
+.p-recruiting__checkbox {
+  margin-right: 20px;
+}
 .p-recruiting__linefeed {
   display: none;
 }
