@@ -1,6 +1,7 @@
 @use '../../Foundation/global' as *;
 .p-work {
   padding: 120px 0 80px;
+  background-color: $color-background;
   @include mq('tab') {
     padding: 60px 0 40px;
   }

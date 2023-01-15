@@ -224,18 +224,26 @@
     <div class="c-titleBox">新着情報</div>
     <div class="p-news__container">
       <ul class="p-news__list">
-        <?php if (have_posts()) : ?>
-          <?php while (have_posts()) : ?>
-            <?php the_post(); ?>
+        <?php
+        $args = array(
+          'post_type' => 'post',
+          'posts_per_page' => 12,
+          'category_name' => 'shopInfo',
+        );
+        $the_query = new WP_Query($args);
+        ?>
+        <?php if ($the_query->have_posts()) : ?>
+          <?php while ($the_query->have_posts()) : ?>
+            <?php $the_query->the_post(); ?>
             <div class="p-news__article">
               <li class="p-news__date"><?php the_time('Y年m月d日'); ?></li>
               <li class="p-news__text">
                 <a href="<?php the_permalink(); ?>">
                   <?php the_title(); ?></a>
               </li>
-            </div>
-          <?php endwhile; ?>
+            </div> <?php endwhile; ?>
         <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
       </ul>
       <div class="p-news__btnContainer">
         <button class="p-news__btn" type="submit">一覧</button>
