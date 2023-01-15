@@ -1,10 +1,10 @@
 @use '../../Foundation/global'as *;
 .p-shopNews {
-    margin-top: 160px;
+    margin-top: 175px;
     @include mq('tab') {
-        margin-top: 80px;
+        margin-top: 85px;
     }
-    @include mq('so') {
+    @include mq('sp') {
         margin-top: 40px;
     }
     &__list {

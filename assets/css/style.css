@@ -110,16 +110,19 @@ select {
 
 .l-main {
   padding-top: 150px;
+  padding-bottom: 70px;
   background-color: #FFF;
 }
 @media (max-width: 900px) {
   .l-main {
     padding-top: 100px;
+    padding-bottom: 35px;
   }
 }
 @media (max-width: 599px) {
   .l-main {
     padding-top: 80px;
+    padding-bottom: 18px;
   }
 }
 
@@ -2021,6 +2024,9 @@ select {
 }
 
 .p-shopInfomation {
+  margin-top: 60px;
+}
+.p-shopInfomation__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2032,17 +2038,17 @@ select {
   margin-top: 80px;
 }
 @media (max-width: 900px) {
-  .p-shopInfomation {
+  .p-shopInfomation__wrapper {
     display: block;
     margin-top: 40px;
   }
 }
-.p-shopInfomation__Wrapper {
+.p-shopInfomation__infoContent {
   max-width: 40%;
   overflow-wrap: break-word;
 }
 @media (max-width: 900px) {
-  .p-shopInfomation__Wrapper {
+  .p-shopInfomation__infoContent {
     max-width: 100%;
   }
 }
@@ -2111,8 +2117,7 @@ select {
   width: 100%;
   height: 100%;
 }
-
-.p-shopContact {
+.p-shopInfomation__contact {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2128,17 +2133,12 @@ select {
   max-width: 1050px;
 }
 @media (max-width: 900px) {
-  .p-shopContact a:not(:first-child) {
+  .p-shopInfomation__contact li:not(:first-child) {
     margin-top: 10px;
   }
 }
-@media (max-width: 599px) {
-  .p-shopContact a:not(:first-child) {
-    margin-top: 5px;
-  }
-}
 @media (max-width: 900px) {
-  .p-shopContact {
+  .p-shopInfomation__contact {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
@@ -2147,7 +2147,15 @@ select {
     margin-top: 40px;
   }
 }
-.p-shopContact__mail, .p-shopContact__tel, .p-shopContact__line {
+.p-shopInfomation__contactLink {
+  width: 100%;
+  height: 100%;
+  display: contents;
+}
+.p-shopInfomation__contactLink:visited {
+  color: #FFF;
+}
+.p-shopInfomation__contactMail, .p-shopInfomation__contactTel, .p-shopInfomation__contactLine {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2169,7 +2177,7 @@ select {
   padding: 0 20px;
 }
 @media (max-width: 900px) {
-  .p-shopContact__mail, .p-shopContact__tel, .p-shopContact__line {
+  .p-shopInfomation__contactMail, .p-shopInfomation__contactTel, .p-shopInfomation__contactLine {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
@@ -2182,63 +2190,63 @@ select {
   }
 }
 @media (max-width: 599px) {
-  .p-shopContact__mail, .p-shopContact__tel, .p-shopContact__line {
+  .p-shopInfomation__contactMail, .p-shopInfomation__contactTel, .p-shopInfomation__contactLine {
     max-width: 100%;
     width: 100%;
     height: 60px;
   }
 }
-.p-shopContact__mail {
+.p-shopInfomation__contactMail {
   background-color: #FF9801;
   font-size: 24px;
 }
 @media (max-width: 900px) {
-  .p-shopContact__mail {
+  .p-shopInfomation__contactMail {
     font-size: 22px;
   }
 }
 @media (max-width: 599px) {
-  .p-shopContact__mail {
+  .p-shopInfomation__contactMail {
     font-size: 20px;
   }
 }
-.p-shopContact__mailImg {
+.p-shopInfomation__contactMailImg {
   width: 35px;
   height: 35px;
 }
 @media (max-width: 900px) {
-  .p-shopContact__mailImg {
+  .p-shopInfomation__contactMailImg {
     margin-right: 50px;
   }
 }
-.p-shopContact__tel {
+.p-shopInfomation__contactTel {
   background-color: #009DFF;
   font-size: 20px;
 }
 @media (max-width: 900px) {
-  .p-shopContact__tel {
+  .p-shopInfomation__contactTel {
     font-size: 22px;
   }
 }
 @media (max-width: 599px) {
-  .p-shopContact__tel {
+  .p-shopInfomation__contactTel {
     font-size: 20px;
   }
 }
-.p-shopContact__telImg {
+.p-shopInfomation__contactTelImg {
   width: 35px;
   height: 35px;
 }
 @media (max-width: 900px) {
-  .p-shopContact__telImg {
+  .p-shopInfomation__contactTelImg {
     margin-right: 50px;
   }
 }
-.p-shopContact__telInfo {
+.p-shopInfomation__contactTelInfo {
   text-align: center;
 }
 @media (max-width: 900px) {
-  .p-shopContact__telInfo {
+  .p-shopInfomation__contactTelInfo {
     display: block;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -2246,7 +2254,7 @@ select {
             align-items: center;
   }
 }
-.p-shopContact__telNum {
+.p-shopInfomation__contactTelNum {
   background-color: #FFF;
   color: #009DFF;
   padding: 10px 7px;
@@ -2255,52 +2263,55 @@ select {
   font-size: 15px;
 }
 @media (max-width: 900px) {
-  .p-shopContact__telNum {
+  .p-shopInfomation__contactTelNum {
     margin: auto 0;
     padding: 5px 4px;
   }
 }
 @media (max-width: 599px) {
-  .p-shopContact__telNum {
+  .p-shopInfomation__contactTelNum {
     font-size: 12px;
     padding: 1px 2px;
   }
 }
-.p-shopContact__line {
+.p-shopInfomation__contactLine {
   background-color: #5AC363;
   font-size: 24px;
 }
 @media (max-width: 900px) {
-  .p-shopContact__line {
+  .p-shopInfomation__contactLine {
     font-size: 22px;
   }
 }
 @media (max-width: 599px) {
-  .p-shopContact__line {
+  .p-shopInfomation__contactLine {
     font-size: 20px;
   }
 }
-.p-shopContact__lineImg {
+.p-shopInfomation__contactLineImg {
   width: 35px;
   height: 35px;
 }
 @media (max-width: 900px) {
-  .p-shopContact__lineImg {
+  .p-shopInfomation__contactLineImg {
     margin-right: 50px;
   }
 }
 
 .p-shopIntroduction {
+  margin-top: 80px;
+}
+.p-shopIntroduction__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 45px 0 80px;
+  margin-top: 40px;
 }
 @media (max-width: 900px) {
-  .p-shopIntroduction {
+  .p-shopIntroduction__wrapper {
     display: block;
-    margin: 23px 0 40px;
+    margin-top: 20px;
   }
 }
 .p-shopIntroduction__img {
@@ -2338,12 +2349,12 @@ select {
 }
 
 .p-shopRepairCost {
-  margin: 40px 0 160px;
+  margin-top: 80px;
   border-color: #707070;
 }
 @media (max-width: 900px) {
   .p-shopRepairCost {
-    margin: 20px 0 100px;
+    margin-top: 40px;
   }
 }
 .p-shopRepairCost th {
@@ -2361,13 +2372,13 @@ select {
 }
 .p-shopRepairCost table {
   border-collapse: collapse;
-  margin-bottom: 20px;
+  margin-top: 40px;
   font-size: 24px;
 }
 @media (max-width: 900px) {
   .p-shopRepairCost table {
+    margin-top: 20px;
     font-size: 22px;
-    margin-bottom: 10px;
   }
 }
 @media (max-width: 599px) {
@@ -2375,14 +2386,21 @@ select {
     font-size: 20px;
   }
 }
+.p-shopRepairCost p {
+  margin-top: 20px;
+}
 
 .p-shopRoot {
-  max-width: 1035px;
-  margin: 70px auto 160px;
+  margin-top: 170px;
 }
 @media (max-width: 900px) {
   .p-shopRoot {
-    margin: 35px 0 80px;
+    margin-top: 85px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopRoot {
+    margin-top: 40px;
   }
 }
 .p-shopRoot__list {
@@ -2399,11 +2417,13 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bold;
+  margin-top: 75px;
   gap: 40px 2vw;
 }
 @media (max-width: 900px) {
   .p-shopRoot__list {
     display: block;
+    margin-top: 40px;
   }
 }
 .p-shopRoot__item {
@@ -2441,6 +2461,7 @@ select {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 .p-shopRoot__itemMap {
   display: -webkit-box;
@@ -2474,14 +2495,14 @@ select {
 }
 
 .p-shopNews {
-  margin-top: 160px;
+  margin-top: 175px;
 }
 @media (max-width: 900px) {
   .p-shopNews {
-    margin-top: 80px;
+    margin-top: 85px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 599px) {
   .p-shopNews {
     margin-top: 40px;
   }

@@ -1,9 +1,9 @@
 @use '../../Foundation/global'as *;
 .p-shopRepairCost {
-    margin-top: 40px;
+    margin-top: 80px;
     border-color: $color-border;
     @include mq('tab') {
-        margin: 20px;
+        margin-top: 40px;
     }
     & th {
         background-color: $color-main;
@@ -23,6 +23,7 @@
         margin-top: 40px;
         font-size: 24px;
         @include mq('tab') {
+            margin-top: 20px;
             font-size: 22px;
         }
         @include mq('sp') {

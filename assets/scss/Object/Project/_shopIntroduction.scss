@@ -1,10 +1,13 @@
 @use '../../Foundation/global'as *;
 .p-shopIntroduction {
-    display: flex;
-    margin: 45px 0 80px;
-    @include mq('tab') {
-        display: block;
-        margin: 23px 0 40px;
+    margin-top: 80px;
+    &__wrapper {
+        display: flex;
+        margin-top: 40px;
+        @include mq('tab') {
+            display: block;
+            margin-top: 20px;
+        }
     }
     &__img {
         max-width: 500px;
