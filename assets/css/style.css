@@ -845,34 +845,34 @@ select {
   color: #FFF;
 }
 
-.p-contact {
+.p-question {
   padding: 30px 0 80px;
   background-color: #fff;
 }
 @media (max-width: 900px) {
-  .p-contact {
+  .p-question {
     padding: 30px 0 40px;
   }
 }
-.p-contact__container {
+.p-question__container {
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
-.p-contact__list {
+.p-question__list {
   margin-top: 50px;
   list-style: none;
   text-align: left;
   border-top: solid gray 1px;
 }
-.p-contact__text {
+.p-question__text {
   padding: 10px 0;
   position: relative;
 }
-.p-contact__triger {
+.p-question__triger {
   color: #1B224C;
 }
-.p-contact__triger::before {
+.p-question__triger::before {
   content: "";
   border-top: 1px solid black;
   width: 20px;
@@ -885,7 +885,7 @@ select {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
-.p-contact__triger.open::before {
+.p-question__triger.open::before {
   content: "";
   border-top: 1px solid black;
   width: 20px;
@@ -898,7 +898,7 @@ select {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
-.p-contact__triger::after {
+.p-question__triger::after {
   content: "";
   border-top: 1px solid black;
   width: 20px;
@@ -907,7 +907,7 @@ select {
   top: 50%;
   right: 0;
 }
-.p-contact__text--hidden {
+.p-question__text--hidden {
   background-color: #f8f8f8;
   padding: 15px;
   display: none;
@@ -2106,6 +2106,75 @@ select {
   height: 50px;
   border: none;
   color: #FFF;
+}
+
+.p-contact {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 120px 0 160px;
+}
+@media (max-width: 900px) {
+  .p-contact {
+    width: 100%;
+    max-width: none;
+    padding: 60px 0 80px;
+  }
+}
+.p-contact__text {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.p-contact__form {
+  margin-top: 40px;
+}
+.p-contact__list {
+  list-style: none;
+}
+.p-contact__listItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.p-contact__listItem:not(:first-child) {
+  margin-top: 15px;
+}
+.p-contact__input {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  border: 0.5px solid #1B224C;
+}
+.p-contact__textarea {
+  height: 240px;
+  margin-top: 10px;
+  border: 0.5px solid #1B224C;
+}
+.p-contact__policy {
+  margin-top: 60px;
+  text-align: center;
+}
+.p-contact__policyCheck {
+  margin-top: 25px;
+}
+.p-contact__submit {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 45px auto 0;
+  padding: 15px 0;
+  text-align: center;
+  color: #FFF;
+  background-color: #1B224C;
+  border: none;
+  border-radius: 5px;
 }
 
 .u-hidden {
