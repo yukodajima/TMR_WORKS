@@ -1,11 +1,14 @@
 @use '../../Foundation/global'as *;
 .p-shopNews {
     margin-top: 175px;
+    padding-bottom: 70px;
     @include mq('tab') {
         margin-top: 85px;
+        padding-bottom: 35px;
     }
     @include mq('sp') {
         margin-top: 40px;
+        padding-bottom: 18px;
     }
     &__list {
         margin: 80px auto 0;
@@ -16,6 +19,7 @@
     &__item {
         display: flex;
         max-width: 1017px;
+        margin:  0 auto;
         @include mq('tab') {
             display: block;
         }

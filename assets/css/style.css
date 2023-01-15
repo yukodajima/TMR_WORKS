@@ -110,19 +110,16 @@ select {
 
 .l-main {
   padding-top: 150px;
-  padding-bottom: 70px;
   background-color: #FFF;
 }
 @media (max-width: 900px) {
   .l-main {
     padding-top: 100px;
-    padding-bottom: 35px;
   }
 }
 @media (max-width: 599px) {
   .l-main {
     padding-top: 80px;
-    padding-bottom: 18px;
   }
 }
 
@@ -2496,15 +2493,18 @@ select {
 
 .p-shopNews {
   margin-top: 175px;
+  padding-bottom: 70px;
 }
 @media (max-width: 900px) {
   .p-shopNews {
     margin-top: 85px;
+    padding-bottom: 35px;
   }
 }
 @media (max-width: 599px) {
   .p-shopNews {
     margin-top: 40px;
+    padding-bottom: 18px;
   }
 }
 .p-shopNews__list {
@@ -2521,6 +2521,7 @@ select {
   display: -ms-flexbox;
   display: flex;
   max-width: 1017px;
+  margin: 0 auto;
 }
 @media (max-width: 900px) {
   .p-shopNews__item {

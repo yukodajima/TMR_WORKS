@@ -1,16 +1,13 @@
 @use '../Foundation/global' as *;
 .l-main {
   padding-top: $header-height-pc;
-  padding-bottom: 70px;
   background-color: $color-background-sub;
 
   @include mq(tab) {
     padding-top: $header-height-tab;
-    padding-bottom: 35px;
   }
 
   @include mq(sp) {
     padding-top: $header-height-sp;
-    padding-bottom: 18px;
   }
 }
