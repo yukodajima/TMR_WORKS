@@ -98,7 +98,7 @@
     <div class="l-container">
       <nav class="p-footer__nav">
         <div class="p-footer__logoContainer">
-          <img class="p-footer__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="会社ロゴ" />
+          <img class="p-footer__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-pc.jpg" alt="会社ロゴ" />
         </div>
         <div class="p-footer__navListBox">
           <li class="p-footer__navList">
