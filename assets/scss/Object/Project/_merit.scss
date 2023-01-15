@@ -1,0 +1,94 @@
+@use '../../Foundation/global'as *;
+.p-merit {
+  margin-top: 80px;
+  @include mq("tab") {
+    margin-top: 60px;
+  }
+  &__titleBox {
+    text-align: center;
+  }
+  &__title {
+    font-size: 32px;
+  }
+  &__linefeed {
+    display: none;
+    @include mq("sp") {
+      display: block;
+    }
+  }
+  &__list {
+    margin: 80px auto 0px;
+    padding: 0;
+    @include mq("tab") {
+      margin: 40px auto 0px;
+      max-width: 600px;
+    }
+  }
+  &__listItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 250px;
+    @include mq("tab") {
+      flex-direction: column;
+      justify-content: start;
+      align-items: normal;
+      height: auto;
+      text-align: center;
+      gap: 20px;
+    }
+    &:not(:first-child) {
+      margin-top: 80px;
+      @include mq("tab") {
+        margin-top: 40px;
+      }
+    }
+    &--reverse {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 80px;
+      @include mq("tab") {
+        flex-direction: column;
+        justify-content: start;
+        align-items: normal;
+        margin-top: 40px;
+        text-align: center;
+        gap: 20px;
+      }
+    }
+  }
+  &__textBox {
+    width: 500px;
+    @include mq("tab") {
+      width: 100%;
+    }
+  }
+  &__listTitle {
+    font-size: 24px;
+    @include mq("tab") {
+      font-size: 20px;
+    }
+  }
+  &__listText {
+    margin-top: 40px;
+    @include mq("tab") {
+      margin-top: 20px;
+    }
+  }
+  &__img {
+    max-width: 350px;
+    height: 250px;
+    @include mq("tab") {
+      height: auto;
+      margin: 0 auto;
+    }
+    & img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

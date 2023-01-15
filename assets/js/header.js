@@ -29,8 +29,8 @@ $(window).on('load', function () {
       var $bp = 900
 
       if($windowWidth > $bp){
-        console.log($windowWidth);
         $menuList.css("display", "flex")
+        $shopList.css("display", "none")
         $menuLine.removeClass("open")
       } else {
         $menuList.css("display", "none")
