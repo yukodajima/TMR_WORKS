@@ -114,6 +114,91 @@
                 <h3 class="p-topMenu__subTitle">Symptoms</h3>
               </div>
             </div>
+            <ul class="p-topMenu__list show">
+              <li class="p-topMenu__item">
+                <div class="p-topMenu__imgContainer">
+                  <img
+                    class="p-topMenu__image"
+                    src="../assets/images/logo-sample.png"
+                    alt=""
+                  />
+                </div>
+                <p class="p-topMenu__text">画面修理</p>
+              </li>
+              <li class="p-topMenu__item">
+                <div class="p-topMenu__imgContainer">
+                  <img
+                    class="p-topMenu__image"
+                    src="../assets/images/logo-sample.png"
+                    alt=""
+                  />
+                </div>
+                <p class="p-topMenu__text">
+                  HDD・SSDの増設<br />
+                  交換（OS再インストール）
+                </p>
+              </li>
+              <li class="p-topMenu__item">
+                <div class="p-topMenu__imgContainer">
+                  <img
+                    class="p-topMenu__image"
+                    src="../assets/images/logo-sample.png"
+                    alt=""
+                  />
+                </div>
+                <p class="p-topMenu__text">メンテナンス・初期化</p>
+              </li>
+              <li class="p-topMenu__item">
+                <div class="p-topMenu__imgContainer">
+                  <img
+                    class="p-topMenu__image"
+                    src="../assets/images/logo-sample.png"
+                    alt=""
+                  />
+                </div>
+                <p class="p-topMenu__text">キーボード修理</p>
+              </li>
+              <li class="p-topMenu__item">
+                <div class="p-topMenu__imgContainer">
+                  <img
+                    class="p-topMenu__image"
+                    src="../assets/images/logo-sample.png"
+                    alt=""
+                  />
+                </div>
+                <p class="p-topMenu__text">バッテリー交換</p>
+              </li>
+              <li class="p-topMenu__item">
+                <div class="p-topMenu__imgContainer">
+                  <img
+                    class="p-topMenu__image"
+                    src="../assets/images/logo-sample.png"
+                    alt=""
+                  />
+                </div>
+                <p class="p-topMenu__text">データ復旧</p>
+              </li>
+              <li class="p-topMenu__item">
+                <div class="p-topMenu__imgContainer">
+                  <img
+                    class="p-topMenu__image"
+                    src="../assets/images/logo-sample.png"
+                    alt=""
+                  />
+                </div>
+                <p class="p-topMenu__text">データ移行</p>
+              </li>
+              <li class="p-topMenu__item">
+                <div class="p-topMenu__imgContainer">
+                  <img
+                    class="p-topMenu__image"
+                    src="../assets/images/logo-sample.png"
+                    alt=""
+                  />
+                </div>
+                <p class="p-topMenu__text">その他</p>
+              </li>
+            </ul>
             <ul class="p-topMenu__list">
               <li class="p-topMenu__item">
                 <div class="p-topMenu__imgContainer">
@@ -133,7 +218,7 @@
                     alt=""
                   />
                 </div>
-                <p class="p-topMenu__text">画面が割れてしまった</p>
+                <p class="p-topMenu__text">HDD・SSDが壊れてしまった</p>
               </li>
               <li class="p-topMenu__item">
                 <div class="p-topMenu__imgContainer">
@@ -143,7 +228,7 @@
                     alt=""
                   />
                 </div>
-                <p class="p-topMenu__text">画面が割れてしまった</p>
+                <p class="p-topMenu__text">画面が付かなくなった</p>
               </li>
               <li class="p-topMenu__item">
                 <div class="p-topMenu__imgContainer">
@@ -153,7 +238,7 @@
                     alt=""
                   />
                 </div>
-                <p class="p-topMenu__text">画面が割れてしまった</p>
+                <p class="p-topMenu__text">キーボードが反応しない</p>
               </li>
               <li class="p-topMenu__item">
                 <div class="p-topMenu__imgContainer">
@@ -163,7 +248,7 @@
                     alt=""
                   />
                 </div>
-                <p class="p-topMenu__text">画面が割れてしまった</p>
+                <p class="p-topMenu__text">充電がすぐになくなる</p>
               </li>
               <li class="p-topMenu__item">
                 <div class="p-topMenu__imgContainer">
@@ -173,7 +258,7 @@
                     alt=""
                   />
                 </div>
-                <p class="p-topMenu__text">画面が割れてしまった</p>
+                <p class="p-topMenu__text">データが消えてしまった</p>
               </li>
               <li class="p-topMenu__item">
                 <div class="p-topMenu__imgContainer">
@@ -183,7 +268,7 @@
                     alt=""
                   />
                 </div>
-                <p class="p-topMenu__text">画面が割れてしまった</p>
+                <p class="p-topMenu__text">器具を落としてしまった</p>
               </li>
               <li class="p-topMenu__item">
                 <div class="p-topMenu__imgContainer">
@@ -193,12 +278,9 @@
                     alt=""
                   />
                 </div>
-                <p class="p-topMenu__text">画面が割れてしまった</p>
+                <p class="p-topMenu__text">OSが起動しない</p>
               </li>
             </ul>
-            <div class="p-topMenu__btnContainer">
-              <button class="p-topMenu__btn" type="submit">一覧</button>
-            </div>
           </div>
         </section>
         <section class="p-shop">
@@ -208,22 +290,24 @@
               <ul class="p-shop__list">
                 <li class="p-shop__item">
                   <p class="p-shop__area">北海道・東北</p>
-                  <div class="p-shop__innerArea">
-                    <div class="p-shop__iconPref">
-                      <div class="p-shop__iconContainer">
-                        <img
-                          class="p-shop__icon"
-                          src="../assets/images/icn-twitter.svg"
-                          alt=""
-                        />
+                  <div class="p-shop__loop">
+                    <div class="p-shop__innerArea">
+                      <div class="p-shop__iconPref">
+                        <div class="p-shop__iconContainer">
+                          <img
+                            class="p-shop__icon"
+                            src="../assets/images/icn-twitter.svg"
+                            alt=""
+                          />
+                        </div>
+                        <p class="p-shop__pref">北海道</p>
                       </div>
-                      <p class="p-shop__pref">北海道</p>
+                      <ul class="p-shop__shopNameList">
+                        <li class="p-shop__shopName">
+                          <a href="#"> 札幌店</a>
+                        </li>
+                      </ul>
                     </div>
-                    <ul class="p-shop__shopNameList">
-                      <li class="p-shop__shopName">
-                        <a href="#"> 札幌店</a>
-                      </li>
-                    </ul>
                   </div>
                 </li>
               </ul>
@@ -343,7 +427,7 @@
                 <div class="p-footer__textArea">
                   <h2 class="p-footer__title">買取</h2>
                   <p class="p-footer__text">
-                    PC関連の買取なら<br>
+                    PC関連の買取なら<br />
                     お任せください
                   </p>
                 </div>
@@ -359,7 +443,7 @@
                 <div class="p-footer__textArea">
                   <h2 class="p-footer__title">販売</h2>
                   <p class="p-footer__text">
-                    法人向け中古パソコン販売<br>
+                    法人向け中古パソコン販売<br />
                     新品パソコンの半額相当！
                   </p>
                 </div>
@@ -429,7 +513,7 @@
               <div class="p-footer__logoContainer">
                 <img
                   class="p-footer__logo"
-                  src="../assets/images/icn-twitter.svg"
+                  src="../assets/images/icon-pc.jpg"
                   alt="会社ロゴ"
                 />
               </div>
@@ -456,7 +540,7 @@
     ></script>
     <script src="../assets/js/index.js"></script>
     <script src="../assets/js/changeTab.js"></script>
-    <script src="../assets/js/slidequestion.js"></script>
-    <script src="../assets/js/slideFooter.js"></script>
+    <script src="../assets/js/slideContact.js"></script>
+    <script src="../assets/js/footer.js"></script>
   </body>
 </html>
