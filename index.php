@@ -2,7 +2,12 @@
 <?php get_template_part('hero'); ?>
 <section class="p-info">
   <div class="l-container">
-    <div class="c-titleBox">新着情報</div>
+    <div class="c-titleBox">
+      <div class="c-titleBox__wrapper">
+        <h3 class="c-titleBox__title">新着情報</h3>
+        <p class="c-titleBox__text">Pick Up</p>
+      </div>
+    </div>
     <ul class="p-info__list">
       <li class="p-info__item">
         <div>
@@ -27,7 +32,12 @@
 </section>
 <section class="p-work">
   <div class="l-container">
-    <div class="c-titleBox">修理のことならPCワークス</div>
+    <div class="c-titleBox">
+      <div class="c-titleBox__wrapper">
+        <p class="p-work__subTitle"><span>3</span>つのポイント</p>
+        <h3 class="c-titleBox__title">修理のことなら<br class="p-work__linefeed">PCワークス</h3>
+      </div>
+    </div>
     <ul class="p-work__list">
       <li class="p-work__item">
         <div class="p-work__imgContainer">
@@ -179,7 +189,12 @@
 </section>
 <section class="p-shop">
   <div class="l-container">
-    <div class="c-titleBox">新着情報</div>
+    <div class="c-titleBox">
+      <div class="c-titleBox__wrapper">
+        <h3 class="c-titleBox__title">利用手順</h3>
+        <p class="c-titleBox__text">Flow</p>
+      </div>
+    </div>
     <div class="p-shop__container">
       <ul class="p-shop__list">
         <?php
@@ -221,7 +236,12 @@
 </section>
 <section class="p-news">
   <div class="l-container">
-    <div class="c-titleBox">新着情報</div>
+    <div class="c-titleBox">
+      <div class="c-titleBox__wrapper">
+        <h3 class="c-titleBox__title">店舗一覧</h3>
+        <p class="c-titleBox__text">Shops</p>
+      </div>
+    </div>
     <div class="p-news__container">
       <ul class="p-news__list">
         <?php
@@ -254,7 +274,12 @@
 <section class="p-question">
   <div class="l-container">
     <div class="p-question__container">
-      <div class="c-titleBox">新着情報</div>
+      <div class="c-titleBox">
+        <div class="c-titleBox__wrapper">
+          <h3 class="c-titleBox__title">よくある質問</h3>
+          <p class="c-titleBox__text">Q&A</p>
+        </div>
+      </div>
       <ul class="p-question__list">
         <li class="p-question__item">
           <p class="p-question__text">

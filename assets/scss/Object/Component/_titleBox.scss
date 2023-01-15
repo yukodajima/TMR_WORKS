@@ -1,4 +1,4 @@
-@use '../../Foundation/global'as *;
+@use '../../Foundation/global' as *;
 
 .c-titleBox {
   text-align: center;
@@ -6,22 +6,22 @@
     position: relative;
     display: inline-block;
     &::before {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       top: 0;
-      left: -20px;
+      left: -30px;
       width: 1px;
       height: 100%;
       transform: rotateZ(20deg);
       background-color: $color-text;
     }
     &::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       top: 0;
-      right: -20px;
+      right: -30px;
       width: 1px;
       height: 100%;
       transform: rotateZ(20deg);
@@ -30,13 +30,13 @@
   }
   &__title {
     font-size: 32px;
-    @include mq("tab") {
+    @include mq('tab') {
       font-size: 25px;
     }
   }
   &__linefeed {
     display: none;
-    @include mq("sp") {
+    @include mq('sp') {
       display: block;
     }
   }
