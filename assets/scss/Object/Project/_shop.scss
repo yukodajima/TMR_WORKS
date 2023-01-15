@@ -1,5 +1,6 @@
 @use '../../Foundation/global' as *;
 .p-shop {
+  background-color: $color-background;
   padding: 80px 0 0;
   @include mq('tab') {
     padding: 40px 0;
