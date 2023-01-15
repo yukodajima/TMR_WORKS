@@ -1,0 +1,41 @@
+@use '../../Foundation/global'as *;
+.p-shopNews {
+    margin-top: 160px;
+    @include mq('tab') {
+        margin-top: 80px;
+    }
+    @include mq('so') {
+        margin-top: 40px;
+    }
+    &__list {
+        margin: 80px auto 0;
+        @include mq('tab') {
+            margin-top: 40px;
+        }
+    }
+    &__item {
+        display: flex;
+        max-width: 1017px;
+        @include mq('tab') {
+            display: block;
+        }
+        &:not(:first-child) {
+            margin-top: 25px;
+        }
+    }
+    &__itemDate {
+        margin-right: 40px;
+        font-size: 16px;
+        @include mq('tab') {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    &__itemContent {
+        max-width: 80%;
+        font-size: 16px;
+        @include mq('tab') {
+            max-width: 100%;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@use '../../Foundation/global'as *;
+.p-shopContact {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    margin: 80px auto 0;
+    max-width: 1050px;
+    & a:not(:first-child) {
+        @include mq('tab') {
+            margin-top: 10px;
+        }
+        @include mq('sp') {
+            margin-top: 5px;
+        }
+    }
+    @include mq('tab') {
+        justify-content: flex-start;
+        display: block;
+        margin-top: 40px;
+    }
+    &__mail , &__tel , &__line {
+        display: flex;
+        justify-content: space-around;
+        color: $color-background-sub;
+        text-decoration: none;
+        align-items: center;
+        text-align: center;
+        border-radius: 8px;
+        max-width: 300px;
+        width: 30%;
+        height: 100px;
+        padding: 0 20px;
+        @include mq('tab') {
+            justify-content: flex-start;
+            max-width: 80%;
+            width: 80%;
+            height: 80px;
+            margin: 0 auto;
+            padding: 0 10%;
+        }
+        @include mq('sp') {
+            max-width: 100%;
+            width: 100%;
+            height: 60px;
+        }
+    }
+    &__mail {
+        background-color: $color-main;
+        font-size: 24px;
+        @include mq('tab') {
+            font-size: 22px;
+        }
+        @include mq('sp') {
+            font-size: 20px;
+        }
+    }
+    &__mailImg {
+        width: 35px;
+        height: 35px;
+        @include mq('tab') {
+            margin-right: 50px;
+        }
+    }
+    &__tel {
+        background-color: #009DFF;
+        font-size: 20px;
+        @include mq('tab') {
+            font-size: 22px;
+        }
+        @include mq('sp') {
+            font-size: 20px;
+        }
+    }
+    &__telImg {
+        width: 35px;
+        height: 35px;
+        @include mq('tab') {
+            margin-right: 50px;
+        }
+    }
+    &__telInfo {
+        text-align: center;
+        @include mq('tab') {
+            display: block;
+            align-items: center;
+        }
+    }
+    &__telNum {
+        background-color: $color-background-sub;
+        color: #009DFF;
+        padding: 10px 7px;
+        border-radius: 8px;
+        margin-top: 10px;
+        font-size: 15px;
+        @include mq('tab') {
+            margin: auto 0;
+            padding: 5px 4px;
+        }
+        @include mq('sp') {
+            font-size: 12px;
+            padding: 1px 2px;
+        }
+    }
+    &__line {
+        background-color: #5AC363;
+        font-size: 24px;
+        @include mq('tab') {
+            font-size: 22px;
+        }
+        @include mq('sp') {
+            font-size: 20px;
+        }
+    }
+    &__lineImg {
+        width: 35px;
+        height: 35px;
+        @include mq('tab') {
+            margin-right: 50px;
+        }
+    }
+}

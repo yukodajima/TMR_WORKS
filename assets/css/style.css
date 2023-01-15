@@ -2019,7 +2019,8 @@ select {
   padding: 60px 0;
   color: #1B224C;
 }
-.p-shopInfo__infomation {
+
+.p-shopInfomation {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2031,76 +2032,87 @@ select {
   margin-top: 80px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__infomation {
+  .p-shopInfomation {
     display: block;
     margin-top: 40px;
   }
 }
-.p-shopInfo__infomationWrapper {
+.p-shopInfomation__Wrapper {
   max-width: 40%;
-}
-.p-shopInfo__shopName {
-  font-size: 32px;
+  overflow-wrap: break-word;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__shopName {
+  .p-shopInfomation__Wrapper {
+    max-width: 100%;
+  }
+}
+.p-shopInfomation__shopName {
+  font-size: 32px;
+  font-weight: bold;
+}
+@media (max-width: 900px) {
+  .p-shopInfomation__shopName {
     font-size: 30px;
   }
 }
 @media (max-width: 599px) {
-  .p-shopInfo__shopName {
+  .p-shopInfomation__shopName {
     font-size: 28px;
   }
 }
-.p-shopInfo__shopAddress {
+.p-shopInfomation__shopAddress {
   font-size: 24px;
   margin-top: 40px;
+  font-weight: bold;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__shopAddress {
+  .p-shopInfomation__shopAddress {
     font-size: 22px;
     margin-top: 20px;
   }
 }
 @media (max-width: 599px) {
-  .p-shopInfo__shopAddress {
+  .p-shopInfomation__shopAddress {
     font-size: 20px;
   }
 }
-.p-shopInfo__shopHours {
+.p-shopInfomation__shopHours {
   font-size: 24px;
   margin-top: 40px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__shopHours {
+  .p-shopInfomation__shopHours {
     font-size: 22px;
     margin-top: 20px;
   }
 }
 @media (max-width: 599px) {
-  .p-shopInfo__shopHours {
+  .p-shopInfomation__shopHours {
     font-size: 20px;
   }
 }
-.p-shopInfo__shopImg {
+.p-shopInfomation__shopImg {
   max-width: 500px;
-  max-height: 350px;
   height: 350px;
   width: 50%;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__shopImg {
+  .p-shopInfomation__shopImg {
     max-width: 100%;
+    max-height: 100%;
     width: 100%;
     height: 100%;
     margin-top: 40px;
   }
 }
-.p-shopInfo__shopImg img {
+.p-shopInfomation__shopImg img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
-.p-shopInfo__contact, .p-shopInfo__contactMail, .p-shopInfo__contactTel, .p-shopInfo__contactLine {
+
+.p-shopContact {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2108,17 +2120,43 @@ select {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 80px auto 0;
+  max-width: 1050px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__contact, .p-shopInfo__contactMail, .p-shopInfo__contactTel, .p-shopInfo__contactLine {
+  .p-shopContact a:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopContact a:not(:first-child) {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 900px) {
+  .p-shopContact {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    display: block;
+    margin-top: 40px;
   }
 }
-.p-shopInfo__contactMail, .p-shopInfo__contactTel, .p-shopInfo__contactLine {
+.p-shopContact__mail, .p-shopContact__tel, .p-shopContact__line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   color: #FFF;
+  text-decoration: none;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -2131,7 +2169,11 @@ select {
   padding: 0 20px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__contactMail, .p-shopInfo__contactTel, .p-shopInfo__contactLine {
+  .p-shopContact__mail, .p-shopContact__tel, .p-shopContact__line {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     max-width: 80%;
     width: 80%;
     height: 80px;
@@ -2140,102 +2182,71 @@ select {
   }
 }
 @media (max-width: 599px) {
-  .p-shopInfo__contactMail, .p-shopInfo__contactTel, .p-shopInfo__contactLine {
+  .p-shopContact__mail, .p-shopContact__tel, .p-shopContact__line {
     max-width: 100%;
     width: 100%;
     height: 60px;
   }
 }
-.p-shopInfo__contact {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 80px;
-}
-@media (max-width: 900px) {
-  .p-shopInfo__contact {
-    display: block;
-    margin-top: 40px;
-  }
-}
-@media (max-width: 900px) {
-  .p-shopInfo__contact li:not(:first-child) {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 599px) {
-  .p-shopInfo__contact li:not(:first-child) {
-    margin-top: 5px;
-  }
-}
-.p-shopInfo__contactMail {
+.p-shopContact__mail {
   background-color: #FF9801;
   font-size: 24px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__contactMail {
+  .p-shopContact__mail {
     font-size: 22px;
   }
 }
 @media (max-width: 599px) {
-  .p-shopInfo__contactMail {
+  .p-shopContact__mail {
     font-size: 20px;
   }
 }
-.p-shopInfo__contactMailImg {
+.p-shopContact__mailImg {
   width: 35px;
   height: 35px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__contactMailImg {
+  .p-shopContact__mailImg {
     margin-right: 50px;
   }
 }
-.p-shopInfo__contactTel {
+.p-shopContact__tel {
   background-color: #009DFF;
   font-size: 20px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__contactTel {
+  .p-shopContact__tel {
     font-size: 22px;
   }
 }
 @media (max-width: 599px) {
-  .p-shopInfo__contactTel {
+  .p-shopContact__tel {
     font-size: 20px;
   }
 }
-.p-shopInfo__contactTelImg {
+.p-shopContact__telImg {
   width: 35px;
   height: 35px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__contactTelImg {
+  .p-shopContact__telImg {
     margin-right: 50px;
   }
 }
-.p-shopInfo__contactTelInfo {
+.p-shopContact__telInfo {
   text-align: center;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__contactTelInfo {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+  .p-shopContact__telInfo {
+    display: block;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
-@media (max-width: 900px) {
-  .p-shopInfo__contactTelInfo p:first-child {
-    margin-right: 50px;
-  }
-}
-.p-shopInfo__contactTelNum {
+.p-shopContact__telNum {
   background-color: #FFF;
   color: #009DFF;
   padding: 10px 7px;
@@ -2244,40 +2255,42 @@ select {
   font-size: 15px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__contactTelNum {
+  .p-shopContact__telNum {
     margin: auto 0;
-    margin-top: 5px;
+    padding: 5px 4px;
   }
 }
 @media (max-width: 599px) {
-  .p-shopInfo__contactTelNum {
-    font-size: 20px;
+  .p-shopContact__telNum {
+    font-size: 12px;
+    padding: 1px 2px;
   }
 }
-.p-shopInfo__contactLine {
+.p-shopContact__line {
   background-color: #5AC363;
   font-size: 24px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__contactLine {
+  .p-shopContact__line {
     font-size: 22px;
   }
 }
 @media (max-width: 599px) {
-  .p-shopInfo__contactLine {
+  .p-shopContact__line {
     font-size: 20px;
   }
 }
-.p-shopInfo__contactLineImg {
+.p-shopContact__lineImg {
   width: 35px;
   height: 35px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__contactLineImg {
+  .p-shopContact__lineImg {
     margin-right: 50px;
   }
 }
-.p-shopInfo__introduction {
+
+.p-shopIntroduction {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2285,89 +2298,94 @@ select {
   margin: 45px 0 80px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__introduction {
+  .p-shopIntroduction {
     display: block;
     margin: 23px 0 40px;
   }
 }
-.p-shopInfo__introdocutionImg {
+.p-shopIntroduction__img {
   max-width: 500px;
   height: 350px;
   width: 50%;
   margin-right: 35px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__introdocutionImg {
+  .p-shopIntroduction__img {
     max-width: 100%;
     width: 100%;
     height: 100%;
   }
 }
-.p-shopInfo__introdocutionImg img {
+.p-shopIntroduction__img img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
-.p-shopInfo__introductionText {
-  max-width: 55%;
+.p-shopIntroduction__text {
+  max-width: 50%;
   margin-top: 55px;
   font-size: 16px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__introductionText {
+  .p-shopIntroduction__text {
     max-width: 100%;
     margin-top: 28px;
   }
 }
-.p-shopInfo__introductionText p:not(:first-child) {
+.p-shopIntroduction__text p:not(:first-child) {
   margin: 1rem 0rem 0rem;
 }
-.p-shopInfo__repairCost {
+
+.p-shopRepairCost {
   margin: 40px 0 160px;
   border-color: #707070;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__repairCost {
+  .p-shopRepairCost {
     margin: 20px 0 100px;
   }
 }
-.p-shopInfo__repairCost th {
+.p-shopRepairCost th {
   background-color: #FF9801;
   color: #FFF;
   border: solid 1px #707070;
+  font-weight: bold;
   width: 400px;
   height: 50px;
 }
-.p-shopInfo__repairCost td {
+.p-shopRepairCost td {
   border: solid 1px #707070;
   width: 400px;
   height: 50px;
 }
-.p-shopInfo__repairCost table {
+.p-shopRepairCost table {
   border-collapse: collapse;
   margin-bottom: 20px;
   font-size: 24px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__repairCost table {
+  .p-shopRepairCost table {
     font-size: 22px;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 599px) {
-  .p-shopInfo__repairCost table {
+  .p-shopRepairCost table {
     font-size: 20px;
   }
 }
-.p-shopInfo__root {
+
+.p-shopRoot {
   max-width: 1035px;
   margin: 70px auto 160px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__root {
+  .p-shopRoot {
     margin: 35px 0 80px;
   }
 }
-.p-shopInfo__rootList {
+.p-shopRoot__list {
   list-style: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2376,48 +2394,55 @@ select {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 40px 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  gap: 40px 2vw;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__rootList {
+  .p-shopRoot__list {
     display: block;
   }
 }
-.p-shopInfo__rootItem {
+.p-shopRoot__item {
   width: 400px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__rootItem {
+  .p-shopRoot__item {
     width: 100%;
   }
 }
 @media (max-width: 900px) {
-  .p-shopInfo__rootItem:not(:first-child) {
+  .p-shopRoot__item:not(:first-child) {
     margin-top: 50px;
   }
 }
-.p-shopInfo__rootItem p {
+.p-shopRoot__item p {
   margin-top: 20px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__rootItem p {
+  .p-shopRoot__item p {
     margin-top: 10px;
   }
 }
-.p-shopInfo__rootItemImg {
-  width: 100%;
+.p-shopRoot__itemImg {
+  width: 400px;
   height: 250px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__rootItemImg {
+  .p-shopRoot__itemImg {
+    width: 100%;
     height: 100%;
   }
 }
-.p-shopInfo__rootItemMap {
+.p-shopRoot__itemImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.p-shopRoot__itemMap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2429,33 +2454,47 @@ select {
   margin-top: 80px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__rootItemMap {
+  .p-shopRoot__itemMap {
     margin-top: 40px;
   }
 }
-.p-shopInfo__rootItemMapImg {
+.p-shopRoot__itemMapImg {
   width: 1020px;
   height: 500px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__rootItemMapImg {
+  .p-shopRoot__itemMapImg {
     width: 100%;
   }
 }
 @media (max-width: 599px) {
-  .p-shopInfo__rootItemMapImg {
+  .p-shopRoot__itemMapImg {
     height: 300px;
   }
 }
-.p-shopInfo__news {
-  margin: 80px auto 0;
+
+.p-shopNews {
+  margin-top: 160px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__news {
+  .p-shopNews {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 900px) {
+  .p-shopNews {
     margin-top: 40px;
   }
 }
-.p-shopInfo__newsItem {
+.p-shopNews__list {
+  margin: 80px auto 0;
+}
+@media (max-width: 900px) {
+  .p-shopNews__list {
+    margin-top: 40px;
+  }
+}
+.p-shopNews__item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2463,29 +2502,29 @@ select {
   max-width: 1017px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__newsItem {
+  .p-shopNews__item {
     display: block;
   }
 }
-.p-shopInfo__newsItem:not(:first-child) {
+.p-shopNews__item:not(:first-child) {
   margin-top: 25px;
 }
-.p-shopInfo__newsItemDate {
+.p-shopNews__itemDate {
   margin-right: 40px;
   font-size: 16px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__newsItemDate {
+  .p-shopNews__itemDate {
     width: 100%;
     margin-right: 0;
   }
 }
-.p-shopInfo__newsContent {
+.p-shopNews__itemContent {
   max-width: 80%;
   font-size: 16px;
 }
 @media (max-width: 900px) {
-  .p-shopInfo__newsContent {
+  .p-shopNews__itemContent {
     max-width: 100%;
   }
 }
