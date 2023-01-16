@@ -19,11 +19,12 @@
             <h2 class="p-revue__title">
               <?php the_title(); ?>
             </h2>
-            <p class="p-revue__text">
+            <h3 class="p-revue__text">
               <?php the_content(); ?>
-            </p>
+            </h3>
             <hr />
-          </li> <?php endwhile; ?>
+          </li>
+        <?php endwhile; ?>
       <?php endif; ?>
       <?php wp_reset_postdata(); ?>
     </ul>
