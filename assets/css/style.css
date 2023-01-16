@@ -478,12 +478,12 @@ select {
 }
 
 .p-menu {
-  padding: 80px 0;
+  padding: 120px 0;
   background-color: #FFF;
 }
 @media (max-width: 900px) {
   .p-menu {
-    padding: 40px 0;
+    padding: 60px 0;
   }
 }
 .p-menu__container {
@@ -491,6 +491,21 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 80px;
+}
+@media (max-width: 900px) {
+  .p-menu__container {
+    margin-top: 40px;
+  }
+}
+.p-menu__topText {
+  text-align: center;
+  margin-top: 40px;
+}
+@media (max-width: 900px) {
+  .p-menu__topText {
+    margin-top: 20px;
+  }
 }
 .p-menu__textContainer {
   max-width: 600px;

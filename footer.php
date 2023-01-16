@@ -40,7 +40,7 @@
       <div class="p-footer__textBox">
         <ul class="p-footer__boxList">
           <li class="p-footer__item">
-            <a href="href=" <?php echo home_url("/beginnerPage"); ?>">初めての方へ</a>
+            <a href=" <?php echo home_url("/beginnerPage"); ?>">初めての方へ</a>
           </li>
           <li class="p-footer__item">
             <a href="<?php echo home_url("/repair"); ?>">修理メニュー</a>
