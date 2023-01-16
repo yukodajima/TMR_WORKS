@@ -10,9 +10,9 @@
       display: block;
       position: absolute;
       top: 0;
-      left: -40px;
+      left: -20px;
       width: 1px;
-      height: 70px;
+      height: 100%;
       transform: rotateZ(20deg);
       background-color: $color-text;
     }
@@ -21,9 +21,9 @@
       display: block;
       position: absolute;
       top: 0;
-      right: -40px;
+      right: -20px;
       width: 1px;
-      height: 70px;
+      height: 100%;
       transform: rotateZ(20deg);
       background-color: $color-text;
     }
@@ -31,7 +31,13 @@
   &__title {
     font-size: 32px;
     @include mq("tab") {
-      font-size: 28px;
+      font-size: 25px;
+    }
+  }
+  &__linefeed {
+    display: none;
+    @include mq("sp") {
+      display: block;
     }
   }
   &__text {

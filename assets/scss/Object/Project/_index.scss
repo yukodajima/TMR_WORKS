@@ -1,11 +1,12 @@
-@use 'example';
+@use "example";
+@use "shopList";
 @use 'revue';
 @use 'info';
 @use 'work';
 @use 'menu';
 @use 'shop';
 @use 'news';
-@use 'contact';
+@use 'question';
 @use 'footer';
 @use 'header';
 @use 'flow';
@@ -17,3 +18,7 @@
 @use 'shopRepairCost';
 @use 'shopRoot';
 @use 'shopNews';
+@use 'contact';
+@use 'franchise';
+@use 'merit';
+@use 'recruiting';

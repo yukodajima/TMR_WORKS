@@ -1,13 +1,14 @@
 @use '../../Foundation/global' as *;
 .p-news {
+  background-color: $color-background;
   padding: 120px 0 80px;
-  max-width: 1000px;
   margin: 0 auto;
   @include mq('tab') {
     padding: 30px 0 40px;
   }
   &__container {
-    margin-top: 80px;
+    max-width: 1000px;
+    margin: 80px auto 0;
     @include mq('tab') {
       margin-top: 40px;
     }

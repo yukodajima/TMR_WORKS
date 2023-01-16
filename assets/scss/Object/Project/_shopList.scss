@@ -1,0 +1,135 @@
+@use '../../Foundation/global'as *;
+.p-shopList {
+    color: $color-text;
+    padding: 115px 0 170px;
+    &__areaList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        margin-top: 85px;
+        gap: 40px 90px;
+        @include mq('tab') {
+            margin-top: 50px;
+            gap: 25px;
+        }
+    }
+    &__areaItem {
+        width: 300px;
+        height: 80px;
+    }
+    &__areaButton {
+        border: none;
+        background-color: $color-main;
+        color: $color-background-sub;
+        ;
+        width: 100%;
+        height: 100%;
+        font-size: 24px;
+        border-radius: 5px;
+        position: relative;
+        @include mq('tab') {
+            font-size: 22px;
+        }
+        &::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            margin-top: -5px;
+            border-top: solid 1px;
+            border-right: solid 1px;
+            transform: rotate(135deg);
+            position: absolute;
+            top: 50%;
+            right: 25px;
+        }
+    }
+    &__shopInfoWrapper {
+        margin-top: 80px;
+        font-weight: bold;
+        @include mq('tab') {
+            margin-top: 40px;
+        }
+    }
+    &__shopInfoArea {
+        font-size: 36px;
+        text-align: center;
+        @include mq('tab') {
+            font-size: 34px;
+        }
+    }
+    &__shopInfoList {
+        margin-top: 60px;
+        gap: 80px 0;
+        @include mq('tab') {
+            margin-top: 50px;
+            gap: 40px 0;
+        }
+    }
+    &__shopInfoItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+        @include mq('tab') {
+            position: relative;
+            display: block;
+            width: 100%;
+        }
+        &:not(:first-child) {
+            margin-top: 40px;
+        }
+    }
+    &__shopInfoImg {
+        width: 240px;
+        height: 180px;
+        margin-right: 50px;
+        @include mq('tab') {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__shopIntroduce {
+        max-width: 400px;
+        width: 40%;
+        @include mq('tab') {
+            word-wrap: break-word;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    &__shopName {
+        font-size: 24px;
+        text-decoration: underline;
+        @include mq('tab') {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+    }
+    &__shopPostalCode {
+        margin-top: 40px;
+        @include mq('tab') {
+            margin-top: 20px;
+        }
+    }
+    &__shopPostalCode , &__shopAddress , &__shopTelNum {
+        font-size: 16px;
+        @include mq('tab') {
+            font-size: 14px;
+        }
+    }
+    &__shopIntroduceButton {
+        width: 200px;
+        height: 50px;
+        font-size: 22px;
+        background-color: $color-background-sub;
+        border-radius: 5px;
+        border-color: $color-border;
+        @include mq('tab') {
+            width: 100%;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    }
+}
