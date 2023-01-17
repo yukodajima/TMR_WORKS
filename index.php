@@ -191,10 +191,11 @@
   <div class="l-container">
     <div class="c-titleBox">
       <div class="c-titleBox__wrapper">
-        <h3 class="c-titleBox__title">利用手順</h3>
-        <p class="c-titleBox__text">Flow</p>
+        <h3 class="c-titleBox__title">店舗一覧</h3>
+        <p class="c-titleBox__text">Shops</p>
       </div>
     </div>
+
     <div class="p-shop__container">
       <ul class="p-shop__list">
         <?php
@@ -238,8 +239,8 @@
   <div class="l-container">
     <div class="c-titleBox">
       <div class="c-titleBox__wrapper">
-        <h3 class="c-titleBox__title">店舗一覧</h3>
-        <p class="c-titleBox__text">Shops</p>
+        <h3 class="c-titleBox__title">各店舗のお知らせ</h3>
+        <p class="c-titleBox__text">News</p>
       </div>
     </div>
     <div class="p-news__container">
