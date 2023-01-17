@@ -1,0 +1,365 @@
+@use '../../Foundation/global'as *;
+.p-shopInfo {
+    padding: 60px 0;
+    color: $color-text;
+    // &__infomation {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     margin-top: 80px;
+    //     @include mq('tab') {
+    //         display: block;
+    //         margin-top: 40px;
+    //     }
+    // }
+    // &__infomationWrapper {
+    //     max-width: 40%;
+    //     overflow-wrap: break-word;
+    //     @include mq('tab') {
+    //         max-width: 100%;
+    //     }
+    // }
+    // &__shopName {
+    //     font-size: 32px;
+    //     font-weight: bold;
+    //     @include mq('tab') {
+    //         font-size: 30px;
+    //     }
+    //     @include mq('sp') {
+    //         font-size: 28px;
+    //     }
+    // }
+    // &__shopAddress {
+    //     font-size: 24px;
+    //     margin-top: 40px;
+    //     font-weight: bold;
+    //     @include mq('tab') {
+    //         font-size: 22px;
+    //         margin-top: 20px;
+    //     }
+    //     @include mq('sp') {
+    //         font-size: 20px;
+    //     }
+    // }
+    // &__shopHours {
+    //     font-size: 24px;
+    //     margin-top: 40px;
+    //     @include mq('tab') {
+    //         font-size: 22px;
+    //         margin-top: 20px;
+    //     }
+    //     @include mq('sp') {
+    //         font-size: 20px;
+    //     }
+    // }
+    // &__shopImg {
+    //     max-width: 500px;
+    //     height: 350px;
+    //     width: 50%;
+    //     @include mq('tab') {
+    //         max-width: 100%;
+    //         max-height: 100%;
+    //         width: 100%;
+    //         height: 100%;
+    //         margin-top: 40px;
+    //     }
+    //     & img {
+    //         object-fit: cover;
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    // }
+    // &__contact , &__contactMail , &__contactTel , &__contactLine {
+    //     display: flex;
+    //     justify-content: space-around;
+    //     @include mq('tab') {
+    //         justify-content: flex-start;
+    //     }
+    // }
+    // &__contactMail , &__contactTel , &__contactLine {
+    //     color: $color-background-sub;
+    //     text-decoration: none;
+    //     align-items: center;
+    //     text-align: center;
+    //     border-radius: 8px;
+    //     max-width: 300px;
+    //     width: 30%;
+    //     height: 100px;
+    //     padding: 0 20px;
+    //     @include mq('tab') {
+    //         max-width: 80%;
+    //         width: 80%;
+    //         height: 80px;
+    //         margin: 0 auto;
+    //         padding: 0 10%;
+    //     }
+    //     @include mq('sp') {
+    //         max-width: 100%;
+    //         width: 100%;
+    //         height: 60px;
+    //     }
+    // }
+    // &__contact {
+    //     justify-content: space-between;
+    //     margin: 80px auto 0;
+    //     max-width: 1050px;
+    //     @include mq('tab') {
+    //         display: block;
+    //         margin-top: 40px;
+    //     }
+    //     & a:not(:first-child) {
+    //         @include mq('tab') {
+    //             margin-top: 10px;
+    //         }
+    //         @include mq('sp') {
+    //             margin-top: 5px;
+    //         }
+    //     }
+    // }
+    // &__contactMail {
+    //     background-color: $color-main;
+    //     font-size: 24px;
+    //     @include mq('tab') {
+    //         font-size: 22px;
+    //     }
+    //     @include mq('sp') {
+    //         font-size: 20px;
+    //     }
+    // }
+    // &__contactMailImg {
+    //     width: 35px;
+    //     height: 35px;
+    //     @include mq('tab') {
+    //         margin-right: 50px;
+    //     }
+    // }
+    // &__contactTel {
+    //     background-color: #009DFF;
+    //     font-size: 20px;
+    //     @include mq('tab') {
+    //         font-size: 22px;
+    //     }
+    //     @include mq('sp') {
+    //         font-size: 20px;
+    //     }
+    // }
+    // &__contactTelImg {
+    //     width: 35px;
+    //     height: 35px;
+    //     @include mq('tab') {
+    //         margin-right: 50px;
+    //     }
+    // }
+    // &__contactTelInfo {
+    //     text-align: center;
+    //     @include mq('tab') {
+    //         display: block;
+    //         align-items: center;
+    //     }
+    //     // @include mq('sp') {
+    //     //     display: block;
+    //     // }
+    //     // & p:first-child{
+    //     //     @include mq('tab') {
+    //     //         margin-right: 50px;
+    //     //     }
+    //     // }
+    // }
+    // &__contactTelNum {
+    //     background-color: $color-background-sub;
+    //     color: #009DFF;
+    //     padding: 10px 7px;
+    //     border-radius: 8px;
+    //     margin-top: 10px;
+    //     font-size: 15px;
+    //     @include mq('tab') {
+    //         margin: auto 0;
+    //         padding: 5px 4px;
+    //     }
+    //     @include mq('sp') {
+    //         font-size: 12px;
+    //         padding: 1px 2px;
+    //     }
+    // }
+    // &__contactLine {
+    //     background-color: #5AC363;
+    //     font-size: 24px;
+    //     @include mq('tab') {
+    //         font-size: 22px;
+    //     }
+    //     @include mq('sp') {
+    //         font-size: 20px;
+    //     }
+    // }
+    // &__contactLineImg {
+    //     width: 35px;
+    //     height: 35px;
+    //     @include mq('tab') {
+    //         margin-right: 50px;
+    //     }
+    // }
+    // &__introduction {
+    //     display: flex;
+    //     margin: 45px 0 80px;
+    //     @include mq('tab') {
+    //         display: block;
+    //         margin: 23px 0 40px;
+    //     }
+    // }
+    // &__introdocutionImg {
+    //     max-width: 500px;
+    //     height: 350px;
+    //     width: 50%;
+    //     margin-right: 35px;
+    //     @include mq('tab') {
+    //         max-width: 100%;
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    //     & img {
+    //         object-fit: cover;
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    // }
+    // &__introductionText {
+    //     max-width: 50%;
+    //     margin-top: 55px;
+    //     font-size: 16px;
+    //     @include mq('tab') {
+    //         max-width: 100%;
+    //         margin-top: 28px;
+    //     }
+    //     & p:not(:first-child) {
+    //         margin: 1rem 0rem 0rem;
+    //     }
+    // }
+    // &__repairCost {
+    //     margin: 40px 0 160px;
+    //     border-color: $color-border;
+    //     @include mq('tab') {
+    //         margin: 20px 0 100px;
+    //     }
+    //     & th {
+    //         background-color: $color-main;
+    //         color: $color-background-sub;
+    //         border: solid 1px $color-border;
+    //         font-weight: bold;
+    //         width: 400px;
+    //         height: 50px;
+    //     }
+    //     & td {
+    //         border: solid 1px $color-border;
+    //         width: 400px;
+    //         height: 50px;
+    //     }
+    //     & table {
+    //         border-collapse:  collapse;
+    //         margin-bottom: 20px;
+    //         font-size: 24px;
+    //         @include mq('tab') {
+    //             font-size: 22px;
+    //             margin-bottom: 10px;
+    //         }
+    //         @include mq('sp') {
+    //             font-size: 20px;
+    //         }
+    //     }
+    // }
+    // &__root {
+    //     max-width: 1035px;
+    //     margin: 70px auto 160px;
+    //     @include mq('tab') {
+    //         margin: 35px 0 80px;
+    //     }
+    // }
+    // &__rootList {
+    //     list-style: none;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    //     font-weight: bold;
+    //     gap: 40px 2vw;
+    //     @include mq('tab') {
+    //         display: block;
+    //     }
+    // }
+    // &__rootItem {
+    //     width: 400px;
+    //     @include mq('tab') {
+    //         width: 100%;
+    //     }
+    //     &:not(:first-child) {
+    //         @include mq('tab') {
+    //             margin-top: 50px;
+    //         }
+    //     }
+    //     & p {
+    //         margin-top: 20px;
+    //         @include mq('tab') {
+    //             margin-top: 10px;
+    //         }
+    //     }
+    // }
+    // &__rootItemImg {
+    //     width: 400px;
+    //     height: 250px;
+    //     @include mq('tab') {
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    //     & img {
+    //         object-fit: cover;
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    // }
+    // &__rootItemMap {
+    //     display: flex;
+    //     justify-content: center;
+    //     margin-top: 80px;
+    //     @include mq('tab') {
+    //         margin-top: 40px;
+    //     }
+    // }
+    // &__rootItemMapImg {
+    //     width: 1020px;
+    //     height: 500px;
+    //     @include mq('tab') {
+    //         width: 100%;
+    //     }
+    //     @include mq('sp') {
+    //         height: 300px;
+    //     }
+    // }
+    // &__news {
+    //     margin: 80px auto 0;
+    //     @include mq('tab') {
+    //         margin-top: 40px;
+    //     }
+    // }
+    // &__newsItem {
+    //     display: flex;
+    //     max-width: 1017px;
+    //     @include mq('tab') {
+    //         display: block;
+    //     }
+    //     &:not(:first-child) {
+    //         margin-top: 25px;
+    //     }
+    // }
+    // &__newsItemDate {
+    //     margin-right: 40px;
+    //     font-size: 16px;
+    //     @include mq('tab') {
+    //         width: 100%;
+    //         margin-right: 0;
+    //     }
+    // }
+    // &__newsContent {
+    //     max-width: 80%;
+    //     font-size: 16px;
+    //     @include mq('tab') {
+    //         max-width: 100%;
+    //     }
+    // }
+}

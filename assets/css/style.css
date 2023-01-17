@@ -63,7 +63,10 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
+  height: 100%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 input,
@@ -274,6 +277,182 @@ select {
 .p-example {
   width: 300px;
   height: 100px;
+}
+
+.p-shopList {
+  color: #1B224C;
+  padding: 115px 0 170px;
+}
+.p-shopList__areaList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin-top: 85px;
+  gap: 40px 90px;
+}
+@media (max-width: 900px) {
+  .p-shopList__areaList {
+    margin-top: 50px;
+    gap: 25px;
+  }
+}
+.p-shopList__areaItem {
+  width: 300px;
+  height: 80px;
+}
+.p-shopList__areaButton {
+  border: none;
+  background-color: #FF9801;
+  color: #FFF;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  border-radius: 5px;
+  position: relative;
+}
+@media (max-width: 900px) {
+  .p-shopList__areaButton {
+    font-size: 22px;
+  }
+}
+.p-shopList__areaButton::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  border-top: solid 1px;
+  border-right: solid 1px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  position: absolute;
+  top: 50%;
+  right: 25px;
+}
+.p-shopList__shopInfoWrapper {
+  margin-top: 80px;
+  font-weight: bold;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopInfoWrapper {
+    margin-top: 40px;
+  }
+}
+.p-shopList__shopInfoArea {
+  font-size: 36px;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopInfoArea {
+    font-size: 34px;
+  }
+}
+.p-shopList__shopInfoList {
+  margin-top: 60px;
+  gap: 80px 0;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopInfoList {
+    margin-top: 50px;
+    gap: 40px 0;
+  }
+}
+.p-shopList__shopInfoItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopInfoItem {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+}
+.p-shopList__shopInfoItem:not(:first-child) {
+  margin-top: 40px;
+}
+.p-shopList__shopInfoImg {
+  width: 240px;
+  height: 180px;
+  margin-right: 50px;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopInfoImg {
+    width: 100%;
+    height: 100%;
+  }
+}
+.p-shopList__shopIntroduce {
+  max-width: 400px;
+  width: 40%;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopIntroduce {
+    word-wrap: break-word;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.p-shopList__shopName {
+  font-size: 24px;
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopName {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+}
+.p-shopList__shopPostalCode {
+  margin-top: 40px;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopPostalCode {
+    margin-top: 20px;
+  }
+}
+.p-shopList__shopPostalCode, .p-shopList__shopAddress, .p-shopList__shopTelNum {
+  font-size: 16px;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopPostalCode, .p-shopList__shopAddress, .p-shopList__shopTelNum {
+    font-size: 14px;
+  }
+}
+.p-shopList__shopIntroduceButton {
+  width: 200px;
+  height: 50px;
+  font-size: 22px;
+  background-color: #FFF;
+  border-radius: 5px;
+  border-color: #707070;
+}
+@media (max-width: 900px) {
+  .p-shopList__shopIntroduceButton {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+  }
 }
 
 .p-revue {
@@ -2157,334 +2336,540 @@ select {
   color: #FFF;
 }
 
-.p-contact {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 120px 0 160px;
+.p-shopInfo {
+  padding: 60px 0;
+  color: #1B224C;
 }
-@media (max-width: 900px) {
-  .p-contact {
-    width: 100%;
-    max-width: none;
-    padding: 60px 0 80px;
-  }
+
+.p-shopInfomation {
+  margin-top: 60px;
 }
-.p-contact__text {
-  display: block;
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
-}
-.p-contact__form {
-  margin-top: 40px;
-}
-.p-contact__list {
-  list-style: none;
-}
-.p-contact__listItem {
+.p-shopInfomation__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.p-contact__listItem:not(:first-child) {
-  margin-top: 15px;
-}
-.p-contact__input {
-  width: 100%;
-  height: 50px;
-  margin-top: 10px;
-  border: 0.5px solid #1B224C;
-}
-.p-contact__textarea {
-  height: 240px;
-  margin-top: 10px;
-  border: 0.5px solid #1B224C;
-}
-.p-contact__policy {
-  margin-top: 60px;
-  text-align: center;
-}
-.p-contact__policyCheck {
-  margin-top: 25px;
-}
-.p-contact__submit {
-  display: block;
-  width: 200px;
-  height: 50px;
-  margin: 45px auto 0;
-  padding: 15px 0;
-  text-align: center;
-  color: #FFF;
-  background-color: #1B224C;
-  border: none;
-  border-radius: 5px;
-}
-
-.p-franchise {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 80px;
 }
 @media (max-width: 900px) {
-  .p-franchise {
-    margin-top: 60px;
+  .p-shopInfomation__wrapper {
+    display: block;
+    margin-top: 40px;
   }
 }
-.p-franchise__text {
-  display: block;
-  margin: 40px auto 0;
-  max-width: 1000px;
+.p-shopInfomation__infoContent {
+  max-width: 40%;
+  overflow-wrap: break-word;
 }
 @media (max-width: 900px) {
-  .p-franchise__text {
-    margin: 20px auto 0;
+  .p-shopInfomation__infoContent {
+    max-width: 100%;
   }
 }
-
-.p-merit {
-  margin-top: 80px;
-}
-@media (max-width: 900px) {
-  .p-merit {
-    margin-top: 60px;
-  }
-}
-.p-merit__titleBox {
-  text-align: center;
-}
-.p-merit__title {
+.p-shopInfomation__shopName {
   font-size: 32px;
+  font-weight: bold;
 }
-.p-merit__linefeed {
-  display: none;
+@media (max-width: 900px) {
+  .p-shopInfomation__shopName {
+    font-size: 30px;
+  }
 }
 @media (max-width: 599px) {
-  .p-merit__linefeed {
-    display: block;
+  .p-shopInfomation__shopName {
+    font-size: 28px;
   }
 }
-.p-merit__list {
-  margin: 80px auto 0px;
-  padding: 0;
-}
-@media (max-width: 900px) {
-  .p-merit__list {
-    margin: 40px auto 0px;
-    max-width: 600px;
-  }
-}
-.p-merit__listItem {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 40px;
-  height: 250px;
-}
-@media (max-width: 900px) {
-  .p-merit__listItem {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-    -webkit-justify-content: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: normal;
-    -webkit-align-items: normal;
-        -ms-flex-align: normal;
-            align-items: normal;
-    height: auto;
-    text-align: center;
-    gap: 20px;
-  }
-}
-.p-merit__listItem:not(:first-child) {
-  margin-top: 80px;
-}
-@media (max-width: 900px) {
-  .p-merit__listItem:not(:first-child) {
-    margin-top: 40px;
-  }
-}
-.p-merit__listItem--reverse {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 40px;
-  margin-top: 80px;
-}
-@media (max-width: 900px) {
-  .p-merit__listItem--reverse {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-    -webkit-justify-content: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: normal;
-    -webkit-align-items: normal;
-        -ms-flex-align: normal;
-            align-items: normal;
-    margin-top: 40px;
-    text-align: center;
-    gap: 20px;
-  }
-}
-.p-merit__textBox {
-  width: 500px;
-}
-@media (max-width: 900px) {
-  .p-merit__textBox {
-    width: 100%;
-  }
-}
-.p-merit__listTitle {
+.p-shopInfomation__shopAddress {
   font-size: 24px;
-}
-@media (max-width: 900px) {
-  .p-merit__listTitle {
-    font-size: 20px;
-  }
-}
-.p-merit__listText {
   margin-top: 40px;
+  font-weight: bold;
 }
 @media (max-width: 900px) {
-  .p-merit__listText {
+  .p-shopInfomation__shopAddress {
+    font-size: 22px;
     margin-top: 20px;
   }
 }
-.p-merit__img {
-  max-width: 350px;
-  height: 250px;
-}
-@media (max-width: 900px) {
-  .p-merit__img {
-    height: auto;
-    margin: 0 auto;
+@media (max-width: 599px) {
+  .p-shopInfomation__shopAddress {
+    font-size: 20px;
   }
 }
-.p-merit__img img {
-  height: 100%;
+.p-shopInfomation__shopHours {
+  font-size: 24px;
+  margin-top: 40px;
+}
+@media (max-width: 900px) {
+  .p-shopInfomation__shopHours {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfomation__shopHours {
+    font-size: 20px;
+  }
+}
+.p-shopInfomation__shopImg {
+  max-width: 500px;
+  height: 350px;
+  width: 50%;
+}
+@media (max-width: 900px) {
+  .p-shopInfomation__shopImg {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+  }
+}
+.p-shopInfomation__shopImg img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
-
-.p-recruiting {
-  margin: 160px auto 0;
-  padding-bottom: 80px;
-  max-width: 700px;
-}
-@media (max-width: 900px) {
-  .p-recruiting {
-    margin: 80px auto 0;
-    padding-bottom: 40px;
-  }
-}
-.p-recruiting__textBox {
-  text-align: center;
-}
-.p-recruiting__form {
-  margin-top: 30px;
-}
-.p-recruiting__list {
-  list-style: none;
-}
-.p-recruiting__checkItem {
-  margin-top: 15px;
-}
-.p-recruiting__listItem {
+.p-shopInfomation__contact {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 80px auto 0;
+  max-width: 1050px;
 }
-.p-recruiting__listItem:not(:first-child) {
-  margin-top: 25px;
+@media (max-width: 900px) {
+  .p-shopInfomation__contact li:not(:first-child) {
+    margin-top: 10px;
+  }
 }
-.p-recruiting__label {
-  display: block;
+@media (max-width: 900px) {
+  .p-shopInfomation__contact {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    display: block;
+    margin-top: 40px;
+  }
 }
-.p-recruiting__radio {
-  margin-right: 20px;
+.p-shopInfomation__contactLink {
+  width: 100%;
+  height: 100%;
+  display: contents;
 }
-.p-recruiting__checkbox {
-  margin-right: 20px;
+.p-shopInfomation__contactLink:visited {
+  color: #FFF;
 }
-.p-recruiting__linefeed {
-  display: none;
+.p-shopInfomation__contactMail, .p-shopInfomation__contactTel, .p-shopInfomation__contactLine {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  color: #FFF;
+  text-decoration: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 300px;
+  width: 30%;
+  height: 100px;
+  padding: 0 20px;
+}
+@media (max-width: 900px) {
+  .p-shopInfomation__contactMail, .p-shopInfomation__contactTel, .p-shopInfomation__contactLine {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-width: 80%;
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 10%;
+  }
 }
 @media (max-width: 599px) {
-  .p-recruiting__linefeed {
+  .p-shopInfomation__contactMail, .p-shopInfomation__contactTel, .p-shopInfomation__contactLine {
+    max-width: 100%;
+    width: 100%;
+    height: 60px;
+  }
+}
+.p-shopInfomation__contactMail {
+  background-color: #FF9801;
+  font-size: 24px;
+}
+@media (max-width: 900px) {
+  .p-shopInfomation__contactMail {
+    font-size: 22px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfomation__contactMail {
+    font-size: 20px;
+  }
+}
+.p-shopInfomation__contactMailImg {
+  width: 35px;
+  height: 35px;
+}
+@media (max-width: 900px) {
+  .p-shopInfomation__contactMailImg {
+    margin-right: 50px;
+  }
+}
+.p-shopInfomation__contactTel {
+  background-color: #009DFF;
+  font-size: 20px;
+}
+@media (max-width: 900px) {
+  .p-shopInfomation__contactTel {
+    font-size: 22px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfomation__contactTel {
+    font-size: 20px;
+  }
+}
+.p-shopInfomation__contactTelImg {
+  width: 35px;
+  height: 35px;
+}
+@media (max-width: 900px) {
+  .p-shopInfomation__contactTelImg {
+    margin-right: 50px;
+  }
+}
+.p-shopInfomation__contactTelInfo {
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .p-shopInfomation__contactTelInfo {
+    display: block;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.p-shopInfomation__contactTelNum {
+  background-color: #FFF;
+  color: #009DFF;
+  padding: 10px 7px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+@media (max-width: 900px) {
+  .p-shopInfomation__contactTelNum {
+    margin: auto 0;
+    padding: 5px 4px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfomation__contactTelNum {
+    font-size: 12px;
+    padding: 1px 2px;
+  }
+}
+.p-shopInfomation__contactLine {
+  background-color: #5AC363;
+  font-size: 24px;
+}
+@media (max-width: 900px) {
+  .p-shopInfomation__contactLine {
+    font-size: 22px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopInfomation__contactLine {
+    font-size: 20px;
+  }
+}
+.p-shopInfomation__contactLineImg {
+  width: 35px;
+  height: 35px;
+}
+@media (max-width: 900px) {
+  .p-shopInfomation__contactLineImg {
+    margin-right: 50px;
+  }
+}
+
+.p-shopIntroduction {
+  margin-top: 80px;
+}
+.p-shopIntroduction__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+@media (max-width: 900px) {
+  .p-shopIntroduction__wrapper {
+    display: block;
+    margin-top: 20px;
+  }
+}
+.p-shopIntroduction__img {
+  max-width: 500px;
+  height: 350px;
+  width: 50%;
+  margin-right: 35px;
+}
+@media (max-width: 900px) {
+  .p-shopIntroduction__img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+}
+.p-shopIntroduction__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.p-shopIntroduction__text {
+  max-width: 50%;
+  margin-top: 55px;
+  font-size: 16px;
+}
+@media (max-width: 900px) {
+  .p-shopIntroduction__text {
+    max-width: 100%;
+    margin-top: 28px;
+  }
+}
+.p-shopIntroduction__text p:not(:first-child) {
+  margin: 1rem 0rem 0rem;
+}
+
+.p-shopRepairCost {
+  margin-top: 80px;
+  border-color: #707070;
+}
+@media (max-width: 900px) {
+  .p-shopRepairCost {
+    margin-top: 40px;
+  }
+}
+.p-shopRepairCost th {
+  background-color: #FF9801;
+  color: #FFF;
+  border: solid 1px #707070;
+  font-weight: bold;
+  width: 400px;
+  height: 50px;
+}
+.p-shopRepairCost td {
+  border: solid 1px #707070;
+  width: 400px;
+  height: 50px;
+}
+.p-shopRepairCost table {
+  border-collapse: collapse;
+  margin-top: 40px;
+  font-size: 24px;
+}
+@media (max-width: 900px) {
+  .p-shopRepairCost table {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopRepairCost table {
+    font-size: 20px;
+  }
+}
+.p-shopRepairCost p {
+  margin-top: 20px;
+}
+
+.p-shopRoot {
+  margin-top: 170px;
+}
+@media (max-width: 900px) {
+  .p-shopRoot {
+    margin-top: 85px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopRoot {
+    margin-top: 40px;
+  }
+}
+.p-shopRoot__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  margin-top: 75px;
+  gap: 40px 2vw;
+}
+@media (max-width: 900px) {
+  .p-shopRoot__list {
+    display: block;
+    margin-top: 40px;
+  }
+}
+.p-shopRoot__item {
+  width: 400px;
+}
+@media (max-width: 900px) {
+  .p-shopRoot__item {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .p-shopRoot__item:not(:first-child) {
+    margin-top: 50px;
+  }
+}
+.p-shopRoot__item p {
+  margin-top: 20px;
+}
+@media (max-width: 900px) {
+  .p-shopRoot__item p {
+    margin-top: 10px;
+  }
+}
+.p-shopRoot__itemImg {
+  width: 400px;
+  height: 250px;
+}
+@media (max-width: 900px) {
+  .p-shopRoot__itemImg {
+    width: 100%;
+    height: 100%;
+  }
+}
+.p-shopRoot__itemImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.p-shopRoot__itemMap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+}
+@media (max-width: 900px) {
+  .p-shopRoot__itemMap {
+    margin-top: 40px;
+  }
+}
+.p-shopRoot__itemMapImg {
+  width: 1020px;
+  height: 500px;
+}
+@media (max-width: 900px) {
+  .p-shopRoot__itemMapImg {
+    width: 100%;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopRoot__itemMapImg {
+    height: 300px;
+  }
+}
+
+.p-shopNews {
+  margin-top: 175px;
+  padding-bottom: 70px;
+}
+@media (max-width: 900px) {
+  .p-shopNews {
+    margin-top: 85px;
+    padding-bottom: 35px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopNews {
+    margin-top: 40px;
+    padding-bottom: 18px;
+  }
+}
+.p-shopNews__list {
+  margin: 80px auto 0;
+}
+@media (max-width: 900px) {
+  .p-shopNews__list {
+    margin-top: 40px;
+  }
+}
+.p-shopNews__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1017px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .p-shopNews__item {
     display: block;
   }
 }
-.p-recruiting__input {
-  width: 100%;
-  height: 50px;
-  margin-top: 10px;
-  border: 0.5px solid #1B224C;
-}
-.p-recruiting__textarea {
-  height: 240px;
-  margin-top: 10px;
-  border: 0.5px solid #1B224C;
-}
-.p-recruiting__policy {
-  margin-top: 60px;
-  text-align: center;
-}
-.p-recruiting__policyCheck {
+.p-shopNews__item:not(:first-child) {
   margin-top: 25px;
 }
-.p-recruiting__submit {
-  display: block;
-  width: 200px;
-  height: 50px;
-  margin: 45px auto 0;
-  padding: 15px 0;
-  text-align: center;
-  color: #FFF;
-  background-color: #1B224C;
-  border: none;
-  border-radius: 5px;
+.p-shopNews__itemDate {
+  margin-right: 40px;
+  font-size: 16px;
+}
+@media (max-width: 900px) {
+  .p-shopNews__itemDate {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.p-shopNews__itemContent {
+  max-width: 80%;
+  font-size: 16px;
+}
+@media (max-width: 900px) {
+  .p-shopNews__itemContent {
+    max-width: 100%;
+  }
 }
 
 .u-hidden {

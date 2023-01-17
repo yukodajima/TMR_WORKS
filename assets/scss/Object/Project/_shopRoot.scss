@@ -1,0 +1,71 @@
+@use '../../Foundation/global'as *;
+.p-shopRoot {
+    margin-top: 170px;
+    @include mq('tab') {
+        margin-top: 85px;
+    }
+    @include mq('sp') {
+        margin-top: 40px;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-weight: bold;
+        margin-top: 75px;
+        gap: 40px 2vw;
+        @include mq('tab') {
+            display: block;
+            margin-top: 40px;
+        }
+    }
+    &__item {
+        width: 400px;
+        @include mq('tab') {
+            width: 100%;
+        }
+        &:not(:first-child) {
+            @include mq('tab') {
+                margin-top: 50px;
+            }
+        }
+        & p {
+            margin-top: 20px;
+            @include mq('tab') {
+                margin-top: 10px;
+            }
+        }
+    }
+    &__itemImg {
+        width: 400px;
+        height: 250px;
+        @include mq('tab') {
+            width: 100%;
+            height: 100%;
+        }
+        & img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__itemMap {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        @include mq('tab') {
+            margin-top: 40px;
+        }
+    }
+    &__itemMapImg {
+        width: 1020px;
+        height: 500px;
+        @include mq('tab') {
+            width: 100%;
+        }
+        @include mq('sp') {
+            height: 300px;
+        }
+    }
+}

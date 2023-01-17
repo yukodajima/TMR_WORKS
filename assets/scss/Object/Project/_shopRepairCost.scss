@@ -1,0 +1,36 @@
+@use '../../Foundation/global'as *;
+.p-shopRepairCost {
+    margin-top: 80px;
+    border-color: $color-border;
+    @include mq('tab') {
+        margin-top: 40px;
+    }
+    & th {
+        background-color: $color-main;
+        color: $color-background-sub;
+        border: solid 1px $color-border;
+        font-weight: bold;
+        width: 400px;
+        height: 50px;
+    }
+    & td {
+        border: solid 1px $color-border;
+        width: 400px;
+        height: 50px;
+    }
+    & table {
+        border-collapse:  collapse;
+        margin-top: 40px;
+        font-size: 24px;
+        @include mq('tab') {
+            margin-top: 20px;
+            font-size: 22px;
+        }
+        @include mq('sp') {
+            font-size: 20px;
+        }
+    }
+    & p {
+        margin-top: 20px;
+    }
+}
