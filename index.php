@@ -11,19 +11,26 @@
     <ul class="p-info__list">
       <li class="p-info__item">
         <div>
-          <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+          <a href="#">
+            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+          </a>
         </div>
         <a class="p-info__text" href="#">PCが動作を重く感じた時に確認したほうがいい5つのことPCが動作を重く感じた時に確認したほうがいい5つのこと</a>
       </li>
       <li class="p-info__item">
         <div>
-          <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+          <a href="#">
+            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+          </a>
         </div>
+
         <a class="p-info__text" href="#">PCが動作を重く感じた時に確認したほうがいい5つのこと</a>
       </li>
       <li class="p-info__item">
         <div>
-          <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+          <a href="#">
+            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+          </a>
         </div>
         <a class="p-info__text" href="#">PCが動作を重く感じた時に確認したほうがいい5つのこと</a>
       </li>
@@ -222,7 +229,7 @@
                     foreach ((array)$fields as $field) :
                     ?>
                       <li class="p-shop__shopName">
-                        <a href="#"><?php echo $field['shop_name']; ?></a>
+                        <a href="<?php echo home_url("/shopList"); ?>"><?php echo $field['shop_name']; ?></a>
                       </li>
                     <?php endforeach; ?>
                   </ul>

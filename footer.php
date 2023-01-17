@@ -4,7 +4,9 @@
       <ul class="p-footer__contentList">
         <li class="p-footer__contentItem">
           <div class="p-footer__imgContainer">
-            <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
+            <a href="<?php echo home_url("/shopList"); ?>">
+              <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
+            </a>
           </div>
           <div class="p-footer__textArea">
             <h2 class="p-footer__title">店舗一覧</h2>
@@ -13,7 +15,9 @@
         </li>
         <li class="p-footer__contentItem">
           <div class="p-footer__imgContainer">
-            <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
+            <a href="<?php echo home_url(); ?>">
+              <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
+            </a>
           </div>
           <div class="p-footer__textArea">
             <h2 class="p-footer__title">買取</h2>
@@ -25,7 +29,9 @@
         </li>
         <li class="p-footer__contentItem">
           <div class="p-footer__imgContainer">
-            <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
+            <a href="<?php echo home_url(); ?>">
+              <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
+            </a>
           </div>
           <div class="p-footer__textArea">
             <h2 class="p-footer__title">販売</h2>
@@ -98,7 +104,9 @@
     <div class="l-container">
       <nav class="p-footer__nav">
         <div class="p-footer__logoContainer">
-          <img class="p-footer__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-pc.jpg" alt="会社ロゴ" />
+          <a href="<?php echo home_url(); ?>">
+            <img class="p-footer__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-pc.jpg" alt="会社ロゴ" />
+          </a>
         </div>
         <div class="p-footer__navListBox">
           <li class="p-footer__navList">
