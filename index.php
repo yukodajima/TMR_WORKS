@@ -266,7 +266,7 @@
             <div class="p-news__article">
               <li class="p-news__date"><?php the_time('Y年m月d日'); ?></li>
               <li class="p-news__text">
-                <a href="<?php the_permalink(); ?>">
+                <a href="<?php echo home_url("/shopList"); ?>">
                   <?php the_title(); ?></a>
               </li>
             </div> <?php endwhile; ?>
