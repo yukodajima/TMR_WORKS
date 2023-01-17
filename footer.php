@@ -40,16 +40,16 @@
       <div class="p-footer__textBox">
         <ul class="p-footer__boxList">
           <li class="p-footer__item">
-            <a href="">初めての方へ</a>
+            <a href=" <?php echo home_url("/beginnerPage"); ?>">初めての方へ</a>
           </li>
           <li class="p-footer__item">
-            <a href="">修理メニュー</a>
+            <a href="<?php echo home_url("/repair"); ?>">修理メニュー</a>
           </li>
           <li class="p-footer__item">
-            <a href="">症状で診断</a>
+            <a href="<?php echo home_url("/repair"); ?>">症状で診断</a>
           </li>
           <li class="p-footer__item">
-            <a href="">お客様の声</a>
+            <a href="<?php echo home_url("/revue"); ?>">お客様の声</a>
           </li>
         </ul>
         <ul class="p-footer__boxList">
@@ -57,36 +57,36 @@
             店舗一覧<span class="p-footer__triger"></span>
           </li>
           <li class="p-footer__shopItem">
-            <a href="">北海道・東北</a>
+            <a href="<?php echo home_url("/shopList"); ?>">北海道・東北</a>
           </li>
           <li class="p-footer__shopItem">
-            <a href="">関東</a>
+            <a href="<?php echo home_url("/shopList"); ?>">関東</a>
           </li>
           <li class="p-footer__shopItem">
-            <a href="">東海・北陸</a>
+            <a href="<?php echo home_url("/shopList"); ?>">東海・北陸</a>
           </li>
           <li class="p-footer__shopItem">
-            <a href="">関西</a>
+            <a href="<?php echo home_url("/shopList"); ?>">関西</a>
           </li>
           <li class="p-footer__shopItem">
-            <a href="">四国・中国</a>
+            <a href="<?php echo home_url("/shopList"); ?>">四国・中国</a>
           </li>
           <li class="p-footer__shopItem">
-            <a href="">九州・沖縄</a>
+            <a href="<?php echo home_url("/shopList"); ?>">九州・沖縄</a>
           </li>
         </ul>
         <ul class="p-footer__boxList">
           <li class="p-footer__category">
-            <a href="">加盟店募集</a>
+            <a href="<?php echo home_url("/franchiseRecruiting"); ?>">加盟店募集</a>
           </li>
           <li class="p-footer__category">
-            <a href="">お知らせ</a>
+            <a href="<?php echo home_url("/beginnerPage"); ?>">お知らせ</a>
           </li>
           <li class="p-footer__category">
-            <a href="">ブログ</a>
+            <a href="<?php echo home_url("/blog"); ?>">ブログ</a>
           </li>
           <li class="p-footer__category">
-            <a href="">お問い合わせ</a>
+            <a href="<?php echo home_url("/contact"); ?>">お問い合わせ</a>
           </li>
         </ul>
       </div>

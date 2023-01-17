@@ -5,6 +5,18 @@
   @include mq('tab') {
     padding: 60px 0 40px;
   }
+  &__subTitle {
+    font-size: 22px;
+    & span {
+      font-size: 29px;
+    }
+  }
+  &__linefeed {
+    display: none;
+    @include mq('sp') {
+      display: block;
+    }
+  }
   &__list {
     margin-top: 60px;
     display: flex;
