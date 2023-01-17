@@ -266,9 +266,6 @@
         <?php endif; ?>
         <?php wp_reset_postdata(); ?>
       </ul>
-      <div class="p-news__btnContainer">
-        <button class="p-news__btn" type="submit">一覧</button>
-      </div>
     </div>
   </div>
 </section>
