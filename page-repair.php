@@ -4,8 +4,8 @@
   <div class="l-container">
     <div class="c-titleBox">
       <div class="c-titleBox__wrapper">
-        <h3 class="c-titleBox__title">新着情報</h3>
-        <p class="c-titleBox__text">Pick Up</p>
+        <h3 class="c-titleBox__title">修理メニュー</h3>
+        <p class="c-titleBox__text">Menu</p>
       </div>
     </div>
     <p class="p-menu__topText">下記メニューよりお選びください</p>
