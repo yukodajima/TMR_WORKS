@@ -44,7 +44,7 @@ function cpt_register_dep()
   ];
   register_taxonomy("dep", ["shop"], $args);
 };
-// add_action("init","cpt_register_dep")
+
 
 function my_enqueue_scripts()
 {

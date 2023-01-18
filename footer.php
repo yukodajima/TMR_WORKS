@@ -127,6 +127,7 @@
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/changeTab.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/changeTabPref.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slideQuestion.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slideFooter.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
