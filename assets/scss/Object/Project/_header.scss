@@ -23,7 +23,7 @@
   &__logo {
     height: 100px;
     @include mq("tab") {
-      width: 200px;
+      width: 230px;
       height: $header-height-tab;
     }
     @include mq("sp") {
@@ -67,8 +67,8 @@
   }
   &__btn {
     @include mq("tab") {
-      width: 130px;
-      font-size: 2vw;
+      width: 110px;
+      font-size: 1.8vw;
     }
     @include mq("sp") {
       width: 20vw;
@@ -79,8 +79,8 @@
   }
   &__contactBtn {
     @include mq("tab") {
-      width: 130px;
-      font-size: 2vw;
+      width: 110px;
+      font-size: 1.8vw;
     }
     @include mq("sp") {
       width: 20vw;
@@ -168,6 +168,11 @@
       @include mq ("tab"){
         border-left: none;
       }
+    }
+  }
+  &__drawerMenuItem {
+    @include mq("tab"){
+      pointer-events: none;
     }
   }
   &__menuLink {

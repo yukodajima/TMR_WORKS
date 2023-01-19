@@ -74,12 +74,13 @@
             </a>
           </li>
           <li class="p-header__menuItem p-header__drawerMenu">
-            <div class="p-header__drawerMenuItem">
+            <a class="p-header__drawerMenuItem" href="<?php echo home_url("/shoplist"); ?>">
               <div class="p-header__menuLogo">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
               </div>
               <p class="p-header__menuText">店舗一覧</p>
-            </div>
+            </a>
+            </a>
           </li>
           <ul class="p-header__shopList">
             <li class="p-header__shopItem">
