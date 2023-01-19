@@ -311,7 +311,7 @@ select {
 }
 .p-shopList__areaButton {
   border: none;
-  background-color: #FF9801;
+  background-color: #FFBA00;
   color: #FFF;
   width: 100%;
   height: 100%;
@@ -326,16 +326,15 @@ select {
 }
 .p-shopList__areaButton::after {
   content: "";
-  width: 10px;
-  height: 10px;
-  margin-top: -5px;
-  border-top: solid 1px;
-  border-right: solid 1px;
+  width: 15px;
+  height: 15px;
+  border-top: solid 2px;
+  border-right: solid 2px;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
   position: absolute;
-  top: 50%;
-  right: 25px;
+  top: 35%;
+  right: 35px;
 }
 .p-shopList__shopInfoWrapper {
   margin-top: 80px;
@@ -394,7 +393,6 @@ select {
 .p-shopList__shopInfoImg {
   width: 240px;
   height: 180px;
-  margin-right: 50px;
 }
 @media (max-width: 900px) {
   .p-shopList__shopInfoImg {
@@ -2870,6 +2868,336 @@ select {
   .p-shopNews__itemContent {
     max-width: 100%;
   }
+}
+
+.p-contact {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 120px 0 160px;
+}
+@media (max-width: 900px) {
+  .p-contact {
+    width: 100%;
+    max-width: none;
+    padding: 60px 0 80px;
+  }
+}
+.p-contact__text {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.p-contact__form {
+  margin-top: 40px;
+}
+.p-contact__list {
+  list-style: none;
+}
+.p-contact__listItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.p-contact__listItem:not(:first-child) {
+  margin-top: 15px;
+}
+.p-contact__input {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  border: 0.5px solid #1B224C;
+}
+.p-contact__textarea {
+  height: 240px;
+  margin-top: 10px;
+  border: 0.5px solid #1B224C;
+}
+.p-contact__policy {
+  margin-top: 60px;
+  text-align: center;
+}
+.p-contact__policyCheck {
+  margin-top: 25px;
+}
+.p-contact__submit {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 45px auto 0;
+  padding: 15px 0;
+  text-align: center;
+  color: #FFF;
+  background-color: #1B224C;
+  border: none;
+  border-radius: 5px;
+}
+
+.p-franchise {
+  margin-top: 80px;
+}
+@media (max-width: 900px) {
+  .p-franchise {
+    margin-top: 60px;
+  }
+}
+.p-franchise__text {
+  display: block;
+  margin: 40px auto 0;
+  max-width: 1000px;
+}
+@media (max-width: 900px) {
+  .p-franchise__text {
+    margin: 20px auto 0;
+  }
+}
+
+.p-merit {
+  margin-top: 80px;
+}
+@media (max-width: 900px) {
+  .p-merit {
+    margin-top: 60px;
+  }
+}
+.p-merit__titleBox {
+  text-align: center;
+}
+.p-merit__title {
+  font-size: 32px;
+}
+.p-merit__linefeed {
+  display: none;
+}
+@media (max-width: 599px) {
+  .p-merit__linefeed {
+    display: block;
+  }
+}
+.p-merit__list {
+  margin: 80px auto 0px;
+  padding: 0;
+}
+@media (max-width: 900px) {
+  .p-merit__list {
+    margin: 40px auto 0px;
+    max-width: 600px;
+  }
+}
+.p-merit__listItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  height: 250px;
+}
+@media (max-width: 900px) {
+  .p-merit__listItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: normal;
+    -webkit-align-items: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    height: auto;
+    text-align: center;
+    gap: 20px;
+  }
+}
+.p-merit__listItem:not(:first-child) {
+  margin-top: 80px;
+}
+@media (max-width: 900px) {
+  .p-merit__listItem:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+.p-merit__listItem--reverse {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+@media (max-width: 900px) {
+  .p-merit__listItem--reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: normal;
+    -webkit-align-items: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    margin-top: 40px;
+    text-align: center;
+    gap: 20px;
+  }
+}
+.p-merit__textBox {
+  width: 500px;
+}
+@media (max-width: 900px) {
+  .p-merit__textBox {
+    width: 100%;
+  }
+}
+.p-merit__listTitle {
+  font-size: 24px;
+}
+@media (max-width: 900px) {
+  .p-merit__listTitle {
+    font-size: 20px;
+  }
+}
+.p-merit__listText {
+  margin-top: 40px;
+}
+@media (max-width: 900px) {
+  .p-merit__listText {
+    margin-top: 20px;
+  }
+}
+.p-merit__img {
+  max-width: 350px;
+  height: 250px;
+}
+@media (max-width: 900px) {
+  .p-merit__img {
+    height: auto;
+    margin: 0 auto;
+  }
+}
+.p-merit__img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-recruiting {
+  margin: 160px auto 0;
+  padding-bottom: 80px;
+  max-width: 700px;
+}
+@media (max-width: 900px) {
+  .p-recruiting {
+    margin: 80px auto 0;
+    padding-bottom: 40px;
+  }
+}
+.p-recruiting__textBox {
+  text-align: center;
+}
+.p-recruiting__form {
+  margin-top: 30px;
+}
+.p-recruiting__list {
+  list-style: none;
+}
+.p-recruiting__checkItem {
+  margin-top: 15px;
+}
+.p-recruiting__listItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.p-recruiting__listItem:not(:first-child) {
+  margin-top: 25px;
+}
+.p-recruiting__label {
+  display: block;
+}
+.p-recruiting__radio {
+  margin-right: 20px;
+}
+.p-recruiting__checkbox {
+  margin-right: 20px;
+}
+.p-recruiting__linefeed {
+  display: none;
+}
+@media (max-width: 599px) {
+  .p-recruiting__linefeed {
+    display: block;
+  }
+}
+.p-recruiting__input {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  border: 0.5px solid #1B224C;
+}
+.p-recruiting__textarea {
+  height: 240px;
+  margin-top: 10px;
+  border: 0.5px solid #1B224C;
+}
+.p-recruiting__policy {
+  margin-top: 60px;
+  text-align: center;
+}
+.p-recruiting__policyCheck {
+  margin-top: 25px;
+}
+.p-recruiting__submit {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 45px auto 0;
+  padding: 15px 0;
+  text-align: center;
+  color: #FFF;
+  background-color: #1B224C;
+  border: none;
+  border-radius: 5px;
 }
 
 .u-hidden {

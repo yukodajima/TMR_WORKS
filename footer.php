@@ -120,7 +120,6 @@
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/changeTab.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slideQuestion.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/slideFooter.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/footer.js"></script>
 </body>

@@ -10,10 +10,16 @@ $(window).on('load', function () {
     var $windowWidth = $(this).width()
     var $bp = 900
 
-    $drawerMenu.on('click', function () {
-      $drawerMenuItem.toggleClass('open');
-      $shopList.slideToggle();
-    });
+    $(function(){
+      if (window.matchMedia('(max-width: 900px)').matches){
+        console.log("OK");
+        $drawerMenu.on('click', function () {
+          $drawerMenuItem.toggleClass('open');
+          $shopList.slideToggle();
+        });
+      }
+    })
+
 
     if($windowWidth > $bp) {
       $menuList.show()
