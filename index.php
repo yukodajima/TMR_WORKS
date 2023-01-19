@@ -11,19 +11,26 @@
     <ul class="p-info__list">
       <li class="p-info__item">
         <div>
-          <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+          <a href="#">
+            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+          </a>
         </div>
         <a class="p-info__text" href="#">PCが動作を重く感じた時に確認したほうがいい5つのことPCが動作を重く感じた時に確認したほうがいい5つのこと</a>
       </li>
       <li class="p-info__item">
         <div>
-          <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+          <a href="#">
+            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+          </a>
         </div>
+
         <a class="p-info__text" href="#">PCが動作を重く感じた時に確認したほうがいい5つのこと</a>
       </li>
       <li class="p-info__item">
         <div>
-          <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+          <a href="#">
+            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+          </a>
         </div>
         <a class="p-info__text" href="#">PCが動作を重く感じた時に確認したほうがいい5つのこと</a>
       </li>
@@ -197,6 +204,15 @@
     </div>
 
     <div class="p-shop__container">
+      <?php
+      $fielddata = get_post_meta(186, 'area_name',  true);
+      $fields = $cfs->get('area'); //親ループ
+      foreach ($fields as $field) :
+      ?>
+        <p><?php echo $fielddata; ?></p>
+      <?php endforeach; ?>
+
+      </ul>
       <ul class="p-shop__list">
         <?php
         $fields = $cfs->get('area'); //親ループ
@@ -222,7 +238,7 @@
                     foreach ((array)$fields as $field) :
                     ?>
                       <li class="p-shop__shopName">
-                        <a href="#"><?php echo $field['shop_name']; ?></a>
+                        <a href="<?php echo home_url("/shopList"); ?>"><?php echo $field['shop_name']; ?></a>
                       </li>
                     <?php endforeach; ?>
                   </ul>
@@ -259,16 +275,13 @@
             <div class="p-news__article">
               <li class="p-news__date"><?php the_time('Y年m月d日'); ?></li>
               <li class="p-news__text">
-                <a href="<?php the_permalink(); ?>">
+                <a href="<?php echo home_url("/shopList"); ?>">
                   <?php the_title(); ?></a>
               </li>
             </div> <?php endwhile; ?>
         <?php endif; ?>
         <?php wp_reset_postdata(); ?>
       </ul>
-      <div class="p-news__btnContainer">
-        <button class="p-news__btn" type="submit">一覧</button>
-      </div>
     </div>
   </div>
 </section>
