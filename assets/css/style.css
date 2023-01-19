@@ -281,7 +281,12 @@ select {
 
 .p-shopList {
   color: #1B224C;
-  padding: 115px 0 170px;
+  padding: 80px 0 170px;
+}
+@media (max-width: 900px) {
+  .p-shopList {
+    padding: 40px 0 80px;
+  }
 }
 .p-shopList__areaList {
   display: -webkit-box;
@@ -340,6 +345,10 @@ select {
 .p-shopList__shopInfoWrapper {
   margin-top: 80px;
   font-weight: bold;
+  display: none;
+}
+.p-shopList__shopInfoWrapper.show {
+  display: block;
 }
 @media (max-width: 900px) {
   .p-shopList__shopInfoWrapper {

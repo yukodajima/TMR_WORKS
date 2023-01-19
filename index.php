@@ -202,7 +202,6 @@
         <p class="c-titleBox__text">Shops</p>
       </div>
     </div>
-
     <div class="p-shop__container">
       <?php
       $fielddata = get_post_meta(186, 'area_name',  true);
@@ -211,7 +210,6 @@
       ?>
         <p><?php echo $fielddata; ?></p>
       <?php endforeach; ?>
-
       </ul>
       <ul class="p-shop__list">
         <?php
