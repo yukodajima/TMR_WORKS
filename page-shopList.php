@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php get_template_part('hero'); ?>
 <div class="p-shopList">
   <div class="l-container">
     <div class="c-titleBox">

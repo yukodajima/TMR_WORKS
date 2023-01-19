@@ -19,7 +19,6 @@ $(window).on("load", function(){
       if($windowWidth > $bp){
         $(".p-footer__shopItem").show()
         $(".p-footer__shopItem").removeClass("open")
-        console.log("ok");
       } else {
         $(".p-footer__shopItem").hide()
         $(".p-footer__shopItem").removeClass("open")

@@ -1586,7 +1586,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-header__logo {
-    width: 200px;
+    width: 230px;
     height: 100px;
   }
 }
@@ -1654,8 +1654,8 @@ select {
 }
 @media (max-width: 900px) {
   .p-header__btn {
-    width: 130px;
-    font-size: 2vw;
+    width: 110px;
+    font-size: 1.8vw;
   }
 }
 @media (max-width: 599px) {
@@ -1668,8 +1668,8 @@ select {
 }
 @media (max-width: 900px) {
   .p-header__contactBtn {
-    width: 130px;
-    font-size: 2vw;
+    width: 110px;
+    font-size: 1.8vw;
   }
 }
 @media (max-width: 599px) {
@@ -1797,6 +1797,11 @@ select {
 @media (max-width: 900px) {
   .p-header__menuItem:not(:first-child) {
     border-left: none;
+  }
+}
+@media (max-width: 900px) {
+  .p-header__drawerMenuItem {
+    pointer-events: none;
   }
 }
 .p-header__menuLink {
