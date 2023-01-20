@@ -1,4 +1,7 @@
-@charset "UTF-8";
+@font-face {
+  font-family: NotoSansJP-Regular;
+  src: url(../../font/NotoSansJP-Regular.otf);
+}
 html {
   font-size: 16px;
 }
@@ -6,7 +9,7 @@ html {
 body {
   color: #1B224C;
   letter-spacing: normal;
-  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: NotoSansJP-Regular;
   min-height: 100%;
 }
 
