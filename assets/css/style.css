@@ -392,77 +392,65 @@ select {
   max-width: 900px;
   margin: 0 auto;
 }
+.p-shopList__shopInfoItem:not(:first-child) {
+  margin-top: 40px;
+}
 @media (max-width: 900px) {
   .p-shopList__shopInfoItem {
     position: relative;
     display: block;
     width: 100%;
   }
-  .p-shopList__shopInfoItem__shopInfoImg {
-    width: 240px;
-    height: 180px;
-  }
 }
-@media (max-width: 900px) and (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopInfoImg {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media (max-width: 900px) {
-  .p-shopList__shopInfoItem:not(:first-child) {
-    margin-top: 40px;
-  }
-}
-.p-shopList__shopInfoItem__shopInfoImg {
+.p-shopList__shopInfoImg {
   width: 240px;
   height: 180px;
   margin-right: 50px;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopInfoImg {
+  .p-shopList__shopInfoImg {
     width: 100%;
     height: 100%;
   }
 }
-.p-shopList__shopInfoItem__shopIntroduce {
+.p-shopList__shopIntroduce {
   max-width: 400px;
   width: 40%;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopIntroduce {
+  .p-shopList__shopIntroduce {
     word-wrap: break-word;
     width: 100%;
     max-width: 100%;
   }
 }
-.p-shopList__shopInfoItem__shopName {
+.p-shopList__shopName {
   font-size: 24px;
   text-decoration: underline;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopName {
+  .p-shopList__shopName {
     font-size: 22px;
     margin-top: 20px;
   }
 }
-.p-shopList__shopInfoItem__shopPostalCode {
+.p-shopList__shopPostalCode {
   margin-top: 40px;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopPostalCode {
+  .p-shopList__shopPostalCode {
     margin-top: 20px;
   }
 }
-.p-shopList__shopInfoItem__shopPostalCode, .p-shopList__shopInfoItem__shopAddress, .p-shopList__shopInfoItem__shopTelNum {
+.p-shopList__shopPostalCode, .p-shopList__shopAddress, .p-shopList__shopTelNum {
   font-size: 16px;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopPostalCode, .p-shopList__shopInfoItem__shopAddress, .p-shopList__shopInfoItem__shopTelNum {
+  .p-shopList__shopPostalCode, .p-shopList__shopAddress, .p-shopList__shopTelNum {
     font-size: 14px;
   }
 }
-.p-shopList__shopInfoItem__shopIntroduceButton {
+.p-shopList__shopIntroduceButton {
   width: 200px;
   height: 50px;
   font-size: 22px;
@@ -471,7 +459,7 @@ select {
   border-color: #707070;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopIntroduceButton {
+  .p-shopList__shopIntroduceButton {
     width: 100%;
     font-size: 20px;
     margin-top: 20px;
