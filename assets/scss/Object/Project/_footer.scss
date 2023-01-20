@@ -228,7 +228,6 @@
     }
     @include mq('tab') {
       border-top: 1px solid #fff;
-      // padding: 10px;
       + .p-footer__category {
         margin-top: auto;
       }
@@ -236,9 +235,13 @@
   }
   &__nav {
     display: flex;
+    align-items: center;
+    @include mq("tab") {
+      justify-content: space-between;
+    }
     @include mq('sp') {
-      padding: 20px 0;
       display: block;
+      padding: 20px 0;
     }
   }
   &__logoContainer {
@@ -246,10 +249,9 @@
     width: 100%;
     height: 100px;
     @include mq('tab') {
-      display: flex;
-      max-width: 200px;
-      width: 100%;
-      height: auto;
+      // display: flex;
+      width: 230px;
+      height: 100%;
     }
   }
   &__logo {
@@ -257,8 +259,6 @@
   }
   &__navListBox {
     margin-left: 15%;
-    max-width: 500px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     white-space: nowrap;
@@ -268,8 +268,9 @@
       font-size: 14px;
     }
     @include mq('sp') {
-      margin-top: 20px;
-      gap: inherit;
+      justify-content: start;
+      margin: 20px 0 0 10%;
+      gap: 5%;
     }
   }
   &__navList {
