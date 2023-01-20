@@ -1,27 +1,30 @@
 $(window).on("load", function(){
   jQuery(function($){
-    const $slideFooter = $(".p-footer__triger")
+    const $trigger = $(".p-footer__trigger")
+    const $shopList = $(".p-footer__shopList")
+    const $shopItem = $(".p-footer__shopItem")
     var $windowWidth = $(this).width()
     var $bp = 900
 
     if($windowWidth > $bp){
-      $(".p-footer__shopItem").show()
+      $shopItem.show()
     }
-    $slideFooter.on('click', function () {
-      $(this).toggleClass('open');
-      $('.p-footer__shopItem').slideToggle();
-    });
-
+    $shopList.on("click", function () {
+      if (window.matchMedia("(max-width: 900px)").matches) {
+        $trigger.toggleClass('open');
+        $shopItem.slideToggle();
+      }
+    })
     $(window).resize(function(){
       var $windowWidth = $(this).width()
       var $bp = 900
 
       if($windowWidth > $bp){
-        $(".p-footer__shopItem").show()
-        $(".p-footer__shopItem").removeClass("open")
+        $shopItem.show()
+        $trigger.removeClass("open")
       } else {
-        $(".p-footer__shopItem").hide()
-        $(".p-footer__shopItem").removeClass("open")
+        $shopItem.hide()
+        $trigger.removeClass("open")
       }
     })
 

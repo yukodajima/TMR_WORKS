@@ -60,7 +60,7 @@
         </ul>
         <ul class="p-footer__boxList">
           <li class="p-footer__shopList">
-            店舗一覧<span class="p-footer__triger"></span>
+            店舗一覧<span class="p-footer__trigger"></span>
           </li>
           <li class="p-footer__shopItem">
             <a href="<?php echo home_url("/shopList"); ?>">北海道・東北</a>

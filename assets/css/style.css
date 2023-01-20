@@ -1383,7 +1383,7 @@ select {
   color: #fff;
 }
 @media (max-width: 900px) {
-  .p-footer__triger::before {
+  .p-footer__trigger::before {
     content: "";
     border-top: 1px solid #fff;
     width: 20px;
@@ -1396,7 +1396,7 @@ select {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
   }
-  .p-footer__triger.open::before {
+  .p-footer__trigger.open::before {
     content: "";
     border-top: 1px solid #fff;
     width: 20px;
@@ -1409,7 +1409,7 @@ select {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
   }
-  .p-footer__triger::after {
+  .p-footer__trigger::after {
     content: "";
     border-top: 1px solid #fff;
     width: 20px;

@@ -125,7 +125,7 @@
       color: #fff;
     }
   }
-  &__triger {
+  &__trigger {
     @include mq('tab') {
       &::before {
         content: '';
