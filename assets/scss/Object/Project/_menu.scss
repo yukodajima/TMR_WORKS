@@ -142,6 +142,9 @@
       height: auto;
     }
   }
+  &__imgContainer > a {
+    text-decoration: none;
+  }
   &__image {
     width: 100%;
     height: auto;
@@ -149,6 +152,7 @@
   &__text {
     text-align: center;
     margin-top: 20px;
+    color: $color-text;
   }
   @include mq('tab') {
     font-size: 20px;

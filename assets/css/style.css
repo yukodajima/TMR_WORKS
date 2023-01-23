@@ -861,6 +861,9 @@ select {
     height: auto;
   }
 }
+.p-menu__imgContainer > a {
+  text-decoration: none;
+}
 .p-menu__image {
   width: 100%;
   height: auto;
@@ -868,6 +871,7 @@ select {
 .p-menu__text {
   text-align: center;
   margin-top: 20px;
+  color: #1B224C;
 }
 @media (max-width: 900px) {
   .p-menu {
