@@ -583,7 +583,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-work {
-    padding: 60px 0 40px;
+    padding: 60px 0;
   }
 }
 .p-work__subTitle {
@@ -897,7 +897,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-shop {
-    padding: 40px 0;
+    padding: 60px 0;
   }
 }
 .p-shop__container {
@@ -973,7 +973,7 @@ select {
     border-bottom: solid 2px #fff;
     border-right: solid 2px #fff;
     position: absolute;
-    top: 50%;
+    top: 53%;
     right: 19px;
     margin-top: -6px;
     -webkit-transform: rotate(227deg);
@@ -1085,7 +1085,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-news {
-    padding: 30px 0 40px;
+    padding: 30px 0 60px;
   }
 }
 .p-news__container {
@@ -1144,7 +1144,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-question {
-    padding: 30px 0 40px;
+    padding: 30px 0 60px;
   }
 }
 .p-question__container {
@@ -2212,7 +2212,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-topMenu {
-    padding: 40px 0;
+    padding: 60px 0;
   }
 }
 .p-topMenu__container {

@@ -192,6 +192,9 @@
         <p class="p-topMenu__text">OSが起動しない</p>
       </li>
     </ul>
+    <div class="p-topMenu__btnContainer">
+      <button class="p-topMenu__btn" type="submit">一覧</button>
+    </div>
   </div>
 </section>
 <section class="p-shop">
@@ -204,8 +207,8 @@
     </div>
     <div class="p-shop__container">
       <?php
-      $fielddata = get_post_meta(186, 'area_name',  true);
       $fields = $cfs->get('area'); //親ループ
+      $fielddata = get_post_meta(186, 'area_name',  true);
       foreach ($fields as $field) :
       ?>
         <p><?php echo $fielddata; ?></p>
@@ -217,7 +220,7 @@
         foreach ($fields as $field) :
         ?>
           <li class="p-shop__item">
-            <p class="p-shop__area"><?php if ($field) echo $field['area_name']; ?></p>
+            <p class="p-shop__area"><?php echo $field['area_name']; ?></p>
             <div class="p-shop__loop">
               <?php
               $fields = $field['pref']; //子ループ
