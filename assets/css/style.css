@@ -824,6 +824,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-menu__list {
+    gap: 20px;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
@@ -857,8 +858,14 @@ select {
 }
 @media (max-width: 900px) {
   .p-menu__imgContainer {
-    max-width: initial;
+    max-width: inherit;
     height: auto;
+  }
+}
+@media (max-width: 599px) {
+  .p-menu__imgContainer {
+    max-width: 250px;
+    margin: 0 auto;
   }
 }
 .p-menu__imgContainer > a {
@@ -1215,7 +1222,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-footer {
-    padding: 40px 0 10px;
+    padding: 60px 0 10px;
   }
 }
 .p-footer__contentList {

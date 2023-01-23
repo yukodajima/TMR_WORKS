@@ -112,6 +112,7 @@
       margin-top: 30px;
     }
     @include mq('tab') {
+      gap: 20px;
       justify-content: space-around;
       :nth-child(n + 3) {
         margin-top: initial;
@@ -138,8 +139,12 @@
   &__imgContainer {
     max-width: 275px;
     @include mq('tab') {
-      max-width: initial;
+      max-width: inherit;
       height: auto;
+    }
+    @include mq('sp') {
+      max-width: 250px;
+      margin: 0 auto;
     }
   }
   &__imgContainer > a {
