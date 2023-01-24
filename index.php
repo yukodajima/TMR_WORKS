@@ -193,7 +193,9 @@
       </li>
     </ul>
     <div class="p-topMenu__btnContainer">
-      <button class="p-topMenu__btn" type="submit">一覧</button>
+      <a href="<?php echo home_url("/repair"); ?>">
+        <button class="p-topMenu__btn" type="submit">一覧</button>
+      </a>
     </div>
   </div>
 </section>
@@ -206,13 +208,6 @@
       </div>
     </div>
     <div class="p-shop__container">
-      <?php
-      $fields = $cfs->get('area'); //親ループ
-      $fielddata = get_post_meta(186, 'area_name',  true);
-      foreach ($fields as $field) :
-      ?>
-        <p><?php echo $fielddata; ?></p>
-      <?php endforeach; ?>
       </ul>
       <ul class="p-shop__list">
         <?php

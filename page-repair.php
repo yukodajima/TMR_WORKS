@@ -79,56 +79,6 @@
         </div>
       </li>
     </ul>
-    <ul class="p-menu__list">
-      <li class="p-menu__item">
-        <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
-        </div>
-        <p class="p-menu__text">画面が割れてしまった</p>
-      </li>
-      <li class="p-menu__item">
-        <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
-        </div>
-        <p class="p-menu__text">HDD・SSDが壊れてしまった</p>
-      </li>
-      <li class="p-menu__item">
-        <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
-        </div>
-        <p class="p-menu__text">画面が付かなくなった</p>
-      </li>
-      <li class="p-menu__item">
-        <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
-        </div>
-        <p class="p-menu__text">キーボードが反応しない</p>
-      </li>
-      <li class="p-menu__item">
-        <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
-        </div>
-        <p class="p-menu__text">充電がすぐになくなる</p>
-      </li>
-      <li class="p-menu__item">
-        <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
-        </div>
-        <p class="p-menu__text">データが消えてしまった</p>
-      </li>
-      <li class="p-menu__item">
-        <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
-        </div>
-        <p class="p-menu__text">器具を落としてしまった</p>
-      </li>
-      <li class="p-menu__item">
-        <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
-        </div>
-        <p class="p-menu__text">OSが起動しない</p>
-      </li>
-    </ul>
   </div>
 </section>
 <?php get_footer(); ?>

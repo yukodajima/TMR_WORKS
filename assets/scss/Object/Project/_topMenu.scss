@@ -113,17 +113,11 @@
     list-style: none;
     width: 20%;
     margin: 0 auto;
-
     @include mq('tab') {
       width: 40%;
     }
-  }
-  &__item {
-    list-style: none;
-    width: 20%;
-    margin: 0 auto;
-    @include mq('tab') {
-      width: 40%;
+    @include mq('sp') {
+      margin: initial;
     }
   }
   &__imgContainer {
