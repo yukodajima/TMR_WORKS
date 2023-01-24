@@ -1528,11 +1528,11 @@ select {
   width: 100%;
 }
 .p-footer__navListBox {
-  margin-left: 15%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  gap: 80px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -1541,7 +1541,6 @@ select {
 }
 @media (max-width: 900px) {
   .p-footer__navListBox {
-    margin: auto;
     gap: 15px;
     font-size: 14px;
   }
