@@ -16,8 +16,8 @@
       padding-right: $padding-tab;
     }
     @include mq('sp') {
-      padding-left: $padding-sp;
-      padding-right: $padding-sp;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
   &__logo {
@@ -28,7 +28,7 @@
     }
     @include mq("sp") {
       width: 40vw;
-      min-width: 150px;
+      min-width: 100px;
       height: $header-height-sp;
     }
     & img {
@@ -47,7 +47,7 @@
       width: 40px;
     }
     @include mq("sp") {
-      width: 30px;
+      width: 20px;
     }
   }
   &__menuArea {
@@ -61,8 +61,8 @@
   &__btnArea {
     @include mq("sp") {
       display: flex;
-      flex-direction: column;
-      gap: 5px;
+      // flex-direction: column;
+      gap: 3px;
     }
   }
   &__btn {
@@ -71,10 +71,10 @@
       font-size: 1.8vw;
     }
     @include mq("sp") {
-      width: 20vw;
-      min-width: 80px;
+      width: 15vw;
+      min-width: 60px;
       height: 25px;
-      font-size: 1.5vw;
+      font-size: 0.3rem;
     }
   }
   &__contactBtn {
@@ -83,10 +83,10 @@
       font-size: 1.8vw;
     }
     @include mq("sp") {
-      width: 20vw;
-      min-width: 80px;
+      width: 15vw;
+      min-width: 72px;
       height: 25px;
-      font-size: 1vw;
+      font-size: 0.3rem;
     }
   }
   &__menuLine {
@@ -124,7 +124,7 @@
   &__menuList {
     display: flex;
     justify-content: center;
-    max-width: $width-base;
+    // max-width: $width-base;
     height: 50px;
     margin: 0 auto;
     padding: 0;
@@ -149,22 +149,53 @@
     }
   }
   &__menuItem {
-    padding: 10px 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    padding: 5px 0;
+    width: 14%;
+    max-width: 160px;
+    min-width: 130px;
+    &:first-child::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: block;
+      content: "";
+      width: 1.5px;
+      height: 60%;
+      background-color: #CBCBCB;
+    }
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      display: block;
+      content: "";
+      width: 1.5px;
+      height: 60%;
+      background-color: #CBCBCB;
+    }
     @include mq ("tab") {
       justify-content: flex-start;
       width: 95%;
       margin: 0 auto;
       padding: 10px 20px;
+      max-width: none;
+      min-width: none;
       border-bottom: 1.5px solid $color-background;
+      &:first-child::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
       &:last-child {
         border: none;
       }
     }
     &:not(:first-child){
-      border-left: 1.5px solid #CBCBCB;
+      // border-left: 1.5px solid #CBCBCB;
       @include mq ("tab"){
         border-left: none;
       }
@@ -176,15 +207,22 @@
     }
   }
   &__menuLink {
-    display: flex;
     position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    // text-align: center;
+    align-items: center;
     gap: 10px;
     width: 100%;
     text-decoration: none;
     color: $color-text;
-    text-align: center;
     white-space: nowrap;
     @include mq("tab") {
+      top: 0;
+      transform: none;
+      justify-content: flex-start;
       &::before {
         content: '';
         border-top: 1px solid #fff;
@@ -248,8 +286,12 @@
     }
   }
   &__drawerMenuItem {
-    display: flex;
     position: relative;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
     gap: 10px;
     width: 100%;
     text-decoration: none;
@@ -257,6 +299,9 @@
     text-align: center;
     white-space: nowrap;
     @include mq("tab") {
+      top: 0;
+      transform: none;
+      justify-content: flex-start;
       &::before {
         content: '';
         border-top: 1px solid #fff;
@@ -292,13 +337,89 @@
     }
   }
   &__menuText {
-    font-size: clamp(0.9rem, 1.6vw, 1.3rem);
+    font-size: clamp(0.9rem, 1.6vw, 1.1rem);
     @include mq("tab") {
       color: $color-background-sub;
     }
   }
   &__menuLogo {
-    width: 20px;
+    min-width: 20px;
     height: 20px;
+  }
+  &__contentList {
+    display: none;
+    @include mq("tab") {
+      display: block;
+      // flex-direction: column;
+      // margin-top: 30px;
+      // gap: 50px;
+      list-style: none;
+      padding: 30px 100px;
+      color: $color-background-sub;
+    }
+    @include mq("sp") {
+      padding: 30px 20px;
+    }
+  }
+  &__contentItem {
+    position: relative;
+    max-width: 350px;
+    @include mq('tab') {
+      max-width: none;
+      height: 300px;
+      margin: 0 auto;
+      &:nth-child(n + 2) {
+        margin-top: 20px;
+        @include mq("sp") {
+          margin-top: 10px;
+        }
+      }
+    }
+    @include mq("tab") {
+      height: 25vw;
+      min-height: 100px;
+    }
+  }
+  &__imgContainer {
+    @include mq("tab") {
+      height: 100%;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__textArea {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-20%);
+    width: 100%;
+    text-align: center;
+    @include mq('tab') {
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+    }
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: bold;
+    @include mq("tab") {
+      font-size: 32px;
+    }
+    @include mq("sp") {
+      font-size: 6vw;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: bold;
+    @include mq("tab") {
+      font-size: 16px;
+    }
+    @include mq("sp") {
+      font-size: 3vw;
+    }
   }
 }

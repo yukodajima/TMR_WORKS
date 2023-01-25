@@ -110,6 +110,47 @@
               <p class="p-header__menuText">加盟店募集</p>
             </a>
           </li>
+          <ul class="p-header__contentList">
+            <li class="p-header__contentItem">
+              <div class="p-header__imgContainer">
+                <a href="<?php echo home_url("/shopList"); ?>">
+                  <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="header画像" />
+                </a>
+              </div>
+              <div class="p-header__textArea">
+                <h2 class="p-header__title">店舗一覧</h2>
+                <p class="p-header__text">お近くのお店をチェック！</p>
+              </div>
+            </li>
+            <li class="p-header__contentItem">
+              <div class="p-header__imgContainer">
+                <a href="<?php echo home_url(); ?>">
+                  <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="header画像" />
+                </a>
+              </div>
+              <div class="p-header__textArea">
+                <h2 class="p-header__title">買取</h2>
+                <p class="p-header__text">
+                  PC関連の買取なら<br>
+                  お任せください
+                </p>
+              </div>
+            </li>
+            <li class="p-header__contentItem">
+              <div class="p-header__imgContainer">
+                <a href="<?php echo home_url(); ?>">
+                  <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="header画像" />
+                </a>
+              </div>
+              <div class="p-header__textArea">
+                <h2 class="p-header__title">販売</h2>
+                <p class="p-header__text">
+                  法人向け中古パソコン販売<br>
+                  新品パソコンの半額相当！
+                </p>
+              </div>
+            </li>
+          </ul>
         </ul>
       </div>
     </header>
