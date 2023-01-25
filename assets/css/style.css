@@ -1,4 +1,7 @@
-@charset "UTF-8";
+@font-face {
+  font-family: NotoSansJP-Regular;
+  src: url(../../font/NotoSansJP-Regular.otf);
+}
 html {
   font-size: 16px;
 }
@@ -6,7 +9,7 @@ html {
 body {
   color: #1B224C;
   letter-spacing: normal;
-  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: NotoSansJP-Regular;
   min-height: 100%;
 }
 
@@ -389,77 +392,65 @@ select {
   max-width: 900px;
   margin: 0 auto;
 }
+.p-shopList__shopInfoItem:not(:first-child) {
+  margin-top: 40px;
+}
 @media (max-width: 900px) {
   .p-shopList__shopInfoItem {
     position: relative;
     display: block;
     width: 100%;
   }
-  .p-shopList__shopInfoItem__shopInfoImg {
-    width: 240px;
-    height: 180px;
-  }
 }
-@media (max-width: 900px) and (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopInfoImg {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media (max-width: 900px) {
-  .p-shopList__shopInfoItem:not(:first-child) {
-    margin-top: 40px;
-  }
-}
-.p-shopList__shopInfoItem__shopInfoImg {
+.p-shopList__shopInfoImg {
   width: 240px;
   height: 180px;
   margin-right: 50px;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopInfoImg {
+  .p-shopList__shopInfoImg {
     width: 100%;
     height: 100%;
   }
 }
-.p-shopList__shopInfoItem__shopIntroduce {
+.p-shopList__shopIntroduce {
   max-width: 400px;
   width: 40%;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopIntroduce {
+  .p-shopList__shopIntroduce {
     word-wrap: break-word;
     width: 100%;
     max-width: 100%;
   }
 }
-.p-shopList__shopInfoItem__shopName {
+.p-shopList__shopName {
   font-size: 24px;
   text-decoration: underline;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopName {
+  .p-shopList__shopName {
     font-size: 22px;
     margin-top: 20px;
   }
 }
-.p-shopList__shopInfoItem__shopPostalCode {
+.p-shopList__shopPostalCode {
   margin-top: 40px;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopPostalCode {
+  .p-shopList__shopPostalCode {
     margin-top: 20px;
   }
 }
-.p-shopList__shopInfoItem__shopPostalCode, .p-shopList__shopInfoItem__shopAddress, .p-shopList__shopInfoItem__shopTelNum {
+.p-shopList__shopPostalCode, .p-shopList__shopAddress, .p-shopList__shopTelNum {
   font-size: 16px;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopPostalCode, .p-shopList__shopInfoItem__shopAddress, .p-shopList__shopInfoItem__shopTelNum {
+  .p-shopList__shopPostalCode, .p-shopList__shopAddress, .p-shopList__shopTelNum {
     font-size: 14px;
   }
 }
-.p-shopList__shopInfoItem__shopIntroduceButton {
+.p-shopList__shopIntroduceButton {
   width: 200px;
   height: 50px;
   font-size: 22px;
@@ -468,7 +459,7 @@ select {
   border-color: #707070;
 }
 @media (max-width: 900px) {
-  .p-shopList__shopInfoItem__shopIntroduceButton {
+  .p-shopList__shopIntroduceButton {
     width: 100%;
     font-size: 20px;
     margin-top: 20px;
@@ -1394,7 +1385,7 @@ select {
   color: #fff;
 }
 @media (max-width: 900px) {
-  .p-footer__triger::before {
+  .p-footer__trigger::before {
     content: "";
     border-top: 1px solid #fff;
     width: 20px;
@@ -1407,7 +1398,7 @@ select {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
   }
-  .p-footer__triger.open::before {
+  .p-footer__trigger.open::before {
     content: "";
     border-top: 1px solid #fff;
     width: 20px;
@@ -1420,7 +1411,7 @@ select {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
   }
-  .p-footer__triger::after {
+  .p-footer__trigger::after {
     content: "";
     border-top: 1px solid #fff;
     width: 20px;
@@ -1514,11 +1505,23 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 900px) {
+  .p-footer__nav {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 @media (max-width: 599px) {
   .p-footer__nav {
-    padding: 20px 0;
     display: block;
+    padding: 20px 0;
   }
 }
 .p-footer__logoContainer {
@@ -1528,13 +1531,8 @@ select {
 }
 @media (max-width: 900px) {
   .p-footer__logoContainer {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 200px;
-    width: 100%;
-    height: auto;
+    width: 230px;
+    height: 100%;
   }
 }
 .p-footer__logo {
@@ -1542,8 +1540,6 @@ select {
 }
 .p-footer__navListBox {
   margin-left: 15%;
-  max-width: 500px;
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1563,8 +1559,12 @@ select {
 }
 @media (max-width: 599px) {
   .p-footer__navListBox {
-    margin-top: 20px;
-    gap: inherit;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 20px 0 0 10%;
+    gap: 5%;
   }
 }
 .p-footer__navList {

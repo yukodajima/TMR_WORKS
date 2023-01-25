@@ -8,20 +8,16 @@ $width-main: 800px; // メインエリアの幅
 $width-side: 360px; // サイドバーの幅
 
 // フォント関係の設定--------------------
-$font-base:
-"Hiragino Sans W3",
-"Hiragino Kaku Gothic ProN",
-"ヒラギノ角ゴ ProN W3",
-"メイリオ",
-Meiryo,
-"ＭＳ Ｐゴシック",
-"MS PGothic",
-sans-serif;
-;
+$font-base:NotoSansJP-Regular;
+@font-face {
+  font-family: NotoSansJP-Regular;
+  src: url(../../font/NotoSansJP-Regular.otf);
+}
 $font-serif: serif;
 $font-size-base: 16px;
 $font-weight-base: 400;
 $line-height-base: calc(27 / 16);
+
 
 // 色関係の設定--------------------------
 $color-main: #FF9801; // サイトカラー
