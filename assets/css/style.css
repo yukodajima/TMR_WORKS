@@ -1209,7 +1209,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-footer {
-    padding: 40px 0 10px;
+    padding: 60px 0 10px;
   }
 }
 .p-footer__contentList {
@@ -2131,7 +2131,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-flow {
-    padding: 60px 0px 40px;
+    padding: 40px 0px;
   }
 }
 .p-flow__list {
@@ -2277,7 +2277,7 @@ select {
 @media (max-width: 900px) {
   .p-important {
     width: 100%;
-    padding: 40px 0px;
+    padding: 60px 0px;
   }
 }
 .p-important__title {
@@ -2351,11 +2351,6 @@ select {
   width: 100%;
   height: 1px;
   background-color: #1B224C;
-}
-@media (max-width: 900px) {
-  .p-important__itemTitle::after {
-    width: 250px;
-  }
 }
 .p-important__text {
   font-size: 16px;

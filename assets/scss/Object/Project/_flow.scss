@@ -3,7 +3,7 @@
 .p-flow {
   padding: 120px 0px 80px;
   @include mq("tab") {
-    padding: 60px 0px 40px;
+    padding: 40px 0px;
   }
   &__list {
     margin: 80px auto 0px;
