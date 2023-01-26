@@ -192,6 +192,11 @@
         <p class="p-topMenu__text">OSが起動しない</p>
       </li>
     </ul>
+    <div class="p-topMenu__btnContainer">
+      <a href="<?php echo home_url("/repair"); ?>">
+        <button class="p-topMenu__btn" type="submit">一覧</button>
+      </a>
+    </div>
   </div>
 </section>
 <section class="p-shop">
@@ -203,10 +208,41 @@
       </div>
     </div>
     <div class="p-shop__container">
-     
       </ul>
       <ul class="p-shop__list">
-      
+        <?php
+        $fields = $cfs->get('area'); //親ループ
+        foreach ($fields as $field) :
+        ?>
+          <li class="p-shop__item">
+            <p class="p-shop__area"><?php echo $field['area_name']; ?></p>
+            <div class="p-shop__loop">
+              <?php
+              $fields = $field['pref']; //子ループ
+              foreach ((array)$fields as $field) :
+              ?>
+                <div class="p-shop__innerArea">
+                  <div class="p-shop__iconPref">
+                    <div class="p-shop__iconContainer">
+                      <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="" />
+                    </div>
+                    <p class="p-shop__pref"><?php echo $field['pref_name']; ?></p>
+                  </div>
+                  <ul class="p-shop__shopNameList">
+                    <?php
+                    $fields = $field['shop']; //孫ループ
+                    foreach ((array)$fields as $field) :
+                    ?>
+                      <li class="p-shop__shopName">
+                        <a href="<?php echo home_url("/shopList"); ?>"><?php echo $field['shop_name']; ?></a>
+                      </li>
+                    <?php endforeach; ?>
+                  </ul>
+                </div>
+              <?php endforeach; ?>
+            </div>
+          </li>
+        <?php endforeach; ?>
       </ul>
     </div>
   </div>

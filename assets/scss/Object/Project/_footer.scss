@@ -24,12 +24,12 @@
         margin-top: 30px;
       }
     }
-    @include mq("sp") {
-      height: 200px;
+    @include mq('sp') {
+      height: 150px;
     }
   }
   &__imgContainer {
-    @include mq("tab") {
+    @include mq('tab') {
       height: 100%;
     }
   }
@@ -53,17 +53,17 @@
   &__title {
     font-size: 48px;
     font-weight: bold;
-    @include mq("sp") {
+    @include mq('sp') {
       font-size: 40px;
     }
   }
   &__text {
     font-size: 18px;
     font-weight: bold;
-    @include mq("tab") {
+    @include mq('tab') {
       font-size: 24px;
     }
-    @include mq("sp") {
+    @include mq('sp') {
       font-size: 20px;
     }
   }
@@ -100,7 +100,7 @@
   }
   &__item {
     white-space: nowrap;
-    @include mq("tab") {
+    @include mq('tab') {
       border-bottom: 1px solid $color-background-sub;
       padding: 10px 20px;
     }
@@ -109,15 +109,15 @@
       color: #fff;
     }
     &:not(:first-child) {
-      margin-top: 10px;
-      @include mq("tab") {
+      margin-top: 30px;
+      @include mq('tab') {
         margin-top: 0;
       }
     }
   }
   &__shopList {
     position: relative;
-    @include mq("tab") {
+    @include mq('tab') {
       padding: 10px 20px;
     }
     & a {

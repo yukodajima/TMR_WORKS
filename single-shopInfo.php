@@ -218,4 +218,25 @@
     </main>
   <?php endwhile; ?>
 <?php endif; ?>
+    </div>
+    <ul class="p-shopNews__list">
+      <li class="p-shopNews__item">
+        <p class="p-shopNews__itemDate">2020-01-01</p>
+        <p class="p-shopNews__itemContent">PC修理の「PCワークス」、創業10周年を記念した「創業祭」キャンペーンを開催!11月末までの期間限定、全国22店舗にてお得なキャンペーンを実施します。</p>
+      </li>
+      <li class="p-shopNews__item">
+        <p class="p-shopNews__itemDate">2020-01-01</p>
+        <p class="p-shopNews__itemContent">＜渋谷店＞PC修理の「PCワークス」、Windows11へのアップグレート作業を30%OFFで行うキャンペーンを実施。今だけの特別価格をお見逃しなく!</p>
+      </li>
+      <li class="p-shopNews__item">
+        <p class="p-shopNews__itemDate">2020-01-01</p>
+        <p class="p-shopNews__itemContent">銀座店・西新宿十二社通り店が同時オープン、全国40店舗でパソコントラブルをフルサポートいたします。</p>
+      </li>
+      <li class="p-shopNews__item">
+        <p class="p-shopNews__itemDate">2020-01-01</p>
+        <p class="p-shopNews__content">2020年1月16日　大阪肥後橋に『PCワークス　大阪岶尾店』が移転リニューアルオープンいたします。</p>
+      </li>
+    </ul>
+  </div>
+</section>
 <?php get_footer(); ?>
