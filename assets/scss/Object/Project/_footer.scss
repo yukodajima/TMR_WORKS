@@ -245,8 +245,7 @@
     }
   }
   &__logoContainer {
-    max-width: 300px;
-    width: 100%;
+    width: 30%;
     height: 100px;
     @include mq('tab') {
       width: 230px;
@@ -258,11 +257,11 @@
   }
   &__navListBox {
     display: flex;
-    gap: 80px;
-    justify-content: space-between;
+    margin-left: 20%;
+    gap: 10%;
+    width: 50%;
     white-space: nowrap;
     @include mq('tab') {
-      // margin: auto;
       gap: 15px;
       font-size: 14px;
     }

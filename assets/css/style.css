@@ -1521,8 +1521,7 @@ select {
   }
 }
 .p-footer__logoContainer {
-  max-width: 300px;
-  width: 100%;
+  width: 30%;
   height: 100px;
 }
 @media (max-width: 900px) {
@@ -1539,11 +1538,9 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  gap: 80px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-left: 20%;
+  gap: 10%;
+  width: 50%;
   white-space: nowrap;
 }
 @media (max-width: 900px) {
