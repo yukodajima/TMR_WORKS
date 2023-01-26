@@ -288,7 +288,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-shopList {
-    padding: 40px 0 80px;
+    padding: 60px 0 80px;
   }
 }
 .p-shopList__areaList {
@@ -386,7 +386,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-shopList__shopInfoWrapper {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 }
 .p-shopList__shopInfoArea {

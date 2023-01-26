@@ -4,7 +4,7 @@
   color: $color-text;
   padding: 80px 0 170px;
   @include mq('tab') {
-    padding: 40px 0 80px;
+    padding: 60px 0 80px;
   }
   &__areaList {
     display: flex;
@@ -76,7 +76,7 @@
       display: block;
     }
     @include mq('tab') {
-      margin-top: 40px;
+      margin-top: 60px;
     }
   }
   &__shopInfoArea {
