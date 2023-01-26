@@ -24,7 +24,7 @@
             </div>
           </div>
           <div class="p-shopInformation__shopImg">
-            <img src="/assets/images/img-sample.jpg" alt="店舗写真">
+            <img src="/assets/images/shop.jpg" alt="店舗写真">
           </div>
         </div>
         <ul class="p-shopInformation__contact">
@@ -67,7 +67,7 @@
         </div>
         <div class="p-shopIntroduction__wrapper">
           <div class="p-shopIntroduction__img">
-            <img src="/assets/images/img-sample.jpg" alt="店舗写真">
+            <img src="/assets/images/shop.jpg" alt="店舗写真">
           </div>
           <div class="p-shopIntroduction__text">
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -159,25 +159,25 @@
         <ul class="p-shopRoot__list">
           <li class="p-shopRoot__item">
             <div class="p-shopRoot__itemImg">
-              <img src="/assets/images/img-sample.jpg" alt="">
+              <img src="/assets/images/root1.jpg" alt="">
             </div>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
           </li>
           <li class="p-shopRoot__item">
             <div class="p-shopRoot__itemImg">
-              <img src="/assets/images/img-sample.jpg" alt="">
+              <img src="/assets/images/root2.jpg" alt="">
             </div>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
           </li>
           <li class="p-shopRoot__item">
             <div class="p-shopRoot__itemImg">
-              <img src="/assets/images/img-sample.jpg" alt="">
+              <img src="/assets/images/root3.jpg" alt="">
             </div>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
           </li>
           <li class="p-shopRoot__item">
             <div class="p-shopRoot__itemImg">
-              <img src="/assets/images/img-sample.jpg" alt="">
+              <img src="/assets/images/root4.jpg" alt="">
             </div>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
           </li>
