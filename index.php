@@ -12,7 +12,7 @@
       <li class="p-info__item">
         <div>
           <a href="#">
-            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/pickup.jpg" alt="画像" />
           </a>
         </div>
         <a class="p-info__text" href="#">PCが動作を重く感じた時に確認したほうがいい5つのことPCが動作を重く感じた時に確認したほうがいい5つのこと</a>
@@ -20,7 +20,7 @@
       <li class="p-info__item">
         <div>
           <a href="#">
-            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/pickup.jpg" alt="画像" />
           </a>
         </div>
 
@@ -29,7 +29,7 @@
       <li class="p-info__item">
         <div>
           <a href="#">
-            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="画像" />
+            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/pickup.jpg" alt="画像" />
           </a>
         </div>
         <a class="p-info__text" href="#">PCが動作を重く感じた時に確認したほうがいい5つのこと</a>
@@ -48,7 +48,7 @@
     <ul class="p-work__list">
       <li class="p-work__item">
         <div class="p-work__imgContainer">
-          <img class="p-work__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png" alt="丸画像" />
+          <img class="p-work__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/point1.jpg" alt="丸画像" />
         </div>
         <h2 class="p-work__title">最短即日対応</h2>
         <p class="p-work__text">
@@ -57,7 +57,7 @@
       </li>
       <li class="p-work__item">
         <div class="p-work__imgContainer">
-          <img class="p-work__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png" alt="丸画像" />
+          <img class="p-work__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/point2.jpg" alt="丸画像" />
         </div>
         <h2 class="p-work__title">お手頃な価格</h2>
         <p class="p-work__text">
@@ -66,7 +66,7 @@
       </li>
       <li class="p-work__item">
         <div class="p-work__imgContainer">
-          <img class="p-work__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png" alt="丸画像" />
+          <img class="p-work__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/point3.jpg" alt="丸画像" />
         </div>
         <h2 class="p-work__title">PC専門店</h2>
         <p class="p-work__text">
@@ -92,13 +92,13 @@
     <ul class="p-topMenu__list show">
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png" alt="" />
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/screen.png" alt="" />
         </div>
         <p class="p-topMenu__text">画面修理</p>
       </li>
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png" alt="" />
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/hddssd.png" alt="" />
         </div>
         <p class="p-topMenu__text">
           HDD・SSDの増設<br />
@@ -107,37 +107,37 @@
       </li>
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png" alt="" />
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/maintenance.png" alt="" />
         </div>
         <p class="p-topMenu__text">メンテナンス・初期化</p>
       </li>
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png" alt="" />
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/screen.png" alt="" />
         </div>
         <p class="p-topMenu__text">キーボード修理</p>
       </li>
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png" alt="" />
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/battery.png" alt="" />
         </div>
         <p class="p-topMenu__text">バッテリー交換</p>
       </li>
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png" alt="" />
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/date.png" alt="" />
         </div>
         <p class="p-topMenu__text">データ復旧</p>
       </li>
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png" alt="" />
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/migration.png" alt="" />
         </div>
         <p class="p-topMenu__text">データ移行</p>
       </li>
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png" alt="" />
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/other.png" alt="" />
         </div>
         <p class="p-topMenu__text">その他</p>
       </li>

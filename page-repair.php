@@ -13,7 +13,7 @@
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
           <a href="<?php echo home_url("/repairDetail"); ?>">
-            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
+            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/screen.png" alt="" />
             <p class="p-menu__text">画面修理</p>
           </a>
         </div>
@@ -21,7 +21,7 @@
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
           <a href="<?php echo home_url("/repairDetail"); ?>">
-            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
+            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/hddssd.png" alt="" />
             <p class="p-menu__text">
               HDD・SSDの増設<br />
               交換（OS再インストール）
@@ -32,7 +32,7 @@
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
           <a href="<?php echo home_url("/repairDetail"); ?>">
-            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
+            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/maintenance.png" alt="" />
             <p class="p-menu__text">メンテナンス・初期化</p>
           </a>
         </div>
@@ -40,7 +40,7 @@
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
           <a href="<?php echo home_url("/repairDetail"); ?>">
-            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
+            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/screen.png" alt="" />
             <p class="p-menu__text">キーボード修理</p>
           </a>
         </div>
@@ -48,7 +48,7 @@
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
           <a href="<?php echo home_url("/repairDetail"); ?>">
-            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
+            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/battery.png" alt="" />
             <p class="p-menu__text">バッテリー交換</p>
           </a>
         </div>
@@ -56,7 +56,7 @@
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
           <a href="<?php echo home_url("/repairDetail"); ?>">
-            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
+            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/date.png" alt="" />
             <p class="p-menu__text">データ復旧</p>
           </a>
         </div>
@@ -64,7 +64,7 @@
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
           <a href="<?php echo home_url("/repairDetail"); ?>">
-            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
+            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/migration.png" alt="" />
             <p class="p-menu__text">データ移行</p>
           </a>
         </div>
@@ -72,7 +72,7 @@
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
           <a href="<?php echo home_url("/repairDetail"); ?>">
-            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/logo-sample.png" alt="" />
+            <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/other.png" alt="" />
             <p class="p-menu__text">その他</p>
 
           </a>

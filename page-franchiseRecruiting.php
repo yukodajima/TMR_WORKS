@@ -35,7 +35,7 @@
             また「こうすると成功しやすい」「こうすると失敗しやすい」といったノウハウも、直営店や過去の加盟店の実績から蓄積されているため、活用することができます。
           </p>
         </div>
-        <div class="p-merit__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
+        <div class="p-merit__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/merit1.jpg" alt=""></div>
       </li>
       <li class="p-merit__listItem--reverse">
         <div class="p-merit__textBox">
@@ -47,7 +47,7 @@
             自分の店舗の売上は、自分の収入に直結するので、良い店舗づくりをしようという努力がそのまま収入につながります。
           </p>
         </div>
-        <div class="p-merit__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
+        <div class="p-merit__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/merit2.jpg" alt=""></div>
       </li>
       <li class="p-merit__listItem">
         <div class="p-merit__textBox">
@@ -59,7 +59,7 @@
             知名度、認知度が高いブランドであれば看板を見ただけでも商品・サービスをイメージしてもらえるので、開業してすぐでもある程度の集客を見込めます。
           </p>
         </div>
-        <div class="p-merit__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
+        <div class="p-merit__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/merit3.jpg" alt=""></div>
       </li>
     </ul>
   </div>

@@ -58,7 +58,7 @@
             </a>
           </li>
           <li class="p-header__menuItem">
-            <a class="p-header__menuLink" href="<?php echo home_url("/repair"); ?>">
+            <a class="p-header__menuLink" href="<?php echo home_url("/symptoms"); ?>">
               <div class="p-header__menuLogo">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
               </div>

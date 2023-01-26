@@ -19,7 +19,7 @@
                     問題を解消する為に必要な費用に関しましての概算見積金額をお伝え致します。
                   </p>
                 </div>
-                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
+                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner1.jpg" alt=""></div>
               </li>
               <li class="p-flow__listItem--reverse">
                 <div class="p-flow__textBox">
@@ -31,7 +31,7 @@
                     お急ぎの方、お忙しい方等、お客様のご都合に合せてお選びいただくことが可能です。
                   </p>
                 </div>
-                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
+                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner2.jpg" alt=""></div>
               </li>
               <li class="p-flow__listItem">
                 <div class="p-flow__textBox">
@@ -46,7 +46,7 @@
                     追加検査費が必要となる場合がございます。
                   </p>
                 </div>
-                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
+                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner3.jpg" alt=""></div>
               </li>
               <li class="p-flow__listItem--reverse">
                 <div class="p-flow__textBox">
@@ -60,7 +60,7 @@
                     ※店頭持ち込みのお客様でも返却時の郵送返却は可能です。
                   </p>
                 </div>
-                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
+                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner4.jpg" alt=""></div>
               </li>
             </ul>
           </div>
