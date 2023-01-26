@@ -380,6 +380,18 @@
       min-height: 100px;
     }
   }
+  &__backGround {
+    @include mq("tab") {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      width: 100%;
+      height: 25vw;
+      background-color: #000000;
+      opacity: .3;
+    }
+  }
   &__imgContainer {
     @include mq("tab") {
       height: 100%;
@@ -391,31 +403,28 @@
     object-fit: cover;
   }
   &__textArea {
-    position: absolute;
-    top: 20%;
-    transform: translateY(-20%);
-    width: 100%;
-    text-align: center;
     @include mq('tab') {
+      position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      z-index: 10;
       padding: 10px;
+      width: 100%;
+      text-align: center;
     }
   }
   &__title {
-    font-size: 48px;
-    font-weight: bold;
     @include mq("tab") {
       font-size: 32px;
+      font-weight: bold;
     }
     @include mq("sp") {
       font-size: 6vw;
     }
   }
   &__text {
-    font-size: 18px;
-    font-weight: bold;
     @include mq("tab") {
+      font-weight: bold;
       font-size: 16px;
     }
     @include mq("sp") {

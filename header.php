@@ -112,10 +112,11 @@
           </li>
           <ul class="p-header__contentList">
             <li class="p-header__contentItem">
+              <div class="p-header__backGround"></div>
               <div class="p-header__imgContainer">
                 <a href="<?php echo home_url("/shopList"); ?>">
-                  <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="header画像" />
-                </a>
+                <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="header画像" />
+              </a>
               </div>
               <div class="p-header__textArea">
                 <h2 class="p-header__title">店舗一覧</h2>
@@ -123,6 +124,7 @@
               </div>
             </li>
             <li class="p-header__contentItem">
+            <div class="p-header__backGround"></div>
               <div class="p-header__imgContainer">
                 <a href="<?php echo home_url(); ?>">
                   <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="header画像" />
@@ -137,6 +139,7 @@
               </div>
             </li>
             <li class="p-header__contentItem">
+            <div class="p-header__backGround"></div>
               <div class="p-header__imgContainer">
                 <a href="<?php echo home_url(); ?>">
                   <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="header画像" />

@@ -16,6 +16,7 @@
   &__contentItem {
     position: relative;
     max-width: 350px;
+    height: 16vw;
     @include mq('tab') {
       max-width: none;
       height: 300px;
@@ -27,21 +28,50 @@
     @include mq('sp') {
       height: 150px;
     }
+    @include mq("sp") {
+      height: 130px;
+    }
+  }
+  &__backGround {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 16vw;
+    background-color: #000000;
+    opacity: .3;
+    @include mq("tab") {
+      height: 300px;
+    }
+    @include mq("sp") {
+      height: 130px;
+    }
   }
   &__imgContainer {
-    @include mq('tab') {
-      height: 100%;
+    @include mq("tab") {
+      height: 300px;
     }
+    @include mq("sp") {
+      height: 130px;
+    }
+    
   }
   &__image {
     width: 100%;
-    height: 100%;
+    height: 16vw;
     object-fit: cover;
+    @include mq("tab") {
+      height: 300px;
+    }
+    @include mq("sp") {
+      height: 130px;
+    }
   }
   &__textArea {
     position: absolute;
     top: 20%;
     transform: translateY(-20%);
+    z-index: 10;
     width: 100%;
     text-align: center;
     @include mq('tab') {

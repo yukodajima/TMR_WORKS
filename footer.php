@@ -3,6 +3,7 @@
     <div class="l-container">
       <ul class="p-footer__contentList">
         <li class="p-footer__contentItem">
+        <div class="p-footer__backGround"></div>
           <div class="p-footer__imgContainer">
             <a href="<?php echo home_url("/shopList"); ?>">
               <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
@@ -14,6 +15,7 @@
           </div>
         </li>
         <li class="p-footer__contentItem">
+          <div class="p-footer__backGround"></div>
           <div class="p-footer__imgContainer">
             <a href="<?php echo home_url(); ?>">
               <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
@@ -28,6 +30,7 @@
           </div>
         </li>
         <li class="p-footer__contentItem">
+        <div class="p-footer__backGround"></div>
           <div class="p-footer__imgContainer">
             <a href="<?php echo home_url(); ?>">
               <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
