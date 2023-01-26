@@ -11,7 +11,7 @@
       PCワークスではビジネスパートナーを募集しております。
       弊社のマーケティング力とノウハウをご提供させていただき、
       既にパソコン修理事業を展開されている企業様、店舗様へは集客・収益UPをご協力させていただきます。
-      iPhone修理、その他の事業を展開されている企業様、店舗様も是非 ご検討ください。
+      iPhone修理、その他の事業を展開されている企業様、店舗様も是非 ご検討ください。<br>
       パソコン修理未経験の企業様、店舗様向けに様々なコースをご提供しておりますのでご安心ください。
       新店オープンから様々な内容をトータルサポートいたします。
     </p>
@@ -31,7 +31,7 @@
             ノウハウ提供・経営指導を<br class="p-merit__linefeed">受けられる
           </h4>
           <p class="p-merit__listText">
-            フランチャイズの場合は、経営にまつわるさまざまなものが、はじめからある状態でスタートすることができるので、開業までがスピーディです。
+            フランチャイズの場合は、経営にまつわるさまざまなものが、はじめからある状態でスタートすることができるので、開業までがスピーディです。<br>
             また「こうすると成功しやすい」「こうすると失敗しやすい」といったノウハウも、直営店や過去の加盟店の実績から蓄積されているため、活用することができます。
           </p>
         </div>
@@ -43,7 +43,7 @@
             店舗売上の拡大に専念できる
           </h4>
           <p class="p-merit__listText">
-            フランチャイズでは、オーナーは店舗の売上を拡大させることに集中できる環境が用意されています。
+            フランチャイズでは、オーナーは店舗の売上を拡大させることに集中できる環境が用意されています。<br>
             自分の店舗の売上は、自分の収入に直結するので、良い店舗づくりをしようという努力がそのまま収入につながります。
           </p>
         </div>
@@ -55,7 +55,7 @@
             フランチャイズ本部の<br class="p-merit__linefeed">ブランド力を活かせる
           </h4>
           <p class="p-merit__listText">
-            フランチャイズの場合、すでに確立したブランド力（ブランドイメージ）がある状態で、経営を始めることができます。
+            フランチャイズの場合、すでに確立したブランド力（ブランドイメージ）がある状態で、経営を始めることができます。<br>
             知名度、認知度が高いブランドであれば看板を見ただけでも商品・サービスをイメージしてもらえるので、開業してすぐでもある程度の集客を見込めます。
           </p>
         </div>
@@ -78,14 +78,14 @@
           <label class="p-recruiting__label" for="">
             法人/個人
           </label>
-          <input class="p-recruiting__radio" type="radio" name="category">法人
+          <input class="p-recruiting__radio" type="radio" name="category" checked>法人
           <input class="p-recruiting__radio" type="radio" name="category">個人
         </li>
         <li class="p-recruiting__checkItem">
           <label class="p-recruiting__label" for="">
             資料請求方法（複数回答可）
           </label>
-          <input class="p-recruiting__checkBox" type="checkbox">資料請求<br class="p-recruiting__linefeed">
+          <input class="p-recruiting__checkBox" type="checkbox" checked>資料請求<br class="p-recruiting__linefeed">
           <input class="p-recruiting__checkBox" type="checkbox">Zoomでの打ち合わせ希望
         </li>
         <li class="p-recruiting__listItem">

@@ -3383,7 +3383,7 @@ select {
 @media (max-width: 900px) {
   .p-recruiting {
     margin: 80px auto 0;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 }
 .p-recruiting__textBox {
