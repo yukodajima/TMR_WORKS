@@ -84,7 +84,7 @@
     font-size: 48px;
     font-weight: bold;
     @include mq('sp') {
-      font-size: 40px;
+      font-size: 32px;
     }
   }
   &__text {
@@ -94,7 +94,7 @@
       font-size: 24px;
     }
     @include mq('sp') {
-      font-size: 20px;
+      font-size: 16px;
     }
   }
   &__line {

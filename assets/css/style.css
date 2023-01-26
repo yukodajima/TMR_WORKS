@@ -1377,7 +1377,7 @@ select {
 }
 @media (max-width: 599px) {
   .p-footer__title {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 .p-footer__text {
@@ -1391,7 +1391,7 @@ select {
 }
 @media (max-width: 599px) {
   .p-footer__text {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .p-footer__line {
