@@ -1560,6 +1560,7 @@ select {
   .p-footer__logoContainer {
     width: 230px;
     height: 100%;
+    margin: 0 auto;
   }
 }
 .p-footer__logo {
@@ -1577,18 +1578,25 @@ select {
 }
 @media (max-width: 900px) {
   .p-footer__navListBox {
-    gap: 15px;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+    gap: 10%;
     font-size: 14px;
   }
 }
 @media (max-width: 599px) {
   .p-footer__navListBox {
-    -webkit-box-pack: start;
-    -webkit-justify-content: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    margin: 20px 0 0 10%;
-    gap: 5%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
 .p-footer__navList {
