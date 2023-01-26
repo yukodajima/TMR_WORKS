@@ -309,13 +309,29 @@ select {
 }
 @media (max-width: 900px) {
   .p-shopList__areaList {
-    margin-top: 50px;
-    gap: 25px;
+    margin-top: 40px;
+    gap: 15px 20px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopList__areaList {
+    gap: 10px;
   }
 }
 .p-shopList__areaItem {
   width: 300px;
   height: 80px;
+}
+@media (max-width: 900px) {
+  .p-shopList__areaItem {
+    width: 260px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopList__areaItem {
+    width: 130px;
+    height: 50px;
+  }
 }
 .p-shopList__areaButton {
   border: none;
@@ -326,10 +342,11 @@ select {
   font-size: 24px;
   border-radius: 5px;
   position: relative;
+  padding: 0;
 }
-@media (max-width: 900px) {
+@media (max-width: 599px) {
   .p-shopList__areaButton {
-    font-size: 22px;
+    font-size: 13px;
   }
 }
 .p-shopList__areaButton::after {
@@ -341,8 +358,23 @@ select {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
   position: absolute;
-  top: 35%;
+  top: 30px;
   right: 35px;
+}
+@media (max-width: 900px) {
+  .p-shopList__areaButton::after {
+    width: 12px;
+    height: 12px;
+    right: 25px;
+  }
+}
+@media (max-width: 599px) {
+  .p-shopList__areaButton::after {
+    width: 8px;
+    height: 8px;
+    top: 18px;
+    right: 12px;
+  }
 }
 .p-shopList__shopInfoWrapper {
   margin-top: 80px;
