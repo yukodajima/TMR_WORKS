@@ -21,14 +21,14 @@
         </div>
       </div>
       <div class="p-shopInfomation__shopImg">
-        <img src="/assets/images/shop.jpg" alt="店舗写真">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shop.jpg" alt="店舗写真">
       </div>
     </div>
     <ul class="p-shopInfomation__contact">
       <li class="p-shopInfomation__contactMail">
         <a class="p-shopInfomation__contactLink" href="">
           <div class="p-shopInfomation__contactMailImg">
-            <img src="/assets/images/icn-instagram.svg" alt="メール">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-instagram.svg" alt="メール">
           </div>
           <p>見積もり依頼</p>
         </a>
@@ -36,7 +36,7 @@
       <li href="" class="p-shopInfomation__contactTel">
         <a class="p-shopInfomation__contactLink" href="">
           <div class="p-shopInfomation__contactTelImg">
-            <img src="/assets/images/icn-instagram.svg" alt="TEL">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-instagram.svg" alt="TEL">
           </div>
           <div class="p-shopInfomation__contactTelInfo">
             <p>お電話で確認</p>
@@ -47,7 +47,7 @@
       <li href="" class="p-shopInfomation__contactLine">
         <a class="p-shopInfomation__contactLink" href="">
           <div class="p-shopInfomation__contactLineImg">
-            <img src="/assets/images/icn-instagram.svg" alt="LINE">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-instagram.svg" alt="LINE">
           </div>
           <p>店舗の公式LINE</p>
         </a>
@@ -64,7 +64,7 @@
     </div>
     <div class="p-shopIntroduction__wrapper">
       <div class="p-shopIntroduction__img">
-        <img src="/assets/images/img-sample.jpg" alt="店舗写真">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="店舗写真">
       </div>
       <div class="p-shopIntroduction__text">
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -156,25 +156,25 @@
     <ul class="p-shopRoot__list">
       <li class="p-shopRoot__item">
         <div class="p-shopRoot__itemImg">
-          <img src="/assets/images/root1.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/root1.jpg" alt="">
         </div>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
       </li>
       <li class="p-shopRoot__item">
         <div class="p-shopRoot__itemImg">
-          <img src="/assets/images/root2.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/root2.jpg" alt="">
         </div>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
       </li>
       <li class="p-shopRoot__item">
         <div class="p-shopRoot__itemImg">
-          <img src="/assets/images/root3.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/root3.jpg" alt="">
         </div>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
       </li>
       <li class="p-shopRoot__item">
         <div class="p-shopRoot__itemImg">
-          <img src="/assets/images/root4.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/root4.jpg" alt="">
         </div>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
       </li>
