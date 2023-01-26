@@ -1279,6 +1279,9 @@ select {
   list-style: none;
   color: #FFF;
 }
+.p-footer__contentList a {
+  color: #FFF;
+}
 @media (max-width: 900px) {
   .p-footer__contentList {
     display: block;

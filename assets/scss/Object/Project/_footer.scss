@@ -9,6 +9,9 @@
     gap: 50px;
     list-style: none;
     color: $color-background-sub;
+    & a {
+      color: $color-background-sub;
+    }
     @include mq('tab') {
       display: block;
     }
@@ -54,7 +57,6 @@
     @include mq("sp") {
       height: 130px;
     }
-    
   }
   &__image {
     width: 100%;

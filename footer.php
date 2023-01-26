@@ -3,46 +3,46 @@
     <div class="l-container">
       <ul class="p-footer__contentList">
         <li class="p-footer__contentItem">
-        <div class="p-footer__backGround"></div>
-          <div class="p-footer__imgContainer">
-            <a href="<?php echo home_url("/shopList"); ?>">
-              <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
-            </a>
-          </div>
-          <div class="p-footer__textArea">
-            <h2 class="p-footer__title">店舗一覧</h2>
-            <p class="p-footer__text">お近くのお店をチェック！</p>
-          </div>
+          <a href="<?php echo home_url("/shopList"); ?>">
+            <div class="p-footer__backGround"></div>
+            <div class="p-footer__imgContainer">
+            <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
+            </div>
+            <div class="p-footer__textArea">
+              <h2 class="p-footer__title">店舗一覧</h2>
+              <p class="p-footer__text">お近くのお店をチェック！</p>
+            </div>
+          </a>
         </li>
         <li class="p-footer__contentItem">
-          <div class="p-footer__backGround"></div>
-          <div class="p-footer__imgContainer">
-            <a href="<?php echo home_url(); ?>">
+          <a href="<?php echo home_url(); ?>">
+            <div class="p-footer__backGround"></div>
+            <div class="p-footer__imgContainer">
               <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
-            </a>
-          </div>
-          <div class="p-footer__textArea">
-            <h2 class="p-footer__title">買取</h2>
-            <p class="p-footer__text">
-              PC関連の買取なら<br>
-              お任せください
-            </p>
-          </div>
+            </div>
+            <div class="p-footer__textArea">
+              <h2 class="p-footer__title">買取</h2>
+              <p class="p-footer__text">
+                PC関連の買取なら<br>
+                お任せください
+              </p>
+            </div>
+          </a>
         </li>
         <li class="p-footer__contentItem">
-        <div class="p-footer__backGround"></div>
-          <div class="p-footer__imgContainer">
-            <a href="<?php echo home_url(); ?>">
+          <a href="<?php echo home_url(); ?>">
+            <div class="p-footer__backGround"></div>
+            <div class="p-footer__imgContainer">
               <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="footer画像" />
-            </a>
-          </div>
-          <div class="p-footer__textArea">
-            <h2 class="p-footer__title">販売</h2>
-            <p class="p-footer__text">
-              法人向け中古パソコン販売<br>
-              新品パソコンの半額相当！
-            </p>
-          </div>
+            </div>
+            <div class="p-footer__textArea">
+              <h2 class="p-footer__title">販売</h2>
+              <p class="p-footer__text">
+                法人向け中古パソコン販売<br>
+                新品パソコンの半額相当！
+              </p>
+            </div>
+          </a>
         </li>
       </ul>
       <div class="p-footer__line"></div>
@@ -55,7 +55,7 @@
             <a href="<?php echo home_url("/repair"); ?>">修理メニュー</a>
           </li>
           <li class="p-footer__item">
-            <a href="<?php echo home_url("/repair"); ?>">症状で診断</a>
+            <a href="<?php echo home_url("/symptoms"); ?>">症状で診断</a>
           </li>
           <li class="p-footer__item">
             <a href="<?php echo home_url("/revue"); ?>">お客様の声</a>
