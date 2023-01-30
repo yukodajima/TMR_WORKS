@@ -52,8 +52,8 @@
     max-height: 300px;
     margin: 0 auto;
     @include mq('tab') {
-      width: 40vw;
-      height: 40vw;
+      width: 70vw;
+      height: 70vw;
     }
   }
   &__image {

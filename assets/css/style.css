@@ -687,8 +687,8 @@ select {
 }
 @media (max-width: 900px) {
   .p-work__imgContainer {
-    width: 40vw;
-    height: 40vw;
+    width: 70vw;
+    height: 70vw;
   }
 }
 .p-work__image {
