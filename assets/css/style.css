@@ -1291,6 +1291,7 @@ select {
   position: relative;
   max-width: 350px;
   height: 16vw;
+  max-height: 200px;
 }
 @media (max-width: 900px) {
   .p-footer__contentItem {
@@ -1317,7 +1318,7 @@ select {
   top: 0;
   left: 0;
   width: 100%;
-  height: 16vw;
+  height: 100%;
   background-color: #000000;
   opacity: 0.3;
 }
@@ -1343,7 +1344,7 @@ select {
 }
 .p-footer__image {
   width: 100%;
-  height: 16vw;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1359,9 +1360,9 @@ select {
 }
 .p-footer__textArea {
   position: absolute;
-  top: 20%;
-  -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
+  top: 30%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
   z-index: 10;
   width: 100%;
   text-align: center;

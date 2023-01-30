@@ -20,6 +20,7 @@
     position: relative;
     max-width: 350px;
     height: 16vw;
+    max-height: 200px;
     @include mq('tab') {
       max-width: none;
       height: 300px;
@@ -40,7 +41,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 16vw;
+    height: 100%;
     background-color: #000000;
     opacity: .3;
     @include mq("tab") {
@@ -60,7 +61,7 @@
   }
   &__image {
     width: 100%;
-    height: 16vw;
+    height: 100%;
     object-fit: cover;
     @include mq("tab") {
       height: 300px;
@@ -71,8 +72,8 @@
   }
   &__textArea {
     position: absolute;
-    top: 20%;
-    transform: translateY(-20%);
+    top: 30%;
+    transform: translateY(-30%);
     z-index: 10;
     width: 100%;
     text-align: center;
