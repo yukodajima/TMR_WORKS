@@ -8,7 +8,8 @@
       お電話からのご請求も承っておりますのでご連絡ください。
     </p>
     <form class="p-contact__form" action="">
-      <ul class="p-contact__list">
+      <?php the_content(); ?>
+      <!-- <ul class="p-contact__list">
         <li class="p-contact__listItem">
           <label class="p-contact__label" for="">
             お名前
@@ -45,7 +46,7 @@
           </label>
           <textarea class="p-contact__textarea" name="name" type="text" required></textarea>
         </li>
-      </ul>
+      </ul> -->
       <div class="p-contact__policy">
         <p class="p-contact__policyText">
           プライバシーポリシーに同意の上、送信ください。
