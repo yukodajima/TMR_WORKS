@@ -2654,8 +2654,7 @@ select {
   }
 }
 .p-topMenu__btnContainer {
-  text-align: center;
-  margin-top: 40px;
+  margin: 40px auto 0;
 }
 .p-topMenu__btn {
   background-color: #FF9801;
