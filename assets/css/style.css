@@ -1132,6 +1132,7 @@ select {
 .p-shop__shopName > a {
   text-decoration: none;
   color: #1B224C;
+  display: block;
 }
 
 .p-news {
