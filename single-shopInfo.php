@@ -12,12 +12,27 @@
         <p class="p-shopInfomation__shopName">札幌店情報</p>
         <div class="p-shopInfomation__shopAddress">
           <p>住所</p>
-          <p>〒000-0000</p>
-          <p>北海道札幌市○○○○○○○○○○○○○○○○○</p>
+          <p>
+            〒
+            <?php
+              $category = get_the_category();
+              echo $category[0]->cat_name;
+            ?>
+          </p>
+          <p>
+            <?php
+            $category = get_the_category();
+            echo $category[1]->cat_name;
+            ?>
+          </p>
         </div>
         <div class="p-shopInfomation__shopHours">
           <p>営業時間</p>
-          <p>10:00-19:00</p>
+          <p>
+            <?php
+            $posttags = get_the_tags();
+              echo $tag->cat_name;
+            ?></p>
         </div>
       </div>
       <div class="p-shopInfomation__shopImg">

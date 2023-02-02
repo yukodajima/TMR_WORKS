@@ -55,3 +55,9 @@ function my_enqueue_scripts()
 
 add_action( 'wp_enqueue_scripts', 'my_enqueue_scripts');
 add_theme_support('post-thumbnails');
+
+// Contact Form 7で自動挿入されるPタグ、brタグを削除
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false() {
+  return false;
+}
