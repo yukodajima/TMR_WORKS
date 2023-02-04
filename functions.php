@@ -20,7 +20,16 @@ function cpt_register_shops()
     'menu_position' => 5,
     "suports" => ["title", "editer", "thumbnail"],
   ];
-  register_post_type("shop", $args);
+  register_post_type("shop", [
+    "labels" => [
+      "name" => "店舗",
+    ],
+    "public" => true,
+    "has_archive" => true,
+    "hierarchical" => false,
+    "menu_position" => 5,
+    "menu_icon" => ""
+  ]);
 }
 add_action("init", "cpt_register_shops");
 

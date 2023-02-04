@@ -1,38 +1,31 @@
 <?php get_header(); ?>
 <?php get_template_part('hero'); ?>
 <section class="p-shopInfomation">
+  <?php the_post(); ?>
   <div class="l-container">
     <div class="c-titleBox">
       <div class="c-titleBox__wrapper">
-        <h3 class="c-titleBox__title">札幌店</h3>
+        <h3 class="c-titleBox__title"><?php echo get_the_title(); ?></h3>
       </div>
     </div>
     <div class="p-shopInfomation__wrapper">
       <div class="p-shopInfomation__infoContent">
-        <p class="p-shopInfomation__shopName">札幌店情報</p>
+        <p class="p-shopInfomation__shopName"><?php echo get_the_title(); ?>情報</p>
         <div class="p-shopInfomation__shopAddress">
           <p>住所</p>
           <p>
             〒
-            <?php
-              $category = get_the_category();
-              echo $category[0]->cat_name;
-            ?>
+            <?php echo get_post_meta($post->ID, 'postal_code', true); ?>
           </p>
           <p>
-            <?php
-            $category = get_the_category();
-            echo $category[1]->cat_name;
-            ?>
+            <?php echo get_post_meta($post->ID, 'address', true); ?>
           </p>
         </div>
         <div class="p-shopInfomation__shopHours">
           <p>営業時間</p>
           <p>
-            <?php
-            $posttags = get_the_tags();
-              echo $tag->cat_name;
-            ?></p>
+            <?php echo get_post_meta($post->ID, 'business_hours', true); ?>
+          </p>
         </div>
       </div>
       <div class="p-shopInfomation__shopImg">
@@ -55,7 +48,7 @@
           </div>
           <div class="p-shopInfomation__contactTelInfo">
             <p>お電話で確認</p>
-            <p class="p-shopInfomation__contactTelNum">TEL:000-000-0000</p>
+            <p class="p-shopInfomation__contactTelNum">TEL:<?php echo get_post_meta($post->ID, 'tel', true); ?></p>
           </div>
         </a>
       </li>
@@ -82,9 +75,9 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="店舗写真">
       </div>
       <div class="p-shopIntroduction__text">
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <p>
+          <?php echo get_post_meta($post->ID, 'store_introduction', true); ?>
+        </p>
       </div>
     </div>
   </div>
@@ -171,31 +164,47 @@
     <ul class="p-shopRoot__list">
       <li class="p-shopRoot__item">
         <div class="p-shopRoot__itemImg">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/root1.jpg" alt="">
+        <?php if (get_post_meta($post->ID, 'root_img1', true)) : ?>
+            <?php echo wp_get_attachment_image(post_custom('root_img1')); ?>
+          <?php endif; ?>
         </div>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
+        <p>
+          <?php echo get_post_meta($post->ID, 'root_text1', true); ?>
+        </p>
       </li>
       <li class="p-shopRoot__item">
         <div class="p-shopRoot__itemImg">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/root2.jpg" alt="">
+        <?php if (get_post_meta($post->ID, 'root_img2', true)) : ?>
+            <?php echo wp_get_attachment_image(post_custom('root_img2')); ?>
+          <?php endif; ?>
         </div>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
+        <p>
+          <?php echo get_post_meta($post->ID, 'root_text2', true); ?>
+        </p>
       </li>
       <li class="p-shopRoot__item">
         <div class="p-shopRoot__itemImg">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/root3.jpg" alt="">
+        <?php if (get_post_meta($post->ID, 'root_img3', true)) : ?>
+            <?php echo wp_get_attachment_image(post_custom('root_img3')); ?>
+          <?php endif; ?>
         </div>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
+        <p>
+          <?php echo get_post_meta($post->ID, 'root_text3', true); ?>
+        </p>
       </li>
       <li class="p-shopRoot__item">
         <div class="p-shopRoot__itemImg">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/root4.jpg" alt="">
+        <?php if (get_post_meta($post->ID, 'root_img4', true)) : ?>
+            <?php echo wp_get_attachment_image(post_custom('root_img4')); ?>
+          <?php endif; ?>
         </div>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
+        <p>
+          <?php echo get_post_meta($post->ID, 'root_text4', true); ?>
+        </p>
       </li>
     </ul>
     <div class="p-shopRoot__itemMap">
-      <iframe class="p-shopRoot__itemMapImg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.769987216787!2d139.6994471153179!3d35.6580382388508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sus!4v1673240940056!5m2!1sja!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <?php the_content(); ?>
     </div>
   </div>
 </section>
