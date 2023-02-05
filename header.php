@@ -74,7 +74,7 @@
             </a>
           </li>
           <li class="p-header__menuItem p-header__drawerMenu">
-            <a class="p-header__drawerMenuItem" href="<?php echo home_url("/shoplist"); ?>">
+            <a class="p-header__drawerMenuItem" href="<?php echo home_url("/shop"); ?>">
               <div class="p-header__menuLogo">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
               </div>

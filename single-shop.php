@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="p-shopInfomation__shopImg">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shop.jpg" alt="店舗写真">
+      <?php the_post_thumbnail('thumbnails'); ?>
       </div>
     </div>
     <ul class="p-shopInfomation__contact">

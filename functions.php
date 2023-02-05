@@ -28,7 +28,16 @@ function cpt_register_shops()
     "has_archive" => true,
     "hierarchical" => false,
     "menu_position" => 5,
-    "menu_icon" => ""
+    "menu_icon" => "",
+    'supports' => array('title','editor','thumbnail')
+  ]);
+
+  register_taxonomy("shop_category", "shop", [
+    "labels" => [
+      "name" => "都道府県別",
+    ],
+    "hierarchical" => true,
+    "show_in_rest" => true,
   ]);
 }
 add_action("init", "cpt_register_shops");
