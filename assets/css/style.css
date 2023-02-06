@@ -3550,6 +3550,123 @@ select {
   border-radius: 5px;
 }
 
+.p-overview {
+  background-color: #F5F5F5;
+  padding: 120px 0;
+}
+@media (max-width: 900px) {
+  .p-overview {
+    padding: 60px 0;
+  }
+}
+.p-overview__list {
+  list-style: none;
+}
+@media (max-width: 599px) {
+  .p-overview__list {
+    border: #707070 1px solid;
+  }
+}
+.p-overview__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1B224C;
+  border-bottom: dotted 1px #707070;
+  height: 100px;
+  border: none;
+}
+@media (max-width: 599px) {
+  .p-overview__item {
+    display: block;
+    height: auto;
+  }
+}
+.p-overview__title {
+  max-width: 250px;
+  width: 100%;
+  background-color: #FF9801;
+  color: #FFF;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  border-top: solid 1px white;
+}
+@media (max-width: 900px) {
+  .p-overview__title {
+    font-size: 18px;
+    max-width: 200px;
+    position: relative;
+    line-height: 60px;
+  }
+}
+@media (max-width: 900px) and (max-width: 599px) {
+  .p-overview__title {
+    max-width: 600px;
+    height: 50px;
+  }
+}
+.p-overview__contentArea {
+  border-top: solid 1px #707070;
+  border-right: solid 1px #707070;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 900px) {
+  .p-overview__contentArea {
+    border: solid 1px #707070;
+  }
+}
+@media (max-width: 599px) {
+  .p-overview__contentArea {
+    height: 80px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: none;
+  }
+}
+.p-overview__content {
+  margin: 0 100px;
+  font-size: 20px;
+  max-width: 650px;
+}
+@media (max-width: 900px) {
+  .p-overview__content {
+    margin: 0 40px;
+  }
+}
+@media (max-width: 599px) {
+  .p-overview__content {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
 .u-hidden {
   display: none;
 }

@@ -1,0 +1,78 @@
+@use '../../Foundation/global' as *;
+.p-overview {
+  background-color: $color-background;
+  padding: 120px 0;
+  @include mq('tab') {
+    padding: 60px 0;
+  }
+  &__list {
+    list-style: none;
+    @include mq('sp') {
+      border: #707070 1px solid;
+    }
+  }
+  &__item {
+    display: flex;
+    color: $color-text;
+    border-bottom: dotted 1px $color-border;
+    height: 100px;
+    border: none;
+    @include mq('sp') {
+      display: block;
+      height: auto;
+    }
+  }
+  &__title {
+    max-width: 250px;
+    width: 100%;
+    background-color: $color-main;
+    color: $color-background-sub;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-top: solid 1px white;
+    @include mq('tab') {
+      font-size: 18px;
+      max-width: 200px;
+      position: relative;
+      line-height: 60px;
+      @include mq('sp') {
+        max-width: 600px;
+        height: 50px;
+      }
+    }
+  }
+  &__contentArea {
+    border-top: solid 1px $color-border;
+    border-right: solid 1px $color-border;
+    max-width: 1000px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    @include mq('tab') {
+      border: solid 1px $color-border;
+    }
+    @include mq('sp') {
+      height: 80px;
+      justify-content: center;
+      border: none;
+    }
+  }
+  &__content {
+    margin: 0 100px;
+    font-size: 20px;
+    max-width: 650px;
+    @include mq('tab') {
+      margin: 0 40px;
+    }
+    @include mq('sp') {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
