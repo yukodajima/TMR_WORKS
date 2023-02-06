@@ -73,73 +73,7 @@
       </p>
     </div>
     <form class="p-recruiting__form" action="">
-      <ul class="p-recruiting__list">
-        <li class="p-recruiting__radioItem">
-          <label class="p-recruiting__label" for="">
-            法人/個人
-          </label>
-          <input class="p-recruiting__radio" type="radio" name="category" checked>法人
-          <input class="p-recruiting__radio" type="radio" name="category">個人
-        </li>
-        <li class="p-recruiting__checkItem">
-          <label class="p-recruiting__label" for="">
-            資料請求方法（複数回答可）
-          </label>
-          <input class="p-recruiting__checkBox" type="checkbox" checked>資料請求<br class="p-recruiting__linefeed">
-          <input class="p-recruiting__checkBox" type="checkbox">Zoomでの打ち合わせ希望
-        </li>
-        <li class="p-recruiting__listItem">
-          <label class="p-recruiting__label" for="">
-            会社名
-          </label>
-          <input class="p-recruiting__input" name="" type="text" required>
-        </li>
-        <li class="p-recruiting__listItem">
-          <label class="p-recruiting__label" for="">
-            会社名（ふりがな）
-          </label>
-          <input class="p-recruiting__input" name="" type="text" required>
-        </li>
-        <li class="p-recruiting__listItem">
-          <label class="p-recruiting__label" for="">
-            担当者名
-          </label>
-          <input class="p-recruiting__input" name="" type="text" required>
-        </li>
-        <li class="p-recruiting__listItem">
-          <label class="p-recruiting__label" for="">
-            メールアドレス
-          </label>
-          <input class="p-recruiting__input" name="email" type="text" required>
-        </li>
-        <li class="p-recruiting__listItem">
-          <label class="p-recruiting__label" for="">
-            電話番号
-          </label>
-          <input class="p-recruiting__input" name="tel" type="text" required>
-        <li class="p-recruiting__listItem">
-          <label class="p-recruiting__label" for="">
-            ご住所
-          </label>
-          <input class="p-recruiting__input" name="" type="text" required>
-        </li>
-        <li class="p-recruiting__listItem">
-          <label class="p-recruiting__label" for="">
-            ご相談内容をご記入ください
-          </label>
-          <textarea class="p-recruiting__textarea" name="name" type="text" required></textarea>
-        </li>
-      </ul>
-      <div class="p-recruiting__policy">
-        <p class="p-recruiting__policyText">
-          プライバシーポリシーに同意の上、送信ください。
-        </p>
-        <p class="p-recruiting__policyCheck">
-          プライバシーポリシーに同意する
-        </p>
-      </div>
-      <button class="p-recruiting__submit">送信する</button>
-    </form>
+    <?php the_content(); ?>
   </div>
 </section>
 <?php get_footer(); ?>

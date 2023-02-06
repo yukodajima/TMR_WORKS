@@ -20,7 +20,25 @@ function cpt_register_shops()
     'menu_position' => 5,
     "suports" => ["title", "editer", "thumbnail"],
   ];
-  register_post_type("shop", $args);
+  register_post_type("shop", [
+    "labels" => [
+      "name" => "店舗",
+    ],
+    "public" => true,
+    "has_archive" => true,
+    "hierarchical" => false,
+    "menu_position" => 5,
+    "menu_icon" => "",
+    'supports' => array('title','editor','thumbnail')
+  ]);
+
+  register_taxonomy("shop_category", "shop", [
+    "labels" => [
+      "name" => "都道府県別",
+    ],
+    "hierarchical" => true,
+    "show_in_rest" => true,
+  ]);
 }
 add_action("init", "cpt_register_shops");
 
@@ -55,3 +73,9 @@ function my_enqueue_scripts()
 
 add_action( 'wp_enqueue_scripts', 'my_enqueue_scripts');
 add_theme_support('post-thumbnails');
+
+// Contact Form 7で自動挿入されるPタグ、brタグを削除
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false() {
+  return false;
+}
