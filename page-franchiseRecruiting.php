@@ -68,8 +68,7 @@
   <div class="l-container">
     <div class="p-recruiting__textBox">
       <p class="p-recruiting__text">
-        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        テキストテキストテキストテキストテキスト
+        下記フォームからお問い合わせください。
       </p>
     </div>
     <form class="p-recruiting__form" action="">

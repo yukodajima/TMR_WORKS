@@ -22,7 +22,7 @@
           </div>
           <div class="p-header__menuArea">
             <div class="p-header__btnArea">
-              <button class="c-btn p-header__btn" onclick="location.href='/shopList'">店舗一覧</button>
+              <button class="c-btn p-header__btn" onclick="location.href='/shop'">店舗一覧</button>
               <button class="c-btn__contact p-header__contactBtn" onclick="location.href='/contact'">お問い合わせ</button>
             </div>
             <div class="p-header__menu">
@@ -79,7 +79,6 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
               </div>
               <p class="p-header__menuText">店舗一覧</p>
-            </a>
             </a>
           </li>
           <ul class="p-header__shopList">

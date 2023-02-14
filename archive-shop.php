@@ -60,10 +60,9 @@
               </div>
               <button class="p-shopList__shopIntroduceButton" onclick="location.href='<?php the_permalink() ?>'">詳細はこちら</button>
             </li>
-
-        <?php endforeach;
-          wp_reset_postdata();
-        endif; ?>
+            <?php endforeach; wp_reset_postdata(); else: ?>
+          <p class="p-shopList__text">店舗がありません</p>
+      <?php endif; ?>
       </ul>
     </div>
     <div class="p-shopList__shopInfoWrapper">
@@ -98,10 +97,9 @@
               </div>
               <button class="p-shopList__shopIntroduceButton" onclick="location.href='<?php the_permalink() ?>'">詳細はこちら</button>
             </li>
-
-        <?php endforeach;
-          wp_reset_postdata();
-        endif; ?>
+            <?php endforeach; wp_reset_postdata(); else: ?>
+          <p class="p-shopList__text">店舗がありません</p>
+      <?php endif; ?>
       </ul>
     </div>
     <div class="p-shopList__shopInfoWrapper">
@@ -136,10 +134,9 @@
               </div>
               <button class="p-shopList__shopIntroduceButton" onclick="location.href='<?php the_permalink() ?>'">詳細はこちら</button>
             </li>
-
-        <?php endforeach;
-          wp_reset_postdata();
-        endif; ?>
+        <?php endforeach; wp_reset_postdata(); else: ?>
+          <p class="p-shopList__text">店舗がありません</p>
+      <?php endif; ?>
       </ul>
     </div>
     <div class="p-shopList__shopInfoWrapper">
@@ -174,10 +171,9 @@
               </div>
               <button class="p-shopList__shopIntroduceButton" onclick="location.href='<?php the_permalink() ?>'">詳細はこちら</button>
             </li>
-
-        <?php endforeach;
-          wp_reset_postdata();
-        endif; ?>
+            <?php endforeach; wp_reset_postdata(); else: ?>
+          <p class="p-shopList__text">店舗がありません</p>
+      <?php endif; ?>
       </ul>
     </div>
     <div class="p-shopList__shopInfoWrapper">
@@ -212,10 +208,9 @@
               </div>
               <button class="p-shopList__shopIntroduceButton" onclick="location.href='<?php the_permalink() ?>'">詳細はこちら</button>
             </li>
-
-        <?php endforeach;
-          wp_reset_postdata();
-        endif; ?>
+            <?php endforeach; wp_reset_postdata(); else: ?>
+          <p class="p-shopList__text">店舗がありません</p>
+      <?php endif; ?>
       </ul>
     </div>
     <div class="p-shopList__shopInfoWrapper">
@@ -250,9 +245,9 @@
               </div>
               <button class="p-shopList__shopIntroduceButton" onclick="location.href='<?php the_permalink() ?>'">詳細はこちら</button>
             </li>
-        <?php endforeach;
-          wp_reset_postdata();
-        endif; ?>
+            <?php endforeach; wp_reset_postdata(); else: ?>
+          <p class="p-shopList__text">店舗がありません</p>
+      <?php endif; ?>
       </ul>
     </div>
   </div>
