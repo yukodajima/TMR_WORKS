@@ -3181,6 +3181,7 @@ select {
 }
 .p-shopNews__list {
   margin: 80px auto 0;
+  list-style: none;
 }
 @media (max-width: 900px) {
   .p-shopNews__list {
@@ -3188,15 +3189,19 @@ select {
   }
 }
 .p-shopNews__item {
+  max-width: 1017px;
+  margin: 0 auto;
+}
+.p-shopNews__item a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1017px;
-  margin: 0 auto;
+  width: 100%;
+  text-decoration: none;
 }
 @media (max-width: 900px) {
-  .p-shopNews__item {
+  .p-shopNews__item a {
     display: block;
   }
 }

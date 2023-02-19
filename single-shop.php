@@ -217,22 +217,20 @@
       </div>
     </div>
     <ul class="p-shopNews__list">
-    <?php
-        $custom_posts = get_posts(array(
-          'post_type' => 'news', // 投稿タイプ
-          'posts_per_page' => 10, // 表示件数
-          'orderby' => 'date', // 表示順の基準
-          'order' => 'DESC', // 昇順・降順
-        ));
-        global $post;
-        if ($custom_posts) : foreach ($custom_posts as $post) : setup_postdata($post); ?>
+      <?php $userId = get_the_author_meta( 'ID' ); ?>
+<?php $custom_posts = get_posts("author=$userId&orderby=date&post_type=news&numberposts=4"); ?>
+<?php if (!empty($custom_posts)) { ?>
+        <?php if ($custom_posts) : foreach( $custom_posts as $post ) : setup_postdata($post); ?>
         <li class="p-shopNews__item">
-          <p class="p-shopNews__itemDate"><?php the_time("Y-m-d"); ?></p>
-          <p class="p-shopNews__itemContent">&lt;<?php the_author(); ?>&gt;<?php the_title(); ?></p>
+          <a href="<?php the_permalink() ?>">
+            <p class="p-shopNews__itemDate"><?php the_time("Y-m-d"); ?></p>
+            <p class="p-shopNews__itemContent">&lt;<?php the_author(); ?>&gt;<?php the_title(); ?></p>
+        </a>
         </li>
-            <?php endforeach; wp_reset_postdata(); else: ?>
+        <?php endforeach; wp_reset_postdata(); else: ?>
           <p class="p-shopList__text">お知らせがありません</p>
-      <?php endif; ?>
+        <?php endif; ?>
+<?php } ?>
     </ul>
   </div>
 </section>
