@@ -1159,15 +1159,19 @@ select {
   }
 }
 .p-news__article {
+  list-style: none;
+}
+.p-news__article + .p-news__article {
+  margin-top: 50px;
+}
+.p-news__article a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
-  list-style: none;
-}
-.p-news__article + .p-news__article {
-  margin-top: 50px;
+  width: 100%;
+  text-decoration: none;
 }
 @media (max-width: 900px) {
   .p-news__article {

@@ -266,12 +266,16 @@
         ));
         global $post;
         if ($custom_posts) : foreach ($custom_posts as $post) : setup_postdata($post); ?>
-        <li class="p-shopNews__item">
-          <p class="p-shopNews__itemDate"><?php the_time("Y-m-d"); ?></p>
-          <p class="p-shopNews__itemContent">&lt;<?php the_author(); ?>&gt;<?php the_title(); ?></p>
-        </li>
+          <li class="p-news__article">
+            <a href="">
+              <p class="p-news__date"><?php the_time("Y-m-d"); ?></p>
+              <div class="p-news__text">
+                <p href="#">&lt;<?php the_author(); ?>&gt;<?php the_title(); ?></p>
+              </div>
+            </a>
+          </li>
             <?php endforeach; wp_reset_postdata(); else: ?>
-          <p class="p-shopList__text">お知らせがありません</p>
+          <p class="p-news__text">お知らせがありません</p>
       <?php endif; ?>
       </ul>
     </div>

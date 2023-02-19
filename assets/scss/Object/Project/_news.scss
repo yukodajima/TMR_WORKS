@@ -14,11 +14,15 @@
     }
   }
   &__article {
-    display: flex;
-    gap: 40px;
     list-style: none;
     + .p-news__article {
       margin-top: 50px;
+    }
+    & a {
+      display: flex;
+      gap: 40px;
+      width: 100%;
+      text-decoration: none;
     }
     @include mq('tab') {
       gap: 15px;
