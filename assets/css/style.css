@@ -3555,6 +3555,20 @@ select {
   border-radius: 5px;
 }
 
+.p-customNews {
+  padding: 100px;
+}
+.p-customNews__date {
+  font-size: 18px;
+}
+.p-customNews__title {
+  font-size: 32px;
+  margin-top: 20px;
+}
+.p-customNews__content {
+  margin-top: 40px;
+}
+
 .u-hidden {
   display: none;
 }

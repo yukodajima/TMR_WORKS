@@ -42,6 +42,23 @@ function cpt_register_shops()
 }
 add_action("init", "cpt_register_shops");
 
+//「お知らせ」のカスタム投稿タイプの設定
+function init_func() {
+  add_theme_support("title-tag");
+  add_theme_support("post-thumbnails");
+
+  register_post_type("news", [
+    "labels" => [
+      "name" => "お知らせ"
+    ],
+    "public" => true, //メニューから使えるようにする
+    "has_archive" => true,
+    "hierarchical" => false,
+    "menu_position" => 5,
+    "menu_icon" => "",
+  ]);
+}
+add_action("init", "init_func");
 function cpt_register_dep()
 {
   $labels = [

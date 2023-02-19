@@ -1,0 +1,14 @@
+@use '../../Foundation/global'as *;
+.p-customNews {
+  padding: 100px;
+  &__date {
+    font-size: 18px;
+  }
+  &__title {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  &__content {
+    margin-top: 40px;
+  }
+}
