@@ -95,4 +95,13 @@ add_theme_support('post-thumbnails');
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
   return false;
+};
+
+function taxonomy_orderby_description( $orderby, $args ) {
+
+  if ( $args['orderby'] == 'description' ) {
+      $orderby = 'tt.description';
+  }
+  return $orderby;
 }
+add_filter( 'get_terms_orderby', 'taxonomy_orderby_description', 10, 2 );

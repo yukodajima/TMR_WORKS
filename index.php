@@ -208,44 +208,55 @@
       </div>
     </div>
     <div class="p-shop__container">
-      </ul>
       <ul class="p-shop__list">
-        <?php
-        $fields = $cfs->get('area'); //親ループ
-        foreach ($fields as $field) :
-        ?>
+        <?php // タームの親・子の一覧にタームに紐づく投稿一覧を表示する方法
+        $categories = get_terms('shop_category',
+        array(
+          'parent' => 0,
+          'orderby' => 'description'
+        ));
+        foreach ($categories as $cat) { ?>
           <li class="p-shop__item">
-            <p class="p-shop__area"><?php echo $field['area_name']; ?></p>
-            <div class="p-shop__loop">
-              <?php
-              $fields = $field['pref']; //子ループ
-              foreach ((array)$fields as $field) :
-              ?>
-                <div class="p-shop__innerArea">
-                  <div class="p-shop__iconPref">
-                    <div class="p-shop__iconContainer">
-                      <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="" />
+            <p class="p-shop__area"><?php echo ($cat->name); ?></p>
+            <?php
+            $children = get_terms('shop_category', 'hierarchical=0&parent=' . $cat->term_id);
+            if ($children) { // 子タームの有無
+              foreach ($children as $child) { ?>
+                <div class="p-shop__loop">
+                  <div class="p-shop__innerArea">
+                    <div class="p-shop__iconPref">
+                      <div class="p-shop__iconContainer">
+                        <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="" />
+                      </div>
+                      <p class="p-shop__pref"><?php echo ($child->name); ?></p>
                     </div>
-                    <p class="p-shop__pref"><?php echo $field['pref_name']; ?></p>
-                  </div>
-                  <ul class="p-shop__shopNameList">
-                    <?php
-                    $fields = $field['shop']; //孫ループ
-                    foreach ((array)$fields as $field) :
+                    <?php $catslug = $child->slug;
+                    $args = array(
+                      'post_type' => 'shop',
+                      'shop_category' => $catslug,
+                      'posts_per_page' => -1,
+                    );
+                    $myquery = new WP_Query($args);
                     ?>
-                      <li class="p-shop__shopName">
-                        <a href="<?php echo home_url("/shopList"); ?>"><?php echo $field['shop_name']; ?></a>
-                      </li>
-                    <?php endforeach; ?>
-                  </ul>
+                    <ul class="p-shop__shopNameList">
+                      <?php if ($myquery->have_posts()) : ?>
+                          <?php while ($myquery->have_posts()) : $myquery->the_post(); ?>
+                            <li class="p-shop__shopName">
+                              <a href="<?php echo home_url("/shopList"); ?>"><?php the_title(); ?></a>
+                            </li>
+                            <?php endwhile; ?>
+                          <?php endif; ?>
+                    </ul>
+                  </div>
                 </div>
-              <?php endforeach; ?>
-            </div>
+              <?php wp_reset_postdata(); ?>
           </li>
-        <?php endforeach; ?>
-      </ul>
-    </div>
-  </div>
+    <?php } //子タームに紐づく記事一覧の表示終了
+    ?>
+  <?php } // 子ターム終了 
+  ?>
+<?php } // 親ターム終了 
+?>
 </section>
 <section class="p-news">
   <div class="l-container">
@@ -257,7 +268,7 @@
     </div>
     <div class="p-news__container">
       <ul class="p-news__list">
-      <?php
+        <?php
         $custom_posts = get_posts(array(
           'post_type' => 'news', // 投稿タイプ
           'posts_per_page' => 4, // 表示件数
@@ -266,17 +277,19 @@
         ));
         global $post;
         if ($custom_posts) : foreach ($custom_posts as $post) : setup_postdata($post); ?>
-          <li class="p-news__article">
-            <a href="">
-              <p class="p-news__date"><?php the_time("Y-m-d"); ?></p>
-              <div class="p-news__text">
-                <p href="#">&lt;<?php the_author(); ?>&gt;<?php the_title(); ?></p>
-              </div>
-            </a>
-          </li>
-            <?php endforeach; wp_reset_postdata(); else: ?>
+            <li class="p-news__article">
+              <a href="">
+                <p class="p-news__date"><?php the_time("Y-m-d"); ?></p>
+                <div class="p-news__text">
+                  <p href="#">&lt;<?php the_author(); ?>&gt;<?php the_title(); ?></p>
+                </div>
+              </a>
+            </li>
+          <?php endforeach;
+          wp_reset_postdata();
+        else : ?>
           <p class="p-news__text">お知らせがありません</p>
-      <?php endif; ?>
+        <?php endif; ?>
       </ul>
     </div>
   </div>
