@@ -1127,8 +1127,9 @@ select {
 .p-shop__shopName {
   list-style: none;
   margin: 20px;
+  padding: 5px 15px;
   font-size: 18px;
-  width: 100px;
+  min-width: 100px;
   border: solid;
   text-align: center;
 }
@@ -1138,6 +1139,8 @@ select {
   }
 }
 .p-shop__shopName > a {
+  display: block;
+  width: 100%;
   text-decoration: none;
   color: #1B224C;
 }

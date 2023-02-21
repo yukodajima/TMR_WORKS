@@ -243,7 +243,7 @@
                     <?php if ($myquery->have_posts()) : ?>
                         <?php while ($myquery->have_posts()) : $myquery->the_post(); ?>
                           <li class="p-shop__shopName">
-                            <a href="<?php echo home_url("/shopList"); ?>"><?php the_title(); ?></a>
+                            <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                           </li>
                           <?php endwhile; ?>
                         <?php endif; ?>
