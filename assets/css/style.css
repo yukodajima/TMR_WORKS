@@ -1052,6 +1052,9 @@ select {
     margin-top: -10px;
   }
 }
+.p-shop__loopBox {
+  width: 100%;
+}
 .p-shop__loop {
   width: 100%;
 }

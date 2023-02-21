@@ -218,41 +218,43 @@
         foreach ($categories as $cat) { ?>
           <li class="p-shop__item">
             <p class="p-shop__area"><?php echo ($cat->name); ?></p>
-            <?php
-            $children = get_terms('shop_category', 'hierarchical=0&parent=' . $cat->term_id);
-            if ($children) { // 子タームの有無
-              foreach ($children as $child) { ?>
-                <div class="p-shop__loop">
-                  <div class="p-shop__innerArea">
-                    <div class="p-shop__iconPref">
-                      <div class="p-shop__iconContainer">
-                        <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="" />
-                      </div>
-                      <p class="p-shop__pref"><?php echo ($child->name); ?></p>
+            <div class="p-shop__loopBox">
+              <div class="p-shop__loop">
+                <?php
+                $children = get_terms('shop_category', 'hierarchical=0&parent=' . $cat->term_id);
+                if ($children) { // 子タームの有無
+                  foreach ($children as $child) { ?>
+                <div class="p-shop__innerArea">
+                  <div class="p-shop__iconPref">
+                    <div class="p-shop__iconContainer">
+                      <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="" />
                     </div>
-                    <?php $catslug = $child->slug;
-                    $args = array(
-                      'post_type' => 'shop',
-                      'shop_category' => $catslug,
-                      'posts_per_page' => -1,
-                    );
-                    $myquery = new WP_Query($args);
-                    ?>
-                    <ul class="p-shop__shopNameList">
-                      <?php if ($myquery->have_posts()) : ?>
-                          <?php while ($myquery->have_posts()) : $myquery->the_post(); ?>
-                            <li class="p-shop__shopName">
-                              <a href="<?php echo home_url("/shopList"); ?>"><?php the_title(); ?></a>
-                            </li>
-                            <?php endwhile; ?>
-                          <?php endif; ?>
-                    </ul>
+                    <p class="p-shop__pref"><?php echo ($child->name); ?></p>
                   </div>
+                  <?php $catslug = $child->slug;
+                  $args = array(
+                    'post_type' => 'shop',
+                    'shop_category' => $catslug,
+                    'posts_per_page' => -1,
+                  );
+                  $myquery = new WP_Query($args);
+                  ?>
+                  <ul class="p-shop__shopNameList">
+                    <?php if ($myquery->have_posts()) : ?>
+                        <?php while ($myquery->have_posts()) : $myquery->the_post(); ?>
+                          <li class="p-shop__shopName">
+                            <a href="<?php echo home_url("/shopList"); ?>"><?php the_title(); ?></a>
+                          </li>
+                          <?php endwhile; ?>
+                        <?php endif; ?>
+                  </ul>
                 </div>
-              <?php wp_reset_postdata(); ?>
+                <?php wp_reset_postdata(); ?>
+              </div>
+              <?php } ?> 
+              <!-- 子タームに紐づく記事一覧の表示終了 -->
+            </div>
           </li>
-    <?php } //子タームに紐づく記事一覧の表示終了
-    ?>
   <?php } // 子ターム終了 
   ?>
 <?php } // 親ターム終了 
