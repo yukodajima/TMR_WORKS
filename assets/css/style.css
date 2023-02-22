@@ -1291,6 +1291,10 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 50px;
   list-style: none;
   color: #FFF;
@@ -1305,6 +1309,7 @@ select {
 }
 .p-footer__contentItem {
   position: relative;
+  width: 30%;
   max-width: 350px;
   height: 16vw;
   max-height: 200px;
@@ -1347,6 +1352,9 @@ select {
   .p-footer__backGround {
     height: 130px;
   }
+}
+.p-footer__imgContainer {
+  height: 100%;
 }
 @media (max-width: 900px) {
   .p-footer__imgContainer {
