@@ -2615,9 +2615,6 @@ select {
   display: -ms-flexbox;
   display: flex;
 }
-.p-topMenu__list :nth-child(n+5) {
-  margin-top: 30px;
-}
 @media (max-width: 900px) {
   .p-topMenu__list {
     margin-top: 30px;
@@ -2625,9 +2622,6 @@ select {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-  }
-  .p-topMenu__list :nth-child(n+3) {
-    margin-top: initial;
   }
 }
 .p-topMenu__item {
