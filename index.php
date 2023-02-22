@@ -141,6 +141,11 @@
         </div>
         <p class="p-topMenu__text">その他</p>
       </li>
+      <div class="p-topMenu__btnContainer">
+        <a href="<?php echo home_url("/repair"); ?>">
+          <button class="p-topMenu__btn" type="submit">一覧</button>
+        </a>
+      </div>
     </ul>
     <ul class="p-topMenu__list">
       <li class="p-topMenu__item">
@@ -191,12 +196,12 @@
         </div>
         <p class="p-topMenu__text">OSが起動しない</p>
       </li>
+      <div class="p-topMenu__btnContainer">
+        <a href="<?php echo home_url("/symptoms"); ?>">
+          <button class="p-topMenu__btn" type="submit">一覧</button>
+        </a>
+      </div>
     </ul>
-    <div class="p-topMenu__btnContainer">
-      <a href="<?php echo home_url("/repair"); ?>">
-        <button class="p-topMenu__btn" type="submit">一覧</button>
-      </a>
-    </div>
   </div>
 </section>
 <section class="p-shop">
