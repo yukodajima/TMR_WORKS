@@ -73,34 +73,14 @@
               <p class="p-header__menuText">お客様の声</p>
             </a>
           </li>
-          <li class="p-header__menuItem p-header__drawerMenu">
-            <a class="p-header__drawerMenuItem" href="<?php echo home_url("/shop"); ?>">
+          <li class="p-header__menuItem">
+            <a class="p-header__menuLink" href="<?php echo home_url("/shop"); ?>">
               <div class="p-header__menuLogo">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
               </div>
               <p class="p-header__menuText">店舗一覧</p>
             </a>
           </li>
-          <ul class="p-header__shopList">
-            <li class="p-header__shopItem">
-              <a href="<?php echo home_url("/shopList"); ?>">北海道・東北</a>
-            </li>
-            <li class="p-header__shopItem">
-              <a href="<?php echo home_url("/shopList"); ?>">関東</a>
-            </li>
-            <li class="p-header__shopItem">
-              <a href="<?php echo home_url("/shopList"); ?>">東海・北陸</a>
-            </li>
-            <li class="p-header__shopItem">
-              <a href="<?php echo home_url("/shopList"); ?>">関西</a>
-            </li>
-            <li class="p-header__shopItem">
-              <a href="<?php echo home_url("/shopList"); ?>">四国・中国</a>
-            </li>
-            <li class="p-header__shopItem">
-              <a href="<?php echo home_url("/shopList"); ?>">九州・沖縄</a>
-            </li>
-          </ul>
           <li class="p-header__menuItem">
             <a class="p-header__menuLink" href="<?php echo home_url("/franchiseRecruiting"); ?>">
               <div class="p-header__menuLogo">

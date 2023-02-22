@@ -23,10 +23,10 @@
       gap: 40px;
       width: 100%;
       text-decoration: none;
-    }
-    @include mq('tab') {
-      gap: 15px;
-      flex-direction: column;
+      @include mq('tab') {
+        gap: 15px;
+        flex-direction: column;
+      }
     }
   }
   &__date {

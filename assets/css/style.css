@@ -1180,7 +1180,7 @@ select {
   text-decoration: none;
 }
 @media (max-width: 900px) {
-  .p-news__article {
+  .p-news__article a {
     gap: 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1475,6 +1475,8 @@ select {
   }
 }
 .p-footer__item a {
+  display: block;
+  width: 100%;
   text-decoration: none;
   color: #fff;
 }
@@ -1589,6 +1591,8 @@ select {
   color: #fff;
 }
 .p-footer__category > a {
+  display: block;
+  width: 100%;
   text-decoration: none;
   color: #fff;
 }
@@ -1694,7 +1698,7 @@ select {
   .p-footer__navList {
     line-height: inherit;
     height: auto;
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
@@ -1809,7 +1813,7 @@ select {
     width: 15vw;
     min-width: 60px;
     height: 25px;
-    font-size: 0.3rem;
+    font-size: 11px;
   }
 }
 @media (max-width: 900px) {
@@ -1823,7 +1827,7 @@ select {
     width: 15vw;
     min-width: 72px;
     height: 25px;
-    font-size: 0.3rem;
+    font-size: 10px;
   }
 }
 .p-header__menuLine {

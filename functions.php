@@ -80,7 +80,6 @@ function cpt_register_dep()
   register_taxonomy("dep", ["shop"], $args);
 };
 
-
 function my_enqueue_scripts()
 {
   wp_enqueue_script('jquery');

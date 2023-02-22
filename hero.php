@@ -3,6 +3,8 @@
   <div class="c-hero__img">
     <?php if(is_archive("shop")): ?>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
+      <?php elseif(is_home()): ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/macbook1993_TP_V.jpg" alt="">
     <?php else: ?>
         <?php the_post_thumbnail(); ?>
     <?php endif; ?>

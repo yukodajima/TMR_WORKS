@@ -57,37 +57,19 @@
           <li class="p-footer__item">
             <a href="<?php echo home_url("/symptoms"); ?>">症状で診断</a>
           </li>
+        </ul>
+        <ul class="p-footer__boxList">
           <li class="p-footer__item">
             <a href="<?php echo home_url("/revue"); ?>">お客様の声</a>
           </li>
-        </ul>
-        <ul class="p-footer__boxList">
-          <li class="p-footer__shopList">
-            店舗一覧<span class="p-footer__trigger"></span>
+          <li class="p-footer__item">
+            <a href="<?php echo home_url("/shop"); ?>">店舗一覧</a>
           </li>
-          <li class="p-footer__shopItem">
-            <a href="<?php echo home_url("/shopList"); ?>">北海道・東北</a>
-          </li>
-          <li class="p-footer__shopItem">
-            <a href="<?php echo home_url("/shopList"); ?>">関東</a>
-          </li>
-          <li class="p-footer__shopItem">
-            <a href="<?php echo home_url("/shopList"); ?>">東海・北陸</a>
-          </li>
-          <li class="p-footer__shopItem">
-            <a href="<?php echo home_url("/shopList"); ?>">関西</a>
-          </li>
-          <li class="p-footer__shopItem">
-            <a href="<?php echo home_url("/shopList"); ?>">四国・中国</a>
-          </li>
-          <li class="p-footer__shopItem">
-            <a href="<?php echo home_url("/shopList"); ?>">九州・沖縄</a>
-          </li>
-        </ul>
-        <ul class="p-footer__boxList">
-          <li class="p-footer__category">
+          <li class="p-footer__item">
             <a href="<?php echo home_url("/franchiseRecruiting"); ?>">加盟店募集</a>
           </li>
+        </ul>
+        <ul class="p-footer__boxList">
           <li class="p-footer__category">
             <a href="<?php echo home_url("/beginnerPage"); ?>">お知らせ</a>
           </li>
