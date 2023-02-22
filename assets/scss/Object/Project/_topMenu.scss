@@ -97,17 +97,10 @@
     &.show {
       display: flex;
     }
-    :nth-child(n + 5) {
-      margin-top: 30px;
-    }
     @include mq('tab') {
       margin-top: 30px;
       gap: 20px;
       justify-content: space-around;
-      :nth-child(n + 3) {
-        margin-top: initial;
-      }
-    }
   }
   &__item {
     list-style: none;
