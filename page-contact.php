@@ -7,9 +7,7 @@
       詳細について下記のフォームよりご請求ください。
       お電話からのご請求も承っておりますのでご連絡ください。
     </p>
-    <form class="p-contact__form" action="">
       <?php the_content(); ?>
-    </form>
   </div>
 </section>
 <?php get_footer(); ?>

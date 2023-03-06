@@ -71,7 +71,6 @@
         下記フォームからお問い合わせください。
       </p>
     </div>
-    <form class="p-recruiting__form" action="">
     <?php the_content(); ?>
   </div>
 </section>
