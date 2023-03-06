@@ -219,7 +219,7 @@
     <ul class="p-shopNews__list">
       <?php $userId = get_the_author_meta( 'ID' ); ?>
 <?php $custom_posts = get_posts("author=$userId&orderby=date&post_type=news&numberposts=4"); ?>
-<?php if (!empty($custom_posts)) { ?>
+<?php if (!empty($custom_posts)) : ?>
         <?php if ($custom_posts) : foreach( $custom_posts as $post ) : setup_postdata($post); ?>
         <li class="p-shopNews__item">
           <a href="<?php the_permalink() ?>">
@@ -227,10 +227,10 @@
             <p class="p-shopNews__itemContent">&lt;<?php the_author(); ?>&gt;<?php the_title(); ?></p>
         </a>
         </li>
-        <?php endforeach; wp_reset_postdata(); else: ?>
+        <?php endforeach; wp_reset_postdata(); endif; ?>
+        <?php else: ?>
           <p class="p-shopList__text">お知らせがありません</p>
         <?php endif; ?>
-<?php } ?>
     </ul>
   </div>
 </section>

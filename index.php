@@ -9,31 +9,30 @@
       </div>
     </div>
     <ul class="p-info__list">
-      <li class="p-info__item">
-        <div>
-          <a href="#">
-            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/pickup.jpg" alt="画像" />
-          </a>
-        </div>
-        <a class="p-info__text" href="#">PCが動作を重く感じた時に確認したほうがいい5つのことPCが動作を重く感じた時に確認したほうがいい5つのこと</a>
-      </li>
-      <li class="p-info__item">
-        <div>
-          <a href="#">
-            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/pickup.jpg" alt="画像" />
-          </a>
-        </div>
-
-        <a class="p-info__text" href="#">PCが動作を重く感じた時に確認したほうがいい5つのこと</a>
-      </li>
-      <li class="p-info__item">
-        <div>
-          <a href="#">
-            <img class="p-info__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/pickup.jpg" alt="画像" />
-          </a>
-        </div>
-        <a class="p-info__text" href="#">PCが動作を重く感じた時に確認したほうがいい5つのこと</a>
-      </li>
+      <?php
+      $custom_posts = get_posts(array(
+        'post_type' => 'blog', // 投稿タイプ
+        'posts_per_page' => 3, // 表示件数
+        'orderby' => 'date', // 表示順の基準
+        'order' => 'DESC', // 昇順・降順
+      ));
+      global $post;
+      if ($custom_posts) : foreach ($custom_posts as $post) : setup_postdata($post); ?>
+        <li class="p-info__item">
+            <a href="<?php the_permalink(); ?>">
+              <div class="p-info__imgBox">
+                <?php if(has_post_thumbnail()): ?>
+                    <?php the_post_thumbnail('thumbnails', ['class' => '.p-info__image']); ?>
+                  <?php else: ?>
+                    <img class="p-info__imgBox" src="<?php echo get_template_directory_uri(); ?>/assets/images/macbook1993_TP_V.jpg" alt="">
+                <?php endif; ?>
+              </div>
+              <p class="p-info__text" ><?php the_title() ?></p>
+            </a>
+        </li>
+        <?php endforeach; wp_reset_postdata(); else : ?>
+          <p class="p-info__notFound">お知らせがありません</p>
+      <?php endif; ?>
     </ul>
   </div>
 </section>
@@ -215,11 +214,13 @@
     <div class="p-shop__container">
       <ul class="p-shop__list">
         <?php // タームの親・子の一覧にタームに紐づく投稿一覧を表示する方法
-        $categories = get_terms('shop_category',
-        array(
-          'parent' => 0,
-          'orderby' => 'description'
-        ));
+        $categories = get_terms(
+          'shop_category',
+          array(
+            'parent' => 0,
+            'orderby' => 'description'
+          )
+        );
         foreach ($categories as $cat) { ?>
           <li class="p-shop__item">
             <p class="p-shop__area"><?php echo ($cat->name); ?></p>
@@ -229,41 +230,41 @@
                 $children = get_terms('shop_category', 'hierarchical=0&parent=' . $cat->term_id);
                 if ($children) { // 子タームの有無
                   foreach ($children as $child) { ?>
-                <div class="p-shop__innerArea">
-                  <div class="p-shop__iconPref">
-                    <div class="p-shop__iconContainer">
-                      <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="" />
-                    </div>
-                    <p class="p-shop__pref"><?php echo ($child->name); ?></p>
-                  </div>
-                  <?php $catslug = $child->slug;
-                  $args = array(
-                    'post_type' => 'shop',
-                    'shop_category' => $catslug,
-                    'posts_per_page' => -1,
-                  );
-                  $myquery = new WP_Query($args);
-                  ?>
-                  <ul class="p-shop__shopNameList">
-                    <?php if ($myquery->have_posts()) : ?>
-                        <?php while ($myquery->have_posts()) : $myquery->the_post(); ?>
-                          <li class="p-shop__shopName">
-                            <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-                          </li>
+                    <div class="p-shop__innerArea">
+                      <div class="p-shop__iconPref">
+                        <div class="p-shop__iconContainer">
+                          <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="" />
+                        </div>
+                        <p class="p-shop__pref"><?php echo ($child->name); ?></p>
+                      </div>
+                      <?php $catslug = $child->slug;
+                      $args = array(
+                        'post_type' => 'shop',
+                        'shop_category' => $catslug,
+                        'posts_per_page' => -1,
+                      );
+                      $myquery = new WP_Query($args);
+                      ?>
+                      <ul class="p-shop__shopNameList">
+                        <?php if ($myquery->have_posts()) : ?>
+                          <?php while ($myquery->have_posts()) : $myquery->the_post(); ?>
+                            <li class="p-shop__shopName">
+                              <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                            </li>
                           <?php endwhile; ?>
                         <?php endif; ?>
-                  </ul>
-                </div>
-                <?php wp_reset_postdata(); ?>
+                      </ul>
+                    </div>
+                    <?php wp_reset_postdata(); ?>
               </div>
-              <?php } ?> 
-              <!-- 子タームに紐づく記事一覧の表示終了 -->
+            <?php } ?>
+            <!-- 子タームに紐づく記事一覧の表示終了 -->
             </div>
           </li>
-  <?php } // 子ターム終了 
-  ?>
-<?php } // 親ターム終了 
-?>
+        <?php } // 子ターム終了
+        ?>
+      <?php } // 親ターム終了
+      ?>
 </section>
 <section class="p-news">
   <div class="l-container">
@@ -273,8 +274,8 @@
         <p class="c-titleBox__text">News</p>
       </div>
     </div>
-    <div class="p-news__container">
-      <ul class="p-news__list">
+    <!-- <div class="p-news__container"> -->
+      <ul class="p-news__container">
         <?php
         $custom_posts = get_posts(array(
           'post_type' => 'news', // 投稿タイプ
@@ -285,20 +286,18 @@
         global $post;
         if ($custom_posts) : foreach ($custom_posts as $post) : setup_postdata($post); ?>
             <li class="p-news__article">
-              <a href="">
+              <a href="<?php the_permalink() ?>">
                 <p class="p-news__date"><?php the_time("Y-m-d"); ?></p>
-                <div class="p-news__text">
-                  <p href="#">&lt;<?php the_author(); ?>&gt;<?php the_title(); ?></p>
+                <div class="p-news__articleTitle">
+                  <p>&lt;<?php the_author(); ?>&gt;<?php the_title(); ?></p>
                 </div>
               </a>
             </li>
-          <?php endforeach;
-          wp_reset_postdata();
-        else : ?>
-          <p class="p-news__text">お知らせがありません</p>
+          <?php endforeach; wp_reset_postdata(); else : ?>
+            <p class="p-news__text">お知らせがありません</p>
         <?php endif; ?>
       </ul>
-    </div>
+    <!-- </div> -->
   </div>
 </section>
 <section class="p-question">

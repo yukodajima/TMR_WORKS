@@ -1,4 +1,5 @@
 <?php
+//店舗詳細のカスタム投稿設定
 function cpt_register_shops()
 {
   $labels = [
@@ -31,7 +32,7 @@ function cpt_register_shops()
     "menu_icon" => "",
     'supports' => array('title','editor','thumbnail')
   ]);
-
+  
   register_taxonomy("shop_category", "shop", [
     "labels" => [
       "name" => "都道府県別",
@@ -44,8 +45,8 @@ add_action("init", "cpt_register_shops");
 
 //「お知らせ」のカスタム投稿タイプの設定
 function init_func() {
-  add_theme_support("title-tag");
-  add_theme_support("post-thumbnails");
+  // add_theme_support("title-tag");
+  // add_theme_support("post-thumbnails");
 
   register_post_type("news", [
     "labels" => [
@@ -56,29 +57,50 @@ function init_func() {
     "hierarchical" => false,
     "menu_position" => 5,
     "menu_icon" => "",
+    'supports' => array('title','editor','thumbnail')
   ]);
 }
 add_action("init", "init_func");
-function cpt_register_dep()
-{
-  $labels = [
-    "single_name" => "dep",
-  ];
-  $args = [
-    "label" => "カテゴリー",
-    "labels" => $labels,
-    "publicly_queryable" => true,
-    "show_in_menu" => true,
-    "query_var" => true,
-    "rewrite" => ["slag" => "dep", "with_front" => true,],
-    "show_admin_column" => false,
-    "show_in_rest" => false,
-    "rest_base" => "dep",
-    "rest_controller_class" => "WP_REST_Terms_Controller",
-    "show_in_quick_edit" => false,
-  ];
-  register_taxonomy("dep", ["shop"], $args);
-};
+
+//ブログ投稿のカスタム投稿設定
+function cpt_register_blog() {
+  // add_theme_support('title-tag');
+  // add_theme_support('post-thumbnails');
+
+  register_post_type('blog', [
+    'labels' => [
+      'name' => 'ブログ投稿'
+    ],
+    'public' => true,
+    'has_archive' => true,
+    'hierarchical' => false,
+    'menu_position' => 5,
+    'menu_icon' => '',
+    'supports' => array('title','editor','thumbnail')
+  ]);
+}
+add_action('init', 'cpt_register_blog');
+
+// function cpt_register_dep()
+// {
+//   $labels = [
+//     "single_name" => "dep",
+//   ];
+//   $args = [
+//     "label" => "カテゴリー",
+//     "labels" => $labels,
+//     "publicly_queryable" => true,
+//     "show_in_menu" => true,
+//     "query_var" => true,
+//     "rewrite" => ["slag" => "dep", "with_front" => true,],
+//     "show_admin_column" => false,
+//     "show_in_rest" => false,
+//     "rest_base" => "dep",
+//     "rest_controller_class" => "WP_REST_Terms_Controller",
+//     "show_in_quick_edit" => false,
+//   ];
+//   register_taxonomy("dep", ["shop"], $args);
+// };
 
 function my_enqueue_scripts()
 {
