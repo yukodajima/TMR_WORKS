@@ -25,17 +25,20 @@
     max-height: 200px;
     @include mq('tab') {
       max-width: none;
+      width: 100%;
       height: 300px;
       margin: 0 auto;
       &:nth-child(n + 2) {
         margin-top: 30px;
       }
     }
-    @include mq('sp') {
-      height: 150px;
-    }
     @include mq("sp") {
       height: 130px;
+    }
+    & a {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
   }
   &__backGround {
@@ -46,32 +49,14 @@
     height: 100%;
     background-color: #000000;
     opacity: .3;
-    @include mq("tab") {
-      height: 300px;
-    }
-    @include mq("sp") {
-      height: 130px;
-    }
   }
   &__imgContainer {
     height: 100%;
-    @include mq("tab") {
-      height: 300px;
-    }
-    @include mq("sp") {
-      height: 130px;
-    }
   }
   &__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    @include mq("tab") {
-      height: 300px;
-    }
-    @include mq("sp") {
-      height: 130px;
-    }
   }
   &__textArea {
     position: absolute;
@@ -108,6 +93,7 @@
     margin-top: 80px;
     @include mq('tab') {
       margin-top: 40px;
+      border: none;
     }
   }
   &__textBox {
@@ -137,8 +123,10 @@
   &__item {
     white-space: nowrap;
     @include mq('tab') {
-      border-bottom: 1px solid $color-background-sub;
       padding: 10px 20px;
+      border-top: 1px solid $color-background-sub;
+      // &:not(:first-child) {
+      // }
     }
     & a {
       display: block;
