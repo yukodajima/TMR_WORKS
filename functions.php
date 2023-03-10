@@ -81,6 +81,22 @@ function cpt_register_blog() {
 }
 add_action('init', 'cpt_register_blog');
 
+//お客様の声のカスタム投稿
+function cpt_register_revue() {
+  register_post_type('revue', [
+    'labels' => [
+      'name' => 'お客様の声'
+    ],
+    'public' => true,
+    'has_archive' => true,
+    'hierarchical' => false,
+    'menu_position' => 5,
+    'menu_icon' =>'',
+    'supports' => array('title', 'editor', 'thumbnail')
+  ]);
+}
+add_action('init', 'cpt_register_revue');
+
 // function cpt_register_dep()
 // {
 //   $labels = [
@@ -126,3 +142,4 @@ function taxonomy_orderby_description( $orderby, $args ) {
   return $orderby;
 }
 add_filter( 'get_terms_orderby', 'taxonomy_orderby_description', 10, 2 );
+?>

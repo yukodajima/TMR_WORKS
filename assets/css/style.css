@@ -539,6 +539,10 @@ select {
     margin-top: 20px;
   }
 }
+.p-revue__item a {
+  text-decoration: none;
+  color: #1B224C;
+}
 .p-revue__date {
   font-size: 16px;
 }

@@ -221,15 +221,15 @@
             'orderby' => 'description'
           )
         );
-        foreach ($categories as $cat) { ?>
+        foreach ($categories as $cat): ?>
           <li class="p-shop__item">
             <p class="p-shop__area"><?php echo ($cat->name); ?></p>
             <div class="p-shop__loopBox">
               <div class="p-shop__loop">
                 <?php
                 $children = get_terms('shop_category', 'hierarchical=0&parent=' . $cat->term_id);
-                if ($children) { // 子タームの有無
-                  foreach ($children as $child) { ?>
+                if ($children): // 子タームの有無
+                  foreach ($children as $child): ?>
                     <div class="p-shop__innerArea">
                       <div class="p-shop__iconPref">
                         <div class="p-shop__iconContainer">
@@ -257,14 +257,15 @@
                     </div>
                     <?php wp_reset_postdata(); ?>
               </div>
-            <?php } ?>
-            <!-- 子タームに紐づく記事一覧の表示終了 -->
+              <?php endforeach; ?>
+              <!-- 子タームに紐づく記事一覧の表示終了 -->
             </div>
           </li>
-        <?php } // 子ターム終了
-        ?>
-      <?php } // 親ターム終了
-      ?>
+        <?php endif; ?>
+      <?php endforeach; ?>
+      </ul>
+    </div>
+  </div>
 </section>
 <section class="p-news">
   <div class="l-container">
