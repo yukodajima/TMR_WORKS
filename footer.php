@@ -95,13 +95,13 @@
         </div>
         <div class="p-footer__navListBox">
           <li class="p-footer__navList">
-            <p>プライバシーポリシー</p>
+            <a href="<?php echo home_url("/privacy-policy"); ?>">プライバシーポリシー</a>
           </li>
           <li class="p-footer__navList">
-            <p>サイトマップ</p>
+            <a href="<?php echo home_url("/privacy-policy"); ?>">サイトマップ</a>
           </li>
           <li class="p-footer__navList">
-            <p>会社概要</p>
+            <a href="<?php echo home_url("/company-overview"); ?>">会社概要</a>
           </li>
         </div>
       </nav>

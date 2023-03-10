@@ -125,8 +125,6 @@
     @include mq('tab') {
       padding: 10px 20px;
       border-top: 1px solid $color-background-sub;
-      // &:not(:first-child) {
-      // }
     }
     & a {
       display: block;
@@ -312,6 +310,10 @@
       line-height: inherit;
       height: auto;
       font-size: 12px;
+    }
+    & a {
+      text-decoration: none;
+      color: $color-text;
     }
   }
 }

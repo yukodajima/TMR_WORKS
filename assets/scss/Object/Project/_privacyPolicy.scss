@@ -1,0 +1,24 @@
+@use "../../Foundation/global" as *;
+
+.p-privacyPolicy {
+  &__item {
+    list-style: none;
+    margin-top: 30px;
+  }
+  &__subTitle {
+    margin-top: 20px;
+  }
+  &__text {
+    margin-top: 10px;
+  }
+  &:first-child  {
+    margin-top: 0;
+    padding-top: 80px;
+  }
+  &:last-child {
+    padding-bottom: 80px;
+  }
+  &__list {
+    list-style: inside;
+  }
+}

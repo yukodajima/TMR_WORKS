@@ -1718,6 +1718,10 @@ select {
     font-size: 12px;
   }
 }
+.p-footer__navList a {
+  text-decoration: none;
+  color: #1B224C;
+}
 
 .p-header {
   background-color: #FFF;
@@ -3747,6 +3751,27 @@ select {
 }
 .p-blog__content {
   margin-top: 40px;
+}
+
+.p-privacyPolicy__item {
+  list-style: none;
+  margin-top: 30px;
+}
+.p-privacyPolicy__subTitle {
+  margin-top: 20px;
+}
+.p-privacyPolicy__text {
+  margin-top: 10px;
+}
+.p-privacyPolicy:first-child {
+  margin-top: 0;
+  padding-top: 80px;
+}
+.p-privacyPolicy:last-child {
+  padding-bottom: 80px;
+}
+.p-privacyPolicy__list {
+  list-style: inside;
 }
 
 .u-hidden {
