@@ -1,12 +1,18 @@
 @use '../../Foundation/global'as *;
 .p-blog {
-  padding: 100px;
+  padding-bottom: 100px;
+  @include mq("sp") {
+    padding-bottom: 40px;
+  }
   &__date {
     font-size: 18px;
   }
   &__title {
     font-size: 32px;
     margin-top: 20px;
+  }
+  &__thumbnail {
+    margin-top: 10px;
   }
   &__content {
     margin-top: 40px;

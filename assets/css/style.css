@@ -3728,7 +3728,12 @@ select {
 }
 
 .p-blog {
-  padding: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 599px) {
+  .p-blog {
+    padding-bottom: 40px;
+  }
 }
 .p-blog__date {
   font-size: 18px;
@@ -3736,6 +3741,9 @@ select {
 .p-blog__title {
   font-size: 32px;
   margin-top: 20px;
+}
+.p-blog__thumbnail {
+  margin-top: 10px;
 }
 .p-blog__content {
   margin-top: 40px;
