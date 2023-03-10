@@ -1209,6 +1209,7 @@ select {
   gap: 40px;
   width: 100%;
   text-decoration: none;
+  color: #1B224C;
 }
 @media (max-width: 900px) {
   .p-news__article a {
@@ -1222,10 +1223,8 @@ select {
 }
 .p-news__date {
   white-space: nowrap;
-  color: #1B224C;
 }
-.p-news__articleTitle > a {
-  color: #1B224C;
+.p-news__articleTitle p {
   text-decoration: none;
 }
 .p-news__btnContainer {
