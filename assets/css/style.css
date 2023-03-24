@@ -1388,6 +1388,8 @@ select {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 100% 100%;
+     object-position: 100% 100%;
 }
 .p-footer__textArea {
   position: absolute;

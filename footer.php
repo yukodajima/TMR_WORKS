@@ -6,7 +6,7 @@
           <a href="<?php echo home_url("/shop"); ?>">
             <div class="p-footer__backGround"></div>
             <div class="p-footer__imgContainer">
-            <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/macbookproIMGL4508_TP_V.jpg" alt="footer画像" />
+              <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer01.jpg" alt="footer画像" />
             </div>
             <div class="p-footer__textArea">
               <h2 class="p-footer__title">店舗一覧</h2>
@@ -18,7 +18,7 @@
           <a href="<?php echo home_url(); ?>">
             <div class="p-footer__backGround"></div>
             <div class="p-footer__imgContainer">
-              <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/PKU4151339PAR58327_TP_V.jpg" alt="footer画像" />
+              <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer02.jpg" alt="footer画像" />
             </div>
             <div class="p-footer__textArea">
               <h2 class="p-footer__title">買取</h2>
@@ -33,7 +33,7 @@
           <a href="<?php echo home_url(); ?>">
             <div class="p-footer__backGround"></div>
             <div class="p-footer__imgContainer">
-              <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner3.jpg" alt="footer画像" />
+              <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer03.jpg" alt="footer画像" />
             </div>
             <div class="p-footer__textArea">
               <h2 class="p-footer__title">販売</h2>
