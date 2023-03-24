@@ -36,7 +36,7 @@
           <li class="p-header__menuItem">
             <a class="p-header__menuLink" href="<?php echo home_url(); ?>">
               <div class="p-header__menuLogo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_top.svg" alt="">
               </div>
               <p class="p-header__menuText">HOME</p>
             </a>
@@ -44,7 +44,7 @@
           <li class="p-header__menuItem">
             <a class="p-header__menuLink" href="<?php echo home_url("/beginnerpage"); ?>">
               <div class="p-header__menuLogo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_beginner.svg" alt="">
               </div>
               <p class="p-header__menuText">初めての方へ</p>
             </a>
@@ -52,7 +52,7 @@
           <li class="p-header__menuItem">
             <a class="p-header__menuLink" href="<?php echo home_url("/repair"); ?>">
               <div class="p-header__menuLogo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_repair.svg" alt="">
               </div>
               <p class="p-header__menuText">修理メニュー</p>
             </a>
@@ -60,7 +60,7 @@
           <li class="p-header__menuItem">
             <a class="p-header__menuLink" href="<?php echo home_url("/symptoms"); ?>">
               <div class="p-header__menuLogo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_symptoms.svg" alt="">
               </div>
               <p class="p-header__menuText">症状で選ぶ</p>
             </a>
@@ -68,7 +68,7 @@
           <li class="p-header__menuItem">
             <a class="p-header__menuLink" href="<?php echo home_url("/revue"); ?>">
               <div class="p-header__menuLogo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_revue.svg" alt="">
               </div>
               <p class="p-header__menuText">お客様の声</p>
             </a>
@@ -76,7 +76,7 @@
           <li class="p-header__menuItem">
             <a class="p-header__menuLink" href="<?php echo home_url("/shop"); ?>">
               <div class="p-header__menuLogo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_shop.svg" alt="">
               </div>
               <p class="p-header__menuText">店舗一覧</p>
             </a>
@@ -84,7 +84,7 @@
           <li class="p-header__menuItem">
             <a class="p-header__menuLink" href="<?php echo home_url("/franchiserecruiting"); ?>">
               <div class="p-header__menuLogo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_franchise.svg" alt="">
               </div>
               <p class="p-header__menuText">加盟店募集</p>
             </a>
