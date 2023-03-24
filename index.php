@@ -47,7 +47,7 @@
     <ul class="p-work__list">
       <li class="p-work__item">
         <div class="p-work__imgContainer">
-          <img class="p-work__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/point1.jpg" alt="丸画像" />
+          <img class="p-work__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/top_work01.png" alt="丸画像" />
         </div>
         <h2 class="p-work__title">最短即日対応</h2>
         <p class="p-work__text">
@@ -56,7 +56,7 @@
       </li>
       <li class="p-work__item">
         <div class="p-work__imgContainer">
-          <img class="p-work__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/point2.jpg" alt="丸画像" />
+          <img class="p-work__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/top_work02.png" alt="丸画像" />
         </div>
         <h2 class="p-work__title">お手頃な価格</h2>
         <p class="p-work__text">
@@ -65,7 +65,7 @@
       </li>
       <li class="p-work__item">
         <div class="p-work__imgContainer">
-          <img class="p-work__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/point3.jpg" alt="丸画像" />
+          <img class="p-work__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/top_work03.png" alt="丸画像" />
         </div>
         <h2 class="p-work__title">PC専門店</h2>
         <p class="p-work__text">
