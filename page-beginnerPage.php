@@ -81,6 +81,7 @@
                     訪問の場合は、別途ご案内いたします。
                     店舗持ち込みの場合は、ご予約なしでも受付いたします。
                   </p>
+                  <button class="c-btn p-flow__btn">修理申込書&#40;PDF&#41;をダウンロード</button>
                 </div>
                 <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner2.jpg" alt=""></div>
               </li>

@@ -274,8 +274,8 @@ select {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 0%;
-     object-position: 50% 0%;
+  -o-object-position: 10% 10%;
+     object-position: 10% 10%;
 }
 .c-hero__titleBox {
   position: absolute;
@@ -2459,6 +2459,16 @@ select {
 @media (max-width: 900px) {
   .p-flow__listText {
     margin-top: 20px;
+  }
+}
+.p-flow__btn {
+  display: block;
+  margin: 20px auto 0;
+  width: 280px;
+}
+@media (max-width: 900px) {
+  .p-flow__btn {
+    margin: 10px auto 0;
   }
 }
 .p-flow__img {
