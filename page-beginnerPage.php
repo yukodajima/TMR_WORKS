@@ -4,7 +4,7 @@
           <div class="l-container">
             <h3 class="p-important__title">
               【お申し込みの前に】<br>
-              修理にあたってご準備いただくこと
+              修理にあたって<br class="p-important__linefeed">ご準備いただくこと
               <!-- ご利用にあたっての<br class="p-important__linefeed">注意点 -->
             </h3>
             <ul class="p-important__list">
@@ -23,7 +23,7 @@
               <li class="p-important__item">
                 <h4 class="p-important__itemTitle">
                   準備②<br>
-                  データのバックアップをお願いします。
+                  データのバックアップを<br class="p-important__linefeed">お願いします。
                 </h4>
                 <p class="p-important__text">
                   データのバックアップを必ずお取りいただくようにお願いしております。
@@ -52,7 +52,7 @@
           <div class="l-container">
             <div class="c-titleBox">
               <div class="c-titleBox__wrapper">
-                <h3 class="c-titleBox__title">🔰修理の受付・流れについて🔰</h3>
+                <h3 class="c-titleBox__title">🔰修理の受付・<br class="p-important__linefeed">流れについて🔰</h3>
                 <!-- <p class="c-titleBox__text">Flow</p> -->
               </div>
             </div>

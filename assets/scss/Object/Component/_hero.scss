@@ -34,11 +34,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: $color-background-sub;
-    & P {
-      font-size: 24px;
-      @include mq("tab") {
-        font-size: 16px;
-      }
+  }
+  &__topText {
+    font-size: 32px;
+    @include mq("tab") {
+      font-size: 22px;
     }
   }
   &__title {
@@ -46,6 +46,18 @@
     @include mq("tab") {
       font-size: 32px;
       white-space: nowrap;
+    }
+  }
+  &__subTitle {
+    font-size: 24px;
+    @include mq("tab") {
+      font-size: 16px;
+    }
+  }
+  &__linefeed {
+    display: none;
+    @include mq("sp") {
+      display: block;
     }
   }
 }

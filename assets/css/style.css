@@ -286,12 +286,12 @@ select {
           transform: translate(-50%, -50%);
   color: #FFF;
 }
-.c-hero__titleBox P {
-  font-size: 24px;
+.c-hero__topText {
+  font-size: 32px;
 }
 @media (max-width: 900px) {
-  .c-hero__titleBox P {
-    font-size: 16px;
+  .c-hero__topText {
+    font-size: 22px;
   }
 }
 .c-hero__title {
@@ -301,6 +301,22 @@ select {
   .c-hero__title {
     font-size: 32px;
     white-space: nowrap;
+  }
+}
+.c-hero__subTitle {
+  font-size: 24px;
+}
+@media (max-width: 900px) {
+  .c-hero__subTitle {
+    font-size: 16px;
+  }
+}
+.c-hero__linefeed {
+  display: none;
+}
+@media (max-width: 599px) {
+  .c-hero__linefeed {
+    display: block;
   }
 }
 
