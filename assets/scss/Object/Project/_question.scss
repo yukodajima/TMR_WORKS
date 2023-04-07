@@ -12,13 +12,23 @@
   }
   &__list {
     margin-top: 50px;
+    padding-top: 10px;
     list-style: none;
     text-align: left;
     border-top: solid gray 1px;
+    & hr {
+      margin: 10px 0;
+    }
+  }
+  &__textBox {
+    position: relative;
+    display: flex;
   }
   &__text {
-    padding: 10px 0;
-    position: relative;
+    width: 95%;
+    @include mq("sp") {
+      width: 90%;
+    }
   }
   &__triger {
     color: $color-text;

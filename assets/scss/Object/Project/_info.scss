@@ -5,6 +5,21 @@
   @include mq('tab') {
     padding-top: 60px;
   }
+  &__titleBox {
+    text-align: center;
+  }
+  &__title {
+    font-size: 32px;
+    @include mq("tab") {
+      font-size: 24px;
+    }
+  }
+  &__linefeed {
+    display: none;
+    @include mq("sp") {
+      display: block;
+    }
+  }
   &__list {
     margin-top: 80px;
     display: flex;
@@ -23,11 +38,16 @@
     width: 30%;
     max-width: 350px;
     @include mq('tab') {
+      width: 100%;
       margin: 0 auto;
       max-width: 400px;
       & + .p-info__item {
         margin-top: 50px;
       }
+    }
+    & a {
+      display: block;
+      width: 100%;
     }
   }
   &__imgBox {

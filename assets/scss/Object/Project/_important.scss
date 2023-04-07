@@ -3,10 +3,10 @@
 .p-important {
   width: 900px;
   margin: 0 auto;
-  padding: 80px 0px;
+  padding: 120px 0px 0px;
   @include mq ("tab") {
     width: 100%;
-    padding: 60px 0px;
+    padding: 60px 0px 0px;
   }
   &__title {
     text-align: center;
@@ -36,7 +36,7 @@
     }
   }
   &__item {
-    width: 30%;
+    width: 47%;
     @include mq("tab") {
       width: 100%;
       &:not(:first-child) {
@@ -63,5 +63,8 @@
   &__text {
     font-size: 16px;
     margin-top: 20px;
+    & span {
+      font-size: 14px;
+    }
   }
 }

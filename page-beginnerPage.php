@@ -1,100 +1,39 @@
 <?php get_header(); ?>
 <?php get_template_part('hero'); ?>
-        <section class="p-flow">
-          <div class="l-container">
-            <div class="c-titleBox">
-              <div class="c-titleBox__wrapper">
-                <h3 class="c-titleBox__title">利用手順</h3>
-                <p class="c-titleBox__text">Flow</p>
-              </div>
-            </div>
-            <ul class="p-flow__list">
-              <li class="p-flow__listItem">
-                <div class="p-flow__textBox">
-                  <h4 class="p-flow__listTitle">
-                    お問い合わせ・修理費用見積
-                  </h4>
-                  <p class="p-flow__listText">
-                    まずはお気軽にお電話いただき、お客様のパソコンのお悩みをお聞かせください。
-                    問題を解消する為に必要な費用に関しましての概算見積金額をお伝え致します。
-                  </p>
-                </div>
-                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner1.jpg" alt=""></div>
-              </li>
-              <li class="p-flow__listItem--reverse">
-                <div class="p-flow__textBox">
-                  <h4 class="p-flow__listTitle">
-                    製品を送る、店舗に訪問、訪問修理から選ぶ
-                  </h4>
-                  <p class="p-flow__listText">
-                    弊社では修理を承る際にパソコンを受け取らせていただく方法がいくつかございます。
-                    お急ぎの方、お忙しい方等、お客様のご都合に合せてお選びいただくことが可能です。
-                  </p>
-                </div>
-                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner2.jpg" alt=""></div>
-              </li>
-              <li class="p-flow__listItem">
-                <div class="p-flow__textBox">
-                  <h4 class="p-flow__listTitle">
-                    診断・お見積り
-                  </h4>
-                  <p class="p-flow__listText">
-                    御予約がなくても受付致します。店鋪スタッフに症状をお聞かせください。
-                    なお、これまでの豊富な実績に基づいた経験により、おおよその費用・修理期間をお伝えすることも可能です。<br>
-                    （料金・納期は症状によって変動致しますのでご了承ください。）<br>
-                    また、詳細な見積は本体を分解しての故障部分の確認が必要となりますので、
-                    追加検査費が必要となる場合がございます。
-                  </p>
-                </div>
-                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner3.jpg" alt=""></div>
-              </li>
-              <li class="p-flow__listItem--reverse">
-                <div class="p-flow__textBox">
-                  <h4 class="p-flow__listTitle">
-                    お支払い・製品返却
-                  </h4>
-                  <p class="p-flow__listText">
-                    修理品の受け取りにお越しいただきましたら、店頭でお客様にも動作 確認をしていただきます。
-                    問題がなければ商品の返却を行い、代金の お支払いをお願い致します。<br>
-                    ・支払方法：現金、銀行振込、クレジットカード、代引き<br>
-                    ※店頭持ち込みのお客様でも返却時の郵送返却は可能です。
-                  </p>
-                </div>
-                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner4.jpg" alt=""></div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="p-important">
+<section class="p-important">
           <div class="l-container">
             <h3 class="p-important__title">
-              ご利用にあたっての<br class="p-important__linefeed">注意点
+              【お申し込みの前に】<br>
+              修理にあたってご準備いただくこと
+              <!-- ご利用にあたっての<br class="p-important__linefeed">注意点 -->
             </h3>
             <ul class="p-important__list">
               <li class="p-important__item">
                 <h4 class="p-important__itemTitle">
-                  注意点1<br>
+                  準備①<br>
                   付属品をご用意ください。
                 </h4>
                 <p class="p-important__text">
-                  基本、デスクトップ（モニタ別体型、モニタ一体型）はパソコン本体、
-                  モニタ電源ケーブル（アダプターも含む）をご用意ください。
-                  キーボード、マウスは必要ありません。
-                  ノート型はパソコン本体、電源ケーブル（ACアダプター含む）をお持ちください。<br>
-                  また、購入時にリカバリディスク（セットアップディスク）等のCD類が付属していた場合はそちらもお持ちください。
-                  ※不足している付属品があった場合は修理ができない場合がございます。
+                  デスクトップ型<span>※1</span>の場合は、パソコン本体、電源ケーブルをお持ち込み（ご郵送）ください。キーボード、マウスは必要ございません。
+                  ノート型の場合は、パソコン本体、ACアダプタをお持ち込み（ご郵送）ください。
+                  付属品が不足している場合、修理できないことがございます。ご不安な際は、お電話ください。<br>
+                  ※1デスクトップ型…モニター別型、モニター一体型
                 </p>
               </li>
               <li class="p-important__item">
                 <h4 class="p-important__itemTitle">
-                  注意点2<br>
-                  身分証明書のご準備
+                  準備②<br>
+                  データのバックアップをお願いします。
                 </h4>
                 <p class="p-important__text">
-                  身分証明書をご準備ください。
+                  データのバックアップを必ずお取りいただくようにお願いしております。
+                  データの消去作業は致しませんが、
+                  本体の修理作業中にソフトウェアの誤作動やHDDの故障を含めた何らかの理由によりデータが初期化された場合も弊社では責任を負いかねます。
+                  また、修理後のデータの変化や消去など保証対象外とさせていただきます。
+                  データのバックアップについて、ご不安な方は、有料にはなりますがデータのクローンをお申し込みください。
                 </p>
               </li>
-              <li class="p-important__item">
+              <!-- <li class="p-important__item">
                 <h4 class="p-important__itemTitle">
                   注意点3<br>
                   データバックアップ
@@ -105,6 +44,73 @@
                   また、本体の修理作業によりソフトウェアの誤作動やHDDの故障を含めた何らかの理由によりデータが初期化された場合も弊社では責任を負いかねます。
                   このことから弊社ではデータの事前バックアップを強くお勧め致します。
                 </p>
+              </li> -->
+            </ul>
+          </div>
+        </section>
+        <section class="p-flow">
+          <div class="l-container">
+            <div class="c-titleBox">
+              <div class="c-titleBox__wrapper">
+                <h3 class="c-titleBox__title">🔰修理の受付・流れについて🔰</h3>
+                <!-- <p class="c-titleBox__text">Flow</p> -->
+              </div>
+            </div>
+            <ul class="p-flow__list">
+              <li class="p-flow__listItem">
+                <div class="p-flow__textBox">
+                  <h4 class="p-flow__listTitle">
+                    (1)まずはお気軽にお問い合わせください
+                  </h4>
+                  <p class="p-flow__listText">
+                    お電話またはお問合せフォームでお客様のお悩みをお聞かせください。症状に応じて最適な修理方法をご案内いたします。
+                    もちろん、ご予約なしでご来店いただいても構いません。
+                    修理に必要な納期や概算見積などもお伝えいたします。
+                  </p>
+                </div>
+                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner1.jpg" alt=""></div>
+              </li>
+              <li class="p-flow__listItem--reverse">
+                <div class="p-flow__textBox">
+                  <h4 class="p-flow__listTitle">
+                    (2)郵送または店舗持ち込み、訪問
+                  </h4>
+                  <p class="p-flow__listText">
+                    お客様のニーズに合わせてサポートをお選びいただけます。郵送・店舗持ち込み・訪問の3種類がございます。
+                    郵送の場合は、パソコン本体と申込書を着払いで店舗宛にお送りください。申込書は下記からダウンロードして必要事項のご記入をお願いします。郵送する段ボールに【修理】と記載いただけると受取がスムーズになります。
+                    訪問の場合は、別途ご案内いたします。
+                    店舗持ち込みの場合は、ご予約なしでも受付いたします。
+                  </p>
+                </div>
+                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner2.jpg" alt=""></div>
+              </li>
+              <li class="p-flow__listItem">
+                <div class="p-flow__textBox">
+                  <h4 class="p-flow__listTitle">
+                    (3)診断・お見積り
+                  </h4>
+                  <p class="p-flow__listText">
+                    実際にPCを見て、無料診断し、お見積をお伝えいたします。
+                    詳細なお見積や修理期間を調べるために、本体を分解しての診断が必要になる場合がございます。その際は作業費3,300円(税込)をいただいております。
+                    機器や症状によって修理期間が異なります。
+                    修理内容にご了承いただけましたら、パソコンをお預かりして作業を行います。
+                  </p>
+                </div>
+                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner3.jpg" alt=""></div>
+              </li>
+              <li class="p-flow__listItem--reverse">
+                <div class="p-flow__textBox">
+                  <h4 class="p-flow__listTitle">
+                    (4)修理完了後、お支払い、ご返却
+                  </h4>
+                  <p class="p-flow__listText">
+                    修理完了後、お電話またはメール、SMSにてご連絡いたします。
+                    ご来店いただける方は、お客様にも動作確認をしていただきます。問題なければ、お支払い確認後、ご返却いたします。
+                    お支払いは、現金または銀行振込、クレジットカード決済、QRカード決済、電子マネーからお選びいただけます。（店舗によって異なります。）
+                    ご来店のお客様でも郵送でのご返却も可能です！
+                  </p>
+                </div>
+                <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner4.jpg" alt=""></div>
               </li>
             </ul>
           </div>

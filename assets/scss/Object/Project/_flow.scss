@@ -1,7 +1,7 @@
 @use '../../Foundation/global'as *;
 
 .p-flow {
-  padding: 120px 0px 80px;
+  padding: 80px 0px;
   @include mq("tab") {
     padding: 60px 0px;
   }

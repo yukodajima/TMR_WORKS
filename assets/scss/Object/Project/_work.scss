@@ -7,6 +7,9 @@
   }
   &__subTitle {
     font-size: 22px;
+    @include mq("sp") {
+      font-size: 16px;
+    }
     & span {
       font-size: 29px;
     }
