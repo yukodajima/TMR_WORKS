@@ -226,45 +226,46 @@
         foreach ($categories as $cat): ?>
           <li class="p-shop__item">
             <p class="p-shop__area"><?php echo ($cat->name); ?></p>
-            <div class="p-shop__loopBox">
-              <div class="p-shop__loop">
-                <?php
+            <ul class="p-shop__loopBox">
+              <?php
                 $children = get_terms('shop_category', 'hierarchical=0&parent=' . $cat->term_id);
                 if ($children): // 子タームの有無
                   foreach ($children as $child): ?>
-                    <div class="p-shop__innerArea">
-                      <div class="p-shop__iconPref">
-                        <div class="p-shop__iconContainer">
-                          <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="" />
+                    <li class="p-shop__loop">
+                      <div class="p-shop__innerArea">
+                        <div class="p-shop__iconPref">
+                          <div class="p-shop__iconContainer">
+                            <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="" />
+                          </div>
+                          <p class="p-shop__pref"><?php echo ($child->name); ?></p>
                         </div>
-                        <p class="p-shop__pref"><?php echo ($child->name); ?></p>
+                        <?php $catslug = $child->slug;
+                        $args = array(
+                          'post_type' => 'shop',
+                          'shop_category' => $catslug,
+                          'posts_per_page' => -1,
+                        );
+                        $myquery = new WP_Query($args);
+                        ?>
+                        <!-- 都道府県ごとの各店舗を表示するリストのループ -->
+                        <ul class="p-shop__shopNameList">
+                          <?php if ($myquery->have_posts()) : ?>
+                            <?php while ($myquery->have_posts()) : $myquery->the_post(); ?>
+                              <li class="p-shop__shopName">
+                                <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                              </li>
+                            <?php endwhile; ?>
+                          <?php endif; ?>
+                        </ul>
                       </div>
-                      <?php $catslug = $child->slug;
-                      $args = array(
-                        'post_type' => 'shop',
-                        'shop_category' => $catslug,
-                        'posts_per_page' => -1,
-                      );
-                      $myquery = new WP_Query($args);
-                      ?>
-                      <ul class="p-shop__shopNameList">
-                        <?php if ($myquery->have_posts()) : ?>
-                          <?php while ($myquery->have_posts()) : $myquery->the_post(); ?>
-                            <li class="p-shop__shopName">
-                              <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-                            </li>
-                          <?php endwhile; ?>
-                        <?php endif; ?>
-                      </ul>
-                    </div>
+                    </li>
                     <?php wp_reset_postdata(); ?>
-              </div>
-              <?php endforeach; ?>
+                  <?php endforeach; ?>
+                <?php endif; ?>
               <!-- 子タームに紐づく記事一覧の表示終了 -->
-            </div>
+            </ul>
           </li>
-        <?php endif; ?>
-      <?php endforeach; ?>
+        <?php endforeach; ?>
       </ul>
     </div>
   </div>

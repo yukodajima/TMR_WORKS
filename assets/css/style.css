@@ -1137,13 +1137,17 @@ select {
 .p-shop__loopBox {
   width: 100%;
 }
-.p-shop__loop {
-  width: 100%;
-}
 @media (max-width: 900px) {
-  .p-shop__loop {
+  .p-shop__loopBox {
     display: none;
   }
+}
+.p-shop__loopBox .active {
+  display: block;
+}
+.p-shop__loop {
+  width: 100%;
+  list-style: none;
 }
 .p-shop__innerArea {
   border-top: solid 1px #707070;

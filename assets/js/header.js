@@ -7,8 +7,8 @@ $(window).on('load', function () {
     const $menuList = $(".p-header__menuList")
     const $menu = $(".p-header__menu")
     const $menuLine = $(".p-header__menuLine")
-    var $windowWidth = $(this).width()
-    var $bp = 900
+    let $windowWidth = $(this).width()
+    let $bp = 900
 
     if ($windowWidth > $bp) {
       $menuList.show()
@@ -20,8 +20,8 @@ $(window).on('load', function () {
     })
 
     $(window).resize(function () {
-      var $windowWidth = $(this).width()
-      var $bp = 900
+      let $windowWidth = $(this).width()
+      let $bp = 900
 
       if ($windowWidth > $bp) {
         $menuList.css("display", "flex")
