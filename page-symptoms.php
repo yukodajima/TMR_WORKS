@@ -12,33 +12,15 @@
     <ul class="p-menu__list show">
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
+          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/maintenance.png" alt="" />
+        </div>
+        <p class="p-menu__text">OSが起動しない</p>
+      </li>
+      <li class="p-menu__item">
+        <div class="p-menu__imgContainer">
           <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/screen.png" alt="" />
         </div>
         <p class="p-menu__text">画面が割れてしまった</p>
-      </li>
-      <li class="p-menu__item">
-        <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/hddssd.png" alt="" />
-        </div>
-        <p class="p-menu__text">HDD・SSDが壊れてしまった</p>
-      </li>
-      <li class="p-menu__item">
-        <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/maintenance.png" alt="" />
-        </div>
-        <p class="p-menu__text">画面が付かなくなった</p>
-      </li>
-      <li class="p-menu__item">
-        <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/battery.png" alt="" />
-        </div>
-        <p class="p-menu__text">キーボードが反応しない</p>
-      </li>
-      <li class="p-menu__item">
-        <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/date.png" alt="" />
-        </div>
-        <p class="p-menu__text">充電がすぐになくなる</p>
       </li>
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
@@ -48,17 +30,43 @@
       </li>
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/other.png" alt="" />
+          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/repair-screen.jpeg" alt="" />
         </div>
-        <p class="p-menu__text">器具を落としてしまった</p>
+        <p class="p-menu__text">画面が付かなくなった</p>
       </li>
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/maintenance.png" alt="" />
+          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/hddssd.png" alt="" />
         </div>
-        <p class="p-menu__text">OSが起動しない</p>
+        <p class="p-menu__text">HDD・SSDが壊れてしまった</p>
+      </li>
+      <li class="p-menu__item">
+        <div class="p-menu__imgContainer">
+          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/date.png" alt="" />
+        </div>
+        <p class="p-menu__text">充電がすぐになくなる</p>
+      </li>
+      <li class="p-menu__item">
+        <div class="p-menu__imgContainer">
+          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/repair-keyboard.png" alt="" />
+        </div>
+        <p class="p-menu__text">キーボードが反応しない</p>
+      </li>
+      <li class="p-menu__item">
+        <div class="p-menu__imgContainer">
+          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/other.png" alt="" />
+        </div>
+        <p class="p-menu__text">パソコンを落としてしまった</p>
       </li>
     </ul>
+    <div class="p-menu__textBox">
+      <p class="p-menu__text">上記選択肢にない症状またはよくわからない</p>
+      <p class="p-menu__text">
+        症状が選択肢に当てはまらない場合でも可能な範囲で修理させていただきます。まずはお気軽にご相談ください^^<br>
+        また、症状の判断が難しくよくわからない方もご相談いただけましたら、修理内容や費用についてご案内いたします！<br>
+        店舗一覧からお近くの店舗をご確認ください！
+      </p>
+    </div>
   </div>
 </section>
 <?php get_footer(); ?>
