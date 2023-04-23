@@ -135,9 +135,10 @@
   }
   &__imgContainer {
     max-width: 275px;
+    height: 230px;
     @include mq('tab') {
       max-width: inherit;
-      height: auto;
+      height: 40vw;
     }
     @include mq('sp') {
       max-width: 250px;
@@ -149,7 +150,8 @@
   }
   &__image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
   }
   &__text {
     text-align: center;
@@ -172,5 +174,8 @@
     height: 50px;
     border: none;
     color: $color-background-sub;
+  }
+  &__textBox {
+    margin-top: 60px;
   }
 }

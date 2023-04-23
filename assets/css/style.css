@@ -987,11 +987,12 @@ select {
 }
 .p-menu__imgContainer {
   max-width: 275px;
+  height: 230px;
 }
 @media (max-width: 900px) {
   .p-menu__imgContainer {
     max-width: inherit;
-    height: auto;
+    height: 40vw;
   }
 }
 @media (max-width: 599px) {
@@ -1005,7 +1006,9 @@ select {
 }
 .p-menu__image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .p-menu__text {
   text-align: center;
@@ -1032,6 +1035,9 @@ select {
   height: 50px;
   border: none;
   color: #FFF;
+}
+.p-menu__textBox {
+  margin-top: 60px;
 }
 
 .p-shop {
