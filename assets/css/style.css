@@ -238,9 +238,13 @@ select {
 .c-titleBox__text {
   font-size: 16px;
 }
-
-.c-titleBox {
-  text-align: center;
+.c-titleBox p {
+  font-size: 24px;
+}
+@media (max-width: 900px) {
+  .c-titleBox p {
+    font-size: 18px;
+  }
 }
 
 .c-hero {

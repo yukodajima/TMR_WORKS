@@ -43,8 +43,10 @@
   &__text {
     font-size: 16px;
   }
-}
-
-.c-titleBox {
-  text-align: center;
+  & p {
+    font-size: 24px;
+    @include mq("tab") {
+      font-size: 18px;
+    }
+  }
 }
