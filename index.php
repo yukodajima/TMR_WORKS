@@ -235,7 +235,7 @@
                       <div class="p-shop__innerArea">
                         <div class="p-shop__iconPref">
                           <div class="p-shop__iconContainer">
-                            <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-twitter.svg" alt="" />
+                            <img class="p-shop__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-map.svg" alt="" />
                           </div>
                           <p class="p-shop__pref"><?php echo ($child->name); ?></p>
                         </div>
