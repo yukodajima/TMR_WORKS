@@ -3102,7 +3102,12 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 40px;
+  gap: 35px;
 }
 @media (max-width: 900px) {
   .p-shopIntroduction__wrapper {
@@ -3114,7 +3119,6 @@ select {
   max-width: 500px;
   height: 350px;
   width: 50%;
-  margin-right: 35px;
 }
 @media (max-width: 900px) {
   .p-shopIntroduction__img {
@@ -3129,19 +3133,23 @@ select {
   width: 100%;
   height: 100%;
 }
-.p-shopIntroduction__text {
+.p-shopIntroduction__textBox {
   max-width: 50%;
-  margin-top: 55px;
   font-size: 16px;
 }
 @media (max-width: 900px) {
-  .p-shopIntroduction__text {
+  .p-shopIntroduction__textBox {
     max-width: 100%;
-    margin-top: 28px;
+    margin-top: 20px;
   }
 }
-.p-shopIntroduction__text p:not(:first-child) {
-  margin: 1rem 0rem 0rem;
+.p-shopIntroduction__title {
+  margin-top: 15px;
+}
+@media (max-width: 599px) {
+  .p-shopIntroduction__title {
+    margin-top: 10px;
+  }
 }
 
 .p-shopRepairCost {

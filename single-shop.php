@@ -72,14 +72,39 @@
     </div>
     <div class="p-shopIntroduction__wrapper">
       <div class="p-shopIntroduction__img">
-      <?php if (get_post_meta($post->ID, 'shop_image', true)) : ?>
-        <?php echo wp_get_attachment_image(post_custom('shop_image')); ?>
-      <?php endif; ?>
-        <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="店舗写真"> -->
+        <?php if (get_post_meta($post->ID, 'shop_image', true)) : ?>
+          <?php echo wp_get_attachment_image(post_custom('shop_image')); ?>
+        <?php endif; ?>
       </div>
-      <div class="p-shopIntroduction__text">
+      <div class="p-shopIntroduction__textBox">
         <p>
           <?php echo get_post_meta($post->ID, 'store_introduction', true); ?>
+        </p>
+        <p class="p-shopIntroduction__title">&#9993;店長から一言メッセージ&#9993;</p>
+        <p>
+          <?php echo get_post_meta($post->ID, 'message', true); ?>
+        </p>
+        <p class="p-shopIntroduction__title">修理方法</p>
+        <p>
+        <?php
+          $values = CFS()->get( 'repair_select' );
+          $selects = array(); // $selects配列を初期化する
+          foreach ( $values as $key => $label ) {
+            $selects[] = $label; // $labelを$selects配列に追加する
+          }
+          echo implode( '&nbsp;/&nbsp;', $selects ); // $selectsをカンマ区切りで出力する
+        ?>
+        </p>
+        <p class="p-shopIntroduction__title">支払い方法</p>
+        <p>
+        <?php
+          $values = CFS()->get( 'pay_select' );
+          $selects = array(); // $selects配列を初期化する
+          foreach ( $values as $key => $label ) {
+            $selects[] = $label; // $labelを$selects配列に追加する
+          }
+          echo implode( '&nbsp;/&nbsp;', $selects ); // $selectsをカンマ区切りで出力する
+        ?>
         </p>
       </div>
     </div>
