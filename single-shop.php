@@ -29,35 +29,40 @@
         </div>
       </div>
       <div class="p-shopInfomation__shopImg">
-      <?php the_post_thumbnail('thumbnails'); ?>
+        <?php the_post_thumbnail('thumbnails'); ?>
       </div>
     </div>
     <ul class="p-shopInfomation__contact">
-      <li class="p-shopInfomation__contactMail">
+      <li class="p-shopInfomation__contactItem p-shopInfomation__contactMail">
         <a class="p-shopInfomation__contactLink" href="">
           <div class="p-shopInfomation__contactMailImg">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-instagram.svg" alt="メール">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-mail.png" alt="メール">
           </div>
-          <p>見積もり依頼</p>
+          <div class="p-shopInfomation__contactInfo">
+            <p>見積もり依頼</p>
+          </div>
         </a>
       </li>
-      <li href="" class="p-shopInfomation__contactTel">
+      <li href="" class="p-shopInfomation__contactItem p-shopInfomation__contactTel">
         <a class="p-shopInfomation__contactLink" href="">
           <div class="p-shopInfomation__contactTelImg">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-instagram.svg" alt="TEL">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-tel.png" alt="TEL">
           </div>
-          <div class="p-shopInfomation__contactTelInfo">
+          <div class="p-shopInfomation__contactInfo">
             <p>お電話で確認</p>
-            <p class="p-shopInfomation__contactTelNum">TEL:<?php echo get_post_meta($post->ID, 'tel', true); ?></p>
+            <p class="p-shopInfomation__contactNum">TEL:<?php echo get_post_meta($post->ID, 'tel', true); ?></p>
           </div>
         </a>
       </li>
-      <li href="" class="p-shopInfomation__contactLine">
+      <li href="" class="p-shopInfomation__contactItem p-shopInfomation__contactLine">
         <a class="p-shopInfomation__contactLink" href="">
           <div class="p-shopInfomation__contactLineImg">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icn-instagram.svg" alt="LINE">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-line.png" alt="LINE">
           </div>
-          <p>店舗の公式LINE</p>
+          <div class="p-shopInfomation__contactInfo">
+            <p>店舗の公式LINE</p>
+            <p class="p-shopInfomation__contactLineId"><?php echo get_post_meta($post->ID, 'line_id', true); ?></p>
+          </div>
         </a>
       </li>
     </ul>
