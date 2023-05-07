@@ -45,6 +45,7 @@
       position: relative;
       display: block;
       width: 40px;
+      cursor: pointer;
     }
     @include mq("sp") {
       width: 20px;
@@ -364,6 +365,9 @@
   &__contentItem {
     position: relative;
     max-width: 350px;
+    & a {
+      color: $color-background-sub;
+    }
     @include mq('tab') {
       max-width: none;
       height: 300px;
@@ -401,6 +405,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 0% 0%;
   }
   &__textArea {
     @include mq('tab') {

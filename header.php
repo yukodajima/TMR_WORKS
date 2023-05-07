@@ -91,46 +91,46 @@
           </li>
           <ul class="p-header__contentList">
             <li class="p-header__contentItem">
-              <div class="p-header__backGround"></div>
-              <div class="p-header__imgContainer">
-                <a href="<?php echo home_url("/shopList"); ?>">
-                <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="header画像" />
+              <a href="<?php echo home_url("/shopList"); ?>">
+                <div class="p-header__backGround"></div>
+                <div class="p-header__imgContainer">
+                  <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer01.jpg" alt="header画像" />
+                </div>
+                <div class="p-header__textArea">
+                  <h2 class="p-header__title">店舗一覧</h2>
+                  <p class="p-header__text">お近くのお店をチェック！</p>
+                </div>
               </a>
-              </div>
-              <div class="p-header__textArea">
-                <h2 class="p-header__title">店舗一覧</h2>
-                <p class="p-header__text">お近くのお店をチェック！</p>
-              </div>
             </li>
             <li class="p-header__contentItem">
-            <div class="p-header__backGround"></div>
-              <div class="p-header__imgContainer">
-                <a href="<?php echo home_url(); ?>">
-                  <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="header画像" />
-                </a>
-              </div>
-              <div class="p-header__textArea">
-                <h2 class="p-header__title">買取</h2>
-                <p class="p-header__text">
-                  PC関連の買取なら<br>
-                  お任せください
-                </p>
-              </div>
-            </li>
+              <a href="<?php echo home_url(); ?>">
+                <div class="p-header__backGround"></div>
+                <div class="p-header__imgContainer">
+                  <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer02.jpg" alt="header画像" />
+                </div>
+                <div class="p-header__textArea">
+                  <h2 class="p-header__title">買取</h2>
+                  <p class="p-header__text">
+                    PC関連の買取なら<br>
+                    お任せください
+                  </p>
+                </div>
+              </a>
+              </li>
             <li class="p-header__contentItem">
-            <div class="p-header__backGround"></div>
-              <div class="p-header__imgContainer">
-                <a href="<?php echo home_url(); ?>">
-                  <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="header画像" />
-                </a>
-              </div>
-              <div class="p-header__textArea">
-                <h2 class="p-header__title">販売</h2>
-                <p class="p-header__text">
-                  法人向け中古パソコン販売<br>
-                  新品パソコンの半額相当！
-                </p>
-              </div>
+              <a href="https://pcworks.shop">
+                <div class="p-header__backGround"></div>
+                <div class="p-header__imgContainer">
+                  <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer03.jpg" alt="header画像" />
+                </div>
+                <div class="p-header__textArea">
+                  <h2 class="p-header__title">販売</h2>
+                  <p class="p-header__text">
+                    法人向け中古パソコン販売<br>
+                    新品パソコンの半額相当！
+                  </p>
+                </div>
+              </a>
             </li>
           </ul>
         </ul>
