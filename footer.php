@@ -71,7 +71,7 @@
         </ul>
         <ul class="p-footer__boxList">
           <li class="p-footer__category">
-            <a href="<?php echo home_url("/beginnerPage"); ?>">お知らせ</a>
+            <a href="<?php echo home_url("/news"); ?>">お知らせ</a>
           </li>
           <li class="p-footer__category">
             <a href="<?php echo home_url("/blog"); ?>">ブログ</a>

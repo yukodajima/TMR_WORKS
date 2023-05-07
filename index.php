@@ -279,7 +279,7 @@
         <?php
         $custom_posts = get_posts(array(
           'post_type' => 'news', // 投稿タイプ
-          'posts_per_page' => 4, // 表示件数
+          'posts_per_page' => 5, // 表示件数
           'orderby' => 'date', // 表示順の基準
           'order' => 'DESC', // 昇順・降順
         ));
