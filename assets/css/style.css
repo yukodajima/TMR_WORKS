@@ -3173,6 +3173,7 @@ select {
   border: solid 1px #707070;
   width: 400px;
   height: 50px;
+  padding: 5px 10px;
 }
 .p-shopRepairCost table {
   border-collapse: collapse;

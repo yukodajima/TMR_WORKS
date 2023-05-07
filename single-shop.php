@@ -126,7 +126,23 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+      <?php $fields01 = CFS()->get( 'price_list' ); ?>
+        <?php if ($fields01)://faq_loop が存在するとき ?>
+          <?php foreach ( $fields01 as $field ):?>
+            <tr>
+              <td>
+                <?php echo $field['price_name'];//faq_loop の faq_qを表示 ?>
+              </td>
+              <td>
+                <?php echo $field['price'];//faq_loop の faq_aを表示 ?>
+              </td>
+              <td>
+                <?php echo $field['period'];//faq_loop の faq_aを表示 ?>
+              </td>
+            </tr>
+          <?php endforeach; ?>
+        <?php endif; ?>
+        <!-- <tr>
           <td> </td>
           <td> </td>
           <td> </td>
@@ -175,7 +191,7 @@
           <td> </td>
           <td> </td>
           <td> </td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
     <p>※店舗によって価格が異なります。詳細については店舗までお問い合わせください</p>
