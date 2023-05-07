@@ -52,7 +52,7 @@
           <div class="l-container">
             <div class="c-titleBox">
               <div class="c-titleBox__wrapper">
-                <h3 class="c-titleBox__title">🔰修理の受付・<br class="p-important__linefeed">流れについて🔰</h3>
+                <h3 class="c-titleBox__title">&#128304;修理の受付・<br class="p-important__linefeed">流れについて&#128304;</h3>
                 <!-- <p class="c-titleBox__text">Flow</p> -->
               </div>
             </div>
