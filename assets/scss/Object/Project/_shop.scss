@@ -37,6 +37,7 @@
       position: relative;
       line-height: 60px;
       max-width: none;
+      cursor: pointer;
       &::before {
         content: '';
         width: 5px;

@@ -1107,6 +1107,7 @@ select {
     position: relative;
     line-height: 60px;
     max-width: none;
+    cursor: pointer;
   }
   .p-shop__area::before {
     content: "";
@@ -2818,6 +2819,7 @@ select {
   margin: 40px auto 0;
   border: none;
   color: #FFF;
+  cursor: pointer;
 }
 
 .p-shopInfo {
