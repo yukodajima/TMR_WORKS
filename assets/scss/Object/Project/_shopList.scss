@@ -42,6 +42,7 @@
     border-radius: 5px;
     position: relative;
     padding: 0;
+    cursor: pointer;
     @include mq('sp') {
       font-size: 13px;
     }
@@ -156,6 +157,7 @@
     background-color: $color-background-sub;
     border-radius: 5px;
     border-color: $color-border;
+    cursor: pointer;
     @include mq('tab') {
       width: 100%;
       font-size: 20px;

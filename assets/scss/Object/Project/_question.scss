@@ -20,9 +20,12 @@
       margin: 10px 0;
     }
   }
+  // &__item {
+  // }
   &__textBox {
     position: relative;
     display: flex;
+    cursor: pointer;
   }
   &__text {
     width: 95%;

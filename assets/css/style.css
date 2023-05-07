@@ -177,6 +177,7 @@ select {
   width: 150px;
   height: 40px;
   font-size: 16px;
+  cursor: pointer;
 }
 .c-btn__contact {
   background-color: #FF9800;
@@ -186,6 +187,7 @@ select {
   width: 150px;
   height: 40px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .c-titleBox {
@@ -390,6 +392,7 @@ select {
   border-radius: 5px;
   position: relative;
   padding: 0;
+  cursor: pointer;
 }
 @media (max-width: 599px) {
   .p-shopList__areaButton {
@@ -536,6 +539,7 @@ select {
   background-color: #FFF;
   border-radius: 5px;
   border-color: #707070;
+  cursor: pointer;
 }
 @media (max-width: 900px) {
   .p-shopList__shopIntroduceButton {
@@ -1223,7 +1227,6 @@ select {
 .p-shop__shopName {
   list-style: none;
   margin: 20px;
-  padding: 5px 15px;
   font-size: 18px;
   min-width: 100px;
   border: solid;
@@ -1239,7 +1242,7 @@ select {
   width: 100%;
   text-decoration: none;
   color: #1B224C;
-  display: block;
+  padding: 5px 15px;
 }
 
 .p-news {
@@ -1347,6 +1350,7 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 .p-question__text {
   width: 95%;
@@ -2630,6 +2634,7 @@ select {
   border: solid 1px black;
   text-align: center;
   padding: 20px;
+  cursor: pointer;
 }
 @media (max-width: 900px) {
   .p-topMenu__textContainer {
@@ -2800,13 +2805,11 @@ select {
     font-size: 16px;
   }
 }
-.p-topMenu__btnContainer {
-  margin: 40px auto 0;
-}
 .p-topMenu__btn {
   background-color: #FF9801;
   width: 200px;
   height: 50px;
+  margin: 40px auto 0;
   border: none;
   color: #FFF;
 }
@@ -3449,6 +3452,7 @@ select {
   background-color: #1B224C;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .p-franchise {
@@ -3711,6 +3715,7 @@ select {
   background-color: #1B224C;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .p-customNews {

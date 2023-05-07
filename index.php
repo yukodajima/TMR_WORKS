@@ -142,11 +142,7 @@
         </div>
         <p class="p-topMenu__text">その他</p>
       </li>
-      <div class="p-topMenu__btnContainer">
-        <a href="<?php echo home_url("/repair"); ?>">
-          <button class="p-topMenu__btn" type="submit">一覧</button>
-        </a>
-      </div>
+      <button class="p-topMenu__btn" onclick="location.href='<?php echo home_url('/repair'); ?>'">一覧</button>
     </ul>
     <ul class="p-topMenu__list">
       <li class="p-topMenu__item">

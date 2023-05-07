@@ -72,7 +72,10 @@
     </div>
     <div class="p-shopIntroduction__wrapper">
       <div class="p-shopIntroduction__img">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="店舗写真">
+      <?php if (get_post_meta($post->ID, 'shop_image', true)) : ?>
+        <?php echo wp_get_attachment_image(post_custom('shop_image')); ?>
+      <?php endif; ?>
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="店舗写真"> -->
       </div>
       <div class="p-shopIntroduction__text">
         <p>

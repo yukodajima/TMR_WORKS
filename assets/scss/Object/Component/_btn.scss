@@ -8,6 +8,7 @@
   width: 150px;
   height: 40px;
   font-size: 16px;
+  cursor: pointer;
   &__contact {
     background-color: #FF9800;
     color: $color-background-sub;
@@ -16,5 +17,6 @@
     width: 150px;
     height: 40px;
     font-size: 16px;
+    cursor: pointer;
   }
 }

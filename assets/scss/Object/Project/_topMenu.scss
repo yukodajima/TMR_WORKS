@@ -15,6 +15,7 @@
     border: solid 1px black;
     text-align: center;
     padding: 20px;
+    cursor: pointer;
     @include mq('tab') {
       max-width: 600px;
       min-width: 120px;
@@ -144,13 +145,13 @@
   @include mq('sp') {
     font-size: 16px;
   }
-  &__btnContainer {
-    margin: 40px auto 0;
-  }
+  // &__btnContainer {
+  // }
   &__btn {
     background-color: $color-main;
     width: 200px;
     height: 50px;
+    margin: 40px auto 0;
     border: none;
     color: $color-background-sub;
   }
