@@ -3786,7 +3786,7 @@ select {
 }
 @media (max-width: 599px) {
   .p-overview__list {
-    border: #707070 1px solid;
+    border: #F5F5F5 1px solid;
   }
 }
 .p-overview__item {
@@ -3826,7 +3826,7 @@ select {
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
-  border-top: solid 1px white;
+  border-top: solid 1px #F5F5F5;
 }
 @media (max-width: 900px) {
   .p-overview__title {
@@ -3843,9 +3843,9 @@ select {
   }
 }
 .p-overview__contentArea {
-  border-top: solid 1px #707070;
-  border-right: solid 1px #707070;
-  border-bottom: solid 1px #707070;
+  border-top: solid 1px #F5F5F5;
+  border-right: solid 1px #F5F5F5;
+  border-bottom: solid 1px #F5F5F5;
   max-width: 1000px;
   width: 100%;
   background-color: #fff;
@@ -3860,7 +3860,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-overview__contentArea {
-    border: solid 1px #707070;
+    border: solid 1px #F5F5F5;
   }
 }
 @media (max-width: 599px) {
