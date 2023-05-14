@@ -89,9 +89,6 @@
   &__loop {
     width: 100%;
     list-style: none;
-    // @include mq('tab') {
-    //   display: none;
-    // }
   }
   &__innerArea {
     border-top: solid 1px $color-border;
