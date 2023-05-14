@@ -17,9 +17,11 @@
       <?php if(is_home()) {
         echo "トップページ";
       } elseif(is_post_type_archive("blog")) {
-        echo "ブログ一覧";
+        echo "ブログ";
       } elseif(is_post_type_archive("shop")) {
         echo "店舗一覧";
+      }elseif(is_post_type_archive("news")) {
+        echo "お知らせ";
       } else {
         the_title();
       } ?>
