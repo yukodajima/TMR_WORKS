@@ -5,7 +5,7 @@
 @use 'work';
 @use 'menu';
 @use 'shop';
-@use 'news';
+@use 'topNews';
 @use 'question';
 @use 'footer';
 @use 'header';
@@ -27,3 +27,4 @@
 @use 'blog';
 @use 'privacyPolicy';
 @use 'blogList';
+@use 'newsList';

@@ -266,7 +266,7 @@
     </div>
   </div>
 </section>
-<section class="p-news">
+<section class="p-topNews">
   <div class="l-container">
     <div class="c-titleBox">
       <div class="c-titleBox__wrapper">
@@ -274,27 +274,27 @@
         <p class="c-titleBox__text">News</p>
       </div>
     </div>
-    <!-- <div class="p-news__container"> -->
-      <ul class="p-news__container">
+    <!-- <div class="p-topNews__container"> -->
+      <ul class="p-topNews__container">
         <?php
         $custom_posts = get_posts(array(
-          'post_type' => 'news', // 投稿タイプ
+          'post_type' => 'topNews', // 投稿タイプ
           'posts_per_page' => 5, // 表示件数
           'orderby' => 'date', // 表示順の基準
           'order' => 'DESC', // 昇順・降順
         ));
         global $post;
         if ($custom_posts) : foreach ($custom_posts as $post) : setup_postdata($post); ?>
-            <li class="p-news__article">
+            <li class="p-topNews__article">
               <a href="<?php the_permalink() ?>">
-                <p class="p-news__date"><?php the_time("Y-m-d"); ?></p>
-                <div class="p-news__articleTitle">
+                <p class="p-topNews__date"><?php the_time("Y-m-d"); ?></p>
+                <div class="p-topNews__articleTitle">
                   <p>&lt;<?php the_author(); ?>&gt;<?php the_title(); ?></p>
                 </div>
               </a>
             </li>
           <?php endforeach; wp_reset_postdata(); else : ?>
-            <p class="p-news__text">お知らせがありません</p>
+            <p class="p-topNews__text">お知らせがありません</p>
         <?php endif; ?>
       </ul>
     <!-- </div> -->
