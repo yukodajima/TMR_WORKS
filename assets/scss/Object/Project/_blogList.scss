@@ -1,0 +1,49 @@
+@use '../../Foundation/global' as *;
+.p-blogList {
+  padding: 80px 0;
+  @include mq('tab') {
+    padding: 40px 0;
+  }
+  &__list {
+    list-style: none;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  &__item {
+    margin-top: 40px;
+    &:first-child {
+      margin-top: 0px;
+    }
+    @include mq('tab') {
+      margin-top: 20px;
+    }
+    & a {
+      text-decoration: none;
+      color: $color-text;
+    }
+    & hr {
+      margin-top: 40px;
+      @include mq("tab") {
+        margin-top: 20px;
+      }
+    }
+  }
+  &__date {
+    font-size: 16px;
+  }
+  &__title {
+    font-size: 24px;
+    margin-top: 20px;
+    @include mq('tab') {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    margin-top: 20px;
+    @include mq('tab') {
+      margin-top: 10px;
+    }
+  }
+}
