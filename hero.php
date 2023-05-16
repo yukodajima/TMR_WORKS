@@ -21,7 +21,7 @@
     } ?>
     <h2 class="c-hero__title">
       <?php if(is_home()) {
-        echo "トップページ";
+        echo "PC・ワークス";
       } elseif(is_post_type_archive("shop")) {
         echo "店舗一覧";
       } elseif(is_post_type_archive("blog")) {
