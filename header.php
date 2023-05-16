@@ -17,7 +17,7 @@
         <div class="p-header__titleBox">
           <div class="p-header__logo">
             <a href="<?php echo home_url(); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-pc.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-repair.jpg" alt="">
             </a>
           </div>
           <div class="p-header__menuArea">
