@@ -19,14 +19,8 @@
             <?php the_title(); ?>
           </h2>
           <p class="p-revue__text">
-            <?php
-            if (mb_strlen($post->post_content, 'UTF-8') > 50) {
-              $content = str_replace('\n', '', mb_substr(strip_tags($post->post_content), 0, 50, 'UTF-8'));
-              echo $content . '…';
-            } else {
-              echo str_replace('\n', '', strip_tags($post->post_content));
-            }
-            ?>
+            <?php the_content(); ?>
+          </p>
           <hr/>
         </li>
       <?php endwhile;
