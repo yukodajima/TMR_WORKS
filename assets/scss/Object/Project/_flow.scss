@@ -69,7 +69,10 @@
     }
   }
   &__btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     margin: 20px auto 0;
     width: 280px;
     @include mq("tab") {

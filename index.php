@@ -31,7 +31,7 @@
             </a>
         </li>
         <?php endforeach; wp_reset_postdata(); else : ?>
-          <p class="p-info__notFound">お知らせがありません</p>
+          <p class="p-info__notFound">ブログ投稿がありません</p>
       <?php endif; ?>
     </ul>
   </div>

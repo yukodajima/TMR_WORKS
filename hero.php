@@ -7,6 +7,8 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-top.jpg" alt="">
       <?php elseif(is_post_type_archive("news")) : ?>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/news-top.jpg" alt="">
+      <?php elseif(is_post_type_archive("revue")) : ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/revue-top.jpg" alt="">
       <?php elseif(is_home()): ?>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top.jpg" alt="">
     <?php else: ?>
@@ -26,6 +28,8 @@
         echo "ブログ";
       }elseif(is_post_type_archive("news")) {
         echo "お知らせ";
+      }elseif(is_post_type_archive("revue")) {
+        echo "お客様の声";
       } else {
         the_title();
       } ?>
