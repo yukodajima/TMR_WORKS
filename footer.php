@@ -98,7 +98,7 @@
             <a href="<?php echo home_url("/privacy-policy"); ?>">プライバシーポリシー</a>
           </li>
           <li class="p-footer__navList">
-            <a href="<?php echo home_url("/privacy-policy"); ?>">サイトマップ</a>
+            <a href="<?php echo home_url("/sitemap"); ?>">サイトマップ</a>
           </li>
           <li class="p-footer__navList">
             <a href="<?php echo home_url("/company-overview"); ?>">会社概要</a>
