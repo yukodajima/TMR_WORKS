@@ -251,16 +251,20 @@ select {
 
 .c-hero {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 .c-hero__backGround {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 5;
-  width: 100%;
+  width: 50%;
   height: 500px;
   background-color: #eaddcf;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 @media (max-width: 900px) {
   .c-hero__backGround {
@@ -269,6 +273,7 @@ select {
 }
 .c-hero__img {
   height: 500px;
+  width: 50%;
 }
 @media (max-width: 900px) {
   .c-hero__img {
@@ -283,13 +288,20 @@ select {
   -o-object-position: 10% 10%;
      object-position: 10% 10%;
 }
+.c-hero__titleBackground {
+  width: 50%;
+  background-color: #FF9801;
+  background-image: -webkit-linear-gradient(4deg, rgb(255, 152, 1) 10%, rgb(234, 221, 207) 90%);
+  background-image: linear-gradient(86deg, rgb(255, 152, 1) 10%, rgb(234, 221, 207) 90%);
+}
 .c-hero__titleBox {
-  position: absolute;
-  z-index: 10;
+  display: inline-block;
+  position: relative;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  padding: 0 3% 0 5%;
   color: #FFF;
 }
 .c-hero__topText {
@@ -297,7 +309,7 @@ select {
 }
 @media (max-width: 900px) {
   .c-hero__topText {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .c-hero__title {
@@ -305,7 +317,7 @@ select {
 }
 @media (max-width: 900px) {
   .c-hero__title {
-    font-size: 32px;
+    font-size: 30px;
     white-space: nowrap;
   }
 }
@@ -314,7 +326,7 @@ select {
 }
 @media (max-width: 900px) {
   .c-hero__subTitle {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .c-hero__linefeed {
@@ -4133,4 +4145,13 @@ select {
   .u-hidden-sp {
     display: none;
   }
+}
+
+html {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  height: 142.8571428571%;
+  width: 142.8571428571%;
 }/*# sourceMappingURL=style.css.map */

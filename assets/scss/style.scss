@@ -39,3 +39,14 @@
 //================================================================================
 
 @forward "Object/Utility/index";
+html {
+  // 70% バージョン
+  $scale: 0.7;
+  // ページを 70% のサイズに縮小
+  transform: scale($scale);
+  // デフォルトでは中央に寄ってしまうので、左上を起点に拡縮するように指定
+  transform-origin: left top;
+  // ブラウザサイズと画面サイズを一致
+  height: calc(100% / $scale);
+  width: calc(100% / $scale);
+}
