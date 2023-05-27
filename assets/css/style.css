@@ -2823,17 +2823,20 @@ select {
 }
 .p-topMenu__imgContainer {
   max-width: 275px;
+  height: 230px;
 }
 @media (max-width: 900px) {
   .p-topMenu__imgContainer {
     max-width: 250px;
     margin: 0 auto;
-    height: auto;
+    height: 40vw;
   }
 }
 .p-topMenu__image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .p-topMenu__text {
   text-align: center;

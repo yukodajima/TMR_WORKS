@@ -125,15 +125,17 @@
   }
   &__imgContainer {
     max-width: 275px;
+    height: 230px;
     @include mq('tab') {
       max-width: 250px;
       margin: 0 auto;
-      height: auto;
+      height: 40vw;
     }
   }
   &__image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
   }
   &__text {
     text-align: center;

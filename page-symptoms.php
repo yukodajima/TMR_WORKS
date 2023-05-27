@@ -42,7 +42,7 @@
       </li>
       <li class="p-menu__item">
         <div class="p-menu__imgContainer">
-          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/date.png" alt="" />
+          <img class="p-menu__image" src="<?php echo get_template_directory_uri(); ?>//assets/images/battery.png" alt="" />
         </div>
         <p class="p-menu__text">充電がすぐになくなる</p>
       </li>

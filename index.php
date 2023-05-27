@@ -114,7 +114,7 @@
       </li>
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/screen.png" alt="" />
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/repair-keyboard.png" alt="" />
         </div>
         <p class="p-topMenu__text">キーボード修理</p>
       </li>
@@ -147,9 +147,27 @@
     <ul class="p-topMenu__list">
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/maintenance.png" alt="" />
+        </div>
+        <p class="p-topMenu__text">OSが起動しない</p>
+      </li>
+      <li class="p-topMenu__item">
+        <div class="p-topMenu__imgContainer">
           <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/screen.png" alt="" />
         </div>
         <p class="p-topMenu__text">画面が割れてしまった</p>
+      </li>
+      <li class="p-topMenu__item">
+        <div class="p-topMenu__imgContainer">
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/migration.png" alt="" />
+        </div>
+        <p class="p-topMenu__text">データが消えてしまった</p>
+      </li>
+      <li class="p-topMenu__item">
+        <div class="p-topMenu__imgContainer">
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/repair-screen.jpeg" alt="" />
+        </div>
+        <p class="p-topMenu__text">画面が付かなくなった</p>
       </li>
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
@@ -161,37 +179,19 @@
         <div class="p-topMenu__imgContainer">
           <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/battery.png" alt="" />
         </div>
-        <p class="p-topMenu__text">画面が付かなくなった</p>
+        <p class="p-topMenu__text">充電がすぐになくなる</p>
       </li>
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/date.png" alt="" />
+          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/repair-keyboard.png" alt="" />
         </div>
         <p class="p-topMenu__text">キーボードが反応しない</p>
       </li>
       <li class="p-topMenu__item">
         <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/battery.png" alt="" />
-        </div>
-        <p class="p-topMenu__text">充電がすぐになくなる</p>
-      </li>
-      <li class="p-topMenu__item">
-        <div class="p-topMenu__imgContainer">
           <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/other.png" alt="" />
         </div>
-        <p class="p-topMenu__text">データが消えてしまった</p>
-      </li>
-      <li class="p-topMenu__item">
-        <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/date.png" alt="" />
-        </div>
-        <p class="p-topMenu__text">器具を落としてしまった</p>
-      </li>
-      <li class="p-topMenu__item">
-        <div class="p-topMenu__imgContainer">
-          <img class="p-topMenu__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/other.png" alt="" />
-        </div>
-        <p class="p-topMenu__text">OSが起動しない</p>
+        <p class="p-topMenu__text">パソコンを落としてしまった</p>
       </li>
       <div class="p-topMenu__btnContainer">
         <a href="<?php echo home_url("/symptoms"); ?>">
