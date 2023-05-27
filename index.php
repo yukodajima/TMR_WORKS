@@ -193,11 +193,7 @@
         </div>
         <p class="p-topMenu__text">パソコンを落としてしまった</p>
       </li>
-      <div class="p-topMenu__btnContainer">
-        <a href="<?php echo home_url("/symptoms"); ?>">
-          <button class="p-topMenu__btn" type="submit">一覧</button>
-        </a>
-      </div>
+      <button class="p-topMenu__btn" onclick="location.href='<?php echo home_url('/symptoms'); ?>'">一覧</button>
     </ul>
   </div>
 </section>
