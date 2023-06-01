@@ -1,4 +1,6 @@
 <?php
+
+
 //店舗詳細のカスタム投稿設定
 function cpt_register_shops()
 {
@@ -19,7 +21,7 @@ function cpt_register_shops()
     "map_meta_cap" => true,
     "query_var" => true,
     'menu_position' => 5,
-    "suports" => ["title", "editer", "thumbnail"],
+    "supports" => ["title", "editer", "thumbnail", 'taxonomies'],
   ];
   register_post_type("shop", [
     "labels" => [
@@ -30,9 +32,8 @@ function cpt_register_shops()
     "hierarchical" => false,
     "menu_position" => 5,
     "menu_icon" => "",
-    'supports' => array('title','editor','thumbnail')
+    'supports' => array('title','editor','thumbnail', 'taxonomies')
   ]);
-  
   register_taxonomy("shop_category", "shop", [
     "labels" => [
       "name" => "都道府県別",
@@ -42,6 +43,21 @@ function cpt_register_shops()
   ]);
 }
 add_action("init", "cpt_register_shops");
+// function custom_post_type_tags() {
+//   $args = array(
+//       'hierarchical' => false,
+//       'labels' => array(
+//           'name' => 'タグ',
+//           'singular_name' => 'タグ',
+//       ),
+//       'show_ui' => true,
+//       'show_admin_column' => true,
+//       'query_var' => true,
+//       'rewrite' => array( 'slug' => 'tag' ),
+//   );
+//   register_taxonomy( 'custom_tags', array( 'cpt_register_shops', 'init_func' ), $args );
+// }
+// add_action( 'init', 'custom_post_type_tags', 0 );
 
 //「お知らせ」のカスタム投稿タイプの設定
 function init_func() {
@@ -57,10 +73,27 @@ function init_func() {
     "hierarchical" => false,
     "menu_position" => 5,
     "menu_icon" => "",
-    'supports' => array('title','editor','thumbnail')
+    'supports' => array('title','editor','thumbnail', 'taxonomies'),
+    'taxonomies' => array( 'custom_tags' ),
   ]);
 }
 add_action("init", "init_func");
+// function custom_post_type_tags() {
+//   $args = array(
+//       'hierarchical' => false,
+//       'labels' => array(
+//           'name' => 'タグ',
+//           'singular_name' => 'タグ',
+//       ),
+//       'show_ui' => true,
+//       'show_admin_column' => true,
+//       'query_var' => true,
+//       'rewrite' => array( 'slug' => 'tag' ),
+//   );
+//   register_taxonomy( 'custom_tags', array( 'init_func' ), $args );
+// }
+// add_action( 'init', 'custom_post_type_tags', 0 );
+
 
 //ブログ投稿のカスタム投稿設定
 function cpt_register_blog() {
@@ -97,26 +130,24 @@ function cpt_register_revue() {
 }
 add_action('init', 'cpt_register_revue');
 
-// function cpt_register_dep()
-// {
-//   $labels = [
-//     "single_name" => "dep",
-//   ];
-//   $args = [
-//     "label" => "カテゴリー",
-//     "labels" => $labels,
-//     "publicly_queryable" => true,
-//     "show_in_menu" => true,
-//     "query_var" => true,
-//     "rewrite" => ["slag" => "dep", "with_front" => true,],
-//     "show_admin_column" => false,
-//     "show_in_rest" => false,
-//     "rest_base" => "dep",
-//     "rest_controller_class" => "WP_REST_Terms_Controller",
-//     "show_in_quick_edit" => false,
-//   ];
-//   register_taxonomy("dep", ["shop"], $args);
-// };
+//お知らせと店舗詳細にタグを追加
+function add_tags_to_custom_post_types() {
+  $args = array(
+      'hierarchical' => false,
+      'labels' => array(
+          'name' => 'タグ',
+          'singular_name' => 'タグ',
+      ),
+      'show_ui' => true,
+      'show_admin_column' => true,
+      'query_var' => true,
+      'rewrite' => array( 'slug' => 'tag' ),
+  );
+  register_taxonomy( 'custom_tags', array( 'shop', 'news' ), $args );
+  register_taxonomy_for_object_type( 'custom_tags', 'cpt_register_shops' );
+  register_taxonomy_for_object_type( 'custom_tags', 'init_func' );
+}
+add_action( 'init', 'add_tags_to_custom_post_types' );
 
 function my_enqueue_scripts()
 {
