@@ -46,5 +46,5 @@
         <?php the_post_thumbnail(); ?>
     <?php endif; ?>
   </div>
-  <!-- <div class="c-hero__backGround"></div> -->
+  <div class="c-hero__backGround"></div>
 </section>
