@@ -1185,7 +1185,6 @@ select {
 .p-shop__innerArea {
   border-top: solid 1px #707070;
   border-right: solid 1px #707070;
-  max-width: 1000px;
   width: 100%;
   background-color: #fff;
 }

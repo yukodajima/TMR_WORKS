@@ -24,7 +24,6 @@ $(window).on('load', function () {
       if(window.matchMedia("(max-width: 900px)").matches){
         shopArea.toggleClass("active");
         $(this).next().slideToggle();
-        console.log("した");
       }
     })
   });

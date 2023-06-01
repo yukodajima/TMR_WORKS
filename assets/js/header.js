@@ -7,12 +7,6 @@ $(window).on('load', function () {
     const $menuList = $(".p-header__menuList")
     const $menu = $(".p-header__menu")
     const $menuLine = $(".p-header__menuLine")
-    let $windowWidth = $(this).width()
-    let $bp = 900
-
-    if ($windowWidth > $bp) {
-      $menuList.show()
-    }
 
     $menu.on("click", function () {
       $menuList.slideToggle()
@@ -35,6 +29,7 @@ $(window).on('load', function () {
     let $win = $(window);
     $win.on("load resize", function(){
       if($drawerMenuItem.hasClass("open")){
+        console.log("OK");
         $drawerMenuItem.removeClass("open")
         $shopList.slideToggle();
       }
