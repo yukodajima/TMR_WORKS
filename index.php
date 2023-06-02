@@ -274,7 +274,7 @@
       <ul class="p-topNews__container">
         <?php
         $custom_posts = get_posts(array(
-          'post_type' => 'topNews', // 投稿タイプ
+          'post_type' => 'news', // 投稿タイプ
           'posts_per_page' => 5, // 表示件数
           'orderby' => 'date', // 表示順の基準
           'order' => 'DESC', // 昇順・降順
@@ -285,7 +285,20 @@
               <a href="<?php the_permalink() ?>">
                 <p class="p-topNews__date"><?php the_time("Y-m-d"); ?></p>
                 <div class="p-topNews__articleTitle">
-                  <p>&lt;<?php the_author(); ?>&gt;<?php the_title(); ?></p>
+                  <p>&lt;
+            <?php
+              $taxonomy = 'custom_tags'; // タグのタクソノミー名
+              $tags = get_the_terms(get_the_ID(), $taxonomy);
+
+              if ($tags && !is_wp_error($tags)) {
+                $tag_names = array();
+                foreach ($tags as $tag) {
+                    $tag_names[] = $tag->name;
+                }
+                echo implode(' / ', $tag_names);
+              }
+              ?>
+            &gt;<?php the_title(); ?></p>
                 </div>
               </a>
             </li>

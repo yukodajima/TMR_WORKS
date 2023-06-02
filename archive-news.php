@@ -17,7 +17,20 @@
           <a href="<?php the_permalink(); ?>">
             <p class="p-newsList__date"><?php the_time('Y年m月d日'); ?></p>
             <h2 class="p-newsList__title">
-            &lt;<?php the_author(); ?>&gt;<?php the_title(); ?>
+            &lt;
+            <?php
+              $taxonomy = 'custom_tags'; // タグのタクソノミー名
+              $tags = get_the_terms(get_the_ID(), $taxonomy);
+              if ($tags && !is_wp_error($tags)) {
+                $tag_names = array();
+                foreach ($tags as $tag) {
+                    $tag_names[] = $tag->name;
+                }
+                echo implode(' / ', $tag_names);
+              }
+              ?>
+            &gt;
+            <?php the_title(); ?>
             </h2>
             <p class="p-newsList__text">
               <?php

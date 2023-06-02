@@ -217,19 +217,35 @@
     </div>
     <ul class="p-shopNews__list">
       <?php $userId = get_the_author_meta( 'ID' ); ?>
-<?php $custom_posts = get_posts("author=$userId&orderby=date&post_type=news&numberposts=4"); ?>
-<?php if (!empty($custom_posts)) : ?>
-        <?php if ($custom_posts) : foreach( $custom_posts as $post ) : setup_postdata($post); ?>
-        <li class="p-shopNews__item">
-          <a href="<?php the_permalink() ?>">
-            <p class="p-shopNews__itemDate"><?php the_time("Y-m-d"); ?></p>
-            <p class="p-shopNews__itemContent">&lt;<?php the_author(); ?>&gt;<?php the_title(); ?></p>
+      <?php $custom_posts = get_posts("author=$userId&orderby=date&post_type=news&numberposts=4"); ?>
+      <?php if (!empty($custom_posts)) : ?>
+      <?php if ($custom_posts) : foreach( $custom_posts as $post ) : setup_postdata($post); ?>
+      <li class="p-shopNews__item">
+        <a href="<?php the_permalink() ?>">
+          <p class="p-shopNews__itemDate"><?php the_time("Y-m-d"); ?></p>
+          <p class="p-shopNews__itemContent">
+            &lt;
+            <?php
+              $taxonomy = 'custom_tags'; // タグのタクソノミー名
+              $tags = get_the_terms(get_the_ID(), $taxonomy);
+
+              if ($tags && !is_wp_error($tags)) {
+                $tag_names = array();
+                foreach ($tags as $tag) {
+                    $tag_names[] = $tag->name;
+                }
+                echo implode(' / ', $tag_names);
+              }
+              ?>
+            &gt;
+            <?php the_title(); ?>
+          </p>
         </a>
-        </li>
-        <?php endforeach; wp_reset_postdata(); endif; ?>
-        <?php else: ?>
-          <p class="p-shopList__text">お知らせがありません</p>
-        <?php endif; ?>
+      </li>
+      <?php endforeach; wp_reset_postdata(); endif; ?>
+      <?php else: ?>
+        <p class="p-shopList__text">お知らせがありません</p>
+      <?php endif; ?>
     </ul>
   </div>
 </section>
