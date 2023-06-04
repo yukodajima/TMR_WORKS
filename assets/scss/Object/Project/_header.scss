@@ -2,7 +2,19 @@
 
 .p-header {
   background-color: $color-background-sub;
-  height: 100%;
+  // height: 100%;
+  letter-spacing: normal;
+  font-family: $font-base;
+  // 70% バージョン
+  // $scale: 0.7;
+  // // ページを 70% のサイズに縮小
+  // transform: scale($scale);
+  // // デフォルトでは中央に寄ってしまうので、左上を起点に拡縮するように指定
+  // transform-origin: left top;
+  // // ブラウザサイズと画面サイズを一致
+  // // height: 100vh;
+  // width: calc(100% / $scale);
+
   &__titleBox {
     display: flex;
     justify-content: space-between;
@@ -21,7 +33,7 @@
     }
   }
   &__logo {
-    height: 100px;
+    height: 60px;
     @include mq("tab") {
       width: 230px;
       height: $header-height-tab;
@@ -34,7 +46,7 @@
     & img {
       width: 100%;
       height: 100%;
-      @include mq("sp") {
+      @include mq("tab") {
         object-fit: contain;
       }
     }
@@ -125,8 +137,7 @@
   &__menuList {
     display: flex;
     justify-content: center;
-    // max-width: $width-base;
-    height: 50px;
+    height: 40px;
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -338,7 +349,7 @@
     }
   }
   &__menuText {
-    font-size: clamp(0.9rem, 1.6vw, 1.1rem);
+    font-size: clamp(0.5rem, 1.3vw, 0.9rem);
     @include mq("tab") {
       color: $color-background-sub;
     }

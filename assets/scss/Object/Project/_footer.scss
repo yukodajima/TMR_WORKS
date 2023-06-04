@@ -106,6 +106,7 @@
     @include mq('tab') {
       display: block;
       margin: 0 auto;
+      max-width: none;
     }
   }
   &__boxList {

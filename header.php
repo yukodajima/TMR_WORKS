@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="l-wrapper">
+  <!-- <div class="l-wrapper"> -->
     <header class="l-header">
       <div class="p-header">
         <div class="p-header__titleBox">
@@ -137,3 +137,10 @@
       </div>
     </header>
     <main class="l-main">
+    <?php if( is_user_logged_in() ) : ?>
+<style type="text/css">
+html {
+  margin-top: 32px;
+}
+</style>
+<?php endif; ?>

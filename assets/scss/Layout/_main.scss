@@ -3,11 +3,28 @@
   padding-top: $header-height-pc;
   background-color: $color-background-sub;
 
+  color: $color-text;
+  letter-spacing: normal;
+  font-family: $font-base;
+  // height: ;
+  $scale: 0.7;
+  // ページを 70% のサイズに縮小
+  transform: scale($scale);
+  // デフォルトでは中央に寄ってしまうので、左上を起点に拡縮するように指定
+  transform-origin: left top;
+  // ブラウザサイズと画面サイズを一致
+  height: 70%;
+  width: calc(100% / $scale);
+  
   @include mq(tab) {
     padding-top: $header-height-tab;
   }
-
+  
   @include mq(sp) {
     padding-top: $header-height-sp;
+  }
+  & section {
+      // 70% バージョン
+  
   }
 }

@@ -3,20 +3,9 @@
 html {
   font-size: $font-size-base;
   height: 100%;
-}
-
-body{
-  color: $color-text;
-  letter-spacing: normal;
-  font-family: $font-base;
-  height: 100%;
-  // 70% バージョン
-  $scale: 0.7;
-  // ページを 70% のサイズに縮小
-  transform: scale($scale);
-  // デフォルトでは中央に寄ってしまうので、左上を起点に拡縮するように指定
-  transform-origin: left top;
-  // ブラウザサイズと画面サイズを一致
-  // height: 100vh;
-  width: calc(100% / $scale);
+  position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
 }
