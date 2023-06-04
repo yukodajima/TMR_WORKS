@@ -216,36 +216,61 @@
       </div>
     </div>
     <ul class="p-shopNews__list">
-      <?php $userId = get_the_author_meta( 'ID' ); ?>
-      <?php $custom_posts = get_posts("author=$userId&orderby=date&post_type=news&numberposts=4"); ?>
-      <?php if (!empty($custom_posts)) : ?>
-      <?php if ($custom_posts) : foreach( $custom_posts as $post ) : setup_postdata($post); ?>
-      <li class="p-shopNews__item">
-        <a href="<?php the_permalink() ?>">
-          <p class="p-shopNews__itemDate"><?php the_time("Y-m-d"); ?></p>
-          <p class="p-shopNews__itemContent">
-            &lt;
-            <?php
-              $taxonomy = 'custom_tags'; // タグのタクソノミー名
-              $tags = get_the_terms(get_the_ID(), $taxonomy);
+      <?php // 現在表示されている投稿と同じタームに分類された投稿を取得
+      //閲覧している記事（投稿）に付与されているタグと同じ記事を表示
+  $taxonomy_slug = 'custom_tags'; // タクソノミーのスラッグを指定
+  $post_type_slug = 'news'; // 投稿タイプのスラッグを指定
+  $post_terms = wp_get_object_terms($post->ID, $taxonomy_slug); // タクソノミーの指定
+  if( $post_terms && !is_wp_error($post_terms)) { // 値があるときに作動
+    $terms_slug = array(); // 配列のセット
+    foreach( $post_terms as $value ){ // 配列の作成
+      $terms_slug[] = $value->slug; // タームのスラッグを配列に追加
+    }
+  }
+  $args = array(
+    'post_type' => $post_type_slug, // 投稿タイプを指定
+    'posts_per_page' => 5, // 表示件数を指定
+    'orderby' =>  'date', // ランダムに投稿を取得
+    'post__not_in' => array($post->ID), // 現在の投稿を除外
+    'order' => 'DESC',
+    'tax_query' => array( // タクソノミーパラメーターを使用
+      array(
+        'taxonomy' => $taxonomy_slug, // タームを取得タクソノミーを指定
+        'field' => 'slug', // スラッグに一致するタームを返す
+        'terms' => $terms_slug // タームの配列を指定
+      )
+    )
+  );
+  $the_query = new WP_Query($args); if($the_query->have_posts()):
+?>
+<?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+<li class="p-shopNews__item">
+          <a href="<?php the_permalink() ?>">
+            <p class="p-shopNews__itemDate"><?php the_time("Y-m-d"); ?></p>
+            <p class="p-shopNews__itemContent">
+              &lt;
+              <?php
+                $taxonomy = 'custom_tags'; // タグのタクソノミー名
+                $tags = get_the_terms(get_the_ID(), $taxonomy);
 
-              if ($tags && !is_wp_error($tags)) {
-                $tag_names = array();
-                foreach ($tags as $tag) {
-                    $tag_names[] = $tag->name;
+                if ($tags && !is_wp_error($tags)) {
+                  $tag_names = array();
+                  foreach ($tags as $tag) {
+                      $tag_names[] = $tag->name;
+                  }
+                  echo implode(' / ', $tag_names);
                 }
-                echo implode(' / ', $tag_names);
-              }
-              ?>
-            &gt;
-            <?php the_title(); ?>
-          </p>
-        </a>
-      </li>
-      <?php endforeach; wp_reset_postdata(); endif; ?>
-      <?php else: ?>
-        <p class="p-shopList__text">お知らせがありません</p>
-      <?php endif; ?>
+                ?>
+              &gt;
+              <?php the_title(); ?>
+            </p>
+          </a>
+        </li>
+<?php endwhile; ?>
+<?php wp_reset_postdata(); ?>
+<?php else: ?>
+  <p class="p-shopList__text">お知らせはありません</p>
+<?php endif; ?>
     </ul>
   </div>
 </section>

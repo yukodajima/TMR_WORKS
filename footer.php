@@ -117,7 +117,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/footer.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slideShop.js"></script>
-
+</main>
 </body>
 
 </html>
