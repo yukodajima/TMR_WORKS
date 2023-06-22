@@ -92,5 +92,4 @@
       <p class="p-privacyPolicy__text">制定日&#058;2022年9月18日</p>
     </section>
   </div>
-</main>
 <?php get_footer(); ?>

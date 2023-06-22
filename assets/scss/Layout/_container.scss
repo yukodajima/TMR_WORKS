@@ -3,7 +3,6 @@
   width: $width-base;
   max-width: 100%;
   margin: 0 auto;
-  height: inherit;
   padding: 0 $padding-pc;
 
   @include mq('tab') {
