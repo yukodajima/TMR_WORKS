@@ -3085,6 +3085,7 @@ select {
 }
 .p-shopInfomation__contactInfo {
   text-align: center;
+  color: #fff;
 }
 @media (max-width: 900px) {
   .p-shopInfomation__contactInfo {
