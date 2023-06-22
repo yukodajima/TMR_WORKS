@@ -34,7 +34,7 @@
     </div>
     <ul class="p-shopInfomation__contact">
       <li class="p-shopInfomation__contactItem p-shopInfomation__contactMail">
-        <a class="p-shopInfomation__contactLink" href="">
+        <a class="p-shopInfomation__contactLink" href="mailto:<?php echo get_post_meta($post->ID, 'email', true); ?>">
           <div class="p-shopInfomation__contactMailImg">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-mail.png" alt="メール">
           </div>
