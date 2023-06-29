@@ -10,10 +10,10 @@
     </div>
     <ul class="p-shopList__areaList">
       <li class="p-shopList__areaItem">
-        <button class="p-shopList__areaButton">北海道・東北</button>
+        <button class="p-shopList__areaButton">関東</button>
       </li>
       <li class="p-shopList__areaItem">
-        <button class="p-shopList__areaButton">関東</button>
+        <button class="p-shopList__areaButton">北海道・東北</button>
       </li>
       <li class="p-shopList__areaItem">
         <button class="p-shopList__areaButton">東海・北陸</button>
@@ -29,7 +29,7 @@
       </li>
     </ul>
     <div class="p-shopList__shopInfoWrapper show">
-      <p class="p-shopList__shopInfoArea">北海道・東北</p>
+      <p class="p-shopList__shopInfoArea">関東</p>
       <ul class="p-shopList__shopInfoList">
       <?php
         $custom_posts = get_posts(array(
@@ -41,7 +41,7 @@
             array(
               'taxonomy' => 'shop_category', //タクソノミーを指定
               'field' => 'slug', //ターム名をスラッグで指定する
-              'terms' => 'hokkaido-tohoku', //表示したいタームをスラッグで指定
+              'terms' => 'kannto', //表示したいタームをスラッグで指定
               'operator' => 'IN'
             ),
           )
@@ -66,7 +66,7 @@
       </ul>
     </div>
     <div class="p-shopList__shopInfoWrapper">
-      <p class="p-shopList__shopInfoArea">関東</p>
+      <p class="p-shopList__shopInfoArea">北海道・東北</p>
       <ul class="p-shopList__shopInfoList">
       <?php
         $custom_posts = get_posts(array(
@@ -78,7 +78,7 @@
             array(
               'taxonomy' => 'shop_category', //タクソノミーを指定
               'field' => 'slug', //ターム名をスラッグで指定する
-              'terms' => 'kannto', //表示したいタームをスラッグで指定
+              'terms' => 'hokkaido-tohoku', //表示したいタームをスラッグで指定
               'operator' => 'IN'
             ),
           )
