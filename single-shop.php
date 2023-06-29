@@ -29,7 +29,9 @@
         </div>
       </div>
       <div class="p-shopInfomation__shopImg">
-        <?php the_post_thumbnail('thumbnails'); ?>
+        <?php if (get_post_meta($post->ID, 'top_image', true)) : ?>
+          <?php echo wp_get_attachment_image(post_custom('top_image')); ?>
+        <?php endif; ?>
       </div>
     </div>
     <ul class="p-shopInfomation__contact">
