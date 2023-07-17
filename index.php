@@ -1,41 +1,5 @@
 <?php get_header(); ?>
 <?php get_template_part('top-hero'); ?>
-<section class="p-info">
-  <div class="l-container">
-    <div class="p-info__titleBox">
-      <h3 class="p-info__title">【新着&excl;&excl;】<br class="p-info__linefeed">🕊パソコン修理ブログ🕊</h3>
-      <div class="p-info__titleWrapper">
-        <!-- <p class="c-titleBox__text">Pick Up</p> -->
-      </div>
-    </div>
-    <ul class="p-info__list">
-      <?php
-      $custom_posts = get_posts(array(
-        'post_type' => 'blog', // 投稿タイプ
-        'posts_per_page' => 3, // 表示件数
-        'orderby' => 'date', // 表示順の基準
-        'order' => 'DESC', // 昇順・降順
-      ));
-      global $post;
-      if ($custom_posts) : foreach ($custom_posts as $post) : setup_postdata($post); ?>
-        <li class="p-info__item">
-            <a href="<?php the_permalink(); ?>">
-              <div class="p-info__imgBox">
-                <?php if(has_post_thumbnail()): ?>
-                    <?php the_post_thumbnail('thumbnails', ['class' => '.p-info__image']); ?>
-                  <?php else: ?>
-                    <img class="p-info__imgBox" src="<?php echo get_template_directory_uri(); ?>/assets/images/macbook1993_TP_V.jpg" alt="">
-                <?php endif; ?>
-              </div>
-              <p class="p-info__text" ><?php the_title() ?></p>
-            </a>
-        </li>
-        <?php endforeach; wp_reset_postdata(); else : ?>
-          <p class="p-info__notFound">ブログ投稿がありません</p>
-      <?php endif; ?>
-    </ul>
-  </div>
-</section>
 <section class="p-work">
   <div class="l-container">
     <div class="c-titleBox">
@@ -260,6 +224,42 @@
         <?php endforeach; ?>
       </ul>
     </div>
+  </div>
+</section>
+<section class="p-info">
+  <div class="l-container">
+    <div class="p-info__titleBox">
+      <h3 class="p-info__title">【新着&excl;&excl;】<br class="p-info__linefeed">🕊パソコン修理ブログ🕊</h3>
+      <div class="p-info__titleWrapper">
+        <!-- <p class="c-titleBox__text">Pick Up</p> -->
+      </div>
+    </div>
+    <ul class="p-info__list">
+      <?php
+      $custom_posts = get_posts(array(
+        'post_type' => 'blog', // 投稿タイプ
+        'posts_per_page' => 3, // 表示件数
+        'orderby' => 'date', // 表示順の基準
+        'order' => 'DESC', // 昇順・降順
+      ));
+      global $post;
+      if ($custom_posts) : foreach ($custom_posts as $post) : setup_postdata($post); ?>
+        <li class="p-info__item">
+            <a href="<?php the_permalink(); ?>">
+              <div class="p-info__imgBox">
+                <?php if(has_post_thumbnail()): ?>
+                    <?php the_post_thumbnail('thumbnails', ['class' => '.p-info__image']); ?>
+                  <?php else: ?>
+                    <img class="p-info__imgBox" src="<?php echo get_template_directory_uri(); ?>/assets/images/macbook1993_TP_V.jpg" alt="">
+                <?php endif; ?>
+              </div>
+              <p class="p-info__text" ><?php the_title() ?></p>
+            </a>
+        </li>
+        <?php endforeach; wp_reset_postdata(); else : ?>
+          <p class="p-info__notFound">ブログ投稿がありません</p>
+      <?php endif; ?>
+    </ul>
   </div>
 </section>
 <section class="p-topNews">
