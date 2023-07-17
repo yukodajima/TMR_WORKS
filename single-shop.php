@@ -130,20 +130,20 @@
       </thead>
       <tbody>
         <?php $fields01 = CFS()->get('price_list'); ?>
-        <?php if ($fields01) : //faq_loop が存在するとき 
+        <?php if ($fields01) : //faq_loop が存在するとき
         ?>
           <?php foreach ($fields01 as $field) : ?>
             <tr>
               <td>
-                <?php echo $field['price_name']; //faq_loop の faq_qを表示 
+                <?php echo $field['price_name']; //faq_loop の faq_qを表示
                 ?>
               </td>
               <td>
-                <?php echo $field['price']; //faq_loop の faq_aを表示 
+                <?php echo $field['price']; //faq_loop の faq_aを表示
                 ?>
               </td>
               <td>
-                <?php echo $field['period']; //faq_loop の faq_aを表示 
+                <?php echo $field['period']; //faq_loop の faq_aを表示
                 ?>
               </td>
             </tr>
@@ -163,13 +163,13 @@
       </div>
     </div>
     <ul class="p-shopRoot__list">
-      <?php $fields01 = CFS()->get('root_list'); ?>
-      <?php if ($fields01) : //faq_loop が存在するとき
+      <?php $fields02 = CFS()->get('root_list'); ?>
+      <?php if ($fields02) : //faq_loop が存在するとき
       ?>
-        <?php foreach ($fields01 as $field) : ?>
+        <?php foreach ($fields02 as $field) : ?>
           <li class="p-shopRoot__item">
             <div class="p-shopRoot__itemImg">
-              <img src="<?php echo $cfs->get('root_img1'); ?>" alt="">
+              <img src="<?php echo $field['root_img1']; ?>" alt="">
             </div>
             <p>
               <?php echo get_post_meta($post->ID, 'root_text1', true); ?>
