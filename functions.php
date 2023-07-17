@@ -168,9 +168,18 @@ function wpcf7_autop_return_false() {
 function taxonomy_orderby_description( $orderby, $args ) {
 
   if ( $args['orderby'] == 'description' ) {
-      $orderby = 'tt.description';
+    $orderby = 'tt.description';
   }
   return $orderby;
 }
 add_filter( 'get_terms_orderby', 'taxonomy_orderby_description', 10, 2 );
+
+//画像圧縮
+add_filter( 'jpeg_quality', function( $arg ){ return 100; } );
+
+
+//---------------------------------------
+// 【投稿記事の画像挿入時にwidthとheightを削除】
+//---------------------------------------
+
 ?>

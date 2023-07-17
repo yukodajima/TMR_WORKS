@@ -119,12 +119,12 @@ select {
   color: #1B224C;
   letter-spacing: normal;
   font-family: NotoSansJP-Regular;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   -webkit-transform-origin: left top;
           transform-origin: left top;
   height: 70%;
-  width: 142.8571428571%;
+  width: 125%;
 }
 @media (max-width: 900px) {
   .l-main {
@@ -275,6 +275,12 @@ select {
   .c-hero__backGround {
     height: 300px;
   }
+}
+.c-hero__homeImg {
+  width: 50%;
+}
+.c-hero__homeImg--right {
+  width: 50%;
 }
 .c-hero__img {
   height: 500px;

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part('hero'); ?>
+<?php get_template_part('top-hero'); ?>
 <section class="p-info">
   <div class="l-container">
     <div class="p-info__titleBox">

@@ -29,9 +29,7 @@
         </div>
       </div>
       <div class="p-shopInfomation__shopImg">
-        <?php if (get_post_meta($post->ID, 'top_image', true)) : ?>
-          <?php echo wp_get_attachment_image(post_custom('top_image')); ?>
-        <?php endif; ?>
+        <img src="<?php echo $cfs->get('top_image'); ?>" alt="">
       </div>
     </div>
     <ul class="p-shopInfomation__contact">
@@ -79,9 +77,7 @@
     </div>
     <div class="p-shopIntroduction__wrapper">
       <div class="p-shopIntroduction__img">
-        <?php if (get_post_meta($post->ID, 'shop_image', true)) : ?>
-          <?php echo wp_get_attachment_image(post_custom('shop_image')); ?>
-        <?php endif; ?>
+        <img src="<?php echo $cfs->get('shop_image'); ?>" alt="">
       </div>
       <div class="p-shopIntroduction__textBox">
         <p>
@@ -165,9 +161,7 @@
     <ul class="p-shopRoot__list">
       <li class="p-shopRoot__item">
         <div class="p-shopRoot__itemImg">
-        <?php if (get_post_meta($post->ID, 'root_img1', true)) : ?>
-            <?php echo wp_get_attachment_image(post_custom('root_img1')); ?>
-          <?php endif; ?>
+          <img src="<?php echo $cfs->get('root_img1'); ?>" alt="">
         </div>
         <p>
           <?php echo get_post_meta($post->ID, 'root_text1', true); ?>
@@ -175,9 +169,7 @@
       </li>
       <li class="p-shopRoot__item">
         <div class="p-shopRoot__itemImg">
-        <?php if (get_post_meta($post->ID, 'root_img2', true)) : ?>
-            <?php echo wp_get_attachment_image(post_custom('root_img2')); ?>
-          <?php endif; ?>
+          <img src="<?php echo $cfs->get('root_img2'); ?>" alt="">
         </div>
         <p>
           <?php echo get_post_meta($post->ID, 'root_text2', true); ?>
@@ -185,9 +177,7 @@
       </li>
       <li class="p-shopRoot__item">
         <div class="p-shopRoot__itemImg">
-        <?php if (get_post_meta($post->ID, 'root_img3', true)) : ?>
-            <?php echo wp_get_attachment_image(post_custom('root_img3')); ?>
-          <?php endif; ?>
+          <img src="<?php echo $cfs->get('root_img3'); ?>" alt="">
         </div>
         <p>
           <?php echo get_post_meta($post->ID, 'root_text3', true); ?>
@@ -195,9 +185,7 @@
       </li>
       <li class="p-shopRoot__item">
         <div class="p-shopRoot__itemImg">
-        <?php if (get_post_meta($post->ID, 'root_img4', true)) : ?>
-            <?php echo wp_get_attachment_image(post_custom('root_img4')); ?>
-          <?php endif; ?>
+          <img src="<?php echo $cfs->get('root_img4'); ?>" alt="">
         </div>
         <p>
           <?php echo get_post_meta($post->ID, 'root_text4', true); ?>
