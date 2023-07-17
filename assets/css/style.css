@@ -279,8 +279,14 @@ select {
 .c-hero__homeImg {
   width: 50%;
 }
+.c-hero__homeImg img {
+  width: 100%;
+}
 .c-hero__homeImg--right {
   width: 50%;
+}
+.c-hero__homeImg--right img {
+  width: 100%;
 }
 .c-hero__img {
   height: 500px;

@@ -18,9 +18,15 @@
   }
   &__homeImg {
     width: 50%;
+    & img {
+      width: 100%;
+    }
   }
   &__homeImg--right {
     width: 50%;
+    & img {
+      width: 100%;
+    }
   }
   &__img {
     height: 500px;
