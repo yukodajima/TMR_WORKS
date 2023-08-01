@@ -486,8 +486,9 @@ select {
 }
 @media (max-width: 900px) {
   .p-shopList__shopInfoImg {
-    width: 300px;
-    height: 225px;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
   }
 }
 .p-shopList__shopIntroduce {

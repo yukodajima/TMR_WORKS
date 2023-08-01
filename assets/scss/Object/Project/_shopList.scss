@@ -116,8 +116,9 @@
     margin-right: 50px;
     aspect-ratio: 0;
     @include mq('tab') {
-      width: 300px;
-      height: 225px;
+      width: 100%;
+      max-width: 500px;
+      height: 300px;
     }
   }
   &__shopIntroduce {
