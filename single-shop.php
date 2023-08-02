@@ -44,24 +44,24 @@
         </a>
       </li>
       <li href="" class="p-shopInfomation__contactItem p-shopInfomation__contactTel">
-        <a class="p-shopInfomation__contactLink" href="">
+        <a class="p-shopInfomation__contactLink" href="tel:<?php echo get_post_meta($post->ID, 'tel', true); ?>">
           <div class="p-shopInfomation__contactTelImg">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-tel.png" alt="TEL">
           </div>
           <div class="p-shopInfomation__contactInfo">
             <p>お電話で確認</p>
-            <p class="p-shopInfomation__contactNum">TEL:<?php echo get_post_meta($post->ID, 'tel', true); ?></p>
+            <!-- <p class="p-shopInfomation__contactNum">TEL:<?php echo get_post_meta($post->ID, 'tel', true); ?></p> -->
           </div>
         </a>
       </li>
       <li href="" class="p-shopInfomation__contactItem p-shopInfomation__contactLine">
-        <a class="p-shopInfomation__contactLink" href="">
+        <a class="p-shopInfomation__contactLink" href="<?php echo get_post_meta($post->ID, 'line_id', true); ?>">
           <div class="p-shopInfomation__contactLineImg">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-line.png" alt="LINE">
           </div>
           <div class="p-shopInfomation__contactInfo">
             <p>店舗の公式LINE</p>
-            <p class="p-shopInfomation__contactLineId"><?php echo get_post_meta($post->ID, 'line_id', true); ?></p>
+            <!-- <p class="p-shopInfomation__contactLineId"><?php echo get_post_meta($post->ID, 'line_id', true); ?></p> -->
           </div>
         </a>
       </li>
