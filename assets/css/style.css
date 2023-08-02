@@ -3094,6 +3094,7 @@ select {
 .p-shopNews__itemDate {
   margin-right: 40px;
   font-size: 16px;
+  color: #1B224C;
 }
 @media (max-width: 900px) {
   .p-shopNews__itemDate {
@@ -3104,6 +3105,7 @@ select {
 .p-shopNews__itemContent {
   max-width: 80%;
   font-size: 16px;
+  color: #1B224C;
 }
 @media (max-width: 900px) {
   .p-shopNews__itemContent {
