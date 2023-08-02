@@ -2075,7 +2075,7 @@ select {
   }
 }
 .p-header__menuText {
-  font-size: clamp(0.5rem, 1.3vw, 0.9rem);
+  font-size: clamp(0.7rem, 1.3vw, 0.9rem);
 }
 @media (max-width: 900px) {
   .p-header__menuText {
