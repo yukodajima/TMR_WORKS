@@ -1,6 +1,10 @@
 @use "../../Foundation/global" as *;
 
 .sitemap {
+  padding: 100px 0;
+  @include mq('tab') {
+    padding: 50px 0;
+  }
   &__item {
     list-style: none;
     margin-top: 30px;
