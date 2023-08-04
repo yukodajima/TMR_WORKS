@@ -22,13 +22,11 @@ $(window).on('load', function () {
 
     shopArea.on("click", function(){
       if(window.matchMedia("(max-width: 900px)").matches){
-        shopArea.toggleClass("active");
+        $(this).toggleClass("active");
         $(this).next().slideToggle();
       }
     })
-    
     const alwaysDisplay = $(".p-shop__area:contains('関東')");
-    alwaysDisplay.addClass("active")
     alwaysDisplay.next().css("display","block");
   });
 });
