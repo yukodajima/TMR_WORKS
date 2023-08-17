@@ -27,6 +27,7 @@ $(window).on('load', function () {
       }
     })
     const alwaysDisplay = $(".p-shop__area:contains('関東')");
+    alwaysDisplay.addClass("active");
     alwaysDisplay.next().css("display","block");
   });
 });
