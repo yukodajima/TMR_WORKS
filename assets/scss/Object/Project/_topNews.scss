@@ -13,6 +13,11 @@
     margin: 80px auto 0;
     @include mq('tab') {
       margin-top: 40px;
+      gap: 30px;
+    }
+    @include mq('sp') {
+      margin-top: 40px;
+      gap: 30px;
     }
   }
   &__article {
@@ -27,7 +32,11 @@
       text-decoration: none;
       color: $color-text;
       @include mq('tab') {
-        gap: 15px;
+        gap: 5px;
+        flex-direction: column;
+      }
+      @include mq('sp') {
+        gap: 5px;
         flex-direction: column;
       }
     }
