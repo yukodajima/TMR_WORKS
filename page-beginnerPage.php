@@ -81,7 +81,7 @@
                     訪問の場合は、別途ご案内いたします。
                     店舗持ち込みの場合は、ご予約なしでも受付いたします。
                   </p>
-                  <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/店舗用修理依頼書.ver.1.0.pdf" download="修理依頼書.pdf" class="c-btn p-flow__btn">修理申込書&#40;PDF&#41;をダウンロード</a>
+                  <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/repairform.pdf" download="repair.pdf" class="c-btn p-flow__btn">修理申込書&#40;PDF&#41;をダウンロード</a>
                 </div>
                 <div class="p-flow__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beginner2.jpg" alt=""></div>
               </li>
