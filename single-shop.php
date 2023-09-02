@@ -169,10 +169,10 @@
         <?php foreach ($fields02 as $field) : ?>
           <li class="p-shopRoot__item">
             <div class="p-shopRoot__itemImg">
-              <img src="<?php echo $field['root_img1']; ?>" alt="">
+              <img src="<?php echo $field['root_img']; ?>" alt="">
             </div>
             <p>
-              <?php echo get_post_meta($post->ID, 'root_text1', true); ?>
+            <?php echo $field['root_text']; ?>
             </p>
           </li>
         <?php endforeach; ?>
