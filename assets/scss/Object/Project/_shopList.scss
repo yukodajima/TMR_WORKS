@@ -120,6 +120,9 @@
       max-width: 500px;
       height: 300px;
     }
+    & img {
+      object-fit: fill;
+    }
   }
   &__shopIntroduce {
     max-width: 400px;

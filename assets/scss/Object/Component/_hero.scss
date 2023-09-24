@@ -89,4 +89,7 @@
       display: block;
     }
   }
+  &__thumbnailImg {
+    object-fit: fill !important;
+  }
 }

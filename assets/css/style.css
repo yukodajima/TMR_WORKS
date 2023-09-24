@@ -354,6 +354,10 @@ select {
     display: block;
   }
 }
+.c-hero__thumbnailImg {
+  -o-object-fit: fill !important;
+     object-fit: fill !important;
+}
 
 .p-example {
   width: 300px;
@@ -525,6 +529,10 @@ select {
     max-width: 500px;
     height: 300px;
   }
+}
+.p-shopList__shopInfoImg img {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .p-shopList__shopIntroduce {
   max-width: 400px;
