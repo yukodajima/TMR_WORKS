@@ -1,6 +1,6 @@
 @use '../Foundation/global' as *;
 .l-main {
-  padding-top: $header-height-pc;
+  padding-top: 130px;
   background-color: $color-background-sub;
 
   color: $color-text;
@@ -15,16 +15,13 @@
   // ブラウザサイズと画面サイズを一致
   height: 70%;
   width: calc(100% / $scale);
-  
   @include mq(tab) {
     padding-top: $header-height-tab;
   }
-  
   @include mq(sp) {
     padding-top: $header-height-sp;
   }
   & section {
       // 70% バージョン
-  
   }
 }
