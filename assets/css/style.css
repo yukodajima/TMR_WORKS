@@ -504,7 +504,7 @@ select {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .p-shopList__shopInfoItem:not(:first-child) {
@@ -518,7 +518,7 @@ select {
   }
 }
 .p-shopList__shopInfoImg {
-  width: 240px;
+  width: 400px;
   height: 180px;
   margin-right: 50px;
   aspect-ratio: 0;
