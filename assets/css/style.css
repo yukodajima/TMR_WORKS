@@ -335,7 +335,7 @@ select {
 @media (max-width: 900px) {
   .c-hero__title {
     font-size: 30px;
-    white-space: nowrap;
+    white-space: normal;
   }
 }
 .c-hero__subTitle {
@@ -2594,7 +2594,6 @@ select {
 }
 @media (max-width: 900px) {
   .p-flow__img {
-    height: auto;
     margin: 0 auto;
   }
 }

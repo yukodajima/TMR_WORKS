@@ -3,11 +3,6 @@
 <section class="p-shopInfomation">
   <?php the_post(); ?>
   <div class="l-container">
-    <div class="c-titleBox">
-      <div class="c-titleBox__wrapper">
-        <h3 class="c-titleBox__title"><?php echo get_the_title(); ?></h3>
-      </div>
-    </div>
     <div class="p-shopInfomation__wrapper">
       <div class="p-shopInfomation__infoContent">
         <p class="p-shopInfomation__shopName"><?php echo get_the_title(); ?>情報</p>

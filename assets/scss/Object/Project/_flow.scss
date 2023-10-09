@@ -83,7 +83,6 @@
     max-width: 350px;
     height: 250px;
     @include mq("tab") {
-      height: auto;
       margin: 0 auto;
     }
     & img {
