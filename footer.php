@@ -15,7 +15,7 @@
           </a>
         </li>
         <li class="p-footer__contentItem">
-          <a href="">
+          <a href="http://pcworks-reuse.com/" target="_blank">
             <div class="p-footer__backGround"></div>
             <div class="p-footer__imgContainer">
               <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer02.jpg" alt="footer画像" />
@@ -30,7 +30,7 @@
           </a>
         </li>
         <li class="p-footer__contentItem">
-          <a href="https://pcworks.shop/">
+          <a href="https://pcworks.shop/" target="_blank">
             <div class="p-footer__backGround"></div>
             <div class="p-footer__imgContainer">
               <img class="p-footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer03.jpg" alt="footer画像" />

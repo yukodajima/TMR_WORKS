@@ -103,7 +103,7 @@
               </a>
             </li>
             <li class="p-header__contentItem">
-              <a href="<?php echo home_url(); ?>">
+              <a href="http://pcworks-reuse.com/" target="_blank">
                 <div class="p-header__backGround"></div>
                 <div class="p-header__imgContainer">
                   <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer02.jpg" alt="header画像" />
@@ -118,7 +118,7 @@
               </a>
               </li>
             <li class="p-header__contentItem">
-              <a href="https://pcworks.shop">
+              <a href="https://pcworks.shop" target="_blank">
                 <div class="p-header__backGround"></div>
                 <div class="p-header__imgContainer">
                   <img class="p-header__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer03.jpg" alt="header画像" />
