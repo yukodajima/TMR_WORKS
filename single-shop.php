@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part('hero'); ?>
+<?php get_template_part('shop-hero'); ?>
 <section class="p-shopInfomation">
   <?php the_post(); ?>
   <div class="l-container">
