@@ -75,6 +75,8 @@ function init_func() {
     "menu_icon" => "",
     'supports' => array('title','editor','thumbnail', 'taxonomies'),
     'taxonomies' => array( 'custom_tags' ),
+    'capability_type' => array( 'blog', 'blogs' ),
+    'map_meta_cap'    => true
   ]);
 }
 add_action("init", "init_func");
@@ -181,5 +183,8 @@ add_filter( 'jpeg_quality', function( $arg ){ return 100; } );
 //---------------------------------------
 // 【投稿記事の画像挿入時にwidthとheightを削除】
 //---------------------------------------
+
+
+// カスタム投稿タイプ blog の場合
 
 ?>
