@@ -23,7 +23,7 @@
     }
     & hr {
       margin-top: 40px;
-      @include mq("tab") {
+      @include mq('tab') {
         margin-top: 20px;
       }
     }
@@ -46,4 +46,11 @@
       margin-top: 10px;
     }
   }
+}
+.wp-pagenavi {
+  text-align: center;
+  margin-top: 50px;
+}
+.pages {
+  display: none;
 }

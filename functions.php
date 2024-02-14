@@ -32,7 +32,7 @@ function cpt_register_shops()
     "hierarchical" => false,
     "menu_position" => 5,
     "menu_icon" => "",
-    'supports' => array('title','editor','thumbnail', 'taxonomies')
+    'supports' => array('title', 'editor', 'thumbnail', 'taxonomies')
   ]);
   register_taxonomy("shop_category", "shop", [
     "labels" => [
@@ -60,7 +60,8 @@ add_action("init", "cpt_register_shops");
 // add_action( 'init', 'custom_post_type_tags', 0 );
 
 //「お知らせ」のカスタム投稿タイプの設定
-function init_func() {
+function init_func()
+{
   // add_theme_support("title-tag");
   // add_theme_support("post-thumbnails");
 
@@ -73,10 +74,10 @@ function init_func() {
     "hierarchical" => false,
     "menu_position" => 5,
     "menu_icon" => "",
-    'supports' => array('title','editor','thumbnail', 'taxonomies'),
-    'taxonomies' => array( 'custom_tags' ),
-    'capability_type' => array( 'blog', 'blogs' ),
-    'map_meta_cap'    => true
+    'supports' => array('title', 'editor', 'thumbnail', 'taxonomies'),
+    'taxonomies' => array('custom_tags'),
+    // 'capability_type' => array('blog', 'blogs'),
+    // 'map_meta_cap'    => true
   ]);
 }
 add_action("init", "init_func");
@@ -98,7 +99,8 @@ add_action("init", "init_func");
 
 
 //ブログ投稿のカスタム投稿設定
-function cpt_register_blog() {
+function cpt_register_blog()
+{
   // add_theme_support('title-tag');
   // add_theme_support('post-thumbnails');
 
@@ -111,13 +113,14 @@ function cpt_register_blog() {
     'hierarchical' => false,
     'menu_position' => 5,
     'menu_icon' => '',
-    'supports' => array('title','editor','thumbnail')
+    'supports' => array('title', 'editor', 'thumbnail')
   ]);
 }
 add_action('init', 'cpt_register_blog');
 
 //お客様の声のカスタム投稿
-function cpt_register_revue() {
+function cpt_register_revue()
+{
   register_post_type('revue', [
     'labels' => [
       'name' => 'お客様の声'
@@ -126,58 +129,63 @@ function cpt_register_revue() {
     'has_archive' => true,
     'hierarchical' => false,
     'menu_position' => 5,
-    'menu_icon' =>'',
+    'menu_icon' => '',
     'supports' => array('title', 'editor', 'thumbnail')
   ]);
 }
 add_action('init', 'cpt_register_revue');
 
 //お知らせと店舗詳細にタグを追加
-function add_tags_to_custom_post_types() {
+function add_tags_to_custom_post_types()
+{
   $args = array(
-      'hierarchical' => false,
-      'labels' => array(
-          'name' => 'タグ',
-          'singular_name' => 'タグ',
-      ),
-      'show_ui' => true,
-      'show_admin_column' => true,
-      'query_var' => true,
-      'rewrite' => array( 'slug' => 'tag' ),
+    'hierarchical' => false,
+    'labels' => array(
+      'name' => 'タグ',
+      'singular_name' => 'タグ',
+    ),
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array('slug' => 'tag'),
   );
-  register_taxonomy( 'custom_tags', array( 'shop', 'news' ), $args );
-  register_taxonomy_for_object_type( 'custom_tags', 'cpt_register_shops' );
-  register_taxonomy_for_object_type( 'custom_tags', 'init_func' );
+  register_taxonomy('custom_tags', array('shop', 'news'), $args);
+  register_taxonomy_for_object_type('custom_tags', 'cpt_register_shops');
+  register_taxonomy_for_object_type('custom_tags', 'init_func');
 }
-add_action( 'init', 'add_tags_to_custom_post_types' );
+add_action('init', 'add_tags_to_custom_post_types');
 
 function my_enqueue_scripts()
 {
   wp_enqueue_script('jquery');
-  wp_enqueue_script('my_scripts', get_template_directory_uri(). '/assets/js/index.js', array());
-  wp_enqueue_style('my_styles', get_template_directory_uri(). '/assets/css/style.css', array());
+  wp_enqueue_script('my_scripts', get_template_directory_uri() . '/assets/js/index.js', array());
+  wp_enqueue_style('my_styles', get_template_directory_uri() . '/assets/css/style.css', array());
 }
 
-add_action( 'wp_enqueue_scripts', 'my_enqueue_scripts');
+add_action('wp_enqueue_scripts', 'my_enqueue_scripts');
 add_theme_support('post-thumbnails');
 
 // Contact Form 7で自動挿入されるPタグ、brタグを削除
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
-function wpcf7_autop_return_false() {
+function wpcf7_autop_return_false()
+{
   return false;
 };
 
-function taxonomy_orderby_description( $orderby, $args ) {
+function taxonomy_orderby_description($orderby, $args)
+{
 
-  if ( $args['orderby'] == 'description' ) {
+  if ($args['orderby'] == 'description') {
     $orderby = 'tt.description';
   }
   return $orderby;
 }
-add_filter( 'get_terms_orderby', 'taxonomy_orderby_description', 10, 2 );
+add_filter('get_terms_orderby', 'taxonomy_orderby_description', 10, 2);
 
 //画像圧縮
-add_filter( 'jpeg_quality', function( $arg ){ return 100; } );
+add_filter('jpeg_quality', function ($arg) {
+  return 100;
+});
 
 
 //---------------------------------------
@@ -186,5 +194,3 @@ add_filter( 'jpeg_quality', function( $arg ){ return 100; } );
 
 
 // カスタム投稿タイプ blog の場合
-
-?>

@@ -2196,7 +2196,7 @@ select {
             justify-content: flex-start;
     gap: 5px;
     width: 100%;
-    height: calc( 100% - 56px );
+    height: calc(100% - 56px);
     background-color: #FF9801;
     overflow-y: auto;
   }
@@ -2204,7 +2204,7 @@ select {
 @media (max-width: 599px) {
   .p-header__menuList {
     top: 35px;
-    height: calc( 100% - 35px );
+    height: calc(100% - 35px);
   }
 }
 .p-header__menuItem {
@@ -4283,6 +4283,15 @@ select {
   .p-newsList__text {
     margin-top: 10px;
   }
+}
+
+.wp-pagenavi {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.pages {
+  display: none;
 }
 
 .sitemap {
