@@ -4294,6 +4294,14 @@ select {
   display: none;
 }
 
+.first {
+  display: none;
+}
+
+.last {
+  display: none;
+}
+
 .sitemap {
   padding: 100px 0;
 }
