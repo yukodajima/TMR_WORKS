@@ -4,11 +4,14 @@
   <div class="l-container">
     <ul class="p-newsList__list">
       <?php
-      $args = array(
-        'post_type' => 'news', // 投稿タイプを指定
-        'posts_per_page' => 10, // 表示する記事数
+      $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+      $newsList_query = new WP_Query(
+        array(
+          'post_type' => 'news', // 投稿タイプを指定
+          'posts_per_page' => 10, // 表示する記事数
+          'paged' => $paged, //ページネーション用
+        )
       );
-      $newsList_query = new WP_Query($args);
       if ($newsList_query->have_posts()) :
         while ($newsList_query->have_posts()) :
           $newsList_query->the_post();
