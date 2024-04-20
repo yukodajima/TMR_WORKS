@@ -4,11 +4,11 @@
     padding-bottom: 70px;
     @include mq('tab') {
         margin-top: 85px;
-        padding-bottom: 35px;
+        padding-bottom: 40px;
     }
     @include mq('sp') {
         margin-top: 40px;
-        padding-bottom: 18px;
+        padding-bottom: 40px;
     }
     &__list {
         display: flex;

@@ -241,7 +241,7 @@
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
       <?php else : ?>
-        <p class="p-shopList__text">お知らせはありません</p>
+        <p class="p-shopNews__text">お知らせはありません</p>
       <?php endif; ?>
     </ul>
     <div class="p-shopNews__listLinkBox">

@@ -76,6 +76,9 @@
     margin: 0 auto;
     font-size: 16px;
     color: $color-text;
+    @include mq('tab') {
+      text-align: center;
+    }
   }
   &__listLinkBox {
     text-align: right;
