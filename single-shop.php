@@ -244,6 +244,9 @@
         <p class="p-shopList__text">お知らせはありません</p>
       <?php endif; ?>
     </ul>
+    <div class="p-shopNews__listLinkBox">
+      <a class="p-shopNews__listLink" href="<?php echo home_url("/news"); ?>">一覧を見る</a>
+    </div>
   </div>
 </section>
 <?php get_footer(); ?>

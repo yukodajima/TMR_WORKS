@@ -261,8 +261,8 @@
       <?php endif; ?>
     </ul>
     <div class="p-info__listLinkBox">
-        <a class="p-info__listLink" href="<?php echo home_url("/blog"); ?>">もっと見る</a>
-      </div>
+      <a class="p-info__listLink" href="<?php echo home_url("/blog"); ?>">もっと見る</a>
+    </div>
   </div>
 </section>
 <section class="p-topNews">

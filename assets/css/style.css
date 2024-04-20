@@ -3704,6 +3704,41 @@ select {
   display: block;
   margin: 0 auto;
 }
+.p-shopNews__listLinkBox {
+  text-align: right;
+  margin-top: 30px;
+}
+.p-shopNews__listLink {
+  position: relative;
+  right: 0;
+  padding-right: 60px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.p-shopNews__listLink::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FF9801;
+}
+.p-shopNews__listLink::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 7px;
+  right: 15px;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
 .p-contact {
   max-width: 700px;
