@@ -4226,6 +4226,23 @@ select {
   }
 }
 
+.wp-pagenavi {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.pages {
+  display: none;
+}
+
+.first {
+  display: none;
+}
+
+.last {
+  display: none;
+}
+
 .p-newsList {
   padding: 80px 0;
 }
