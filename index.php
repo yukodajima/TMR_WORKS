@@ -314,7 +314,6 @@
       <?php else : ?>
         <p class="p-topNews__text">お知らせがありません</p>
       <?php endif; ?>
-      </ul>
     <!-- </div> -->
   </div>
 </section>

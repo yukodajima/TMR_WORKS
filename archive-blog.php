@@ -35,10 +35,9 @@
           </a>
           <hr/>
         </li>
-      <?php endwhile;
-      endif;
-      wp_reset_postdata();
-      ?>
+      <?php endwhile; else : wp_reset_postdata(); ?>
+        <p class="p-blogList__notFound">ブログ投稿がありません</p>
+      <?php endif ?>
     </ul>
     <?php wp_pagenavi(); ?>
   </div>
