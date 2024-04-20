@@ -256,13 +256,14 @@
               <p class="p-info__text" ><?php the_title() ?></p>
             </a>
         </li>
-        <?php endforeach; wp_reset_postdata(); else : ?>
-          <p class="p-info__notFound">ブログ投稿がありません</p>
-      <?php endif; ?>
+        <?php endforeach; wp_reset_postdata(); ?>
     </ul>
     <div class="p-info__listLinkBox">
       <a class="p-info__listLink" href="<?php echo home_url("/blog"); ?>">もっと見る</a>
     </div>
+    <?php else : ?>
+      <p class="p-info__notFound">ブログ投稿がありません</p>
+    <?php endif; ?>
   </div>
 </section>
 <section class="p-topNews">
@@ -305,13 +306,13 @@
                 </div>
               </a>
             </li>
+            <div class="p-topNews__listLinkBox">
+              <a class="p-topNews__listLink" href="<?php echo home_url("/news"); ?>">もっと見る</a>
+            </div>
           <?php endforeach; wp_reset_postdata(); else : ?>
             <p class="p-topNews__text">お知らせがありません</p>
         <?php endif; ?>
       </ul>
-      <div class="p-topNews__listLinkBox">
-        <a class="p-topNews__listLink" href="<?php echo home_url("/news"); ?>">もっと見る</a>
-      </div>
     <!-- </div> -->
   </div>
 </section>
