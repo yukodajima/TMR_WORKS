@@ -285,33 +285,35 @@
         ));
         global $post;
         if ($custom_posts) : foreach ($custom_posts as $post) : setup_postdata($post); ?>
-            <li class="p-topNews__article">
-              <a href="<?php the_permalink() ?>">
-                <p class="p-topNews__date"><?php the_time("Y-m-d"); ?></p>
-                <div class="p-topNews__articleTitle">
-                  <p>&lt;
-            <?php
-              $taxonomy = 'custom_tags'; // タグのタクソノミー名
-              $tags = get_the_terms(get_the_ID(), $taxonomy);
+          <li class="p-topNews__article">
+            <a href="<?php the_permalink() ?>">
+              <p class="p-topNews__date"><?php the_time("Y-m-d"); ?></p>
+              <div class="p-topNews__articleTitle">
+                <p>&lt;
+          <?php
+            $taxonomy = 'custom_tags'; // タグのタクソノミー名
+            $tags = get_the_terms(get_the_ID(), $taxonomy);
 
-              if ($tags && !is_wp_error($tags)) {
-                $tag_names = array();
-                foreach ($tags as $tag) {
-                    $tag_names[] = $tag->name;
-                }
-                echo implode(' / ', $tag_names);
+            if ($tags && !is_wp_error($tags)) {
+              $tag_names = array();
+              foreach ($tags as $tag) {
+                  $tag_names[] = $tag->name;
               }
-              ?>
-            &gt;<?php the_title(); ?></p>
-                </div>
-              </a>
-            </li>
-            <div class="p-topNews__listLinkBox">
-              <a class="p-topNews__listLink" href="<?php echo home_url("/news"); ?>">もっと見る</a>
-            </div>
-          <?php endforeach; wp_reset_postdata(); else : ?>
-            <p class="p-topNews__text">お知らせがありません</p>
-        <?php endif; ?>
+              echo implode(' / ', $tag_names);
+            }
+            ?>
+          &gt;<?php the_title(); ?></p>
+              </div>
+            </a>
+          </li>
+        <?php endforeach; wp_reset_postdata(); ?>
+      </ul>
+      <div class="p-topNews__listLinkBox">
+        <a class="p-topNews__listLink" href="<?php echo home_url("/news"); ?>">もっと見る</a>
+      </div>
+      <?php else : ?>
+        <p class="p-topNews__text">お知らせがありません</p>
+      <?php endif; ?>
       </ul>
     <!-- </div> -->
   </div>
