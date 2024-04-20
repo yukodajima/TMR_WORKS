@@ -77,4 +77,47 @@
     font-size: 16px;
     color: $color-text;
   }
+  &__listLinkBox {
+    text-align: right;
+    margin-top: 30px;
+  }
+  &__listLink {
+    position: relative;
+    right: 0;
+    padding-right: 60px;
+    text-decoration: none;
+    cursor: pointer;
+    &::before{
+      content: '';
+      position: absolute;
+      top: -8px;
+      right: 0;
+      display: block;
+      width: 40px;
+      height: 40px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-color: $color-main;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      display: block;
+      top: 7px;
+      right: 15px;
+      // transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+      border-top: 3px solid #fff;
+      border-right: 3px solid #fff;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    background-color: $color-main;
+    cursor: pointer;
+  }
 }
